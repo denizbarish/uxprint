@@ -1,0 +1,206 @@
+{
+  "screens": [
+    {
+      "id": "login-method",
+      "title": "Log In: Choose A Method",
+      "theme": "light",
+      "flow": "Log in",
+      "step": "Choose a method",
+      "capture": "login/screen-initial.png",
+      "template": "auth",
+      "url": "https://linear.app/login",
+      "survey": "login"
+    },
+    {
+      "id": "login-email",
+      "title": "Log In: Enter Email",
+      "theme": "light",
+      "flow": "Log in",
+      "step": "Enter email",
+      "capture": "login/screen-email.png",
+      "template": "auth",
+      "url": "https://linear.app/login"
+    },
+    {
+      "id": "signup-method",
+      "title": "Sign Up: Choose A Method",
+      "theme": "light",
+      "flow": "Sign up",
+      "step": "Choose a method",
+      "capture": "signup/screen-initial.png",
+      "template": "auth",
+      "url": "https://linear.app/signup",
+      "survey": "signup"
+    },
+    {
+      "id": "signup-email",
+      "title": "Sign Up: Enter Email",
+      "theme": "light",
+      "flow": "Sign up",
+      "step": "Enter email",
+      "capture": "signup/screen-email.png",
+      "template": "auth",
+      "url": "https://linear.app/signup"
+    },
+    {
+      "id": "controls",
+      "title": "Controls",
+      "theme": "dark"
+    },
+    {
+      "id": "home",
+      "title": "Home",
+      "theme": "dark",
+      "template": "home",
+      "url": "https://linear.app",
+      "survey": "home"
+    },
+    {
+      "id": "product",
+      "title": "Product Area",
+      "theme": "dark",
+      "template": "product",
+      "url": "https://linear.app/plan",
+      "survey": "plan"
+    },
+    {
+      "id": "feature",
+      "title": "Feature Page",
+      "theme": "dark",
+      "template": "feature",
+      "url": "https://linear.app/insights",
+      "survey": "insights"
+    },
+    {
+      "id": "pricing",
+      "title": "Pricing",
+      "theme": "dark",
+      "template": "pricing",
+      "url": "https://linear.app/pricing",
+      "survey": "pricing"
+    },
+    {
+      "id": "company",
+      "title": "Company",
+      "theme": "dark",
+      "template": "company",
+      "url": "https://linear.app/about",
+      "survey": "about"
+    },
+    {
+      "id": "index-grid",
+      "title": "Index Grid",
+      "theme": "dark",
+      "template": "index",
+      "url": "https://linear.app/customers",
+      "survey": "customers"
+    },
+    {
+      "id": "changelog",
+      "title": "Changelog",
+      "theme": "dark",
+      "template": "changelog",
+      "url": "https://linear.app/changelog",
+      "survey": "changelog"
+    },
+    {
+      "id": "post",
+      "title": "Post",
+      "theme": "dark",
+      "template": "post",
+      "url": "https://linear.app/changelog/2026-11-12-bring-your-own-key",
+      "survey": "changelog-2026-11-12-bring-your-own-key"
+    },
+    {
+      "id": "legal",
+      "title": "Legal Text",
+      "theme": "dark",
+      "template": "legal-text",
+      "url": "https://linear.app/terms",
+      "survey": "terms"
+    },
+    {
+      "id": "hub",
+      "title": "Hub",
+      "theme": "dark",
+      "template": "hub",
+      "url": "https://linear.app/contact",
+      "survey": "contact"
+    },
+    {
+      "id": "docs",
+      "title": "Docs",
+      "theme": "dark",
+      "template": "docs",
+      "url": "https://linear.app/docs",
+      "survey": "docs"
+    },
+    {
+      "id": "centered",
+      "title": "Centered",
+      "theme": "dark",
+      "template": "centered",
+      "url": "https://linear.app/download",
+      "survey": "download"
+    },
+    {
+      "id": "integrations",
+      "title": "Integrations",
+      "theme": "dark",
+      "template": "integrations",
+      "url": "https://linear.app/integrations",
+      "survey": "integrations"
+    }
+  ],
+  "components": {
+    "Button, primary": {
+      "screen": "controls",
+      "part": "buttons"
+    },
+    "Button, secondary": {
+      "screen": "controls",
+      "part": "buttons"
+    },
+    "Nav link": {
+      "screen": "controls",
+      "part": "header"
+    },
+    "Mega menu": {
+      "screen": "controls",
+      "part": "header"
+    },
+    "Plan column": {
+      "screen": "pricing"
+    },
+    "Switch": {
+      "screen": "controls",
+      "part": "switch"
+    },
+    "Sidebar item": {
+      "screen": "controls",
+      "part": "sidebar"
+    },
+    "Disclosure row": {
+      "screen": "controls",
+      "part": "disclosure"
+    },
+    "Text link with arrow": {
+      "screen": "controls",
+      "part": "links"
+    },
+    "Icon button": {
+      "screen": "controls",
+      "part": "links"
+    },
+    "Auth button": {
+      "screen": "login-method"
+    },
+    "Auth field": {
+      "screen": "login-email"
+    },
+    "Footer link": {
+      "screen": "controls",
+      "part": "footer"
+    }
+  }
+}

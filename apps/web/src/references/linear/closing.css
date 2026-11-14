@@ -1,0 +1,111 @@
+/* Shared closing blocks: customer quotes and the proof line. */
+
+.lr-quotes {
+  display: grid;
+  grid-template-columns: 880px 432px;
+  gap: 8px;
+  justify-content: center;
+}
+
+.lr-quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+  padding: 24px 32px 32px;
+  border-radius: 8px;
+  color: var(--lr-canvas);
+  background: linear-gradient(160deg, #dfe6f3, #e8e1f2);
+  transition: filter 0.16s var(--lr-ease);
+}
+
+.lr-quote:hover {
+  filter: brightness(1.04);
+}
+
+.lr-quote--1 {
+  background: #e4e4dc;
+}
+
+.lr-quote--2 {
+  display: none;
+}
+
+.lr-quote__text {
+  max-width: 550px;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.022em;
+  text-indent: -0.4em;
+}
+
+.lr-quote__by {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #3c3f45;
+}
+
+.lr-quote__by strong {
+  display: block;
+  font-weight: 510;
+  color: var(--lr-canvas);
+}
+
+.lr-quote__logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(8, 9, 10, 0.12);
+  border: 0;
+}
+
+.lr-proof {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.lr-proof strong {
+  color: var(--lr-text-1);
+  font-weight: 510;
+}
+
+
+@media (max-width: 1023px) {
+  .lr-quotes {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 639px) {
+  .lr-quotes {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 8px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+  .lr-quote {
+    flex: none;
+    width: 320px;
+    height: 360px;
+    padding: 20px 24px 24px;
+  }
+  .lr-quote--2 {
+    display: flex;
+    background: #dfe8e2;
+  }
+  .lr-quote__text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .lr-proof {
+    display: none;
+  }
+}

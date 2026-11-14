@@ -1,0 +1,203 @@
+/* Legal page (older system, white). Gaps between blocks come from the measured /privacy layout via --mt. */
+
+.l-layout {
+  display: grid;
+  grid-template-columns: 270px 810px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 128px;
+}
+
+.l-side {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  width: 238px;
+  margin: 54px 0 0 16px;
+}
+
+.l-side__kicker {
+  font-size: 15px;
+  font-weight: 425;
+  line-height: 24px;
+  color: #727f96;
+}
+
+.l-side__current {
+  position: relative;
+  display: block;
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 425;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #0a2540;
+}
+
+.l-side__current::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 4px;
+  width: 1px;
+  height: 16px;
+  background: var(--accent);
+}
+
+.l-side ul {
+  margin-top: 6px;
+  padding-left: 16px;
+}
+
+.l-side li {
+  padding: 4px 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.l-side li a {
+  display: block;
+  color: #727f96;
+  transition: color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.l-side li a:hover {
+  color: #0a2540;
+}
+
+.l-main > * {
+  margin-top: var(--mt);
+}
+
+.l-h1 {
+  padding-left: 16px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: -1.12px;
+  color: #0a2540;
+}
+
+.l-h2 {
+  padding-left: 16px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.1px;
+  color: #0a2540;
+}
+
+.l-h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #0a2540;
+}
+
+.l-h4 {
+  font-size: 18px;
+  font-weight: 425;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #0a2540;
+}
+
+.l-p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+}
+
+.l-p strong {
+  font-weight: 500;
+  color: #0a2540;
+}
+
+.l-p--indent {
+  padding-left: 40px;
+}
+
+.l-toc {
+  display: block;
+  padding-left: 16px;
+  font-size: 18px;
+  font-weight: 425;
+  line-height: 23px;
+  color: var(--accent);
+}
+
+.l-box {
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 16px;
+  border-radius: 4px;
+  background: #f7f9fc;
+  box-shadow: 0 0 0 4px #ffffff, 0 2px 5px 3px rgba(50, 50, 93, 0.1), 0 1px 3px 3px rgba(0, 0, 0, 0.07);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #425466;
+}
+
+.l-box--notice {
+  background: #ffffff;
+}
+
+.l-box a {
+  color: var(--accent);
+  font-weight: 425;
+}
+
+@media (max-width: 1039px) {
+  .l-layout {
+    grid-template-columns: 1fr;
+    padding: 0 16px 96px;
+  }
+
+  .l-side {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .s-lheader--logo {
+    height: 74px;
+  }
+
+  .l-main > * {
+    margin-top: min(var(--mt), 32px);
+  }
+
+  .l-h1 {
+    margin-top: 48px;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+  }
+
+  .l-h1,
+  .l-h2,
+  .l-toc {
+    padding-left: 0;
+  }
+
+  .l-p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .l-p--indent {
+    padding-left: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .l-side li a {
+    transition: none;
+  }
+}

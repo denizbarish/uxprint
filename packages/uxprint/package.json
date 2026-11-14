@@ -1,0 +1,43 @@
+{
+  "name": "uxprint",
+  "version": "0.1.0",
+  "description": "UI/UX prints of well-designed platforms, ready for AI coding agents.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denizbarish/uxprint.git",
+    "directory": "packages/uxprint"
+  },
+  "homepage": "https://github.com/denizbarish/uxprint#readme",
+  "funding": "https://github.com/sponsors/denizbarish",
+  "type": "module",
+  "bin": {
+    "uxprint": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "prints"
+  ],
+  "scripts": {
+    "build": "tsup && tsc",
+    "test": "vitest run --reporter=dot",
+    "prepack": "rm -rf prints && cp -R ../../prints prints",
+    "postpack": "rm -rf prints"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "tsup": "^9.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,229 @@
+/* Centered template, measured on linear.app/download at 1440 and 390. */
+
+.lr-centered-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 59px;
+  text-align: center;
+}
+
+.lr-centered-icon {
+  width: 164px;
+  height: 164px;
+  border-radius: 36px;
+}
+
+.lr-centered-hero h1 {
+  margin-top: 30px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 590;
+  letter-spacing: -0.022em;
+}
+
+.lr-centered-lead {
+  margin-top: 12px;
+  font-size: 17px;
+  line-height: 23.8px;
+  letter-spacing: -0.012em;
+  color: var(--lr-text-2);
+}
+
+.lr-centered-get {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.lr-centered-get .lr-btn {
+  gap: 10px;
+  font-size: 15px;
+}
+
+.lr-centered-get kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.08);
+  font: inherit;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.lr-centered-get span {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 16.8px;
+  color: var(--lr-text-4);
+}
+
+.lr-centered-lead--phone,
+.lr-centered-get--phone {
+  display: none;
+}
+
+.lr-centered-blocks {
+  max-width: 832px;
+  margin: 64px auto 0;
+  padding-bottom: 95px;
+}
+
+.lr-centered-block {
+  display: grid;
+  grid-template-columns: 300px 360px;
+  justify-content: space-between;
+  align-items: start;
+  padding: 32px 0 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lr-centered-block > p {
+  padding-top: 18px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.013em;
+  color: var(--lr-text-3);
+}
+
+.lr-centered-block strong {
+  font-weight: 510;
+  color: var(--lr-text-1);
+}
+
+.lr-centered-rows li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.lr-centered-rows li + li,
+.lr-centered-phone-web li {
+  height: 57px;
+  margin-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lr-centered-rows__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 510;
+  color: var(--lr-text-2);
+}
+
+.lr-centered-rows__label svg {
+  color: var(--lr-text-3);
+}
+
+.lr-centered-rows__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.lr-centered-pill {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+  font: inherit;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 510;
+  color: var(--lr-text-1);
+  cursor: pointer;
+  transition:
+    box-shadow 0.16s var(--lr-ease),
+    background-color 0.16s var(--lr-ease),
+    color 0.16s var(--lr-ease);
+}
+
+.lr-centered-pill:hover {
+  background: #191a1b;
+}
+
+.lr-centered-pill:active {
+  transform: scale(0.97);
+}
+
+.lr-centered-pill--quiet {
+  background: var(--lr-canvas);
+  box-shadow: inset 0 0 0 1px #1c1c1f;
+  color: var(--lr-text-3);
+}
+
+.lr-centered-pill--quiet:hover {
+  background: #232326;
+  box-shadow: inset 0 0 0 1px #232326;
+  color: var(--lr-text-1);
+}
+
+.lr-centered-phone-web {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .lr-centered-blocks {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .lr-centered-block {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
+  }
+}
+
+@media (max-width: 639px) {
+  .lr-centered-lead--wide,
+  .lr-centered-get--wide {
+    display: none;
+  }
+  .lr-centered-lead--phone {
+    display: block;
+    max-width: 312px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .lr-centered-get--phone {
+    display: flex;
+    gap: 8px;
+  }
+  .lr-centered-blocks {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin: 64px 24px 0;
+  }
+  .lr-centered-block {
+    padding: 35px 0 40px;
+  }
+  .lr-centered-block > p {
+    padding-top: 0;
+  }
+  .lr-centered-block--mobile > p {
+    min-height: 63px;
+  }
+  .lr-centered-rows {
+    padding-left: 24px;
+  }
+  .lr-centered-block--desktop .lr-centered-rows li:nth-child(2) {
+    display: none;
+  }
+  .lr-centered-phone-web {
+    display: block;
+    margin-top: -15px;
+  }
+  .lr-centered-pill--quiet {
+    display: none;
+  }
+}

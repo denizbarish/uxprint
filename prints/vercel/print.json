@@ -1,0 +1,1843 @@
+{
+  "slug": "vercel",
+  "name": "Vercel",
+  "url": "https://vercel.com",
+  "category": "marketing-site",
+  "tags": [
+    "light",
+    "monochrome",
+    "geist",
+    "developer-tool",
+    "saas",
+    "ring-borders",
+    "docs-sidebar"
+  ],
+  "summary": "Near-white #fafafa canvas, #171717 ink and one grey (#4d4d4d) for everything else: Geist type with tight negative tracking, 1px ring borders instead of strokes, and a single dark button per group.",
+  "theme": "light",
+  "source": {
+    "tool": "craft-anything 0.4.0 + playwright 1.65.0",
+    "mode": "deep",
+    "capturedAt": "2026-11-13",
+    "widths": [
+      1440,
+      768,
+      390
+    ],
+    "pages": [
+      {
+        "name": "home",
+        "url": "https://vercel.com"
+      },
+      {
+        "name": "pricing",
+        "url": "https://vercel.com/pricing"
+      },
+      {
+        "name": "docs",
+        "url": "https://vercel.com/docs"
+      },
+      {
+        "name": "login",
+        "url": "https://vercel.com/login"
+      },
+      {
+        "name": "signup",
+        "url": "https://vercel.com/signup"
+      }
+    ]
+  },
+  "color": {
+    "background": [
+      {
+        "name": "canvas",
+        "value": "#fafafa",
+        "use": "Page background on every page, including the header and the auth screens"
+      },
+      {
+        "name": "surface",
+        "value": "#ffffff",
+        "use": "Secondary buttons, docs cards, the highlighted plan column, the sign-up card, inputs"
+      },
+      {
+        "name": "inverse",
+        "value": "#171717",
+        "use": "Primary button fill"
+      },
+      {
+        "name": "inverse-pressed",
+        "value": "#383838",
+        "use": "Primary auth button right after a click, with the pointer still on it (read during the log-in step)"
+      },
+      {
+        "name": "row-hover",
+        "value": "#f2f2f2",
+        "use": "Docs sidebar item on hover and press"
+      },
+      {
+        "name": "badge",
+        "value": "#ebebeb",
+        "use": "Small pill badge fill on the pricing page (three elements)"
+      },
+      {
+        "name": "card-hover",
+        "value": "#fafafa",
+        "use": "Docs link card on hover and press (white card turns canvas colour)"
+      }
+    ],
+    "text": [
+      {
+        "name": "primary",
+        "value": "#171717",
+        "use": "Headlines, button labels, current nav item, emphasised words"
+      },
+      {
+        "name": "secondary",
+        "value": "#4d4d4d",
+        "use": "The most used text colour: nav links, sidebar items, body copy, the second half of two-tone quotes"
+      },
+      {
+        "name": "tertiary",
+        "value": "#666666",
+        "use": "Docs card descriptions, inactive tabs"
+      },
+      {
+        "name": "muted",
+        "value": "#8f8f8f",
+        "use": "Icon buttons at rest and small grey text on pricing (21 elements), such as the FAQ numbers"
+      },
+      {
+        "name": "faint",
+        "value": "#a8a8a8",
+        "use": "Legal links in the log-in footer"
+      },
+      {
+        "name": "strong",
+        "value": "#000000",
+        "use": "Docs card titles, active tab, typed input text"
+      },
+      {
+        "name": "on-inverse",
+        "value": "#ffffff",
+        "use": "Label on the primary button"
+      },
+      {
+        "name": "link",
+        "value": "#0072f5",
+        "use": "Text links on auth screens and the skip link. Outside code highlighting it is the only coloured text seen; docs also has two #0068d6 text elements whose role was not isolated"
+      }
+    ],
+    "border": [
+      {
+        "name": "ring",
+        "value": "#ebebeb",
+        "use": "1px box-shadow ring on secondary buttons, provider buttons and inputs; there are almost no real borders"
+      },
+      {
+        "name": "ring-alpha",
+        "value": "#00000014",
+        "use": "rgba(0, 0, 0, 0.08) ring on raised surfaces (sign-up card, docs search, raised pills)"
+      },
+      {
+        "name": "tab-rail",
+        "value": "#eaeaea",
+        "use": "1px inset rule under a tab list"
+      },
+      {
+        "name": "card-edge",
+        "value": "#e6e6e6",
+        "use": "1px border of pricing feature cards"
+      },
+      {
+        "name": "card-edge-hover",
+        "value": "#c9c9c9",
+        "use": "Pricing feature card border on hover"
+      },
+      {
+        "name": "header-rule",
+        "value": "#0000001a",
+        "use": "Hairline under the header once the page scrolls (--header-border-bottom: 0 1px 0 0)"
+      }
+    ],
+    "accent": [
+      {
+        "name": "focus",
+        "value": "#0072f5",
+        "use": "Focus ring (2px white gap, then 2px blue: 0 0 0 2px #fff, 0 0 0 4px) and 2px solid outlines on links"
+      },
+      {
+        "name": "rating-hover",
+        "value": "#e0f0ff",
+        "use": "Background of a feedback rating button on hover"
+      }
+    ],
+    "semantic": [
+      {
+        "name": "code-green",
+        "value": "#297a3a",
+        "use": "Highlighted tokens inside terminal code blocks on the docs page"
+      },
+      {
+        "name": "error",
+        "value": "#ee0000",
+        "use": "--geist-error (#e00). Declared on the docs page; a rendered use was not observed"
+      },
+      {
+        "name": "warning",
+        "value": "#f5a623",
+        "use": "--geist-warning. Declared on the docs page; a rendered use was not observed"
+      },
+      {
+        "name": "legacy-success-blue",
+        "value": "#0070f3",
+        "use": "--geist-success (blue in this legacy palette). Declared on docs and auth pages; a rendered use was not observed"
+      }
+    ]
+  },
+  "typography": {
+    "families": [
+      {
+        "role": "sans",
+        "stack": "GeistSans, \"GeistSans Fallback\"",
+        "features": "\"calt\" 0, \"rlig\", \"ss11\"",
+        "substitute": {
+          "name": "Geist",
+          "source": "google-fonts",
+          "note": "Same face: Geist is open source (SIL OFL), also on npm as geist. Loaded as a variable face, weights 100 to 900; 450 and 550 are used"
+        }
+      },
+      {
+        "role": "mono",
+        "stack": "\"Geist Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, \"Liberation Mono\", \"DejaVu Sans Mono\", \"Courier New\", monospace, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "features": "\"liga\" 0",
+        "substitute": {
+          "name": "Geist Mono",
+          "source": "google-fonts",
+          "note": "Same face, open source. Used for code, the price unit and the hero sub-line on phones"
+        }
+      }
+    ],
+    "scale": [
+      {
+        "name": "display",
+        "size": "64px",
+        "weight": 400,
+        "lineHeight": "64px",
+        "tracking": "-3.84px",
+        "family": "sans",
+        "use": "Home hero headline, two lines. The pricing h1 uses the same size at weight 450"
+      },
+      {
+        "name": "section",
+        "size": "56px",
+        "weight": 450,
+        "lineHeight": "56px",
+        "tracking": "-3.36px",
+        "family": "sans",
+        "use": "Home section headlines, two lines"
+      },
+      {
+        "name": "docs-title",
+        "size": "56px",
+        "weight": 600,
+        "lineHeight": "56px",
+        "tracking": "-3.36px",
+        "family": "sans",
+        "use": "Docs page h1 (48px at 768 and 390)"
+      },
+      {
+        "name": "auth-title",
+        "size": "32px",
+        "weight": 600,
+        "lineHeight": "40px",
+        "tracking": "-0.96px",
+        "family": "sans",
+        "use": "Log in title. The sign-up title uses -1.28px and drops to 24px at 390"
+      },
+      {
+        "name": "lead",
+        "size": "24px",
+        "weight": 450,
+        "lineHeight": "32px",
+        "tracking": "-0.96px",
+        "family": "sans",
+        "use": "Two-tone quotes on home (first words #171717, rest #4d4d4d) and pricing card titles (h3)"
+      },
+      {
+        "name": "heading",
+        "size": "24px",
+        "weight": 600,
+        "lineHeight": "32px",
+        "tracking": "-0.96px",
+        "family": "sans",
+        "use": "Docs h2"
+      },
+      {
+        "name": "section-label",
+        "size": "18px",
+        "weight": 600,
+        "lineHeight": "27px",
+        "tracking": "-0.54px",
+        "family": "sans",
+        "use": "The section name after the logo in the docs header"
+      },
+      {
+        "name": "card-title",
+        "size": "16px",
+        "weight": 600,
+        "lineHeight": "24px",
+        "tracking": "-0.32px",
+        "family": "sans",
+        "use": "Docs card titles (h3)"
+      },
+      {
+        "name": "button-large",
+        "size": "16px",
+        "weight": 500,
+        "lineHeight": "24px",
+        "family": "sans",
+        "use": "40px buttons: hero pills and every auth button"
+      },
+      {
+        "name": "body",
+        "size": "16px",
+        "weight": 400,
+        "lineHeight": "24px",
+        "family": "sans",
+        "use": "Default body, auth links, plan descriptions"
+      },
+      {
+        "name": "prose",
+        "size": "16px",
+        "weight": 400,
+        "lineHeight": "27.2px",
+        "family": "sans",
+        "use": "Docs reading paragraphs; inline links in them are 16px/500, underlined"
+      },
+      {
+        "name": "button",
+        "size": "14px",
+        "weight": 500,
+        "lineHeight": "21px",
+        "family": "sans",
+        "use": "32px and 36px buttons: header, pricing and docs"
+      },
+      {
+        "name": "ui",
+        "size": "14px",
+        "weight": 400,
+        "lineHeight": "20px",
+        "family": "sans",
+        "use": "The workhorse size (most counted on every page): nav links, table rows, feature lists. 21px line height in the docs sidebar"
+      },
+      {
+        "name": "small",
+        "size": "13px",
+        "weight": 400,
+        "lineHeight": "18px",
+        "family": "sans",
+        "use": "Pricing fine print and its links; docs card descriptions use 20px line height, the sign-up terms line 16px"
+      },
+      {
+        "name": "code",
+        "size": "13px",
+        "weight": 400,
+        "lineHeight": "20px",
+        "family": "mono",
+        "use": "Terminal and code blocks, ligatures off"
+      },
+      {
+        "name": "caption",
+        "size": "12px",
+        "weight": 400,
+        "lineHeight": "16px",
+        "family": "sans",
+        "use": "Legal links in the log-in footer"
+      }
+    ]
+  },
+  "spacing": {
+    "unit": "4px",
+    "scale": [
+      "2px",
+      "4px",
+      "6px",
+      "8px",
+      "10px",
+      "12px",
+      "16px",
+      "24px",
+      "32px",
+      "36px",
+      "40px",
+      "48px",
+      "64px",
+      "96px",
+      "128px"
+    ],
+    "containerMaxWidth": "1448px including 24px inline padding, so content is 1400px (--ds-page-width). Docs main column 1024px; the docs sidebar 300px",
+    "pageGutter": {
+      "desktop": "24px",
+      "mobile": "24px on marketing and docs pages, 16px on auth pages"
+    },
+    "sectionGap": "Pricing: the page opens with 144px of top padding at 1440, 96px at 768, 64px at 390; each section closes with 96px, 80px and 64px of bottom padding. The plan block has 72px above it at 1440"
+  },
+  "radius": [
+    {
+      "name": "2",
+      "value": "2px",
+      "use": "Pricing feature cards, legal text links"
+    },
+    {
+      "name": "4",
+      "value": "4px",
+      "use": "24px icon buttons, logo mark hit area on auth"
+    },
+    {
+      "name": "6",
+      "value": "6px",
+      "use": "The default (--geist-radius, most counted): 32px header buttons, docs sidebar items, menu rows, the docs search trigger, the skip link"
+    },
+    {
+      "name": "8",
+      "value": "8px",
+      "use": "Auth buttons and the auth email field (--geist-marketing-radius, --radius-lg)"
+    },
+    {
+      "name": "12",
+      "value": "12px",
+      "use": "Docs link cards and the sign-up card"
+    },
+    {
+      "name": "20",
+      "value": "20px",
+      "use": "Six elements on home; which ones was not isolated"
+    },
+    {
+      "name": "pill",
+      "value": "9999px",
+      "use": "Hero buttons, pricing plan buttons, Show more, the pricing search field, badges. Computed style reads 3.35544e+07px"
+    },
+    {
+      "name": "circle",
+      "value": "50%",
+      "use": "32px feedback rating buttons"
+    }
+  ],
+  "shadow": [
+    {
+      "name": "ring",
+      "value": "rgb(235, 235, 235) 0px 0px 0px 1px",
+      "use": "Edge of every secondary and provider button. In the computed value it is preceded by four transparent Tailwind ring layers"
+    },
+    {
+      "name": "ring-alpha",
+      "value": "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+      "use": "--ds-shadow-border-base: edges of raised surfaces"
+    },
+    {
+      "name": "border-small",
+      "value": "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 2px 0px, rgb(250, 250, 250) 0px 0px 0px 1px",
+      "use": "Sign-up card, raised pill buttons on home (--ds-shadow-border-small)"
+    },
+    {
+      "name": "ring-lift",
+      "value": "rgb(235, 235, 235) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "use": "Ring plus a 1px drop, three elements across the site"
+    },
+    {
+      "name": "focus-ring",
+      "value": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 114, 245) 0px 0px 0px 4px",
+      "use": "Keyboard focus on icon buttons, menu triggers, cards, rating buttons (--ds-focus-ring)"
+    },
+    {
+      "name": "tab-rail",
+      "value": "rgb(234, 234, 234) 0px -1px 0px 0px inset",
+      "use": "Bottom rule of a tab list"
+    },
+    {
+      "name": "header",
+      "value": "0 1px 0 0 #0000001a",
+      "use": "Header bottom edge once scrolled (--header-border-bottom), faded in with box-shadow 0.2s ease"
+    },
+    {
+      "name": "tooltip",
+      "value": "0 0 0 1px #00000014, 0px 1px 1px #00000005, 0px 4px 8px #0000000a, 0 0 0 1px var(--ds-background-200)",
+      "use": "--ds-shadow-tooltip with its border variables written out"
+    },
+    {
+      "name": "menu",
+      "value": "0 0 0 1px #00000014, 0px 1px 1px #00000005, 0px 4px 8px -4px #0000000a, 0px 16px 24px -8px #0000000f",
+      "use": "--ds-shadow-menu: dropdowns. The captured variable is cut off after these layers, so any trailing layer is not recorded"
+    },
+    {
+      "name": "modal",
+      "value": "0 0 0 1px #00000014, 0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a, 0px 24px 32px -8px #0000000f",
+      "use": "--ds-shadow-modal: dialogs. Cut off in the capture like menu; no dialog was opened"
+    },
+    {
+      "name": "modal-elevated",
+      "value": "0px 0px 0px 1px #00000014, 0px 32px 72px -12px #0000000f, 0px 8px 32px -12px #00000014, 0px 8px 24px -12px #0000001f",
+      "use": "--ds-shadow-modal-elevated, declared on docs and auth pages; a rendered use was not observed"
+    }
+  ],
+  "layout": {
+    "breakpoints": [
+      "min-width 401px (the most used query)",
+      "min-width 601px / max-width 600px",
+      "961px (--breakpoint-lg, --container-lg)",
+      "1200px and 1400px (--container-xl, --container-2xl)"
+    ],
+    "patterns": [
+      {
+        "name": "Header",
+        "description": "64px (--header-height) on the canvas colour, no border until the page scrolls. 24px logo mark at the left edge; then the nav (two menu triggers with small chevrons, two plain links) in 14px #4d4d4d, the current page in #171717. Right edge: three 32px buttons 12px apart, two secondary and the dark one last."
+      },
+      {
+        "name": "Mega menu",
+        "description": "Opening a nav trigger drops a full-width white panel under the header with a hairline below it. Three columns, each a small muted group label over a stack of large single-line links in #171717, some with a trailing north-east arrow for external pages. The page behind is washed out to about half strength, not darkened."
+      },
+      {
+        "name": "Home hero",
+        "description": "Three zones on one row at 1440: a two-line 64px headline with two 40px pill buttons (dark then outlined) at the left, the large black triangle mark centred, and three short 16px lines stacked at the right that cycle. Lots of empty canvas above and below; no background image."
+      },
+      {
+        "name": "Logo row",
+        "description": "Six monochrome customer logos spread edge to edge across the 1400px column, about 330px below the hero buttons."
+      },
+      {
+        "name": "Split showcase",
+        "description": "A 56px two-line headline in a 673px left column, then a product illustration built from white panels with 1px rings, and at the right a two-tone 24px quote plus a small 'Features' label over 14px/500 links. The next section mirrors it with the headline on the right half."
+      },
+      {
+        "name": "Plan frame",
+        "description": "Three plan columns share one 1px frame with 1px dividers; the middle (recommended) column is white, the others canvas. Each column: a small plan name (with a grey pill badge on the middle one), a large price with a small mono unit (the page inventory has 56px and 48px; which is the price was not isolated), 16px #4d4d4d description, a hairline, a 14px feature list with 16px line icons, and a 36px pill button at the bottom (dark only in the middle column)."
+      },
+      {
+        "name": "Comparison table",
+        "description": "Full 1400px width. A 36px pill search field and a 24px plan-name header row; then groups, each with a 16px line icon and 24px title, a 16px description and a hairline. Rows about 53px tall: 14px #4d4d4d label on the left, centred check marks or 14px values per plan, info icons after some labels, hairlines only between groups."
+      },
+      {
+        "name": "FAQ split",
+        "description": "Headline (56px, two lines) in the left half; numbered accordion in the right half. Each row: two-digit number in #8f8f8f, 20px question in #171717, chevron at the far right; the open answer is 16px #4d4d4d under the question text."
+      },
+      {
+        "name": "Docs shell",
+        "description": "Header with logo, a slash and the section name in 18px/600, then menu triggers. A 300px left sidebar on the canvas: a 36px search trigger with a key hint at the top, small muted group labels, 36px rows with chevrons for expandable items, and soft fades at its top and bottom edges as it scrolls. Main column 1024px."
+      },
+      {
+        "name": "Docs hero",
+        "description": "Left: 56px/600 title, a lead paragraph in #4d4d4d (size not isolated), three 36px buttons (dark, then two outlined). Right: an underlined tab strip over a white terminal panel with a header row (icon, label, copy button) and 13px mono commands."
+      },
+      {
+        "name": "Card grid",
+        "description": "Three columns of white 12px-radius link cards with 16px gaps: a 16px line icon, a 16px/600 title and a 13px #666666 description, 24px padding. Hover turns the card canvas colour over 0.25s."
+      },
+      {
+        "name": "Changelog list",
+        "description": "Rows split by hairlines: a 13px date in a narrow left column, then an underlined 16px/500 title and an underlined 14px description."
+      },
+      {
+        "name": "Docs footer",
+        "description": "40px block padding, 24px inline, six link columns at 1440, three at 768, two at 390. The home page footer was not captured."
+      }
+    ],
+    "responsive": "The header stays 64px; at 390 it shows only the logo and a two-line menu icon (docs adds a three-dot button after the section name). Home hero at 768 and 390 becomes one centred column: mark, centred headline, a single mono sub-line, then full-width stacked pill buttons. Pricing plans stack into one column already at 768; the pricing h1 is 64px at 768 and 40px at 390. The docs sidebar is hidden at 768 and 390, the docs title is 48px, cards stack to one column. The sign-up card goes to 358px wide with 16px side margins at 390 and its title to 24px."
+  },
+  "components": [
+    {
+      "name": "Button, primary",
+      "anatomy": "Dark filled rectangle (6px or 8px radius) or pill with a centred label; no icon.",
+      "spec": {
+        "height": "32px in the header, 36px on pricing and docs, 40px in the home hero and on auth",
+        "padding": "0 6px at 32px; 0 10px at 36px (docs), 0 12px as a 36px or 40px pill; 0 14px on auth",
+        "radius": "6px at 32px and 36px; 9999px for hero and pricing pills; 8px on auth",
+        "background": "#171717",
+        "color": "#ffffff",
+        "font": "14px/500, line height 21px at 32px and 36px; 16px/500, line height 24px at 40px",
+        "transition": "all 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "No difference measured under forced hover. After a click on the auth button, with the pointer still on it, the fill read #383838"
+        },
+        {
+          "name": "active",
+          "change": "Home hero pill: outline colour #f7fafd, width 2px, offset 1px (outline-style stays none, so nothing visible was measured)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "Outline colour #005fcc, width 1px, offset 1px reported with outline-style none: no visible focus ring was measured on filled buttons"
+        }
+      ],
+      "notes": "One per group, always the last of a header button group and the first of a hero pair."
+    },
+    {
+      "name": "Button, secondary",
+      "anatomy": "White fill with a 1px #ebebeb ring drawn as box-shadow, no border; same shapes and sizes as primary.",
+      "spec": {
+        "height": "32px, 36px, 40px as primary",
+        "padding": "as primary",
+        "radius": "as primary",
+        "background": "#ffffff (#fafafa for the Log In button on the sign-up header)",
+        "color": "#171717",
+        "box-shadow": "rgb(235, 235, 235) 0px 0px 0px 1px",
+        "font": "as primary",
+        "transition": "all 0.15s cubic-bezier(0.4, 0, 0.2, 1); the log-in header Sign Up button uses colours only, 0.2s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "No difference measured under forced hover"
+        },
+        {
+          "name": "focus-visible",
+          "change": "Outline colour #005fcc, width 1px, offset 1px with outline-style none, as primary"
+        }
+      ],
+      "notes": "A raised variant on home (40px pill, 262px wide, padding 0 12px 0 8px, no text label; the uneven padding suggests a leading icon, not confirmed) uses the border-small shadow instead of the plain ring. Its states were not measured."
+    },
+    {
+      "name": "Button, ghost",
+      "anatomy": "Label only, no fill and no ring.",
+      "spec": {
+        "height": "40px",
+        "padding": "0 14px",
+        "radius": "8px",
+        "background": "transparent",
+        "color": "#171717",
+        "font": "16px/500, line height 24px",
+        "transition": "all 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "Outline colour #005fcc, width 1px (outline-style none)"
+        }
+      ],
+      "notes": "Used for the 'show more options' row under the provider buttons on auth."
+    },
+    {
+      "name": "Icon button",
+      "anatomy": "A 16px line icon in a square hit area, no fill.",
+      "spec": {
+        "size": "24px (page actions), 28px (copy in a code header), 32px (copy prompt)",
+        "radius": "4px at 24px, 6px at 28px and 32px",
+        "color": "#8f8f8f at 24px, #4d4d4d at 28px, #171717 at 32px",
+        "transition": "none at 24px; all 0.15s cubic-bezier(0.4, 0, 0.2, 1) at 28px and 32px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "24px variant: colour #171717"
+        },
+        {
+          "name": "active",
+          "change": "24px variant: colour #171717"
+        },
+        {
+          "name": "focus-visible",
+          "change": "24px variant: colour #171717 and box-shadow rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 114, 245) 0px 0px 0px 4px"
+        }
+      ]
+    },
+    {
+      "name": "Nav link",
+      "anatomy": "Plain text in the header; menu triggers add a small chevron that flips when open.",
+      "spec": {
+        "height": "32px",
+        "padding": "0",
+        "color": "#4d4d4d; #171717 for the current page",
+        "font": "14px/400, line height 20px",
+        "gap between links": "about 24px",
+        "transition": "none on the marketing header; the docs section label uses colours 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "Docs section label: colour #171717. Marketing nav links: no difference measured"
+        },
+        {
+          "name": "focus-visible",
+          "change": "Links: outline 2px solid #0072f5, offset 4px. Docs section label: the blue box-shadow focus ring"
+        }
+      ]
+    },
+    {
+      "name": "Text link",
+      "anatomy": "Inline text, three flavours: blue on auth, underlined ink in docs and pricing, grey legal links.",
+      "spec": {
+        "auth": "#0072f5, 16px/400, no underline at rest",
+        "docs inline": "#171717, 16px/500, underlined, line height 27.2px, transition opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1)",
+        "fine print": "#171717, 13px/400, underlined",
+        "legal": "#a8a8a8, 12px/400 on log in; #171717 13px on sign up",
+        "list links": "colours 0.1s cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "Auth and comparison-table links: underline appears. Legal links on log in: colour #4d4d4d"
+        },
+        {
+          "name": "active",
+          "change": "Same as hover"
+        },
+        {
+          "name": "focus-visible",
+          "change": "Outline 2px solid #0072f5, offset 4px. Sign-up legal links: the blue box-shadow ring instead"
+        }
+      ]
+    },
+    {
+      "name": "Text field",
+      "anatomy": "A bare input inside a wrapper; the wrapper draws the edge and radius, the input has neither.",
+      "spec": {
+        "height": "40px on auth, 36px for the pricing search",
+        "padding": "0 12px",
+        "background": "#ffffff",
+        "color": "#000000",
+        "font": "16px/400, line height 24px on auth (prevents zoom on phones); 14px/400 for the pricing search",
+        "wrapper": "8px radius on auth, pill on pricing; the auth page inventory shows one rgba(0, 0, 0, 0.08) 1px ring that is not on a button, which fits the field wrapper",
+        "attributes": "type=email, name=email, autocomplete=email, required"
+      },
+      "states": [
+        {
+          "name": "focus",
+          "change": "Not measured. Screenshots of the focused auth field show a soft grey double ring around it"
+        },
+        {
+          "name": "invalid",
+          "change": "No styling; the browser's native validation bubble appears under the field"
+        }
+      ]
+    },
+    {
+      "name": "Sidebar item",
+      "anatomy": "Row with the label left and a 16px chevron right for items that expand.",
+      "spec": {
+        "height": "36px",
+        "padding": "0 8px 0 10px",
+        "gap": "8px",
+        "radius": "6px",
+        "color": "#4d4d4d",
+        "font": "14px/400, line height 21px",
+        "transition": "none on the row"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #f2f2f2, colour #171717"
+        },
+        {
+          "name": "active",
+          "change": "background #f2f2f2, colour #171717"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 2px solid #0072f5, offset 4px"
+        }
+      ]
+    },
+    {
+      "name": "Search trigger",
+      "anatomy": "Field-shaped button: search icon, placeholder-style label, a small key-hint chip at the right.",
+      "spec": {
+        "height": "36px",
+        "radius": "6px",
+        "color": "#4d4d4d",
+        "font": "14px/400, line height 21px",
+        "width": "264px in the docs sidebar"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "box-shadow rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 114, 245) 0px 0px 0px 4px"
+        }
+      ],
+      "notes": "Opens the command menu (cmdk); the menu itself was not opened."
+    },
+    {
+      "name": "Tabs",
+      "anatomy": "A row of text tabs on a 1px inset bottom rule; the selected tab carries a dark bar on that rule.",
+      "spec": {
+        "height": "51px",
+        "tab padding": "14px 2px",
+        "font": "14px/400, line height 21px",
+        "color": "#666666 inactive, #000000 selected",
+        "rail": "rgb(234, 234, 234) 0px -1px 0px 0px inset"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "colour and bar colour #000000"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser default outline (auto, 1px, #005fcc)"
+        }
+      ]
+    },
+    {
+      "name": "Link card",
+      "anatomy": "White card: 16px line icon, 16px/600 title, 13px description; the whole card is the link.",
+      "spec": {
+        "padding": "24px",
+        "radius": "12px",
+        "background": "#ffffff",
+        "title": "16px/600, -0.32px, #000000",
+        "description": "13px/400, line height 20px, #666666",
+        "edge": "a 1px light edge is visible in screenshots; it is not on the link element itself",
+        "transition": "background 0.25s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #fafafa"
+        },
+        {
+          "name": "active",
+          "change": "background #fafafa"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 2px solid #0072f5, offset 4px"
+        }
+      ]
+    },
+    {
+      "name": "Feature card",
+      "anatomy": "Bordered panel with a text link and chevron at the top, an illustration, then a 24px title and 16px description at the bottom.",
+      "spec": {
+        "padding": "32px",
+        "gap": "32px",
+        "radius": "2px",
+        "border": "1px #e6e6e6",
+        "background": "transparent (canvas)",
+        "transition": "colours 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "border colour #c9c9c9"
+        },
+        {
+          "name": "active",
+          "change": "border colour #c9c9c9"
+        },
+        {
+          "name": "focus-visible",
+          "change": "box-shadow rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 114, 245) 0px 0px 0px 4px"
+        }
+      ]
+    },
+    {
+      "name": "Accordion row",
+      "anatomy": "Number, question, chevron on one line; answer below, indented to the question text.",
+      "spec": {
+        "summary height": "68px",
+        "number": "#8f8f8f, same size as the question",
+        "question": "20px, #171717",
+        "answer": "16px, #4d4d4d",
+        "open motion": "accordion-down 0.2s ease-out, accordion-up 0.2s ease-out"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "chevron turns up, answer revealed"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline colour #005fcc, width 1px"
+        }
+      ],
+      "notes": "The 20px size comes from the page inventory; its weight and line height were not isolated."
+    },
+    {
+      "name": "Dropdown menu",
+      "anatomy": "White popover under its trigger, right edges aligned; rows with a 16px icon and a 14px label.",
+      "spec": {
+        "padding": "6px (--ds-popover-padding)",
+        "row height": "36px (--ds-popover-row-height)",
+        "row padding": "0 8px",
+        "row radius": "6px",
+        "shadow": "--ds-shadow-menu",
+        "motion": "--ds-motion-popover-duration 0.2s with --ds-motion-timing-swift cubic-bezier(.175, .885, .32, 1.1)"
+      },
+      "states": [],
+      "notes": "Seen open on the docs prompt actions; row hover was not measured."
+    },
+    {
+      "name": "Rating button",
+      "anatomy": "Round emoji button in a row of four, part of a 'was this helpful' box with a textarea and a small dark Send button.",
+      "spec": {
+        "size": "32px",
+        "radius": "50%",
+        "color": "#4d4d4d",
+        "transition": "background, border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+        "textarea": "100px tall, padding 10px 12px, 14px/400 line height 20px",
+        "send button": "32px, padding 0 6px, 6px radius, #171717, 14px/500"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background and border colour #e0f0ff"
+        },
+        {
+          "name": "focus-visible",
+          "change": "box-shadow rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 114, 245) 0px 0px 0px 4px"
+        }
+      ]
+    },
+    {
+      "name": "Code panel",
+      "anatomy": "White panel with a header row (prompt icon, 13px label, copy button at the right) over 13px mono lines.",
+      "spec": {
+        "font": "13px Geist Mono, line height 20px, ligatures off",
+        "token colour": "#297a3a for highlighted words",
+        "copy button": "28px icon button"
+      },
+      "states": []
+    },
+    {
+      "name": "Skip link",
+      "anatomy": "Hidden link at the very top that appears on keyboard focus.",
+      "spec": {
+        "height": "24px",
+        "padding": "0 4px",
+        "radius": "6px",
+        "color": "#0072f5",
+        "background": "#ffffff",
+        "box-shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 114, 245) 0px 0px 0px 4px",
+        "opacity": "0"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "opacity 1"
+        }
+      ]
+    },
+    {
+      "name": "Job row",
+      "anatomy": "Full-width link row: title and location stacked on the left, a Read more pill on the right.",
+      "spec": {
+        "padding": "48px at 1440, 24px at 390",
+        "title": "20px/450, line height 26px, -0.4px tracking, max 470px (16px/24px in 194px on phones)",
+        "location": "16px/400 #4d4d4d, 8px under the title (14px/20px on phones)",
+        "pill": "128x40 at 1440, 90x40 at 390, white with a #ebebeb ring, 14px/500",
+        "divider": "1px #ebebeb between rows"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "Not observed; the reference uses a white row background"
+        }
+      ]
+    },
+    {
+      "name": "Template card",
+      "anatomy": "White card: image on top, title, two-line description.",
+      "spec": {
+        "size": "448x361 at 1440, 342x306 at 390",
+        "radius": "2px",
+        "border": "1px rgba(0, 0, 0, 0.08)",
+        "image": "235px tall (180px on phones)",
+        "title": "20px/450, line height 26px, 24px from the image, one line",
+        "text": "14px/400 #4d4d4d, line height 20px, clamped to 2 lines, 12px below the title"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "Not observed"
+        }
+      ]
+    },
+    {
+      "name": "Framed grid",
+      "anatomy": "A 1079px column outlined by #ebebeb hairlines with small plus marks at two corners; rows split by full rules and columns by dashed rules.",
+      "spec": {
+        "width": "1079px at 1440, full width minus 16px each side on phones",
+        "plus mark": "21px, 1px #a8a8a8 strokes, centred on the corner",
+        "row rule": "1px #ebebeb",
+        "column rule": "1px dashed #ebebeb"
+      },
+      "notes": "Used by the solution, careers and legal templates."
+    }
+  ],
+  "motion": {
+    "durations": [
+      {
+        "name": "link",
+        "value": "0.1s",
+        "use": "Colour changes on text links; opacity on underlined docs links"
+      },
+      {
+        "name": "default",
+        "value": ".15s",
+        "use": "--default-transition-duration: buttons (all), card borders, docs nav colours"
+      },
+      {
+        "name": "popover",
+        "value": ".2s",
+        "use": "--ds-motion-popover-duration; also accordions, rating buttons, header shadow"
+      },
+      {
+        "name": "card",
+        "value": "0.25s",
+        "use": "Docs card background on hover"
+      },
+      {
+        "name": "overlay",
+        "value": ".3s",
+        "use": "--ds-motion-overlay-duration: dialog and command menu backdrop and panel; header opacity"
+      },
+      {
+        "name": "cycle",
+        "value": "0.5s",
+        "use": "Colour change on the cycling hero lines"
+      }
+    ],
+    "easings": [
+      {
+        "name": "standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "use": "The default for nearly every transition (--default-transition-timing-function, --ease-in-out)"
+      },
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0, 0, 0.2, 1)",
+        "use": "Hero line changes and the docs feedback box (--ease-out)"
+      },
+      {
+        "name": "ease-in",
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "use": "One pricing colour transition (--ease-in)"
+      },
+      {
+        "name": "swift",
+        "value": "cubic-bezier(.175, .885, .32, 1.1)",
+        "use": "--ds-motion-timing-swift, a slight overshoot: overlays and popovers"
+      },
+      {
+        "name": "out-expo",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "use": "fade-slide-in and the feedback toast scale in and out"
+      },
+      {
+        "name": "slow-settle",
+        "value": "cubic-bezier(.4, .04, .04, 1)",
+        "use": "Long 1.25s fade-in and slide-in, card flips"
+      },
+      {
+        "name": "in-out-quad",
+        "value": "cubic-bezier(.455, .03, .515, .955)",
+        "use": "Command menu loading bar; a 0.3s opacity on pricing"
+      },
+      {
+        "name": "fade",
+        "value": "cubic-bezier(0.3, 0.57, 0.07, 0.95)",
+        "use": "A 0.15s opacity transition present on every page; the element was not identified"
+      }
+    ],
+    "transitions": [
+      {
+        "target": "Button (primary, secondary, ghost, icon)",
+        "properties": "all",
+        "duration": "0.15s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Text and footer links",
+        "properties": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke",
+        "duration": "0.1s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Docs section label, docs nav colours",
+        "properties": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke",
+        "duration": "0.15s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Feature card border",
+        "properties": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke",
+        "duration": "0.15s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Docs link card",
+        "properties": "background",
+        "duration": "0.25s",
+        "easing": "ease"
+      },
+      {
+        "target": "Underlined docs link",
+        "properties": "opacity",
+        "duration": "0.1s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Rating button",
+        "properties": "background, border-color",
+        "duration": "0.2s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Comparison table icons (svg)",
+        "properties": "all",
+        "duration": "0.2s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Header on marketing pages",
+        "properties": "opacity",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Header bottom edge on scroll (sign-up)",
+        "properties": "box-shadow",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Log-in header button",
+        "properties": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Cycling hero lines: text",
+        "properties": "color",
+        "duration": "0.5s",
+        "easing": "cubic-bezier(0, 0, 0.2, 1)"
+      },
+      {
+        "target": "Cycling hero lines: container and detail",
+        "properties": "height 0.2s; opacity of the detail text 0.3s",
+        "duration": "0.2s and 0.3s",
+        "easing": "cubic-bezier(0, 0, 0.2, 1)"
+      },
+      {
+        "target": "Auth provider group",
+        "properties": "opacity, transform, filter",
+        "duration": "0.13s, 0.2s, 0.13s",
+        "easing": "ease-out, ease-in-out, ease-out"
+      },
+      {
+        "target": "Auth footer line",
+        "properties": "opacity, transform, filter",
+        "duration": "0.11s, 0.175s, 0.11s",
+        "easing": "ease-out, ease-in-out, ease-out"
+      },
+      {
+        "target": "Another auth block (not identified)",
+        "properties": "opacity, transform, filter",
+        "duration": "0.08s, 0.175s, 0.08s",
+        "easing": "ease-out, ease-in-out, ease-out"
+      },
+      {
+        "target": "Docs sidebar panel",
+        "properties": "transform, translate, opacity, filter",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Docs sidebar edge fades",
+        "properties": "--docs-sidebar-fade-top, --docs-sidebar-fade-bottom",
+        "duration": "0.15s",
+        "easing": "ease"
+      },
+      {
+        "target": "Docs feedback box growing",
+        "properties": "height, width, border-radius, transform, background-color",
+        "duration": "0.15s",
+        "easing": "cubic-bezier(0, 0, 0.2, 1)"
+      },
+      {
+        "target": "Docs feedback form reveal",
+        "properties": "opacity, translate",
+        "duration": "0.2s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Home hero canvas fade-in (seen running)",
+        "properties": "opacity 0 to 1",
+        "duration": "1.2s",
+        "easing": "linear"
+      }
+    ],
+    "keyframes": [
+      {
+        "name": "overlay-fade-in",
+        "use": "Dialog and command menu backdrop; it stops at 0.8 opacity. --ds-overlay-backdrop-color is the lightest grey, so the backdrop is light, not dark.",
+        "css": "@keyframes overlay-fade-in { 0% { opacity: 0; } 100% { opacity: 0.8; } }",
+        "timing": "var(--ds-motion-overlay-duration) var(--ds-motion-overlay-timing): .3s cubic-bezier(.175, .885, .32, 1.1)"
+      },
+      {
+        "name": "overlay-fade-out",
+        "use": "Backdrop leaving.",
+        "css": "@keyframes overlay-fade-out { 0% { opacity: 0.8; } 100% { opacity: 0; } }",
+        "timing": ".3s cubic-bezier(.175, .885, .32, 1.1)"
+      },
+      {
+        "name": "overlay-scale-in",
+        "use": "Dialog and command menu panel entering; --ds-motion-overlay-scale is .96.",
+        "css": "@keyframes overlay-scale-in { 0% { transform: scale(var(--ds-motion-overlay-scale)); opacity: 0; } 100% { opacity: 1; transform: scale(1); } }",
+        "timing": ".3s cubic-bezier(.175, .885, .32, 1.1)"
+      },
+      {
+        "name": "overlay-scale-out",
+        "use": "Dialog and command menu panel leaving.",
+        "css": "@keyframes overlay-scale-out { 0% { opacity: 1; transform: scale(1); } 100% { transform: scale(var(--ds-motion-overlay-scale)); opacity: 0; } }",
+        "timing": ".3s cubic-bezier(.175, .885, .32, 1.1)"
+      },
+      {
+        "name": "command-loading",
+        "use": "Indeterminate bar while the command menu searches.",
+        "css": "@keyframes command-loading { 0% { opacity: 1; transform: translate(-100%); } 100% { opacity: 1; transform: translate(300%); } }",
+        "timing": "1.1s cubic-bezier(.455, .03, .515, .955) infinite"
+      },
+      {
+        "name": "nav-enter-from-left",
+        "use": "Navigation menu content when moving to an item on the left; served with the auth pages.",
+        "css": "@keyframes nav-enter-from-left { 0% { opacity: 0; transform: translate(-200px); } 100% { opacity: 1; transform: translate(0px); } }"
+      },
+      {
+        "name": "nav-enter-from-right",
+        "use": "Navigation menu content when moving to an item on the right.",
+        "css": "@keyframes nav-enter-from-right { 0% { opacity: 0; transform: translate(200px); } 100% { opacity: 1; transform: translate(0px); } }"
+      },
+      {
+        "name": "nav-exit-to-left",
+        "use": "Outgoing navigation menu content.",
+        "css": "@keyframes nav-exit-to-left { 0% { opacity: 1; transform: translate(0px); } 100% { opacity: 0; transform: translate(-200px); } }"
+      },
+      {
+        "name": "nav-exit-to-right",
+        "use": "Outgoing navigation menu content.",
+        "css": "@keyframes nav-exit-to-right { 0% { opacity: 1; transform: translate(0px); } 100% { opacity: 0; transform: translate(200px); } }"
+      },
+      {
+        "name": "nav-scale-in",
+        "use": "Navigation menu viewport appearing, tipping forward slightly.",
+        "css": "@keyframes nav-scale-in { 0% { opacity: 0; transform: rotateX(-30deg) scale(0.9); } 100% { opacity: 1; transform: rotateX(0deg) scale(1); } }"
+      },
+      {
+        "name": "nav-scale-out",
+        "use": "Navigation menu viewport closing.",
+        "css": "@keyframes nav-scale-out { 0% { opacity: 1; transform: rotateX(0deg) scale(1); } 100% { opacity: 0; transform: rotateX(-10deg) scale(0.95); } }"
+      },
+      {
+        "name": "accordion-down",
+        "use": "Accordion answer opening.",
+        "css": "@keyframes accordion-down { 0% { height: 0px; } 100% { height: var(--radix-accordion-content-height,var(--bits-accordion-content-height,var(--reka-accordion-content-height,var(--kb-accordion-content-height,var(--ngp-accordion-content-height,auto))))); } }",
+        "timing": ".2s ease-out"
+      },
+      {
+        "name": "accordion-up",
+        "use": "Accordion answer closing.",
+        "css": "@keyframes accordion-up { 0% { height: var(--radix-accordion-content-height,var(--bits-accordion-content-height,var(--reka-accordion-content-height,var(--kb-accordion-content-height,var(--ngp-accordion-content-height,auto))))); } 100% { height: 0px; } }",
+        "timing": ".2s ease-out"
+      },
+      {
+        "name": "dropdown-open",
+        "use": "Small dropdowns dropping in from just above (auth pages).",
+        "css": "@keyframes dropdown-open { 0% { opacity: 0; transform: translateY(-5px); } 100% { opacity: 1; transform: none; } }"
+      },
+      {
+        "name": "dropdown-close",
+        "use": "Small dropdowns leaving upward.",
+        "css": "@keyframes dropdown-close { 0% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-10px); } }"
+      },
+      {
+        "name": "tooltip-fade-in",
+        "use": "Tooltips: a 0.4s hover delay, then a 0.1s fade (0.1s delay for the faster variant).",
+        "css": "@keyframes tooltip-fade-in { 0% { opacity: 0; } 100% { opacity: 1; pointer-events: all; } }",
+        "timing": ".1s ease-in .4s forwards"
+      },
+      {
+        "name": "popover-fade-out",
+        "use": "Popovers closing.",
+        "css": "@keyframes popover-fade-out { 0% { opacity: 1; } 100% { opacity: 0; } }",
+        "timing": "var(--ds-motion-popover-timing) var(--ds-motion-popover-duration): cubic-bezier(.175, .885, .32, 1.1), .2s"
+      },
+      {
+        "name": "hover-card-slide-down",
+        "use": "Docs hover card appearing below its trigger.",
+        "css": "@keyframes hover-card-slide-down { 0% { opacity: 0; transform: translateY(-10px); } 100% { opacity: 1; transform: none; } }"
+      },
+      {
+        "name": "hover-card-slide-up",
+        "use": "Docs hover card appearing above its trigger.",
+        "css": "@keyframes hover-card-slide-up { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: none; } }"
+      },
+      {
+        "name": "tip-enter",
+        "use": "Inline tips on auth screens: fade in out of a 3px blur.",
+        "css": "@keyframes tip-enter { 0% { filter: blur(3px); opacity: 0; } 100% { filter: blur(); opacity: 1; } }"
+      },
+      {
+        "name": "tip-exit",
+        "use": "Inline tips leaving into a blur.",
+        "css": "@keyframes tip-exit { 0% { filter: blur(); opacity: 1; } 100% { filter: blur(3px); opacity: 0; } }"
+      },
+      {
+        "name": "swap-reveal",
+        "use": "Auth card content swapping between steps: fades in from a 2px blur.",
+        "css": "@keyframes swap-reveal { 0% { opacity: 0; filter: blur(2px); } }"
+      },
+      {
+        "name": "sso-reveal-fade",
+        "use": "The SSO field appearing on auth.",
+        "css": "@keyframes sso-reveal-fade { 0% { opacity: 0; filter: blur(2px); } }"
+      },
+      {
+        "name": "sso-reveal-slide",
+        "use": "Paired with sso-reveal-fade: slides down 6px into place.",
+        "css": "@keyframes sso-reveal-slide { 0% { transform: translateY(-6px); } }"
+      },
+      {
+        "name": "item-enter",
+        "use": "List items entering on auth pages.",
+        "css": "@keyframes item-enter { 0% { opacity: 0; transform: translateY(4px); } 100% { opacity: 1; transform: none; } }"
+      },
+      {
+        "name": "item-leave",
+        "use": "List items leaving on auth pages.",
+        "css": "@keyframes item-leave { 0% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-2px); } }"
+      },
+      {
+        "name": "shake",
+        "use": "A small sideways shake, served on docs and auth; the trigger was not observed.",
+        "css": "@keyframes shake { 25% { translate: -1%; } 75% { translate: 1%; } }"
+      },
+      {
+        "name": "modal-appear",
+        "use": "Modal rising 20px into place.",
+        "css": "@keyframes modal-appear { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "feedback-appear",
+        "use": "Feedback widget content appearing.",
+        "css": "@keyframes feedback-appear { 0% { opacity: 0; transform: translateY(5px); } 100% { opacity: 1; transform: none; } }",
+        "timing": ".5s .1s ease forwards"
+      },
+      {
+        "name": "feedback-fade-in",
+        "use": "Feedback popover scaling in.",
+        "css": "@keyframes feedback-fade-in { 0% { opacity: 0; scale: 0.95; } 100% { opacity: 1; scale: 1; } }",
+        "timing": ".1s cubic-bezier(.16, 1, .3, 1)"
+      },
+      {
+        "name": "feedback-fade-out",
+        "use": "Feedback popover scaling out.",
+        "css": "@keyframes feedback-fade-out { 0% { opacity: 1; scale: 1; } 100% { opacity: 0; scale: 0.95; } }",
+        "timing": ".2s cubic-bezier(.16, 1, .3, 1) forwards"
+      },
+      {
+        "name": "skeleton",
+        "use": "Loading placeholder sweep.",
+        "css": "@keyframes skeleton { 100% { transform: translate(-50%); } }",
+        "timing": "1.5s ease-in-out infinite reverse"
+      },
+      {
+        "name": "shimmer",
+        "use": "Loading shimmer across a wide gradient (docs and marketing bundles).",
+        "css": "@keyframes shimmer { 0% { background-position: 200% 0px; } 100% { background-position: -200% 0px; } }"
+      },
+      {
+        "name": "spinner-opacity",
+        "use": "Spinner blades fading in turn.",
+        "css": "@keyframes spinner-opacity { 0% { opacity: 1; } 100% { opacity: 0.15; } }"
+      },
+      {
+        "name": "spin",
+        "use": "Loading icon rotation.",
+        "css": "@keyframes spin { 100% { transform: rotate(360deg); } }",
+        "timing": "1s linear infinite"
+      },
+      {
+        "name": "caret-blink",
+        "use": "Blinking caret; where it is applied was not observed.",
+        "css": "@keyframes caret-blink { 0%, 70%, 100% { opacity: 1; } 20%, 50% { opacity: 0; } }"
+      },
+      {
+        "name": "marquee",
+        "use": "A sideways-scrolling row. At 390 the customer logo row is cropped mid-logo, which fits it; not seen running.",
+        "css": "@keyframes marquee { 0% { transform: translate(0px); } 100% { transform: translateX(calc(-100% - var(--marquee-gap))); } }",
+        "timing": "var(--marquee-speed,40s) linear infinite"
+      },
+      {
+        "name": "logo-carousel",
+        "use": "Logos taking turns in one slot: visible for about a fifth of the cycle.",
+        "css": "@keyframes logo-carousel { 0% { opacity: 0; } 3% { opacity: 1; } 22% { opacity: 1; } 25% { opacity: 0; } 100% { opacity: 0; } }",
+        "timing": "ease-in-out infinite (duration set per element, not recorded)"
+      },
+      {
+        "name": "letter-reveal",
+        "use": "Home: letters leaving by blurring and growing.",
+        "css": "@keyframes letter-reveal { 100% { opacity: 0; filter: blur(4px); transform: scale(1.3); } }"
+      },
+      {
+        "name": "slide-up-fade-in",
+        "use": "Marketing blocks rising 8px into view.",
+        "css": "@keyframes slide-up-fade-in { 0% { opacity: 0; transform: translateY(8px); } 100% { opacity: 1; transform: translateY(0px); } }"
+      }
+    ],
+    "unmeasured": [
+      "Hover on filled and outlined buttons: forced hover produced no measurable change on any of them, so their hover colour is not recorded. The only observed variant is #383838 on the dark auth button right after a click.",
+      "Running durations of most keyframes: the CSS is recorded but nothing was running when measured. Timings above come from the platform's --animate-* variables where one names the keyframe; the rest have none.",
+      "The home hero: a canvas fades in over 1.2s linear and the triangle mark is drawn in it; what the canvas animates is script-driven and not specified.",
+      "The three hero lines cycle by script. Only their CSS transitions (colour 0.5s, height 0.2s, detail opacity 0.3s) were measured, not the interval.",
+      "Everything on home below the second showcase rendered blank in the capture (it loads on scroll), so those sections and their motion are not recorded.",
+      "Sign up: a script-driven Web Animation (Motion) runs filter blur(0px) to blur(5px) on a div over 5100ms with a 110ms delay and a long linear() spring curve. The customer line under the card changes between screenshots; that this animation drives it is likely but not confirmed.",
+      "The mega menu, dropdowns and accordions were seen open, but their open and close motion was not captured as it ran.",
+      "Focus on the auth email field: no measured difference; screenshots show a soft grey double ring."
+    ]
+  },
+  "flows": [
+    {
+      "name": "Log in",
+      "entry": "/login",
+      "layout": "Canvas #fafafa, no card. 64px header with the logo mark at the left and a 32px secondary Sign Up button at the right (24px side padding, 16px at 390). One 320px column centred horizontally, its 32px title about 156px from the top of a 900px viewport. 40px controls; 16px between them. A 64px footer holds two 12px #a8a8a8 legal links, centred.",
+      "steps": [
+        {
+          "name": "Choose a method or enter email",
+          "screen": [
+            "Title naming the action (\"Log in to <product>\"), 32px/600, centred",
+            "Email field, placeholder \"Email Address\"",
+            "Dark primary button: continue with email, full column width",
+            "1px hairline divider, 16px above and below",
+            "Five secondary provider buttons, each a brand icon left of the label: three OAuth providers, SAML SSO, passkey",
+            "Ghost button: show other options",
+            "16px line: a question with a blue sign-up link"
+          ],
+          "actions": [
+            "Continue with email submits the field in place; there is no separate email screen, the URL stays /login",
+            "Provider buttons leave for the provider (not followed)",
+            "Show other options reveals more methods (not recorded)",
+            "Sign-up link goes to /signup"
+          ],
+          "validation": "Empty submit: the browser's native bubble (\"Please fill out this field.\") under the field. Malformed address: the native bubble asking for an '@'. The page stays put and no custom inline error appears; the dark button reads #383838 while the pointer is still on it."
+        }
+      ],
+      "notRecorded": "Everything after a valid email (code or magic link), the provider and SSO hand-offs, the 'other options' content, and a dialog the state crawler saw open on /login (it changed the address and was not captured as an image)."
+    },
+    {
+      "name": "Sign up",
+      "entry": "/signup",
+      "layout": "Canvas #fafafa. 64px header with the full wordmark at the left and a 32px Log In button (#fafafa fill, #ebebeb ring) at the right. A white card centred horizontally: 550px wide, 12px radius, border-small shadow, top at 136px, 600px tall at 1440 (358px wide with 16px margins, top 104px, at 390). Inside, a 390px column. Under the card, a single centred line pairing a customer logo with a 14px result that changes between visits.",
+      "steps": [
+        {
+          "name": "Choose a method",
+          "screen": [
+            "Title in two centred lines, 32px/600, -1.28px tracking",
+            "Four secondary provider buttons, brand icon left of the label, 40px with 16px between",
+            "Ghost button: show other options",
+            "Blue 16px text link: continue with email, with a trailing arrow",
+            "13px #4d4d4d terms line at the bottom of the card with #171717 links"
+          ],
+          "actions": [
+            "Continue with email swaps the card content to step 2 in place; the URL stays /signup",
+            "Provider buttons leave for the provider (not followed)",
+            "Log In in the header goes to /login"
+          ]
+        },
+        {
+          "name": "Enter email",
+          "screen": [
+            "Same title",
+            "Email field, focused on arrival (grey ring visible), placeholder is an example address",
+            "Dark primary button: continue with email, full column width",
+            "1px hairline",
+            "Blue text link with a leading arrow back to the other sign-up options",
+            "Terms line"
+          ],
+          "actions": [
+            "Enter or the button submits",
+            "The back link returns to step 1"
+          ],
+          "validation": "Same as log in: native browser bubbles only, for empty and malformed input; no custom inline error."
+        }
+      ],
+      "notRecorded": "Email verification and everything after it (account details, team or plan choice, onboarding) sit behind an account."
+    }
+  ],
+  "principles": [
+    "Paint the page #fafafa and put white (#ffffff) only on things you can act on or read as a unit: buttons, cards, the highlighted plan, the auth card.",
+    "Use two text colours for almost everything: #171717 for what matters and #4d4d4d for the rest. Reach for #666666 and #8f8f8f only for small secondary text and icons.",
+    "Draw edges with a 1px box-shadow ring (#ebebeb or rgba(0, 0, 0, 0.08)), not borders. Add the 2px soft drop only on the few surfaces that float.",
+    "Set headlines in Geist with heavy negative tracking (-0.06em on display sizes) at weight 400 to 600; never bold 700.",
+    "Interface text is 14px. Buttons are 32px in headers, 36px in content, 40px in heroes and forms.",
+    "One dark #171717 button per group. Pair it with white ringed buttons; colour is never used for a button fill.",
+    "Blue #0072f5 is for focus rings and auth links only. The focus ring is a 2px white gap plus a 2px blue ring.",
+    "Keep motion short and plain: 0.1s for link colours, 0.15s with cubic-bezier(0.4, 0, 0.2, 1) for controls, 0.2s to 0.3s with a slight overshoot for popovers and overlays."
+  ],
+  "avoid": [
+    "Coloured, gradient or glowing buttons",
+    "Visible drop shadows on cards that sit on the canvas",
+    "Text in pure #000000 for body copy (it is reserved for docs card titles and the selected tab)",
+    "Weights of 700 and above, and positive letter spacing on headings",
+    "Custom-styled validation errors on simple auth forms; the platform relies on native browser validation",
+    "Dark overlays behind menus: the mega menu washes the page out with white instead"
+  ],
+  "libraries": {
+    "detected": [
+      {
+        "name": "React",
+        "npm": "react",
+        "purpose": "UI runtime",
+        "evidence": "\"react.transitional.element\" in scripts on all five pages"
+      },
+      {
+        "name": "Next.js",
+        "npm": "next",
+        "purpose": "Framework for site, docs and auth",
+        "evidence": "window.next defined on every page; \"__next_f\" and \"next/dist/\" in scripts"
+      },
+      {
+        "name": "Tailwind CSS",
+        "npm": "tailwindcss",
+        "purpose": "Styling",
+        "evidence": "--tw-* custom properties on rendered elements and Tailwind v4 theme variables (--spacing, --text-*, --ease-*); data-slot attributes on rendered elements, the convention shadcn/ui uses (weak evidence for shadcn itself)"
+      },
+      {
+        "name": "Radix UI",
+        "npm": "radix-ui",
+        "purpose": "Accordion, navigation menu and other unstyled primitives",
+        "evidence": "data-radix-collection-item, data-state and id^=radix- on rendered elements in docs; \"data-radix-\" in scripts on every page; --radix-accordion-content-height in keyframes"
+      },
+      {
+        "name": "React Aria",
+        "npm": "react-aria-components",
+        "purpose": "Press handling and accessible primitives",
+        "evidence": "an element with id^=react-aria-pressable-style rendered on home, docs and log in; \"react-aria-\" in scripts"
+      },
+      {
+        "name": "Base UI",
+        "npm": "@base-ui/react",
+        "purpose": "Unstyled primitives",
+        "evidence": "\"data-base-ui-\" in scripts on every page; no rendered attribute seen, so weaker than Radix and React Aria"
+      },
+      {
+        "name": "Motion",
+        "npm": "motion",
+        "purpose": "Script-driven animation",
+        "evidence": "\"framerAppearId\" in scripts on home, pricing and auth; a running Web Animation with a linear() spring curve on sign up"
+      },
+      {
+        "name": "cmdk",
+        "npm": "cmdk",
+        "purpose": "Command menu behind the docs search",
+        "evidence": "\"[cmdk-\" selector in a docs script; cmdkFadeIn, cmdkScaleIn and cmdkLoading keyframes on every page"
+      },
+      {
+        "name": "tailwindcss-animate or tw-animate-css",
+        "purpose": "enter and exit animation utilities",
+        "evidence": "keyframes named enter and exit built on --tw-enter-* and --tw-exit-* variables. A keyframe signature, not a package name"
+      },
+      {
+        "name": "TanStack Query",
+        "npm": "@tanstack/react-query",
+        "purpose": "Server state in docs",
+        "evidence": "\"No QueryClient set\" in a docs script"
+      },
+      {
+        "name": "Shiki",
+        "npm": "shiki",
+        "purpose": "Code highlighting in docs",
+        "evidence": "the bare string \"shiki\" in a docs script. Weak evidence"
+      },
+      {
+        "name": "Prism",
+        "npm": "prismjs",
+        "purpose": "Code highlighting",
+        "evidence": "the bare string \"prismjs\" in scripts on every page. Weak evidence"
+      },
+      {
+        "name": "Geist",
+        "npm": "geist",
+        "purpose": "Sans and mono typefaces",
+        "evidence": "loaded font faces \"GeistSans 100 900\" and \"Geist Mono 100 900\""
+      }
+    ],
+    "recommended": [
+      {
+        "name": "Lucide",
+        "npm": "lucide-react",
+        "purpose": "16px line icons; the platform's own icon set was not identified as a public package"
+      },
+      {
+        "name": "Sonner",
+        "npm": "sonner",
+        "purpose": "Toasts; no toast was observed or detected"
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "home",
+      "name": "Home",
+      "use": "The front page: one large statement, proof logos, then alternating product showcases and a closing call to action.",
+      "structure": [
+        "Sticky 64px header (#fafafa, hairline appears once the page scrolls), full mega menu at 961px and up, hamburger sheet below",
+        "Hero 836px tall at 1440: H1 64px/400 line height 64px, -3.84px tracking, top at 328px; two 40px pill buttons; a circular product visual on the right; a list of short lines that reveal detail on hover",
+        "Logo row: 6 customer logos at about 24px tall",
+        "Three split showcases: H2 56px/450, 2 lines; media panel 516px to 660px tall beside a quote block (quote top 101px to 116px); 153px to 289px after each",
+        "\"Lately released\" grid: 3 cards, the first one tall",
+        "Closing call to action row: 2 pills",
+        "Footer 846px at 1440: 12 link columns in 2 rows of 6 (212px wide, 24px gap, 34px row gap), headings 14px/500, rows 28px, theme switch pill at the bottom right",
+        "Page height 5930px at 1440, 6905px at 390"
+      ],
+      "pages": [
+        "/home"
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product Page",
+      "use": "A single product or capability: hero with a dark product bar, then a grid of feature cards and a call to action.",
+      "structure": [
+        "Hero: chips row, H1 and lead, 36px pills, a dark full-width product bar",
+        "H2 48px/450 in 2 lines",
+        "Feature grid: 9 cards in 3 columns, each a 448x252 media frame with a 14px title and body, 72px between rows",
+        "Call to action row (2 pills), footer",
+        "Page height 3362px at 1440, 6169px at 390"
+      ],
+      "pages": [
+        "/ai",
+        "/ci",
+        "/cdn",
+        "/eve",
+        "/agent",
+        "/botid",
+        "/fluid",
+        "/ai-sdk",
+        "/chat",
+        "/plugin",
+        "/sandbox",
+        "/passport",
+        "/security",
+        "/workflows",
+        "/ai-gateway",
+        "/connect",
+        "/products/observability",
+        "/products/previews",
+        "/security/bot-management",
+        "/security/web-application-firewall",
+        "/solutions/turborepo",
+        "/frameworks/nextjs",
+        "/oss"
+      ]
+    },
+    {
+      "id": "solution",
+      "name": "Solution Page",
+      "use": "An audience or industry page told inside one framed grid: proof numbers, features with small product visuals, a toolkit, a dark block and customer logos.",
+      "structure": [
+        "Framed column 1079px wide at x181, #ebebeb hairlines, plus marks at the top left and bottom right; 64px above, 90px below",
+        "Hero row 533px: H1 72px/450, line height 83.52px, -4.32px tracking, 2 lines, centred; lead 20px/36px; two 36px pills",
+        "Stats row 604px: H2 40px/450 on the left (359px column), 2x2 stats (24px/500 with a bold lead, logo below), dashed column rules",
+        "Two feature rows (597px and 629px): 16px label with icon, 24px/500 text with a bold lead, 443px visual 192px or 224px tall",
+        "Quote card (1014x72, 12px radius) and the toolkit: H2 40px, 6 cells in 3 columns (label, 20px/450 text, 32px round arrow), 97px row gap",
+        "Dark block (#0a0a0a) 527px: H2 32px #ededed, 3 link cells 348px tall",
+        "Logo grid: title row 238px, 3x2 logos (125px and 121px rows), 92px empty guide row",
+        "Call to action row 230px: 24px/500 text with coloured plan words, 2 pills; side column with a 14px note and a pill",
+        "Page height 5939px at 1440, 7943px at 390 (cells stack, toolkit cells 177px with the arrow on the right)"
+      ],
+      "pages": [
+        "/for/retail",
+        "/for/web-apps",
+        "/for/marketing-sites",
+        "/for/platforms",
+        "/enterprise",
+        "/solutions/design-engineering",
+        "/solutions/platform-engineering",
+        "/partners/aws",
+        "/startups",
+        "/open-source-program"
+      ]
+    },
+    {
+      "id": "pricing",
+      "name": "Pricing",
+      "use": "Plans, a full comparison table and the pricing FAQ.",
+      "structure": [
+        "H1 display in 2 lines",
+        "Plans frame: 3 plan columns with price, lead, feature list and a button",
+        "Fine print, two side cards",
+        "Comparison table with a sticky head (plan names fade in), group rows, per-row heights as measured, check and dash marks",
+        "Call to action row",
+        "FAQ accordion of 14 items, the first open",
+        "\"Still not sure?\" call to action",
+        "Page height 16092px at 1440"
+      ],
+      "pages": [
+        "/pricing"
+      ]
+    },
+    {
+      "id": "about",
+      "name": "About",
+      "use": "Company story: statement, pillars, investors and people.",
+      "structure": [
+        "Hero: display H1 in 2 lines with a side lead and a pill",
+        "3 pillars with labels",
+        "Investor logo grid of 16 cells",
+        "People grid of 17 cells (260px and 280px)",
+        "Call to action, footer",
+        "Page height 5798px at 1440, 11215px at 390"
+      ],
+      "pages": [
+        "/about"
+      ]
+    },
+    {
+      "id": "customers",
+      "name": "Customer Stories",
+      "use": "Story index: carousel of featured stories, a story list, a quote and a logo wall.",
+      "structure": [
+        "H1 72px/400 at 176px",
+        "Carousel: 974x548 slides, previous and next buttons with a progress bar",
+        "13 story rows of 96px",
+        "Quote",
+        "Logo wall: 60 logos in 6 columns of 118px (20 on phones), select filter, Show More",
+        "Page height 5696px at 1440, 8664px at 390"
+      ],
+      "pages": [
+        "/customers"
+      ]
+    },
+    {
+      "id": "careers",
+      "name": "Careers",
+      "use": "Job board inside the framed grid: hero, filters on the left and a long list of positions.",
+      "structure": [
+        "Framed column 1079px, 64px above and 181px below",
+        "Hero row 539px with a 90px guide grid and a globe drawing; title 48px/450 in 2 lines at 388px; 36px pill",
+        "Head row 93px: H2 32px/450 in the right column",
+        "Left column 359px: Location and Department filter rows (60px, 16px/600), sticky",
+        "Job rows 718px wide: 48px padding, title 20px/450 (max 470px), location 16px #4d4d4d 8px below, 128x40 Read more pill; 154px with a location, 136px without, 180px for 2-line titles",
+        "Page height 15090px at 1440 (86 rows), 13309px at 390 (rows 100px to 168px, 16px titles in 194px, 90px pills)"
+      ],
+      "pages": [
+        "/careers"
+      ]
+    },
+    {
+      "id": "listing",
+      "name": "Blog and Article Index",
+      "use": "Lists of posts, changelog entries, press items and courses.",
+      "structure": [
+        "H1 48px/450 at 112px; filter pills, search field and RSS icon",
+        "3 featured cards (420px, H2 32px)",
+        "Post grid: 12 posts of 216px (date, H3 24px/450 in up to 3 lines, author avatars)",
+        "Show more pill",
+        "Two split sections with an H2 and link lists",
+        "Page height 3328px at 1440, 7338px at 390 (posts 156px with 89px gaps)"
+      ],
+      "pages": [
+        "/blog",
+        "/changelog",
+        "/press",
+        "/i",
+        "/kb",
+        "/academy",
+        "/events"
+      ]
+    },
+    {
+      "id": "catalog",
+      "name": "Template Catalog",
+      "use": "Searchable grid of templates, integrations or partners.",
+      "structure": [
+        "H1 48px/450 at 136px with a 384px lead (16px, 2 lines)",
+        "Right: 256x36 search pill with icon and a 100x36 Filters pill",
+        "Card grid: 3 columns, 24px gaps, cards 448x361 (white, 2px radius, hairline), 235px image, 20px/450 title 24px below, 14px text clamped to 2 lines",
+        "View All pill (105x36) 34px under the grid, 96px before the footer",
+        "Page height 4396px at 1440 (24 cards); 8414px at 390 in the survey (cards 342x306 with 180px images)"
+      ],
+      "pages": [
+        "/templates",
+        "/marketplace",
+        "/shipped",
+        "/partners/solution-partners"
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal Document",
+      "use": "Policies and terms: long text with a table of contents.",
+      "structure": [
+        "Framed column with a 91px gap row, 154px title row (H1 56px), 90px date row",
+        "Two columns: 718px text column (48px padding, 16px/24px #4d4d4d paragraphs, 12px apart) and a sticky table of contents (16px/600 title, 14px links 12px apart)",
+        "Section headings 32px, 68px above (139px for the first)",
+        "Page height 4220px at 1440, 6615px at 390"
+      ],
+      "pages": [
+        "/legal",
+        "/legal/dpa",
+        "/legal/terms",
+        "/legal/cookie-policy",
+        "/legal/privacy-notice",
+        "/legal/acceptable-use-policy"
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Contact Form",
+      "use": "Sales or support contact: intro with proof on the left, form on the right.",
+      "structure": [
+        "Intro 684px: display H1, 18px lead, 5 proof rows (logo plus 16px/500 result, 34px apart; 3 rows on phones)",
+        "Form 566px: 2 columns of 275px, 32px row gap, 36px fields (6px radius, hairline ring), 150px textarea, consent box with a switch, 36px submit pill",
+        "Page height 1924px at 1440, 3454px at 390"
+      ],
+      "pages": [
+        "/contact/sales",
+        "/help",
+        "/domains",
+        "/drop"
+      ]
+    },
+    {
+      "id": "docs",
+      "name": "Docs Article",
+      "use": "Documentation pages: section sidebar, article and on-this-page list.",
+      "structure": [
+        "Docs header: logo, slash, Docs, Build and Learn menus, Getting Started; Ask AI, Log In, Sign Up on the right",
+        "Sidebar 240px at x24, sticky under the header and scrolling on its own: back row, 34px items (14px), 30px sub items (13px), chevrons for groups",
+        "Article 788px at x324: breadcrumbs at 112px, H1 48px/600 at 177px, 16px/25.6px paragraphs, H2 32px/600 with 35px to 39px above, code panels (40px head, 13px mono lines of 20px, line numbers), endpoint cards 388x46 in 2 columns, 12px gap",
+        "On this page list 240px at x1160: 14px title #7d7d7d, links 32px apart, active link 500 weight with a left rule",
+        "Page height 3761px at 1440, 6549px at 390 (no sidebar or list; H1 32px)"
+      ],
+      "pages": [
+        "/docs",
+        "/docs/frameworks",
+        "/docs/queues/sdk",
+        "/docs/rest-api/sdk",
+        "/docs/frameworks/backend/nitro",
+        "/docs/flags/flags-sdk-reference",
+        "/docs/frameworks/backend/fastapi",
+        "/docs/frameworks/full-stack/nuxt",
+        "/docs/frameworks/full-stack/sveltekit",
+        "/docs/frameworks/full-stack/tanstack-start"
+      ]
+    },
+    {
+      "id": "auth",
+      "name": "Auth",
+      "use": "Log in and sign up.",
+      "structure": [
+        "64px header: logo (mark on log in, wordmark on sign up) and one 32px button on the right",
+        "Log in: no card, a 320px column centred in the space between header and footer; title 32px/600; 40px email field, dark Continue with Email button, 1px rule with 16px around, 5 provider buttons 16px apart, ghost Show other options, 16px sign-up line; 64px footer with two 12px #a8a8a8 links",
+        "Sign up: white card 550x600 (12px radius, hairline), 72px under the header, 64px 80px 28px padding; title 2 lines; 4 provider buttons, Show other options, blue Continue with Email link, 13px terms line at the bottom; a single proof line (logo plus 14px result) 8px under the card",
+        "Both fit one viewport: 900px at 1440, 844px at 390 (card 358px wide, 40px from the header, title 24px)"
+      ],
+      "pages": [
+        "/login",
+        "/signup"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "uxprint-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "scripts": {
+    "capture": "node tools/capture.mjs",
+    "draft": "node tools/draft.mjs",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "validate": "pnpm --filter uxprint build && node packages/uxprint/dist/cli.js validate"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0",
+    "sharp": "^0.35.5"
+  }
+}

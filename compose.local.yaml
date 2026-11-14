@@ -1,0 +1,6 @@
+# Local viewing only: adds the original screenshots (never published, gitignored) for the side-by-side view.
+#   docker compose -p uxprint -f compose.yaml -f compose.local.yaml up -d --build
+services:
+  web:
+    volumes:
+      - ./apps/web/public/_originals:/usr/share/nginx/html/_originals:ro

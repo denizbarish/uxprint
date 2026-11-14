@@ -1,0 +1,19 @@
+{
+  "screens": [
+    {"id": "home", "title": "Home", "theme": "light", "template": "home", "url": "https://vercel.com/home", "survey": "home-2"},
+    {"id": "product", "title": "Product Page", "theme": "light", "template": "product", "url": "https://vercel.com/products/previews", "survey": "products-previews"},
+    {"id": "pricing", "title": "Pricing", "theme": "light", "template": "pricing", "url": "https://vercel.com/pricing", "survey": "pricing"},
+    {"id": "about", "title": "About", "theme": "light", "template": "about", "url": "https://vercel.com/about", "survey": "about"},
+    {"id": "customers", "title": "Customer Stories", "theme": "light", "template": "customers", "url": "https://vercel.com/customers", "survey": "customers"},
+    {"id": "listing", "title": "Blog", "theme": "light", "template": "listing", "url": "https://vercel.com/blog", "survey": "blog"},
+    {"id": "legal", "title": "Legal Document", "theme": "light", "template": "legal", "url": "https://vercel.com/legal/cookie-policy", "survey": "legal-cookie-policy"},
+    {"id": "contact", "title": "Contact Form", "theme": "light", "template": "contact", "url": "https://vercel.com/contact/sales", "survey": "contact-sales"},
+    {"id": "docs", "title": "Docs Article", "theme": "light", "template": "docs", "url": "https://vercel.com/docs/rest-api/sdk", "survey": "docs-rest-api-sdk"},
+    {"id": "login", "title": "Log In", "theme": "light", "template": "auth", "url": "https://vercel.com/login", "survey": "login"},
+    {"id": "signup", "title": "Sign Up", "theme": "light", "template": "auth", "url": "https://vercel.com/signup", "survey": "signup"},
+    {"id": "solution", "title": "Solution Page", "theme": "light", "template": "solution", "url": "https://vercel.com/solutions/platform-engineering", "survey": "solutions-platform-engineering"},
+    {"id": "careers", "title": "Careers", "theme": "light", "template": "careers", "url": "https://vercel.com/careers", "survey": "careers"},
+    {"id": "catalog", "title": "Template Catalog", "theme": "light", "template": "catalog", "url": "https://vercel.com/templates", "survey": "templates"}
+  ],
+  "components": {}
+}

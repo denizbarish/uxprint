@@ -1,0 +1,115 @@
+/* Company page (newer system). Offsets measured at 1440 and 390 on /about. */
+
+.a-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 16px 160px;
+}
+
+.a-art {
+  width: 298px;
+  height: 299px;
+  border-radius: 0;
+}
+
+.a-copy {
+  width: 608px;
+  max-width: 100%;
+  margin-top: 96px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 28.5px;
+  letter-spacing: -0.19px;
+  color: #50617a;
+}
+
+.a-copy p + p {
+  margin-top: 32px;
+}
+
+.a-copy a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #a7b3c4;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.a-copy a:hover {
+  text-decoration-color: currentColor;
+}
+
+.a-links {
+  width: 608px;
+  max-width: 100%;
+  margin-top: 96px;
+  border-top: 1px solid #e5edf5;
+  border-bottom: 1px solid #e5edf5;
+}
+
+.a-links li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.4px;
+  color: #50617a;
+}
+
+.a-links li + li {
+  border-top: 1px solid #e5edf5;
+}
+
+.a-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.a-links a svg {
+  width: 9px;
+  height: 9px;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.a-links a:hover svg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 640px) {
+  .a-page {
+    padding: 56px 16px 88px;
+  }
+
+  .a-art {
+    width: 179px;
+    height: 180px;
+  }
+
+  .a-copy {
+    margin-top: 64px;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.3px;
+  }
+
+  .a-copy p + p {
+    margin-top: 23px;
+  }
+
+  .a-links {
+    margin-top: 96px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .a-copy a,
+  .a-links a svg {
+    transition: none;
+  }
+}

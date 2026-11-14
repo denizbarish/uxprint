@@ -1,0 +1,127 @@
+/* Legal document template, measured on /legal/cookie-policy at 1440 and 390. */
+
+.vc-legal__gap {
+  height: 91px;
+}
+
+.vc-legal__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 154px;
+}
+
+.vc-legal__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-legal__body {
+  grid-template-columns: 718px 1fr;
+}
+
+.vc-legal__main {
+  padding: 48px 48px 128px;
+}
+
+.vc-legal__p {
+  min-height: calc(var(--lines) * 24px);
+  color: var(--vc-ink-2);
+}
+
+.vc-legal__p + .vc-legal__p {
+  margin-top: 12px;
+}
+
+.vc-legal__p a {
+  color: var(--vc-link);
+}
+
+.vc-legal__h {
+  margin: 68px 0 24px;
+}
+
+.vc-legal__main > section:first-of-type .vc-legal__h {
+  margin-top: 139px;
+}
+
+.vc-legal__toc {
+  padding: 48px;
+}
+
+.vc-legal__toc-title {
+  position: sticky;
+  top: 112px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.vc-legal__toc ul {
+  position: sticky;
+  top: 158px;
+  margin-top: 22px;
+}
+
+.vc-legal__toc li + li {
+  margin-top: 12px;
+}
+
+.vc-legal__toc a {
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  line-height: 20px;
+  transition: color 0.1s var(--vc-ease);
+}
+
+.vc-legal__toc a:hover {
+  color: var(--vc-ink);
+}
+
+@media (max-width: 960px) {
+  .vc-frame.vc-legal {
+    margin-top: 16px;
+  }
+  .vc-legal__gap {
+    height: 45px;
+  }
+  .vc-legal__title {
+    height: 90px;
+  }
+  .vc-legal__title .vc-h56 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.28px;
+  }
+  .vc-legal__date {
+    height: 44px;
+  }
+  .vc-legal__body {
+    display: block !important;
+  }
+  .vc-legal__main {
+    padding: 25px 24px 44px;
+  }
+  .vc-legal__p {
+    min-height: 0;
+  }
+  .vc-legal__h {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.96px;
+  }
+  .vc-legal__main > section .vc-legal__h {
+    margin-top: 68px;
+  }
+  .vc-legal__main > section:first-of-type .vc-legal__h {
+    margin-top: 123px;
+  }
+  .vc-legal__toc {
+    display: none;
+  }
+}

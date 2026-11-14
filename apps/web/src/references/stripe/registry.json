@@ -1,0 +1,109 @@
+{
+  "screens": [
+    {
+      "id": "home",
+      "title": "Home",
+      "theme": "light",
+      "template": "home",
+      "url": "https://stripe.com",
+      "survey": "home"
+    },
+    {
+      "id": "product",
+      "title": "Product",
+      "theme": "light",
+      "template": "product",
+      "url": "https://stripe.com/capital",
+      "survey": "capital"
+    },
+    {
+      "id": "platform",
+      "title": "Platform Product",
+      "theme": "light",
+      "template": "platform-product",
+      "url": "https://stripe.com/billing",
+      "survey": "billing"
+    },
+    {
+      "id": "solution",
+      "title": "Solution",
+      "theme": "light",
+      "template": "solution",
+      "url": "https://stripe.com/use-cases/saas",
+      "survey": "use-cases-saas"
+    },
+    {
+      "id": "pricing",
+      "title": "Pricing",
+      "theme": "light",
+      "template": "pricing",
+      "url": "https://stripe.com/pricing",
+      "survey": "pricing"
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "theme": "light",
+      "template": "about",
+      "url": "https://stripe.com/about",
+      "survey": "about"
+    },
+    {
+      "id": "customers",
+      "title": "Customers",
+      "theme": "light",
+      "template": "customers",
+      "url": "https://stripe.com/customers",
+      "survey": "customers"
+    },
+    {
+      "id": "legal",
+      "title": "Legal",
+      "theme": "light",
+      "template": "legal",
+      "url": "https://stripe.com/privacy",
+      "survey": "privacy"
+    },
+    {
+      "id": "contact",
+      "title": "Contact Sales",
+      "theme": "light",
+      "template": "contact",
+      "url": "https://stripe.com/contact/sales",
+      "survey": "contact-sales"
+    },
+    {
+      "id": "blog",
+      "title": "Blog",
+      "theme": "light",
+      "template": "article-list",
+      "url": "https://stripe.com/blog",
+      "survey": "blog"
+    },
+    {
+      "id": "directory",
+      "title": "Sitemap",
+      "theme": "light",
+      "template": "directory",
+      "url": "https://stripe.com/sitemap",
+      "survey": "sitemap"
+    },
+    {
+      "id": "segment",
+      "title": "Startups",
+      "theme": "light",
+      "template": "segment",
+      "url": "https://stripe.com/startups",
+      "survey": "startups"
+    },
+    {
+      "id": "careers",
+      "title": "Careers",
+      "theme": "light",
+      "template": "careers",
+      "url": "https://stripe.com/careers",
+      "survey": "careers"
+    }
+  ],
+  "components": {}
+}

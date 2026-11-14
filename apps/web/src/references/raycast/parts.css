@@ -1,0 +1,729 @@
+/* Parts shared by several templates: AI bento, plan cards, enterprise card, comparison table, FAQ. */
+
+/* ---------- AI bento (home, product) ---------- */
+
+.rc-ai__eyebrow {
+  color: #ff6363;
+  font-family: var(--rc-mono);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+}
+
+.rc-ai__title {
+  margin-top: 19px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  letter-spacing: -0.8px;
+}
+
+.rc-ai__lead {
+  width: 500px;
+  max-width: 100%;
+  margin: 15px auto 0;
+  color: #ffffff80;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.18px;
+}
+
+.rc-ai__bento {
+  width: 1020px;
+  max-width: 100%;
+  margin: 56px auto 0;
+  display: grid;
+  grid-template-columns: 495px 495px;
+  grid-template-rows: 530px 520px;
+  gap: 30px;
+  text-align: left;
+}
+
+.rc-ai__card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 24px;
+  border: 1px solid #ffffff0f;
+  border-radius: 16px;
+  background: linear-gradient(137deg, #111214 4.87%, #0c0d0f 75.88%);
+}
+
+.rc-ai__card--wide {
+  grid-column: 1 / -1;
+}
+
+.rc-ai__visual {
+  flex: 1;
+  margin: 0 -24px 24px;
+  border-radius: 16px 16px 0 0;
+}
+
+.rc-ai__card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.rc-ai__card p {
+  margin-top: 2px;
+  width: 400px;
+  max-width: 100%;
+  color: var(--rc-text-2);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rc-ai__link {
+  margin-top: 50px;
+}
+
+.rc-ai {
+  width: 1060px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 58px 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 1240px) {
+
+  .rc-ai__bento {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .rc-ai {
+    padding: 58px 20px 0;
+  }
+
+  .rc-ai__title {
+    width: 300px;
+    margin: 19px auto 0;
+  }
+
+  .rc-ai__lead {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .rc-ai__bento {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 56px;
+  }
+
+  .rc-ai__card {
+    padding: 0 15px 15px;
+  }
+
+  .rc-ai__card:nth-child(1) {
+    height: 251px;
+  }
+
+  .rc-ai__card:nth-child(2) {
+    height: 366px;
+  }
+
+  .rc-ai__card:nth-child(3) {
+    height: 480px;
+  }
+
+  .rc-ai__card h3 {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .rc-ai__link {
+    margin-top: 32px;
+  }
+}
+
+/* ---------- Icons, tags, segmented control ---------- */
+
+.rc-icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.rc-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 15px;
+  margin-left: 8px;
+  padding: 0 5px;
+  border: 1px solid #56c2ff66;
+  border-radius: 999px;
+  color: #56c2ff;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  vertical-align: 1px;
+}
+
+.rc-segmented {
+  display: grid;
+  gap: 2px;
+  height: 40px;
+  padding: 4px;
+  border: 1px solid #ffffff0f;
+  border-radius: 999px;
+  background: #ffffff0a;
+}
+
+.rc-segmented button {
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 999px;
+  color: var(--rc-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.1px;
+  transition: all 0.2s ease;
+}
+
+.rc-segmented button:hover {
+  color: #fff;
+}
+
+.rc-segmented button[aria-checked="true"] {
+  background: #ffffff17;
+  color: #fff;
+  box-shadow: inset 0 1px 0 #ffffff0f;
+}
+
+.rc-segmented button:focus-visible {
+  outline: 2px solid #ffffffb2;
+  outline-offset: 1px;
+}
+
+/* ---------- Plan cards (pricing, product) ---------- */
+
+.rc-plans {
+  width: 1110px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rc-billing {
+  position: relative;
+  display: grid;
+  grid-template-columns: 129px 129px;
+  gap: 4px;
+  width: 280px;
+  height: 62px;
+  padding: 8px;
+  border: 1px solid #ffffff0f;
+  border-radius: 31px;
+  background: linear-gradient(137deg, #111214 4.87%, #0c0d0f 75.88%);
+  box-shadow: inset 0 1px 1px #ffffff26;
+}
+
+.rc-billing button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  color: var(--rc-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+  transition: color 0.2s ease;
+}
+
+.rc-billing button[aria-checked="true"],
+.rc-billing button:hover {
+  color: #fff;
+}
+
+.rc-billing__thumb {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 129px;
+  height: 45px;
+  border-radius: 22.5px;
+  background: radial-gradient(51.07% 92.4% at 51% 7.61%, #5a5a5a 0%, #1a1a1a 100%);
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+  transition: transform 0.3s ease;
+}
+
+.rc-billing__thumb[data-side="right"] {
+  transform: translateX(133px);
+}
+
+.rc-billing__chip {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-family: var(--rc-mono);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.rc-plans__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 1122px;
+  margin-top: 48px;
+  border: 1px solid #2f3031;
+  border-radius: 16px;
+  background: linear-gradient(137deg, #111214 4.87%, #0c0d0f 75.88%);
+}
+
+.rc-plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+}
+
+.rc-plan header {
+  min-height: 116px;
+}
+
+.rc-plan__name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+.rc-plan__desc {
+  color: var(--rc-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  letter-spacing: 0.2px;
+}
+
+.rc-plan__price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.rc-plan__price span {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: 0.3px;
+}
+
+.rc-plan__price small {
+  color: var(--rc-text-2);
+  font-family: var(--rc-mono);
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.rc-plan__billed {
+  height: 24px;
+  margin-top: -12px;
+  color: var(--rc-text-2);
+  font-family: var(--rc-mono);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.rc-plan__billed s {
+  color: var(--rc-text-3);
+}
+
+.rc-plan__cta {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.rc-plan__billed + .rc-plan__cta {
+  margin-top: 0;
+}
+
+.rc-plan__features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.rc-plan__features li {
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+}
+
+.rc-plan__features li .rc-icon {
+  margin-top: 3px;
+}
+
+.rc-plan__features li.is-muted {
+  color: var(--rc-text-2);
+}
+
+.rc-plan__feature {
+  display: block;
+}
+
+.rc-plan__note {
+  display: block;
+  color: var(--rc-text-2);
+}
+
+.rc-plan__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+}
+
+.rc-plan__more svg {
+  width: 12px;
+}
+
+.rc-plan__foot {
+  margin-top: 8px;
+  color: var(--rc-text-2);
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.rc-plan--featured {
+  position: absolute;
+  top: -16px;
+  left: 369px;
+  width: 369px;
+  height: 1152px;
+  padding: 38px 32px 48px;
+  border: 1px solid #2f3031;
+  border-radius: 16px;
+  background: linear-gradient(137deg, #222326 4.87%, #151618 75.88%);
+  box-shadow: 0 24px 60px #00000080;
+}
+
+.rc-plan--featured .rc-plan__name {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.rc-plan--featured .rc-plan__desc {
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.rc-plan--featured header {
+  min-height: 54px;
+}
+
+.rc-plans__grid > .rc-plan:last-child {
+  grid-column: 3;
+}
+
+.rc-plans__grid > .rc-plan:not(.rc-plan--featured) .rc-segmented + .rc-plan__price,
+.rc-plan header + .rc-segmented {
+  margin-top: 0;
+}
+
+.rc-plan header:has(+ .rc-segmented) {
+  min-height: 54px;
+}
+
+.rc-plan .rc-segmented + .rc-plan__price {
+  margin-top: 24px;
+}
+
+.rc-plan__badge {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56c2ff33 0%, #56c2ff00 70%);
+}
+
+.rc-plans__compare {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 32px;
+  color: var(--rc-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+  transition: color 0.3s ease;
+}
+
+.rc-plans__compare:hover {
+  color: #fff;
+}
+
+/* ---------- Enterprise card ---------- */
+
+.rc-enterprise-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+  margin-top: 97px;
+}
+
+.rc-enterprise {
+  display: grid;
+  grid-template-columns: 728px 364px;
+  width: 1094px;
+  max-width: calc(100% - 32px);
+  height: 433px;
+  border: 1px solid #2f3031;
+  border-radius: 16px;
+  background: linear-gradient(137deg, #222326 4.87%, #151618 75.88%);
+}
+
+.rc-enterprise__info {
+  padding: 40px;
+}
+
+.rc-enterprise__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.rc-enterprise__cols .rc-plan__features {
+  margin-top: 0;
+  gap: 8px;
+}
+
+.rc-enterprise__group {
+  margin-top: 24px;
+}
+
+.rc-enterprise__cols > .rc-enterprise__group {
+  margin-top: 24px;
+}
+
+.rc-enterprise__title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+}
+
+.rc-enterprise__pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 40px;
+  border-left: 1px solid #2f3031;
+}
+
+.rc-enterprise__price {
+  margin-top: 149px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+
+.rc-enterprise__billed {
+  margin-top: 4px;
+  color: var(--rc-text-2);
+  font-family: var(--rc-mono);
+  font-size: 12px;
+}
+
+.rc-enterprise__pricing .rc-btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.rc-enterprise__more {
+  font-size: 16px;
+  line-height: 16.96px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* ---------- FAQ ---------- */
+
+.rc-faq {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.rc-faq__head {
+  text-align: center;
+}
+
+.rc-faq__list {
+  margin-top: 64px;
+  padding-top: 1px;
+}
+
+.rc-faq__item {
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.rc-faq__item h3 {
+  font: inherit;
+}
+
+.rc-faq__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+  padding: 39px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.rc-faq__question .rc-icon {
+  color: var(--rc-text-2);
+  transition: transform 0.4s ease;
+}
+
+.rc-faq__item[data-open] .rc-faq__question .rc-icon {
+  transform: rotate(180deg);
+}
+
+.rc-faq__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.2s ease, opacity 0.2s ease;
+}
+
+.rc-faq__answer > div {
+  overflow: hidden;
+}
+
+.rc-faq__item[data-open] .rc-faq__answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.rc-faq__answer p {
+  padding-bottom: 32px;
+  color: var(--rc-text-2);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media (max-width: 1140px) {
+  .rc-plans__grid {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    border: 0;
+    background: none;
+    padding: 0 16px;
+  }
+
+  .rc-plan,
+  .rc-plan--featured {
+    position: relative;
+    inset: auto;
+    width: auto;
+    height: auto;
+    border: 1px solid #ffffff0f;
+    border-radius: 16px;
+  }
+
+  .rc-plans__grid > .rc-plan:last-child {
+    grid-column: auto;
+  }
+
+  .rc-enterprise {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .rc-enterprise__pricing {
+    border-left: 0;
+    border-top: 1px solid #2f3031;
+  }
+
+  .rc-enterprise__price {
+    margin-top: 0;
+  }
+
+  .rc-enterprise__pricing .rc-btn {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rc-plans__grid {
+    margin-top: 48px;
+  }
+
+  .rc-plan {
+    padding: 24px;
+  }
+
+  .rc-plans__grid > .rc-plan:first-child {
+    height: 133px;
+    overflow: hidden;
+  }
+
+  .rc-plan--featured {
+    height: 1152px;
+    padding: 24px;
+  }
+
+  .rc-plans__grid > .rc-plan:last-child {
+    height: 784px;
+  }
+
+  .rc-enterprise-wrap {
+    margin-top: 40px;
+  }
+
+  .rc-enterprise {
+    height: 872px;
+    max-width: calc(100% - 32px);
+  }
+
+  .rc-enterprise__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .rc-enterprise__info {
+    padding: 24px;
+  }
+
+  .rc-faq {
+    padding: 0 24px;
+  }
+
+  .rc-faq__list {
+    margin-top: 69px;
+  }
+}

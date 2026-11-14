@@ -1,0 +1,131 @@
+/* Legal text template, measured on linear.app/terms at 1440 and 390. Column: 624px at x408. */
+
+.lr-legal-doc {
+  max-width: 624px;
+  margin: 0 auto;
+  padding: 203px 0 225px;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: var(--lr-text-2);
+}
+
+.lr-legal-doc h1 {
+  font-size: 64px;
+  line-height: 67.84px;
+  font-weight: 590;
+  letter-spacing: -0.022em;
+  color: var(--lr-text-1);
+}
+
+.lr-legal-date {
+  margin-top: 32px;
+  font-family: var(--lr-mono);
+  font-size: 13px;
+  line-height: 19.5px;
+  text-transform: uppercase;
+  color: var(--lr-text-3);
+}
+
+.lr-legal-lead {
+  margin-top: 20px;
+}
+
+.lr-legal-date + .lr-legal-lead {
+  margin-top: 31px;
+}
+
+.lr-legal-doc hr {
+  height: 1px;
+  margin: 38px 0 0;
+  border: 0;
+  background: var(--lr-line);
+}
+
+.lr-legal-toc {
+  margin: 43px 0 0;
+  padding-left: 32px;
+  list-style: decimal;
+  font-family: var(--lr-mono);
+  font-size: 13px;
+  color: var(--lr-text-3);
+}
+
+.lr-legal-toc li {
+  height: 40px;
+  padding-top: 8px;
+}
+
+.lr-legal-toc a {
+  font-size: 15px;
+  line-height: 24px;
+  border-radius: 4px;
+  transition: color 0.1s var(--lr-ease);
+}
+
+.lr-legal-toc a:hover {
+  color: var(--lr-text-1);
+}
+
+.lr-legal-toc + hr {
+  margin-top: 42px;
+}
+
+.lr-legal-doc section {
+  padding-top: 40px;
+}
+
+.lr-legal-doc section + section {
+  padding-top: 65px;
+}
+
+.lr-legal-doc h2 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 590;
+  letter-spacing: -0.022em;
+  color: var(--lr-text-1);
+}
+
+.lr-legal-clause {
+  margin-top: 32px;
+}
+
+.lr-legal-clause + .lr-legal-clause {
+  margin-top: 20px;
+}
+
+.lr-legal-doc h3 {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 27.2px;
+  font-weight: 590;
+  color: var(--lr-text-1);
+}
+
+.lr-legal-doc h3 span {
+  position: absolute;
+  right: calc(100% + 32px);
+  font-weight: 400;
+  color: var(--lr-text-3);
+}
+
+@media (max-width: 1023px) {
+  .lr-legal-doc {
+    padding-left: 64px;
+    padding-right: 24px;
+    max-width: 712px;
+  }
+}
+
+@media (max-width: 639px) {
+  .lr-legal-doc {
+    padding: 203px 24px 225px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .lr-legal-doc h3 span {
+    position: static;
+    margin-right: 8px;
+  }
+}

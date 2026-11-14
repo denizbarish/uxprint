@@ -1,0 +1,116 @@
+/* Legal and long-form document template (measured on /privacy). */
+
+.rc-legal {
+  width: 746px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 204px 16px 96px;
+}
+
+.rc-legal__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62.4px;
+  letter-spacing: 0.2px;
+  font-feature-settings: "liga" 0, "ss02", "ss08";
+}
+
+.rc-legal__date {
+  margin-top: 12px;
+  color: var(--rc-text-2);
+  font-size: 18px;
+  line-height: 28.8px;
+  letter-spacing: 0.2px;
+}
+
+.rc-legal__body {
+  position: relative;
+  margin-top: 153px;
+}
+
+/* Rule between the title block and the text, 67px above the first paragraph. */
+.rc-legal__body::before {
+  content: "";
+  position: absolute;
+  inset: -68px 0 auto;
+  height: 1px;
+  background: var(--rc-surface-3);
+}
+
+.rc-legal__body p {
+  margin-bottom: 32px;
+  color: #ffffffd9;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.32px;
+}
+
+.rc-legal__body strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.rc-legal__body h2 {
+  margin-bottom: 32px;
+  padding-top: 48px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27.6px;
+}
+
+.rc-legal__body h3 {
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 20.7px;
+}
+
+.rc-legal__body p + h3 {
+  padding-top: 48px;
+}
+
+.rc-legal__body h2 + h3 {
+  margin-top: -1px;
+}
+
+.rc-legal__body ul {
+  margin-bottom: 32px;
+  padding-left: 32px;
+  list-style: disc;
+}
+
+.rc-legal__body li {
+  margin-bottom: 12.6px;
+  color: #ffffffcc;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.rc-legal__body > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .rc-legal {
+    width: 100%;
+    padding: 154px 16px 64px;
+  }
+
+  .rc-legal__title {
+    font-size: 32px;
+    line-height: 41.6px;
+  }
+
+  .rc-legal__date {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .rc-legal__body {
+    margin-top: 108px;
+  }
+}

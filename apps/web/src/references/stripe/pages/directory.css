@@ -1,0 +1,159 @@
+/* Directory template (sitemap). Measured at 1440 and 390 on /sitemap. */
+
+.d-hero {
+  position: relative;
+  height: 438px;
+  padding-top: 126px;
+  background: #f6f9fc;
+}
+
+.d-bar {
+  position: absolute;
+  height: 57px;
+  transform: skewY(-6deg);
+}
+
+.d-bar--a {
+  left: 20px;
+  top: 347px;
+  width: 160px;
+  background: #80e9ff;
+}
+
+.d-bar--b {
+  left: 0;
+  top: 364px;
+  width: 315px;
+  height: 73px;
+  background: #7a73ff;
+}
+
+.d-bar--c {
+  left: 0;
+  top: 350px;
+  width: 450px;
+  height: 30px;
+  background: #0048e5;
+  opacity: 0;
+}
+
+.d-bar--d {
+  right: 0;
+  top: 285px;
+  width: 315px;
+  height: 73px;
+  background: #80e9ff;
+}
+
+.d-bar--e {
+  right: 20px;
+  top: 318px;
+  width: 160px;
+  background: #7a73ff;
+}
+
+.d-body {
+  position: relative;
+  padding: 124px 0 120px;
+  background: #ffffff;
+}
+
+.d-body::before {
+  content: "";
+  position: absolute;
+  inset: -153px 0 auto;
+  height: 154px;
+  background: #ffffff;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.d-group {
+  position: relative;
+  display: grid;
+  grid-template-columns: 270px 810px;
+  margin: 0 -16px;
+}
+
+.d-group + .d-group {
+  margin-top: 130px;
+}
+
+.d-group .p-feature__title {
+  margin-left: 16px;
+}
+
+.d-group ul {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  row-gap: 20px;
+}
+
+.d-group li {
+  padding: 2px 16px 0;
+  font-size: 15px;
+  font-weight: 425;
+  line-height: 18px;
+}
+
+.d-group a {
+  color: var(--accent);
+  transition: color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.d-group a:hover {
+  color: #0a2540;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .d-group a {
+    transition: none;
+  }
+}
+
+@media (max-width: 1039px) {
+  .d-group {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    margin: 0;
+  }
+
+  .d-group ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .d-group li {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .d-hero {
+    height: 257px;
+    padding-top: 81px;
+  }
+
+  .d-hero .p-h2 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .d-bar {
+    display: none;
+  }
+
+  .d-body {
+    padding: 115px 16px 96px;
+  }
+
+  .d-group {
+    row-gap: 50px;
+  }
+
+  .d-group + .d-group {
+    margin-top: 66px;
+  }
+
+  .d-group ul {
+    grid-template-columns: 1fr;
+  }
+}

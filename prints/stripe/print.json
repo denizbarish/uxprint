@@ -1,0 +1,2199 @@
+{
+  "slug": "stripe",
+  "name": "Stripe",
+  "url": "https://stripe.com",
+  "category": "marketing-site",
+  "tags": [
+    "light",
+    "fintech",
+    "saas",
+    "developer-tool",
+    "gradient",
+    "light-weight-type",
+    "framed-grid",
+    "bento",
+    "modal-auth"
+  ],
+  "summary": "White pages framed by faint vertical hairlines, light-weight (300) Sohne headlines in deep navy with a muted continuation, a single violet #533afd for actions, and a silk gradient ribbon sweeping across the hero.",
+  "theme": "light",
+  "source": {
+    "tool": "craft-anything 0.4.0 + playwright 1.65.0",
+    "mode": "deep",
+    "capturedAt": "2026-11-13",
+    "widths": [
+      1440,
+      768,
+      390
+    ],
+    "pages": [
+      {
+        "name": "home",
+        "url": "https://stripe.com"
+      },
+      {
+        "name": "pricing",
+        "url": "https://stripe.com/pricing"
+      },
+      {
+        "name": "docs",
+        "url": "https://docs.stripe.com"
+      },
+      {
+        "name": "login",
+        "url": "https://dashboard.stripe.com/login"
+      },
+      {
+        "name": "register",
+        "url": "https://dashboard.stripe.com/register"
+      }
+    ]
+  },
+  "color": {
+    "background": [
+      {
+        "name": "canvas",
+        "value": "#ffffff",
+        "use": "Page background, bento cards, mega menu, auth cards"
+      },
+      {
+        "name": "subtle",
+        "value": "#f8fafd",
+        "use": "Footer (1299px tall at 1440) and the closing band above it; hover fill of white icon buttons"
+      },
+      {
+        "name": "tint",
+        "value": "#e5edf5",
+        "use": "Pale blue-grey fill (19 elements on home); also the 1px border of outlined link cards and the end colour of the background-flash keyframe"
+      },
+      {
+        "name": "pricing-canvas",
+        "value": "#f6f9fc",
+        "use": "Pricing page header band and tinted page sections; the pricing page sits on #fafbfd and #f6f9fc instead of pure white"
+      },
+      {
+        "name": "deep-navy",
+        "value": "#0d1738",
+        "use": "Announcement bar and full-bleed dark sections (stats band, infrastructure section)"
+      },
+      {
+        "name": "violet-wash",
+        "value": "#e8e9ff",
+        "use": "Fill of square icon buttons (carousel next, bento expand)"
+      },
+      {
+        "name": "violet-wash-strong",
+        "value": "#e2e4ff",
+        "use": "Collapsed story button (40px square with a plus)"
+      },
+      {
+        "name": "chat-navy",
+        "value": "#0a2540",
+        "use": "Chat now button fill; on the pricing page also the heading colour and the Custom plan card"
+      }
+    ],
+    "text": [
+      {
+        "name": "heading",
+        "value": "#061b31",
+        "use": "Headlines, first sentence of two-tone headings, nav triggers, footer link hover"
+      },
+      {
+        "name": "body",
+        "value": "#50617a",
+        "use": "Body copy, footer links, underlined inline links"
+      },
+      {
+        "name": "muted",
+        "value": "#64748d",
+        "use": "Continuation sentence of two-tone headings, legal text, captions"
+      },
+      {
+        "name": "on-dark",
+        "value": "#ffffff",
+        "use": "Text on #0d1738 bands and on violet buttons"
+      },
+      {
+        "name": "on-dark-muted",
+        "value": "#6480b2",
+        "use": "Inactive stats and inline links on dark bands"
+      },
+      {
+        "name": "pricing-body",
+        "value": "#425466",
+        "use": "Body copy on the pricing page (older palette)"
+      }
+    ],
+    "border": [
+      {
+        "name": "card-outline",
+        "value": "#e5edf5",
+        "use": "1px border of outlined link cards; hover #bac8da"
+      },
+      {
+        "name": "card-outline-hover",
+        "value": "#bac8da",
+        "use": "Hover border of outlined link cards"
+      },
+      {
+        "name": "secondary-button",
+        "value": "#b9b9f9",
+        "use": "1px border of the light secondary button"
+      },
+      {
+        "name": "story-button",
+        "value": "#d6d9fc",
+        "use": "1px border of the expanding story button; hover fill of violet-wash icon buttons"
+      },
+      {
+        "name": "frame-hairline",
+        "value": "#e5edf5",
+        "use": "Vertical frame lines at the column edges and the rules between bands on home. Seen in screenshots; their computed colour was not measured, this is the closest measured pale border"
+      }
+    ],
+    "accent": [
+      {
+        "name": "violet",
+        "value": "#533afd",
+        "use": "Primary button fill, links, logo, mega menu item titles. The only action colour on home"
+      },
+      {
+        "name": "violet-hover",
+        "value": "#4936e1",
+        "use": "Hero primary button hover (header button hover is #4133cb, form button hover #4032c8)"
+      },
+      {
+        "name": "link-hover",
+        "value": "#2e2b8c",
+        "use": "Hover and active colour of violet text links and outlined buttons"
+      },
+      {
+        "name": "focus-ring",
+        "value": "#5452fbbf",
+        "use": "3px solid outline on every focusable element on the marketing site; offset 1px on buttons, 3px on text links"
+      },
+      {
+        "name": "on-dark-link",
+        "value": "#7389ff",
+        "use": "Text links on dark bands; hover #7e94ff, active #a8bfff"
+      },
+      {
+        "name": "legacy-blurple",
+        "value": "#635bff",
+        "use": "Pricing page pill buttons and links, chat focus shadow, dashboard links. The older brand violet, still on pricing and the dashboard"
+      },
+      {
+        "name": "cyan",
+        "value": "#00d4ff",
+        "use": "Contact sales pill on the dark Custom pricing card; hover #ffffff"
+      },
+      {
+        "name": "orange",
+        "value": "#ff6118",
+        "use": "Text accents inside product mock-ups (12 elements on home, e.g. a checkout button label)"
+      }
+    ],
+    "semantic": [
+      {
+        "name": "success",
+        "value": "#108c3d",
+        "use": "Positive figures and status text inside product mock-ups"
+      },
+      {
+        "name": "success-wash",
+        "value": "#15be5333",
+        "use": "Green-tinted fill inside product mock-ups (7 elements); the exact component was not identified"
+      }
+    ],
+    "alternate": {
+      "name": "Dashboard and docs palette",
+      "appliesTo": "docs.stripe.com and the dashboard log in and sign up screens, which use the dashboard's own grey-blue system instead of the marketing violet",
+      "tokens": [
+        {
+          "name": "canvas",
+          "value": "#ffffff",
+          "use": "Page, auth card, input and outline button fill"
+        },
+        {
+          "name": "surface",
+          "value": "#f7fafc",
+          "use": "Docs tile list background, unselected tiles"
+        },
+        {
+          "name": "surface-pressed",
+          "value": "#f4f7fa",
+          "use": "Active (pressed) fill of outline buttons and the docs search trigger"
+        },
+        {
+          "name": "text",
+          "value": "#273951",
+          "use": "Input text, outline button labels"
+        },
+        {
+          "name": "text-body",
+          "value": "#414552",
+          "use": "Docs headings and body"
+        },
+        {
+          "name": "text-label",
+          "value": "#3c4257",
+          "use": "Sign up labels and inputs"
+        },
+        {
+          "name": "text-muted",
+          "value": "#50617a",
+          "use": "Docs top tabs, Ask AI button"
+        },
+        {
+          "name": "text-hover",
+          "value": "#1a2c44",
+          "use": "Hover colour of docs tabs and outline buttons"
+        },
+        {
+          "name": "link-hover",
+          "value": "#1a1f36",
+          "use": "Hover colour of docs and auth links"
+        },
+        {
+          "name": "docs-link",
+          "value": "#5469d4",
+          "use": "Docs links and the docs primary button fill"
+        },
+        {
+          "name": "auth-primary",
+          "value": "#675dff",
+          "use": "Sign in button, checked checkbox"
+        },
+        {
+          "name": "auth-link",
+          "value": "#635bff",
+          "use": "Forgot password link, links inside consent text"
+        },
+        {
+          "name": "ring",
+          "value": "#d4dee9",
+          "use": "1px box-shadow ring on inputs, outline buttons, search trigger; dividers"
+        },
+        {
+          "name": "ring-hover",
+          "value": "#95a4ba",
+          "use": "Ring colour on hover"
+        },
+        {
+          "name": "focus-violet",
+          "value": "#a497fc",
+          "use": "1px inner ring of a focused log in field (with a 4px #e0d9fb halo)"
+        },
+        {
+          "name": "focus-violet-halo",
+          "value": "#e0d9fb",
+          "use": "4px outer halo of a focused log in field or checkbox"
+        },
+        {
+          "name": "focus-blue",
+          "value": "#0196ed5c",
+          "use": "4px focus halo on sign up fields and docs buttons"
+        },
+        {
+          "name": "code-string",
+          "value": "#85d996",
+          "use": "Green string tokens in the dark docs code panel"
+        }
+      ]
+    }
+  },
+  "typography": {
+    "families": [
+      {
+        "role": "sans",
+        "stack": "sohne-var, \"SF Pro Display\", sans-serif",
+        "features": "\"ss01\"",
+        "substitute": {
+          "name": "Inter",
+          "source": "google-fonts",
+          "note": "Sohne is a paid Klim face loaded as a variable font (weights 1 to 1000). Use the variable Inter for 300 and 425. The pricing page declares sohne-var, \"Helvetica Neue\", Arial, sans-serif and the dashboard declares sohne-var, sohne-woff, \"Helvetica Neue\", Arial, sans-serif"
+        }
+      },
+      {
+        "role": "mono",
+        "stack": "SourceCodePro, SFMono-Regular, monospace",
+        "substitute": {
+          "name": "Source Code Pro",
+          "source": "google-fonts",
+          "note": "same face, loaded at weight 500"
+        }
+      },
+      {
+        "role": "sans",
+        "stack": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "substitute": {
+          "name": "system-ui",
+          "source": "system",
+          "note": "docs.stripe.com only; the docs load no web font. Docs code uses Menlo, Consolas, monospace"
+        }
+      }
+    ],
+    "scale": [
+      {
+        "name": "display-dark",
+        "size": "56px",
+        "weight": 300,
+        "lineHeight": "57.68px",
+        "tracking": "-1.4px",
+        "family": "sans",
+        "use": "Centred headline on the dark stats band"
+      },
+      {
+        "name": "display",
+        "size": "48px",
+        "weight": 300,
+        "lineHeight": "55.2px",
+        "tracking": "-0.96px",
+        "family": "sans",
+        "use": "Home hero headline: first sentence in heading colour, continuation in muted slate"
+      },
+      {
+        "name": "stat",
+        "size": "48px",
+        "weight": 300,
+        "lineHeight": "48px",
+        "tracking": "-0.96px",
+        "family": "sans",
+        "use": "Large figures in the stats row"
+      },
+      {
+        "name": "title",
+        "size": "32px",
+        "weight": 300,
+        "lineHeight": "35.2px",
+        "tracking": "-0.64px",
+        "family": "sans",
+        "use": "Section headlines, two-tone"
+      },
+      {
+        "name": "card-title",
+        "size": "26px",
+        "weight": 300,
+        "lineHeight": "29.12px",
+        "tracking": "-0.26px",
+        "family": "sans",
+        "use": "Bento card titles and split-section headlines"
+      },
+      {
+        "name": "row-title",
+        "size": "22px",
+        "weight": 300,
+        "lineHeight": "24.2px",
+        "tracking": "-0.22px",
+        "family": "sans",
+        "use": "Customer story rows, news titles"
+      },
+      {
+        "name": "lead",
+        "size": "20px",
+        "weight": 300,
+        "lineHeight": "28px",
+        "tracking": "-0.2px",
+        "family": "sans",
+        "use": "Intro paragraph under a section headline"
+      },
+      {
+        "name": "body-large",
+        "size": "18px",
+        "weight": 300,
+        "lineHeight": "25.2px",
+        "family": "sans",
+        "use": "Paragraph beside a split-section headline"
+      },
+      {
+        "name": "body",
+        "size": "16px",
+        "weight": 300,
+        "lineHeight": "22.4px",
+        "family": "sans",
+        "use": "Body copy and inline links"
+      },
+      {
+        "name": "button",
+        "size": "16px",
+        "weight": 400,
+        "lineHeight": "16px",
+        "family": "sans",
+        "use": "48px buttons and text links with a chevron"
+      },
+      {
+        "name": "nav",
+        "size": "14px",
+        "weight": 400,
+        "lineHeight": "14px",
+        "family": "sans",
+        "use": "Header nav triggers and the 40px header buttons"
+      },
+      {
+        "name": "small",
+        "size": "14px",
+        "weight": 300,
+        "lineHeight": "19.6px",
+        "family": "sans",
+        "use": "Announcement bar text, legal copy"
+      },
+      {
+        "name": "caption",
+        "size": "12px",
+        "weight": 300,
+        "lineHeight": "17.4px",
+        "family": "sans",
+        "use": "Footnotes, unsubscribe line"
+      },
+      {
+        "name": "code",
+        "size": "12px",
+        "weight": 500,
+        "lineHeight": "24px",
+        "family": "mono",
+        "use": "Code samples on the marketing site"
+      },
+      {
+        "name": "pricing-hero",
+        "size": "56px",
+        "weight": 500,
+        "lineHeight": "68px",
+        "tracking": "-1.12px",
+        "family": "sans",
+        "use": "Pricing page title (older system: weight 500, no ss01)"
+      },
+      {
+        "name": "pricing-section",
+        "size": "38px",
+        "weight": 500,
+        "lineHeight": "48px",
+        "tracking": "-0.2px",
+        "family": "sans",
+        "use": "Pricing section titles"
+      },
+      {
+        "name": "pricing-label",
+        "size": "15px",
+        "weight": 425,
+        "lineHeight": "24px",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Pricing headings, pill buttons and emphasised links"
+      },
+      {
+        "name": "pricing-body",
+        "size": "15px",
+        "weight": 300,
+        "lineHeight": "24px",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Pricing body copy and checklist items"
+      },
+      {
+        "name": "docs-title",
+        "size": "32px",
+        "weight": 700,
+        "lineHeight": "40px",
+        "family": "sans",
+        "use": "Docs page title (system stack)"
+      },
+      {
+        "name": "docs-heading",
+        "size": "21px",
+        "weight": 700,
+        "family": "sans",
+        "use": "Docs group headings (system stack)"
+      },
+      {
+        "name": "docs-link",
+        "size": "16px",
+        "weight": 500,
+        "lineHeight": "26px",
+        "family": "sans",
+        "use": "Docs link lists (system stack)"
+      },
+      {
+        "name": "docs-tab",
+        "size": "14px",
+        "weight": 600,
+        "lineHeight": "20px",
+        "family": "sans",
+        "use": "Docs top tabs and auth field labels"
+      },
+      {
+        "name": "auth-input",
+        "size": "16px",
+        "weight": 300,
+        "lineHeight": "24px",
+        "family": "sans",
+        "use": "Typed text in auth fields"
+      },
+      {
+        "name": "auth-button",
+        "size": "16px",
+        "weight": 500,
+        "lineHeight": "24px",
+        "family": "sans",
+        "use": "Auth primary and social buttons"
+      },
+      {
+        "name": "auth-footnote",
+        "size": "13px",
+        "weight": 400,
+        "family": "sans",
+        "use": "Switch-flow line under the auth form"
+      }
+    ]
+  },
+  "spacing": {
+    "unit": "4px",
+    "scale": [
+      "2px",
+      "4px",
+      "6px",
+      "8px",
+      "12px",
+      "16px",
+      "24px",
+      "32px",
+      "40px",
+      "48px",
+      "64px",
+      "96px",
+      "112px",
+      "128px"
+    ],
+    "containerMaxWidth": "1266px with 16px inline padding (content 1232px). Pricing uses 1080px, docs content 1008px",
+    "pageGutter": {
+      "desktop": "87px at 1440 (the centred 1266px frame); content starts at 104px, hero text at 208px",
+      "mobile": "16px"
+    },
+    "sectionGap": "Bands stack edge to edge; each section headline box starts 93px below its band's top edge at 1440. Pricing declares 160px top and bottom padding"
+  },
+  "radius": [
+    {
+      "name": "hairline",
+      "value": "1px",
+      "use": "Corner of the focus outline on text links"
+    },
+    {
+      "name": "control",
+      "value": "4px",
+      "use": "Every marketing button, nav trigger and icon button; sign up inputs. The most used radius on home (99)"
+    },
+    {
+      "name": "card",
+      "value": "6px",
+      "use": "Second most used on home (81); bento cards and product frames read at this radius in the screenshots. Auth inputs and buttons"
+    },
+    {
+      "name": "docs",
+      "value": "8px",
+      "use": "Docs search trigger, Ask AI, try-it tiles; pricing cards"
+    },
+    {
+      "name": "auth-card",
+      "value": "12px",
+      "use": "The single 12px radius on the log in page, where the card is the only large rounded surface"
+    },
+    {
+      "name": "pricing-pill",
+      "value": "16.5px",
+      "use": "Pricing page pill buttons (33px tall)"
+    },
+    {
+      "name": "pill",
+      "value": "999px",
+      "use": "Pricing newsletter email input"
+    },
+    {
+      "name": "round",
+      "value": "50%",
+      "use": "Avatars and status dots"
+    }
+  ],
+  "shadow": [
+    {
+      "name": "frame",
+      "value": "rgba(50, 50, 93, 0.25) 0px 30px 45px -30px, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px",
+      "use": "Product mock-up frames on home"
+    },
+    {
+      "name": "soft",
+      "value": "rgba(23, 23, 23, 0.08) 0px 15px 35px 0px",
+      "use": "Floating cards on home (chat card, mock-up panels)"
+    },
+    {
+      "name": "soft-small",
+      "value": "rgba(23, 23, 23, 0.06) 0px 3px 6px 0px",
+      "use": "Small raised elements on home"
+    },
+    {
+      "name": "float-button",
+      "value": "rgba(0, 0, 0, 0.1) 0px 4px 8px 0px",
+      "use": "White 40px floating icon button"
+    },
+    {
+      "name": "pricing-button",
+      "value": "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
+      "use": "Pricing pill buttons and small cards (23 uses)"
+    },
+    {
+      "name": "pricing-card",
+      "value": "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+      "use": "Pricing plan cards and panels"
+    },
+    {
+      "name": "auth-card",
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 5px 15px 0px, rgba(48, 49, 61, 0.08) 0px 15px 35px 0px",
+      "use": "Log in card"
+    },
+    {
+      "name": "ring",
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(212, 222, 233) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "use": "Docs and dashboard: 1px ring used instead of a border on inputs and outline buttons"
+    },
+    {
+      "name": "search-trigger",
+      "value": "rgba(16, 17, 26, 0.16) 0px 1px 1px 0px, rgb(212, 222, 233) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "use": "Docs search trigger at rest"
+    },
+    {
+      "name": "selected-tile",
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px",
+      "use": "Selected tile in the docs try-it list"
+    },
+    {
+      "name": "checkbox",
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(103, 93, 255) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(48, 49, 61, 0.08) 0px 2px 5px 0px",
+      "use": "Checked checkbox on the log in page"
+    }
+  ],
+  "layout": {
+    "breakpoints": [
+      "pricing: 600px, 900px, 1112px, 1300px (min-width)",
+      "login: 490px, 768px, 1040px, 1264px, 1440px (min-width)",
+      "docs: 800px (max-width), 1000px (min-width)",
+      "home: no media queries readable in the captured stylesheets"
+    ],
+    "patterns": [
+      {
+        "name": "Announcement bar",
+        "description": "36px tall full-width #0d1738 strip above the header: one centred 14px/400 white line ending in a bold link with a chevron, a close X 40px wide at the right edge. Its 4px corner squares off on scroll (announcement-bar-square keyframes)."
+      },
+      {
+        "name": "Header",
+        "description": "76px tall, white, 1px hairline below. Inside a 64px nav: logo at the left of the 1232px content column, then Products, Solutions, Developers, Resources (each with a small chevron), Pricing, a 1px vertical divider and an AI guide link with a sparkle icon. At the right, a 40px outlined Sign in and a 40px violet Contact sales with a chevron. The gradient ribbon passes behind it."
+      },
+      {
+        "name": "Framed column",
+        "description": "The 1266px frame is drawn as two 1px vertical hairlines running the full page height at 87px from each edge at 1440. Bands are separated by 1px horizontal rules that meet the frame lines. Dark bands and the gradient ribbon run full bleed across the frame."
+      },
+      {
+        "name": "Hero",
+        "description": "Text inset to 208px. A 14px label with a live, ticking figure, then a four-line 48px/300 headline whose first sentence is in heading navy and the rest in slate, then two 48px buttons 8px apart (violet primary with chevron, light secondary with a Google mark). A silk gradient ribbon (blue, violet, orange, pink) sweeps from the top centre to the right edge behind the text. A row of six customer logos sits in a ruled strip below."
+      },
+      {
+        "name": "Two-tone section intro",
+        "description": "32px/300 headline, left aligned at the content edge, about 790px wide: one short sentence in #061b31 followed in the same paragraph by a longer sentence in #64748d."
+      },
+      {
+        "name": "Bento grid",
+        "description": "Cards with a 1px border on white, 16px apart: a row of two (816px and 400px wide, 676px tall), a row of three, then one full-width card. Each card has a 26px/300 title at 24px inset top left, a small square expand button top right, and a live product mock-up bleeding off the bottom or right edge over a soft gradient. The whole card is a button that opens a large dialog over a blurred page."
+      },
+      {
+        "name": "Dark stats band",
+        "description": "Full-bleed #0d1738 with a soft violet glow. Centred 56px/300 white headline on two lines, then a 1px-ruled row of four stats (48px/300 figure, 16px label); the active stat is white and the others #6480b2. Below, an animated starburst of lines and dots with a small day/night switch in the top right corner."
+      },
+      {
+        "name": "Split section intro",
+        "description": "Headline (26px/300) and a violet button in a 504px left column; an 18px/300 slate paragraph in the right half. Followed by a feature list, a story list or three columns."
+      },
+      {
+        "name": "Customer story list",
+        "description": "Rows separated by dashed hairlines: 40px logo tile, 22px/300 title, and at the right a 40px story button. The first row is open, showing a 1232px wide photo with three inline facts under it; the others are collapsed."
+      },
+      {
+        "name": "Three-up feature columns",
+        "description": "Three columns each with a 40px outlined icon tile, a bold lead-in sentence followed by slate copy on the same line, and a violet text link with a chevron."
+      },
+      {
+        "name": "Pricing hero and plans",
+        "description": "Pricing uses the older system: #f6f9fc page, a diagonal multicolour stripe crossing the page behind two plan cards (a white Standard card with a tinted price panel, a dark navy Custom card with four stacked option tiles), dashed vertical guide lines every 270px, and a floating pill sub-nav (Standard pricing, Custom pricing, FAQs) that becomes a sticky white bar with a gradient progress line on scroll."
+      },
+      {
+        "name": "Pricing table",
+        "description": "A left index of product links (15px, active in violet, groups in bold) and a white card at the right whose rows are split in two: product name and description on the left, fee and footnotes on the right, separated by dashed hairlines."
+      },
+      {
+        "name": "Docs shell",
+        "description": "Two header rows: logo with a DOCS wordmark at the left, a 200px search trigger and an Ask AI button centred, Create account and a small outlined Sign in at the right; a second row of 14px/600 tabs with two dropdowns at the right. Content in a 1008px column starting at 216px. A dotted gradient pattern fills the top left corner. The page scrolls inside the app shell (document height equals the viewport)."
+      },
+      {
+        "name": "Footer",
+        "description": "#f8fafd band, 16px/300 #50617a links in columns, a newsletter email field with a Continue button, and a locale switcher."
+      },
+      {
+        "name": "Floating chat card",
+        "description": "Fixed at the bottom right: a white card with two overlapping avatars, a green dot, a bold availability line and a close X; a separate dark Chat now button below it. Present on home and pricing at every width."
+      }
+    ],
+    "responsive": "At 768 the announcement wraps to 47px, the header is 66px and the nav collapses into a menu button; the content column is 736px with 16px gutters and bento cards stack. At 390 the announcement wraps to three lines (67px), the header shows the logo and a square menu button, the hero headline shows only its first sentence, both hero buttons go full width and stack, every grid becomes one column, and the chat card overlaps the content. Pricing at 390 stacks the plan cards and moves the price panel under the description. On the sign up page the 1440 modal over a blurred dashboard becomes, at 390, a plain card on a tinted page with the gradient ribbon at the bottom and the Google button moved above the fields."
+  },
+  "components": [
+    {
+      "name": "Button, primary",
+      "anatomy": "Rectangle with a 4px radius, label and a small trailing chevron 8px after it.",
+      "spec": {
+        "height": "40px in the header, 48px in heroes and forms, 32px small",
+        "padding": "11.5px 20px 12.5px at 40px, 15.5px 24px 16.5px at 48px, 6px 16px at 32px",
+        "radius": "4px",
+        "background": "#533afd",
+        "color": "#ffffff",
+        "font": "14px/400 (line height 14px) at 40px and 32px, 16px/400 (line height 16px) at 48px",
+        "gap": "8px",
+        "transition": "background-color, color, outline-color, border 0.3s cubic-bezier(0.25, 1, 0.5, 1); in the header color, background-color, border-color 0.24s cubic-bezier(0.45, 0.05, 0.55, 0.95)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #4936e1 (hero), #4133cb (header), #4032c8 (form Continue), #5d64fe (on a dark band)"
+        },
+        {
+          "name": "active",
+          "change": "background #4032c8 (hero and form), #533afc (header), #5d64fe (dark band)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 3px solid #5452fbbf, offset 1px; the hero button also darkens to #4434d3 with the outline at #5452fb27"
+        }
+      ],
+      "notes": "Never rounded into a pill on the current marketing pages. Usually paired with one secondary button 8px to its right."
+    },
+    {
+      "name": "Button, secondary",
+      "anatomy": "Same 4px rectangle with a 1px lavender border, violet label, optional leading brand mark or trailing chevron.",
+      "spec": {
+        "height": "48px (40px in the header)",
+        "padding": "14.5px 24px 15.5px at 48px, 10.5px 20px 13.5px at 40px",
+        "radius": "4px",
+        "background": "#ffffffa6 in the hero, transparent elsewhere",
+        "border": "1px solid #b9b9f9",
+        "color": "#533afd",
+        "font": "16px/400 at 48px, 14px/400 at 40px",
+        "transition": "background-color, color, outline-color, border 0.3s cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #4b37e6, border #a09def (hero); color #2e2b8c, border #4032c8 (in content); color #322d9a, border #574bcf (header)"
+        },
+        {
+          "name": "active",
+          "change": "color #302c91, border #4538ca (hero); color #2f2b8e, border #4234c9 (content)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 3px solid #5452fb7a, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Button on media",
+      "anatomy": "White 4px rectangle with violet label and chevron, placed on a photo or a dark band. A ghost variant has a translucent violet border and white label.",
+      "spec": {
+        "height": "48px",
+        "padding": "15.5px 24px 16.5px",
+        "radius": "4px",
+        "background": "#ffffff (ghost: #ffffff00 with 1px #4834dbb2 border)",
+        "color": "#533afd (ghost: #ffffff)",
+        "font": "16px/400",
+        "transition": "background-color, color 0.3s cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "label #101139 (ghost: border #5d64fe)"
+        },
+        {
+          "name": "active",
+          "change": "label #131444 (ghost: border #5d64fe)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "label #5139f8, outline 3px solid #5452fbbf, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Text link with chevron",
+      "anatomy": "Violet label followed by a small chevron; no underline.",
+      "spec": {
+        "color": "#533afd (on dark: #7389ff)",
+        "font": "16px/400",
+        "transition": "color 0.3s cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #2e2b8c (on dark: #7e94ff)"
+        },
+        {
+          "name": "active",
+          "change": "color #2e2b8c or #2f2b8e (on dark: #a8bfff)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 3px solid #5452fbbf, offset 3px, radius 1px"
+        }
+      ]
+    },
+    {
+      "name": "Inline link",
+      "anatomy": "Underlined text inside body copy or legal lines.",
+      "spec": {
+        "color": "#50617a in body, #64748d in legal lines",
+        "font": "16px/300 line height 22.4px in body, 14px/300 in legal, 12px/300 in captions",
+        "decoration": "underline",
+        "transition": "color 0.3s cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #061b31"
+        },
+        {
+          "name": "active",
+          "change": "color #061b31"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 3px solid #5452fbbf, offset 3px, radius 1px"
+        }
+      ]
+    },
+    {
+      "name": "Header nav trigger",
+      "anatomy": "Label and a small down chevron that flips up while open; opens the mega menu.",
+      "spec": {
+        "height": "40px",
+        "padding": "12px 0",
+        "radius": "4px",
+        "color": "#061b31",
+        "font": "14px/400, line height 14px",
+        "gap": "4px",
+        "transition": "color, background-color, border-color 0.24s cubic-bezier(0.45, 0.05, 0.55, 0.95)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "no computed difference measured on the trigger itself; inside the open menu an arrow slides in next to the hovered item (nav-hover-arrow-in)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 3px solid #5452fbbf, offset 1px"
+        },
+        {
+          "name": "open",
+          "change": "chevron points up, mega menu appears"
+        }
+      ],
+      "notes": "Triggers sit about 28px apart. The logo link fades to opacity 0.6 on hover and focus (opacity 0.24s cubic-bezier(0.45, 0.05, 0.55, 0.95))."
+    },
+    {
+      "name": "Mega menu",
+      "anatomy": "White panel spanning the 1262px nav width directly under the header, with a shadow and the page dimmed behind it. Four columns of groups (16px/400 group title over a 1px rule, then items: violet 14px/400 title over a 14px/300 slate description). A fifth column on a tinted background holds more links and an event card with an image. A bottom row, separated by a rule, holds a question and two violet links with descriptions.",
+      "spec": {
+        "width": "1262px",
+        "item": "14px/400 #533afd title, 14px/300 #50617a description, line height 18px",
+        "column-gap": "about 40px",
+        "background": "#ffffff, last column tinted"
+      },
+      "states": [
+        {
+          "name": "item hover",
+          "change": "an arrow fades and slides in from 3px left (nav-hover-arrow-in), and fades out on leave (nav-hover-arrow-out)"
+        }
+      ],
+      "notes": "Opening and closing timing was not measured."
+    },
+    {
+      "name": "Icon button, square",
+      "anatomy": "40px square with a 4px radius and a centred 16px icon, measured on the story carousel arrows. The bento expand buttons look the same in screenshots but were not measured.",
+      "spec": {
+        "size": "40px",
+        "radius": "4px",
+        "background": "#e8e9ff",
+        "transition": "background-color, outline-color 0.3s cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #d6d9fc"
+        },
+        {
+          "name": "active",
+          "change": "background #d6d9fc"
+        },
+        {
+          "name": "focus-visible",
+          "change": "background #dfe1fe, outline 3px solid #5452fb64, offset 1px"
+        },
+        {
+          "name": "disabled",
+          "change": "transparent fill, icon #1010104d"
+        }
+      ]
+    },
+    {
+      "name": "Expanding story button",
+      "anatomy": "Collapsed: a 40px square with a plus on violet wash. Expanded (on the open row): a 166px outlined button with label and chevron.",
+      "spec": {
+        "height": "40px",
+        "radius": "4px",
+        "background": "#e2e4ff collapsed, transparent expanded",
+        "border": "1px solid #d6d9fc expanded",
+        "color": "#533afd",
+        "font": "16px/400",
+        "transition": "background, color, border, width 0.4s cubic-bezier(0.3, 0, 0.2, 1); the label fades with opacity 0.4s cubic-bezier(0.3, 0, 0.2, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #2e2b8c, border #4032c8"
+        },
+        {
+          "name": "active",
+          "change": "color #2e2b8c, border #4032c8"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 3px solid #5452fbbf, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Bento card",
+      "anatomy": "White card with a 1px border: title top left, square expand button top right, live product mock-up below bleeding off an edge over a pastel gradient. The whole card is a button.",
+      "spec": {
+        "padding": "24px to the title",
+        "radius": "6px (read from screenshots)",
+        "title": "26px/300 #061b31, line height 29.12px, tracking -0.26px",
+        "gap": "16px between cards",
+        "transition": "z-index 0.1s steps(1); inner transform and clip-path 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "a large dialog with the card's detail (heading, copy, two buttons, bigger mock-ups) opens over the page; the page behind turns pale blue-grey"
+        }
+      ],
+      "notes": "Hover and focus differences on the card were not observed."
+    },
+    {
+      "name": "Stat switcher",
+      "anatomy": "Row of four buttons on the dark band, each a large figure over a two-line label, separated by 1px rules; a short bright line marks the active one.",
+      "spec": {
+        "figure": "48px/300, line height 48px, tracking -0.96px",
+        "label": "16px/300, line height 22.4px",
+        "color": "#ffffff active, #6480b2 inactive",
+        "transition": "color 1.2s cubic-bezier(0.65, 0, 0.35, 1) when the band switches theme"
+      },
+      "states": [
+        {
+          "name": "active",
+          "change": "figure and label turn white"
+        }
+      ],
+      "notes": "A 32px day/night switch (combobox, 1px #8586c2 border, radius 4px) sits in the corner of the band; focus-visible adds a box-shadow #635bff1a 0px 0px 0px 3px and its border colour changes over 1.2s cubic-bezier(0.65, 0, 0.35, 1)."
+    },
+    {
+      "name": "Chat button and card",
+      "anatomy": "Dark rectangular Chat now button fixed bottom right, with a white availability card above it.",
+      "spec": {
+        "height": "40px",
+        "padding": "0 24px",
+        "radius": "4px",
+        "background": "#0a2540",
+        "border": "1px solid #ffffff1f",
+        "color": "#ffffff",
+        "font": "15px/400 (15px/500 on pricing)",
+        "transition": "background 0.2s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #1a3a5c (measured on pricing)"
+        },
+        {
+          "name": "active",
+          "change": "background #1a3a5c"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser default outline (1px auto #005fcc)"
+        }
+      ],
+      "notes": "The card's close X is #9ca3af and turns #6b7280 on hover (color 0.15s ease-in-out). The card enters and leaves with the chat-cta keyframes."
+    },
+    {
+      "name": "Pricing pill button",
+      "anatomy": "Older-system pill with label and chevron.",
+      "spec": {
+        "height": "33px",
+        "padding": "3px 12px 6px 16px",
+        "radius": "16.5px",
+        "background": "#635bff (on the dark card: #00d4ff with #0a2540 label)",
+        "color": "#ffffff",
+        "font": "15px/425, line height 24px",
+        "shadow": "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
+        "transition": "background-color, opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1); in the header opacity, color, background-color, border, fill, stroke 0.3s cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #0a2540 (cyan variant: #ffffff)"
+        },
+        {
+          "name": "active",
+          "change": "background #0a2540 (cyan variant: #ffffff)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "box-shadow #4d90fe 0px 0px 0px 2px, #ffffffe6 0px 0px 0px 2px inset on the form button; others offset 1px only"
+        }
+      ],
+      "notes": "Pricing links are 15px/425 #635bff and turn #0a2540 on hover; grey links instead drop to opacity 0.6 or 0.65 (color, opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1))."
+    },
+    {
+      "name": "Pricing FAQ row",
+      "anatomy": "Full-width white row with a 1px rule below, question at the left and a round violet chevron icon at the right. Open rows show the answer on a tinted strip.",
+      "spec": {
+        "height": "60px",
+        "padding": "17px 32px 19px 16px",
+        "background": "#ffffff",
+        "color": "#0a2540",
+        "font": "15px/425, line height 24px",
+        "gap": "16px",
+        "transition": "height 0.3s cubic-bezier(0.65, 0, 0.35, 1); chevron transform 0.3s cubic-bezier(0.65, 0, 0.35, 1)"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "chevron points up, answer (15px/300 slate with violet links) slides open below"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser default outline (1px auto #005fcc)"
+        }
+      ]
+    },
+    {
+      "name": "Sticky section nav",
+      "anatomy": "On pricing: a floating white pill bar with three anchor links that, once scrolled past, becomes a full-width white bar with the links at the left, a Contact sales pill at the right and a gradient progress line along its top edge.",
+      "spec": {
+        "link": "15px/425 #0a2540, active #635bff",
+        "transition": "transform, opacity 0.25s ease; enters from translateY(-100%)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "link colour #635bff"
+        },
+        {
+          "name": "active link",
+          "change": "colour #635bff; hovering it then gives #0a2540 at opacity 0.6"
+        }
+      ]
+    },
+    {
+      "name": "Docs search trigger",
+      "anatomy": "200px button with a search icon, placeholder label and a slash key cap at the right. Opens a command dialog.",
+      "spec": {
+        "height": "32px",
+        "padding": "2px 8px",
+        "radius": "8px",
+        "background": "#ffffff",
+        "shadow": "rgba(16, 17, 26, 0.16) 0px 1px 1px 0px, rgb(212, 222, 233) 0px 0px 0px 1px",
+        "color": "#5469d4",
+        "font": "14px/400",
+        "gap": "4px",
+        "transition": "box-shadow 0.15s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "text #273951, ring #95a4ba"
+        },
+        {
+          "name": "active",
+          "change": "background #f4f7fa, text #3c4f69, drop shadow flips to 0px -1px 1px"
+        }
+      ],
+      "notes": "The dialog is a 648px white panel pinned 16px from the top, centred, with a search field, a close X, and a Suggested list of icon rows; the page behind is covered by a blue-grey scrim."
+    },
+    {
+      "name": "Docs outline button",
+      "anatomy": "White button drawn with a 1px box-shadow ring (Sign in, Ask AI).",
+      "spec": {
+        "height": "28px (Sign in), 32px (Ask AI)",
+        "padding": "4px 8px, 6px 12px",
+        "radius": "6px, 8px",
+        "background": "#ffffff",
+        "ring": "#d4dee9 0px 0px 0px 1px",
+        "color": "#273951 (Ask AI #50617a)",
+        "font": "14px/600 (Ask AI 14px/400)",
+        "transition": "background-color, box-shadow 0.15s cubic-bezier(0, 0.09, 0.4, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "ring #95a4ba"
+        },
+        {
+          "name": "active",
+          "change": "background #f4f7fa, text #3c4f69"
+        },
+        {
+          "name": "focus-visible",
+          "change": "adds a 4px #0196ed5c ring outside the 1px ring"
+        }
+      ]
+    },
+    {
+      "name": "Docs tab and link",
+      "anatomy": "Top tabs are plain 14px/600 slate labels; content links are 16px/500 blue.",
+      "spec": {
+        "tab": "36px tall, padding 8px 12px, #50617a, transition color 0.1s cubic-bezier(0, 0, 0.4, 1)",
+        "link": "#5469d4, 16px/500 line height 26px (14px/500 in the header)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "tab #1a2c44; link #1a1f36"
+        },
+        {
+          "name": "focus-visible",
+          "change": "link: radius 4px, box-shadow #3a97d447 0px 0px 0px 4px, #0759965c 0px 0px 1px 1px"
+        }
+      ],
+      "notes": "Header dropdowns (APIs & SDKs, Help) open a white menu right-aligned under the trigger, 14px items, a 1px divider between groups and external-link icons."
+    },
+    {
+      "name": "Docs try-it list",
+      "anatomy": "Vertical list of tiles beside a dark code panel; the selected tile is white and raised, the others sit on the tinted list background.",
+      "spec": {
+        "height": "48.86px per tile",
+        "padding": "12px",
+        "radius": "8px",
+        "background": "#f7fafc, selected #ffffff",
+        "color": "#414552, selected text blue",
+        "font": "14px/400 system stack"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #ffffff"
+        },
+        {
+          "name": "selected",
+          "change": "background #ffffff, shadow rgba(60, 66, 87, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px"
+        }
+      ],
+      "notes": "Transitions on the tiles are 0s (instant)."
+    },
+    {
+      "name": "Copy chip",
+      "anatomy": "Monospace value with a copy icon, used for test card numbers.",
+      "spec": {
+        "height": "24px",
+        "padding": "2px",
+        "radius": "6px",
+        "border": "1px solid #ecf1f6",
+        "color": "#50617a",
+        "font": "12px/700 Source Code Pro, line height 20px",
+        "transition": "all 0.1s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "border #d4dee9, text #1a2c44"
+        },
+        {
+          "name": "active",
+          "change": "background #ecf1f6"
+        }
+      ]
+    },
+    {
+      "name": "Auth field",
+      "anatomy": "14px/600 label above, then a white input drawn with a box-shadow ring. A link may sit at the right end of the label row.",
+      "spec": {
+        "height": "44px",
+        "padding": "8px 12px",
+        "radius": "6px",
+        "background": "#ffffff",
+        "ring": "#d4dee9 0px 0px 0px 1px",
+        "color": "#273951",
+        "font": "16px/300, line height 24px",
+        "label": "14px/600 line height 20px",
+        "transition": "box-shadow 0.24s ease"
+      },
+      "states": [
+        {
+          "name": "focus (log in)",
+          "change": "box-shadow #a497fc 0px 0px 0px 1px, #e0d9fb 0px 0px 0px 4px"
+        },
+        {
+          "name": "focus (sign up)",
+          "change": "box-shadow #d4dee9 0px 0px 0px 1px, #0196ed5c 0px 0px 0px 4px"
+        }
+      ],
+      "notes": "Two sign up fields render their ring on a wrapper and use a 14px/300 inner input with 4px 8px padding and a 4px radius; they look the same. Hover was not measured."
+    },
+    {
+      "name": "Auth button",
+      "anatomy": "Full-width primary in violet, and outline social buttons with a centred 16px icon and label.",
+      "spec": {
+        "height": "44px primary on log in, 36px on sign up; 40px outline (36px on sign up)",
+        "padding": "8px 16px",
+        "radius": "6px",
+        "background": "#675dff primary; transparent or #ffffff outline",
+        "ring": "#675dff 0px 0px 0px 1px on primary; 1px #d4dee9 on outline",
+        "color": "#ffffff primary, #273951 outline",
+        "font": "16px/500, line height 24px",
+        "gap": "8px",
+        "transition": "background-color, box-shadow 0.15s cubic-bezier(0, 0.09, 0.4, 1)"
+      },
+      "states": [
+        {
+          "name": "incomplete form",
+          "change": "the primary renders pale lavender with cursor default until the fields are filled; the computed fill stays #675dff, so the paling comes from a wrapper that was not measured"
+        },
+        {
+          "name": "hover (outline)",
+          "change": "background #ffffff, ring #95a4ba"
+        },
+        {
+          "name": "active (outline)",
+          "change": "background #f4f7fa, text #3c4f69"
+        },
+        {
+          "name": "focus-visible",
+          "change": "primary: ring plus #e0d9fb75 halo; outline: background #ffffff8a on log in, 4px #0196ed5c ring on sign up"
+        }
+      ]
+    },
+    {
+      "name": "Auth checkbox",
+      "anatomy": "14px box with a 4px radius and a 14px label beside it.",
+      "spec": {
+        "size": "14px",
+        "radius": "4px",
+        "background": "#675dff checked",
+        "shadow": "rgb(103, 93, 255) 0px 0px 0px 1px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(48, 49, 61, 0.08) 0px 2px 5px 0px",
+        "transition": "background-color, box-shadow 0.24s ease"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "adds a #e0d9fb 0px 0px 0px 4px halo, outline offset 2px"
+        }
+      ]
+    },
+    {
+      "name": "Product sub-nav",
+      "anatomy": "Bar under the older header: product name in accent on the left, section links on the right; the current link is accent coloured.",
+      "spec": {
+        "height": "not observed",
+        "name": "18px/425/28px, accent colour",
+        "links": "15px/425/24px #0a2540; current link in accent"
+      },
+      "states": []
+    },
+    {
+      "name": "Pricing card row",
+      "anatomy": "Row inside a pricing card: copy on the left (title + body), price panel on the right.",
+      "spec": {
+        "columns": "446px copy, 365px price panel",
+        "border": "1px solid #e7ecf1 on top",
+        "copy padding": "16px 24px 16px",
+        "title": "15px/425/24px #0a2540",
+        "body": "15px/300/24px #425466",
+        "price panel": "#fafbfd, padding 15px 24px",
+        "price": "15px/425/19px #0a2540",
+        "unit": "15px/300/24px #3f4b66",
+        "note": "13px/300/21px #707f98"
+      },
+      "states": [],
+      "notes": "Rows stack under 640px: the price panel goes full width under the copy."
+    },
+    {
+      "name": "Pricing accordion row",
+      "anatomy": "Collapsed group of extra price rows inside a pricing card.",
+      "spec": {
+        "height": "57px closed (1px rule + 56px)",
+        "title": "15px/425/24px #0a2540 at 24px inset",
+        "summary": "15px/425 at x 919",
+        "icon": "round 20px accent with a plus"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "price rows appear below; icon turns 45 degrees"
+        }
+      ]
+    },
+    {
+      "name": "Mobile navigation sheet",
+      "anatomy": "Burger button opens a full-screen sheet with section rows; each section drills in with a Back row; Start now and Contact sales stay pinned at the bottom.",
+      "spec": {
+        "burger": "40px square, #e8e9ff wash (accent fill on the older system)",
+        "rows": "50px, 18px",
+        "pinned buttons": "48px"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "sheet covers the page, burger becomes a close icon"
+        }
+      ]
+    }
+  ],
+  "motion": {
+    "durations": [
+      {
+        "name": "instant-docs",
+        "value": "0.1s",
+        "use": "Docs tab colour, copy chip"
+      },
+      {
+        "name": "quick",
+        "value": "0.15s",
+        "use": "Pricing links and pills; docs and dashboard outline buttons; opacity of menu list items on home"
+      },
+      {
+        "name": "header",
+        "value": "0.24s",
+        "use": "Header nav triggers, header buttons and logo; auth field focus ring"
+      },
+      {
+        "name": "default",
+        "value": "0.3s",
+        "use": "The default on home: links, buttons, icon buttons, svg fill and stroke"
+      },
+      {
+        "name": "expand",
+        "value": "0.4s",
+        "use": "Story button width and label"
+      },
+      {
+        "name": "reveal",
+        "value": "0.5s",
+        "use": "Fade-in of blocks as they enter the viewport; diagram pieces"
+      },
+      {
+        "name": "pricing-image",
+        "value": "0.6s",
+        "use": "Pricing pictures and story overlays"
+      },
+      {
+        "name": "bento",
+        "value": "0.8s",
+        "use": "Transform and clip-path inside bento cards"
+      },
+      {
+        "name": "theme",
+        "value": "1.2s",
+        "use": "Day/night switch on the dark band: colour, border and opacity"
+      }
+    ],
+    "easings": [
+      {
+        "name": "default",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "use": "Every hover on home links, buttons and icons; also the chat card"
+      },
+      {
+        "name": "header",
+        "value": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+        "use": "Header triggers, header buttons, logo"
+      },
+      {
+        "name": "bento",
+        "value": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+        "use": "Bento card transform and clip-path, one-off fades"
+      },
+      {
+        "name": "reveal",
+        "value": "cubic-bezier(0.33, 1, 0.68, 1)",
+        "use": "Scroll fade-ins and the hero digit roll"
+      },
+      {
+        "name": "expand",
+        "value": "cubic-bezier(0.3, 0, 0.2, 1)",
+        "use": "Story button"
+      },
+      {
+        "name": "in-out",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "use": "Theme switch, accordion height, chevron rotation"
+      },
+      {
+        "name": "path",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "use": "SVG path transforms in illustrations"
+      },
+      {
+        "name": "cycle",
+        "value": "cubic-bezier(0.78, 0, 0.22, 1)",
+        "use": "Vertical text cycling inside product mock-ups"
+      },
+      {
+        "name": "pricing",
+        "value": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+        "use": "Pricing links, pills and icons"
+      },
+      {
+        "name": "pricing-image",
+        "value": "cubic-bezier(0.7, 0, 0, 1)",
+        "use": "Pricing pictures and overlays"
+      },
+      {
+        "name": "dashboard",
+        "value": "cubic-bezier(0, 0.09, 0.4, 1)",
+        "use": "Dashboard and docs buttons"
+      },
+      {
+        "name": "docs-tab",
+        "value": "cubic-bezier(0, 0, 0.4, 1)",
+        "use": "Docs tab colour"
+      }
+    ],
+    "transitions": [
+      {
+        "target": "Text link (home)",
+        "properties": "color",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      {
+        "target": "Button (home)",
+        "properties": "background-color, color, outline-color, border",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      {
+        "target": "Header trigger and header button",
+        "properties": "color, background-color, border-color",
+        "duration": "0.24s",
+        "easing": "cubic-bezier(0.45, 0.05, 0.55, 0.95)"
+      },
+      {
+        "target": "Logo link",
+        "properties": "opacity",
+        "duration": "0.24s",
+        "easing": "cubic-bezier(0.45, 0.05, 0.55, 0.95)"
+      },
+      {
+        "target": "Icon button",
+        "properties": "background-color, outline-color",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      {
+        "target": "Illustration svg",
+        "properties": "fill, stroke, transform, opacity",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      {
+        "target": "Menu list item",
+        "properties": "opacity",
+        "duration": "0.15s",
+        "easing": "linear"
+      },
+      {
+        "target": "Story button",
+        "properties": "background, color, border, width",
+        "duration": "0.4s",
+        "easing": "cubic-bezier(0.3, 0, 0.2, 1)"
+      },
+      {
+        "target": "Bento card content",
+        "properties": "transform, clip-path",
+        "duration": "0.8s",
+        "easing": "cubic-bezier(0.165, 0.84, 0.44, 1)"
+      },
+      {
+        "target": "Scroll reveal",
+        "properties": "opacity 0 to 1",
+        "duration": "0.5s",
+        "easing": "cubic-bezier(0.33, 1, 0.68, 1)"
+      },
+      {
+        "target": "Dark band theme switch",
+        "properties": "color, border-color, opacity",
+        "duration": "1.2s",
+        "easing": "cubic-bezier(0.65, 0, 0.35, 1)"
+      },
+      {
+        "target": "Announcement collapse",
+        "properties": "grid-template-rows",
+        "duration": "0.4s",
+        "easing": "cubic-bezier(0.65, 0, 0.35, 1)"
+      },
+      {
+        "target": "Chat card",
+        "properties": "grid-template-rows, transform (to translateY(32px))",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      },
+      {
+        "target": "Outlined link card",
+        "properties": "border-color, background-color",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Pricing link and pill",
+        "properties": "color, opacity / background-color, opacity",
+        "duration": "0.15s",
+        "easing": "cubic-bezier(0.215, 0.61, 0.355, 1)"
+      },
+      {
+        "target": "Pricing FAQ row",
+        "properties": "height; chevron transform",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.65, 0, 0.35, 1)"
+      },
+      {
+        "target": "Pricing sticky nav",
+        "properties": "transform (from translateY(-100%)), opacity",
+        "duration": "0.25s",
+        "easing": "ease"
+      },
+      {
+        "target": "Pricing carousel",
+        "properties": "transform (translateX -270px per step)",
+        "duration": "0.35s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      {
+        "target": "Docs and dashboard button",
+        "properties": "background-color, box-shadow",
+        "duration": "0.15s",
+        "easing": "cubic-bezier(0, 0.09, 0.4, 1)"
+      },
+      {
+        "target": "Docs search trigger",
+        "properties": "box-shadow",
+        "duration": "0.15s",
+        "easing": "ease"
+      },
+      {
+        "target": "Docs tab",
+        "properties": "color",
+        "duration": "0.1s",
+        "easing": "cubic-bezier(0, 0, 0.4, 1)"
+      },
+      {
+        "target": "Auth field and checkbox",
+        "properties": "box-shadow (checkbox also background-color)",
+        "duration": "0.24s",
+        "easing": "ease"
+      },
+      {
+        "target": "Sign up password block",
+        "properties": "height",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.7, 0, 0.3, 1)"
+      }
+    ],
+    "keyframes": [
+      {
+        "name": "nav-hover-arrow-in",
+        "use": "Arrow next to a hovered mega menu item slides in from 3px left",
+        "css": "@keyframes nav-hover-arrow-in{0%{opacity:0;transform:translateX(-3px)}to{opacity:1;transform:translateX(0)}}"
+      },
+      {
+        "name": "nav-hover-arrow-out",
+        "use": "Same arrow fades out on leave; on pricing it ran for 150ms with cubic-bezier(0.25, 1, 0.5, 1)",
+        "css": "@keyframes nav-hover-arrow-out{0%{opacity:1}to{opacity:0}}",
+        "timing": "150ms cubic-bezier(0.25, 1, 0.5, 1) forwards (measured on pricing's copy, refreshed-nav-hover-arrow-out)"
+      },
+      {
+        "name": "navigation-menu-delay-reset",
+        "use": "Resets a custom property that delays the mega menu between triggers",
+        "css": "@keyframes navigation-menu-delay-reset{0%,to{--navigation-menu-transition-delay:0s}}"
+      },
+      {
+        "name": "detect-scroll",
+        "use": "Scroll-driven trick on the header nav that sets a custom property when the page can scroll",
+        "css": "@keyframes detect-scroll{0%,to{--can-scroll: }}"
+      },
+      {
+        "name": "announcement-bar-square",
+        "use": "Squares the announcement bar's corners on scroll",
+        "css": "@keyframes announcement-bar-square{to{--announcement-bar-radius:0px}}"
+      },
+      {
+        "name": "bento-dialog-reveal-fade-in-up",
+        "use": "Bento detail dialog content rises 30px and fades in",
+        "css": "@keyframes bento-dialog-reveal-fade-in-up{0%{opacity:0;transform:translate3d(0,30px,0)}to{opacity:1;transform:translateZ(0)}}"
+      },
+      {
+        "name": "bento-overlay-gradient-opacity-animation",
+        "use": "Gradient overlay behind the bento dialog fades in",
+        "css": "@keyframes bento-overlay-gradient-opacity-animation{0%{opacity:0}to{opacity:1}}"
+      },
+      {
+        "name": "agentic-commerce-graphic-border-spin",
+        "use": "A conic border spins around a card in an illustration",
+        "css": "@keyframes agentic-commerce-graphic-border-spin{0%{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(1turn)}}"
+      },
+      {
+        "name": "book-of-the-week-fade-in",
+        "use": "Image fade-in in the news section",
+        "css": "@keyframes book-of-the-week-fade-in{0%{opacity:0}to{opacity:1}}",
+        "timing": "500ms, keyframe easing cubic-bezier(0.33, 1, 0.68, 1)"
+      },
+      {
+        "name": "background-flash",
+        "use": "Background fades to a pale blue-grey; where it runs was not observed (original name opacityAnimation)",
+        "css": "@keyframes background-flash{0%{background-color:rgba(229,237,245,0)}to{background-color:rgba(229,237,245,.7)}}"
+      },
+      {
+        "name": "chat-cta-card-entrance",
+        "use": "Chat availability card rises 16px and fades in",
+        "css": "@keyframes chat-cta-card-entrance{0%{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}"
+      },
+      {
+        "name": "chat-cta-card-exit",
+        "use": "Chat availability card drops 8px and fades out",
+        "css": "@keyframes chat-cta-card-exit{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}}"
+      },
+      {
+        "name": "chat-cta-entrance",
+        "use": "Chat button rises 20px from 95% scale",
+        "css": "@keyframes chat-cta-entrance{0%{opacity:0;transform:translateY(20px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}"
+      },
+      {
+        "name": "chat-cta-exit",
+        "use": "Chat button leaves in reverse",
+        "css": "@keyframes chat-cta-exit{0%{opacity:1;transform:translateY(0) scale(1)}to{opacity:0;transform:translateY(20px) scale(.95)}}"
+      },
+      {
+        "name": "portal-tooltip-item-fade-in",
+        "use": "Tooltip content fades in on pricing",
+        "css": "@keyframes portal-tooltip-item-fade-in{0%{opacity:0}}"
+      },
+      {
+        "name": "skeleton-overlay",
+        "use": "Docs sidebar and content skeleton shimmer (original names SidebarSkeleton-Overlay-animation, ContentSkeleton-Overlay-animation)",
+        "css": "@keyframes skeleton-overlay{0%{background-position:-200px 0}100%{background-position:calc(200px + 100%) 0}}"
+      },
+      {
+        "name": "skeleton-fade-in",
+        "use": "Docs skeleton blocks fade in",
+        "css": "@keyframes skeleton-fade-in{0%{opacity:0}100%{opacity:1}}"
+      },
+      {
+        "name": "gradient-sweep",
+        "use": "Background-position sweep across a gradient, on docs and dashboard (original generic name keyframes)",
+        "css": "@keyframes gradient-sweep{0%{background-position:200% center}100%{background-position:0 center}}"
+      },
+      {
+        "name": "spinner-show",
+        "use": "Spinner fades in (docs and dashboard)",
+        "css": "@keyframes spinner-show{from{opacity:0}to{opacity:1}}"
+      },
+      {
+        "name": "spinner-rotation",
+        "use": "Spinner rotation",
+        "css": "@keyframes spinner-rotation{100%{transform:rotate(360deg)}}"
+      },
+      {
+        "name": "highlight-line",
+        "use": "Docs code panel: a highlighted line fades from green to the panel colour",
+        "css": "@keyframes highlight-line{0%{background:var(--sail-color-green-800)}100%{background:#1a2652}}"
+      },
+      {
+        "name": "auth-shake",
+        "use": "Log in and sign up card shakes on a rejected submit (original names Login-shake, RegisterAndLoginLayout-shake). Present in the CSS, not triggered during capture",
+        "css": "@keyframes auth-shake{0%,to{transform:translate(0)}20%{transform:translate(-15px)}40%{transform:translate(15px)}60%{transform:translate(-10px)}80%{transform:translate(10px)}}"
+      },
+      {
+        "name": "modal-panel-shake",
+        "use": "Dashboard modal panel shake with a slight 3D turn. Present in the CSS, not triggered",
+        "css": "@keyframes modal-panel-shake{0%{transform:translate(0)}12.5%{transform:translate(-6px) rotateY(-5deg)}37.5%{transform:translate(5px) rotateY(4deg)}62.5%{transform:translate(-3px) rotateY(-2deg)}87.5%{transform:translate(2px) rotateY(1deg)}to{transform:translate(0)}}"
+      },
+      {
+        "name": "confirmation-button-spinner-rotation",
+        "use": "Spinner inside a submitting dashboard button",
+        "css": "@keyframes confirmation-button-spinner-rotation{to{transform:rotate(360deg)}}"
+      },
+      {
+        "name": "strength-indicator-movement",
+        "use": "Password strength meter while it is being computed: a 4px block slides along the track (original fetchingStrengthIndicatorMovement)",
+        "css": "@keyframes strength-indicator-movement{0%{left:0%}to{left:calc(100% - 4px)}}"
+      },
+      {
+        "name": "strength-indicator-width",
+        "use": "Password strength meter grows from 4px to 128px",
+        "css": "@keyframes strength-indicator-width{0%{width:4px}to{width:128px}}"
+      },
+      {
+        "name": "loading-background",
+        "use": "Dashboard loading placeholder sweep (original LoadingBackground--animation)",
+        "css": "@keyframes loading-background{0%{background-position:0px top}to{background-position:-400px top}}"
+      }
+    ],
+    "unmeasured": [
+      "The hero gradient ribbon (blue, violet, orange, pink silk folds) crossing the header and hero on home, and the same ribbon behind the log in card. On log in it is a static 3000 by 2500 image; on home it is rendered by script. The string THREE.WebGLRenderer is in the home and log in scripts, but whether the ribbon moves, and how, was not measured.",
+      "The hero headline: its computed colours read rgb(129, 184, 26) and rgba(0, 14, 255, 0.5) while the screenshot shows navy and slate text with parts of words tinted violet where the ribbon passes. The effect is script or blend driven and not specified here.",
+      "In the 1440 screenshot the header Sign in label is orange over the ribbon although its computed colour is #533afd; the mechanism was not measured.",
+      "The live counter in the hero label ticks; a span slides up by 100% over 325ms after a 450ms delay with cubic-bezier(0.33, 1, 0.68, 1), consistent with rolling digits.",
+      "Product mock-ups in the bento cards play scripted sequences: a 11.95s opacity timeline on an image (cubic-bezier(0.2, 0, 0, 1)), vertical text cycling over 1420ms after a 4000ms delay with cubic-bezier(0.78, 0, 0.22, 1), path draws with stroke-dashoffset over 1s. Full choreography is not specified.",
+      "A testimonial logo strip autoplays: a violet (#533afd) bar grows under the active logo (an svg rect animated in width), switching the quote. Its period was not measured.",
+      "The starburst of lines and dots on the dark band animates continuously; it is script driven and not specified.",
+      "Mega menu open and close timing, the bento dialog entrance (the capture caught the dialog blurred mid-opening), and the docs search dialog entrance: keyframes or transitions exist but their running duration was not measured.",
+      "Elements revealed by script translate up from 324px with no CSS transition (transition: all 0s), so the timing comes from script and was not measured.",
+      "Hover on the bento cards, on the header nav triggers themselves, and on auth fields showed no computed difference; any hover effect there is not recorded."
+    ]
+  },
+  "flows": [
+    {
+      "name": "Log in",
+      "entry": "/login",
+      "layout": "dashboard.stripe.com. White page with a 76px top bar (logo at 105px from the left, 1px hairline below) and the gradient ribbon image filling the right two-thirds behind. Faint vertical frame lines at the column edges. One white card, 540px wide, centred horizontally, top at 138px of a 900px viewport, 12px radius, auth-card shadow, 64px side padding (412px content) and 48px top padding. A tinted strip at the bottom inside the card holds the switch link. Copyright and privacy links sit below the fold.",
+      "steps": [
+        {
+          "name": "Credentials",
+          "screen": [
+            "Card title in slate (\"Sign in to your account\")",
+            "Email field: type email, name email, required, no autocomplete attribute; focused on arrival with the violet ring",
+            "Password field: type password, autocomplete current-password; the label row carries a \"Forgot your password?\" link at the right (14px/600 #635bff)",
+            "Checkbox \"Remember me on this device\", checked by default",
+            "Primary Sign in button, 44px full width, pale while the fields are empty",
+            "Divider: 1px #d4dee9 line with a centred 13px label (\"Or sign in with\")",
+            "Three 40px outline buttons stacked 10px apart: Google, Passkey, SSO, each with a 16px icon",
+            "Tinted strip at the card's foot: 13px question with a violet link to create an account"
+          ],
+          "actions": [
+            "Sign in (a type=button control, submitted by script): not exercised",
+            "Forgot your password: goes to /reset",
+            "Create account: goes to /register",
+            "Google: continues with Google (id continue_with_google)",
+            "Passkey and SSO: their ids (toggle_passkey_mode, toggle_sso_mode) indicate the card switches mode in place; not exercised",
+            "Logo: goes to stripe.com"
+          ],
+          "validation": "Not observed: no submit was attempted on this page, and the measurement recorded no validation result. The CSS carries a horizontal shake (auth-shake) for a rejected attempt."
+        }
+      ],
+      "notRecorded": "Everything after valid credentials (two-step verification, account picker, dashboard), the reset password screen, the passkey and SSO modes, and the Google hand-off."
+    },
+    {
+      "name": "Sign up",
+      "entry": "/register",
+      "layout": "dashboard.stripe.com. At 1440 a white modal card, about 540px wide with rounded corners and a soft shadow (its radius and shadow were not isolated), centred and starting 91px down, over a blurred, dimmed preview of the dashboard (240px sidebar, 60px search header, charts). About 48px inner padding around a 444px content column. At 390 there is no dashboard preview: a tinted top bar with the logo, the card full width with 16px margins, the gradient ribbon at the bottom of the page, and the Google button moved above the fields.",
+      "steps": [
+        {
+          "name": "Account details",
+          "screen": [
+            "Card title in bold slate (\"Create your Stripe account\")",
+            "Email field: type email, autocomplete email; focused on arrival with the blue 4px halo",
+            "Full name field: type text, autocomplete name",
+            "Password field: type password, autocomplete new-password",
+            "Country: a 44px select-like button with a flag, the country name and an up-down chevron; an info icon next to its label opens a tooltip",
+            "Marketing consent checkbox, unchecked, with a three-line label containing two links",
+            "Primary Create account button, full width, pale while the form is incomplete",
+            "Divider with a centred 13px label (\"Or sign up with\")",
+            "Outline Google button",
+            "13px line with a question and a violet sign in link"
+          ],
+          "actions": [
+            "Create account: posts to /register (not exercised beyond an empty submit)",
+            "Google: continues with Google",
+            "Sign in: goes to /login",
+            "Country: opens a country list (not opened during capture)"
+          ],
+          "validation": "An empty submit stays on the page with no visible change: no native bubble, no inline message, the button stays pale. Field-level errors after typing were not observed. The CSS carries a password strength meter (strength-indicator keyframes, a 0.3s height transition on the password block) and the auth-shake keyframes."
+        }
+      ],
+      "notRecorded": "Email verification, business details and activation steps, the password strength messages, and the country list, which all need input or an account."
+    }
+  ],
+  "principles": [
+    "Build on white. Draw the page frame with two faint full-height vertical hairlines at the column edges and 1px rules between bands; let dark #0d1738 bands and the gradient ribbon run full bleed across that frame.",
+    "Set headlines light: Sohne at weight 300 with tight negative tracking (-0.02em at 48px, -1.4px at 56px). Emphasis comes from colour, not weight.",
+    "Write section headlines as one paragraph in two tones: a short sentence in #061b31, then the explanation in #64748d at the same size.",
+    "Use one action colour on marketing pages: #533afd for the primary button, links and focus. Buttons are 4px-radius rectangles, 48px in content and 40px in the header, with a trailing chevron.",
+    "Every focusable element gets a 3px solid #5452fbbf outline (offset 1px on buttons, 3px on text links). Hover darkens the violet; nothing scales or lifts.",
+    "Animate colour over 0.3s with cubic-bezier(0.25, 1, 0.5, 1); the header uses 0.24s with cubic-bezier(0.45, 0.05, 0.55, 0.95).",
+    "Show the product: live, animated UI mock-ups inside bento cards, bleeding off the card edge over pastel gradients, rather than icons or stock illustration.",
+    "Dashboard and docs surfaces switch to the grey-blue system: 1px #d4dee9 box-shadow rings instead of borders, 6px to 8px radii, a 4px focus halo, and the system font on docs."
+  ],
+  "avoid": [
+    "Bold or semibold display headlines on marketing pages",
+    "Pill-shaped buttons outside the pricing page",
+    "More than one filled violet button in a group",
+    "Saturated backgrounds behind body text; colour lives in the ribbon, the dark bands and the mock-ups",
+    "Card drop shadows on the white canvas for ordinary content; shadows are kept for floating mock-ups, menus and the auth card",
+    "Centred body copy outside hero-like bands (the dark stats band and testimonials are the exceptions)"
+  ],
+  "libraries": {
+    "detected": [
+      {
+        "name": "React",
+        "npm": "react",
+        "purpose": "UI runtime on the marketing site, docs and dashboard",
+        "evidence": "\"react.element\" in the marketing framework chunk, the docs react bundle and the dashboard login and account bundles"
+      },
+      {
+        "name": "Next.js",
+        "npm": "next",
+        "purpose": "Framework for stripe.com",
+        "evidence": "window.__NEXT_DATA__ and window.next defined on the home page; \"__NEXT_DATA__\" in a main chunk"
+      },
+      {
+        "name": "React Aria",
+        "npm": "react-aria-components",
+        "purpose": "Accessible primitives on docs and the dashboard auth screens",
+        "evidence": "ids starting with react-aria on rendered elements (the log in checkbox, among others); \"react-aria-\" in the docs frontend bundle"
+      },
+      {
+        "name": "Motion",
+        "npm": "motion",
+        "purpose": "Script-driven animation: presence, reveals",
+        "evidence": "\"framerAppearId\" in a home chunk; \"AnimatePresence\" in the docs, log in and account bundles. Script strings only, weaker than an attribute"
+      },
+      {
+        "name": "Floating UI",
+        "npm": "@floating-ui/react",
+        "purpose": "Popover and tooltip positioning",
+        "evidence": "the string \"floating-ui\" in home, docs, log in and account bundles. Weak evidence"
+      },
+      {
+        "name": "three.js",
+        "npm": "three",
+        "purpose": "WebGL rendering, likely for the hero graphics",
+        "evidence": "\"THREE.WebGLRenderer\" in a home chunk and a log in bundle"
+      },
+      {
+        "name": "TanStack Query",
+        "npm": "@tanstack/react-query",
+        "purpose": "Server state in the dashboard",
+        "evidence": "\"No QueryClient set\" in a log in bundle"
+      },
+      {
+        "name": "Emotion",
+        "npm": "@emotion/react",
+        "purpose": "Styling on docs and dashboard",
+        "evidence": "the string \"@emotion/\" in the docs and dashboard bundles. Weak evidence"
+      },
+      {
+        "name": "StyleX",
+        "npm": "@stylexjs/stylex",
+        "purpose": "Styling on docs and dashboard",
+        "evidence": "the bare word \"stylex\" in the docs and dashboard bundles. Weak evidence"
+      },
+      {
+        "name": "Prism",
+        "npm": "prismjs",
+        "purpose": "Code highlighting in docs",
+        "evidence": "\"Prism.languages\" in the docs common bundle"
+      },
+      {
+        "name": "jQuery",
+        "npm": "jquery",
+        "purpose": "Present on the dashboard auth pages; its role was not observed",
+        "evidence": "window.jQuery defined on /login and /register"
+      },
+      {
+        "name": "Sohne",
+        "purpose": "Text face (paid Klim licence), variable 1 to 1000",
+        "evidence": "loaded font face \"sohne-var 1 1000\" on home, pricing, log in and sign up"
+      },
+      {
+        "name": "Source Code Pro",
+        "npm": "@fontsource/source-code-pro",
+        "purpose": "Monospace face on the marketing site",
+        "evidence": "loaded font face \"SourceCodePro 500\" on home"
+      }
+    ],
+    "recommended": [
+      {
+        "name": "Lucide",
+        "npm": "lucide-react",
+        "purpose": "16px line icons and chevrons; Stripe's own inline SVG icons are not a public package"
+      },
+      {
+        "name": "Inter",
+        "npm": "@fontsource-variable/inter",
+        "purpose": "Free variable stand-in for Sohne at weights 300, 400 and 425"
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "home",
+      "name": "Home page",
+      "use": "The main marketing page of the newer system: one long white page inside the framed 1266px column.",
+      "structure": [
+        "Announcement bar above the 76px header (dismissible); header: wordmark, 4 mega menu triggers (40px, 14px/400), Pricing, divider, Help me link, Sign in (secondary 40px) and Contact sales (primary 40px, #533afd, 4px radius)",
+        "Frame: 1266px column centred, 1px #e5edf5 vertical lines at x 87 and 1353 at 1440",
+        "Hero 685px tall: 4-line display headline, lead 16px/300/22.4px, two 48px buttons; animated gradient ribbon drawn on canvas behind it (761px tall, starts 76px above the hero, offset 337px from the left)",
+        "Bento of solution cards: rows of 816px + 400px cards, 676px tall, third row one 1232 x 450px card",
+        "Event promo band 560px; stats band 977px on a #555d7d to #786cb6 gradient with tabbed stats",
+        "Scale section: rule, split rows, customer story rows, expert band, wide media, quote and logo strip",
+        "Developer band on #0d1738 with code media; news track of cards; closing CTA",
+        "Full footer on #f8fafd, 1299px tall: 4 columns at x 104/416/728/1040, links 16px/300/20px #50617a with 24px pitch, newsletter, locale and copyright"
+      ],
+      "pages": [
+        "/"
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product page, older system",
+      "use": "Single-product pages still on the older system: pastel #f6f9fc page, 1080px container with dashed column guides, pill buttons in the product accent colour.",
+      "structure": [
+        "Header 78px with pill Sign in and Contact sales (33px, 16.5px radius); sticky sub-nav with product name 18px/425 in accent and section links 15px/425",
+        "Hero 663px: display 56px/500/68px (max 460px), lead 18px/300/28px, accent pill + ghost pill; diagonal colour ribbon on the right",
+        "Feature row 755px: 4 columns of 270px, each a 40px icon, 15px/425 title with a 1px accent bar 16px to its left, body 15px/300/24px",
+        "How it works: eyebrow 18px/500 accent, h2 38px/500/48px, numbered 4-column steps, product demo media, follow-up h2, lead and pill",
+        "Quote card on #03293b with logo switcher of 4 marks",
+        "CTA grid 540 + 270 + 270px with two side features, then legal small print 128px below",
+        "Older footer, 1600px: brand column + 3 link columns of 270px, titles 15px/425, links pitch 28px, pill newsletter, copyright"
+      ],
+      "pages": [
+        "/tax",
+        "/apps",
+        "/sigma",
+        "/connect",
+        "/climate",
+        "/capital",
+        "/payouts",
+        "/identity",
+        "/partners",
+        "/payments",
+        "/data-pipeline",
+        "/support-plans",
+        "/payments/link",
+        "/capital/platforms",
+        "/payments/elements",
+        "/payments/checkout",
+        "/authorization-boost",
+        "/revenue-recognition",
+        "/financial-connections",
+        "/professional-services",
+        "/payments/payment-links",
+        "/payments/payment-methods",
+        "/partners/become-a-partner",
+        "/terminal"
+      ]
+    },
+    {
+      "id": "platform-product",
+      "name": "Product page, newer system",
+      "use": "Product pages moved to the newer white system with a framed column, a product sub-nav and accordions.",
+      "structure": [
+        "Header 76px (newer system); product sub-nav 81px with name and section links",
+        "Hero 771px with large product art (1264 x 772px) behind the copy; logo strip 74px",
+        "Opportunity band 460px on tint; 3 alternating text and media rows of 261px",
+        "Feature accordion: one row open at a time, closed head 73px, open row 730px with media",
+        "Scale stats, customer story cards 400 x 584px, analyst band",
+        "Capabilities 2 x 2 grid (474 and 404px tall cards), optimise carousel of 4 cards 348px wide",
+        "FAQ accordion with resources column, CTA band 319px, notes 366px, full footer"
+      ],
+      "pages": [
+        "/radar",
+        "/issuing",
+        "/billing",
+        "/invoicing",
+        "/atlas",
+        "/treasury",
+        "/treasury/platforms",
+        "/billing/subscriptions",
+        "/billing/usage-based-billing",
+        "/managed-payments",
+        "/crypto-onramp",
+        "/money-management/availability",
+        "/use-cases/global-businesses"
+      ]
+    },
+    {
+      "id": "solution",
+      "name": "Use case and industry page",
+      "use": "Pages per use case or industry on the older system; bands of fixed height alternate white and #f6f9fc.",
+      "structure": [
+        "Older header 78px; hero 604px on a tinted wedge: kicker 15px/425 accent, display 56px/500 over 2 lines (682px), lead, Contact sales pill + ghost Start now; product mockup on the right",
+        "Logo band 663px: 8 logos 200 x 40px in 4 columns of 270px, 60px row gap",
+        "Tint band 1145px: eyebrow, h2 38px/500/48px, link lead, 3 stacked features (476px) beside a tall media",
+        "White band 1688px: cyan eyebrow #02bcf5, h2, lead, two 412px columns with h3 26px/500/36px and pills, two media, 4-column automation row",
+        "Tint 496px and 429px callouts with a 412px text column and media on the right; white 948px band with 2 x 2 features",
+        "Case study band 1166px: h2 492px wide, Challenge / Solution / Products blocks and a logo",
+        "Tint expert services band 629px; CTA band 481px (540 + 270 + 270px); older footer on #f6f9fc"
+      ],
+      "pages": [
+        "/use-cases/ai",
+        "/use-cases/saas",
+        "/use-cases/crypto",
+        "/use-cases/ecommerce",
+        "/use-cases/platforms",
+        "/use-cases/marketplaces",
+        "/use-cases/creator-economy",
+        "/use-cases/agentic-commerce",
+        "/use-cases/in-app-payments",
+        "/use-cases/embedded-finance",
+        "/use-cases/finance-automation",
+        "/industries/gaming",
+        "/industries/retail",
+        "/industries/travel",
+        "/industries/fintech",
+        "/industries/insurance",
+        "/industries/nonprofits",
+        "/industries/public-sector",
+        "/industries/media-entertainment",
+        "/industries/professional-services"
+      ]
+    },
+    {
+      "id": "segment",
+      "name": "Audience landing page",
+      "use": "Landing pages for a company stage or the yearly event. Measured /startups: older legacy system (#f6f9fc tint bands, 1080px container, pill buttons), not the newer framed column.",
+      "structure": [
+        "Legacy header (78px); hero 813px at 1440 with a 76/425 display headline (-3.04px tracking), 18/300 lead, two pills and a 350x208 promo card; a gradient canvas sits behind the hero (922px band at 390, canvas 430x1228)",
+        "Bands at 1440 (390): business types 855 (815, tint), program card 1361 (2362; card has a 4px #ff9a6c top rule, 104px inner padding), stage rows with chips 1812 (2800, tint), tabbed product cards 1236 (1093; at 390 a 318x559 card carousel, 24px gap), growth rows 1808 (2801, tint), stat band 891 (988, #f6f5f6), partner band 441 (494), help grid 906 and closing CTA 385; legacy footer 1600 at 1440"
+      ],
+      "pages": [
+        "/enterprise",
+        "/startups",
+        "/sessions",
+        "/sessions/2026"
+      ]
+    },
+    {
+      "id": "pricing",
+      "name": "Pricing page",
+      "use": "The pricing page: plan cards, a feature list, then a long product price list with a sticky side index.",
+      "structure": [
+        "Older header 78px on #f6f9fc; h1 56px/500/68px at y 162 (2 lines)",
+        "Plan cards at y 362, 532 x 287px, 8px radius, 16px apart: Standard (white, 262px #f6f9fc rate panel inset 4px, rate 26px/500) and Custom (#0c2e4e, 4 options 262 x 67px on #1f4468, 3px apart, 16px/300 white); Contact sales pill on #00d4ff",
+        "Diagonal gradient ribbon behind the cards; floating section tabs 348 x 50px, 99px radius, white 70% with blur, 48px below the cards",
+        "Features: h2 26px/500 at y 840, 4 x 2 grid of 270px columns, 40px icon, 15px/425 title, tick rows 15px/300/24px with 28px pitch (each opens a tooltip)",
+        "Explore section on #f6f9fc from y 1532: eyebrow, h2 38px/500/48px, lead 18px/300/28px; sticky side index 222px wide (806px tall, group labels 15px/425, links 15px/300 with 27px pitch, Custom pricing pill pinned under a #e1e9ef rule) beside 810px cards",
+        "Group heading 26px/500 + lead 15px/300, cards 24px apart, 64px between groups; card: 8px radius, shadow, padding 24, title 18px/425, lead, Start now pill top right, tick bullets 28px pitch; rows split 446px copy / 365px price panel on #fafbfd with a 1px #e7ecf1 top rule; price 15px/425, unit 15px/300 #3f4b66, notes 13px/300/21px #707f98, ghost pill links",
+        "Accordion rows inside cards: closed head 57px (title 15px/425, optional summary at x 919, round plus icon), open shows more price rows; card footer row 66px with a ghost pill",
+        "Custom pricing (white, 2160px): 412px copy column + 540 x 400px package card, 4 features, ROI card 1080 x 386px on #f6f9fc, story carousel with stats column and 810 x 410px story, 4 logo buttons 200 x 80px",
+        "FAQ on #f6f9fc (706px): h2 38px, rows 60px on white with 1px #e7ecf1 rules, round chevron icon; open answer 15px/300/24px, 762px wide, 16px under the head",
+        "CTA 709px (540 + 270 + 270px), older footer on #f6f9fc 1600px",
+        "Sticky pricing bar after the tabs scroll away: 64px white, tabs left, Contact sales pill right, 2px gradient progress line on top"
+      ],
+      "pages": [
+        "/pricing"
+      ]
+    },
+    {
+      "id": "about",
+      "name": "Company statement page",
+      "use": "Short text pages: one centred column of large body copy, a link list and the mini footer.",
+      "structure": [
+        "Newer header 76px; centred art 298 x 299px at y 172",
+        "Text column 608px at x 416, 19px/300/28.5px #50617a, paragraphs 32px apart, underlined inline links",
+        "Link list 96px below: 3 rows of 56px with #e5edf5 rules, label 16px/300 left, link 16px/400 #000 with chevron right",
+        "Mini footer 142px: locale button, copyright 16px/300, brand mark right"
+      ],
+      "pages": [
+        "/about"
+      ]
+    },
+    {
+      "id": "careers",
+      "name": "Careers page",
+      "use": "The careers sub-site with its own header and sections (newer system, white bands in the framed 1266px column).",
+      "structure": [
+        "Own 76px header (66px at 390): wordmark plus 'careers' mark, three 14px links (38px tall, r4; current #061b31, others #533afd) and a 121x40 primary button; at 390 the links collapse into a 40px #e8e9ff menu button",
+        "Bands at 1440 (390): hero 259 (140) with a 48/300 headline (-0.96px); full-bleed image 513 (294); mission 995 (1410) with a 32/300 two-tone title, 18/300 copy, two 608x432 images and three 400px value columns; AI band 782 (597) with a 1264x511 image; GDP line plus 142x34 logo marquee (172px pitch) 304 (242); scale band 778 (1337) with canvas and four 316px stat cells (48/300 gradient figures); news carousel 748 (702) with 28px #e8e9ff arrows and a 1232x460 video; FAQ 747 (955) with an 816px accordion (18/300 questions, 62px closed rows); three 400x480 cards 851 (678); newer full footer 1299 (3170)"
+      ],
+      "pages": [
+        "/careers"
+      ]
+    },
+    {
+      "id": "customers",
+      "name": "Customer stories overview",
+      "use": "Overview of customer stories on the older system.",
+      "structure": [
+        "Older header 78px and sub-nav 40px (Customers, Overview, All customer stories)",
+        "Hero 606px: display 56px/500/68px (412px, 4 lines), lead 18px/300 (508px), dark #0a2540 pill + ghost pill; mosaic of 6 story cards 254 x 356px, 4px radius, in 3 staggered columns at x 720/990/1260",
+        "Results band 707px: h2 38px/500 at 395px from its top, 4 stats 24px/500/32px + 15px/300 caption",
+        "Logo band 360px on #f6f9fc: 8 logos 200 x 40px",
+        "By size band 1125px: eyebrow, h2, segmented Startup/Enterprise toggle (32px), stats column 206px + story card 810 x 410px, logo switcher of 200 x 80px buttons",
+        "Building together band 1311px on tint: case with Challenge/Solution/Products, phone mockup 264 x 533px (36px radius) and photo 267 x 406px",
+        "By use case band 1748px: pill tabs, 2 columns of 548px story tiles (624 and 309px tall)",
+        "By solution band 1493px on tint: 2 text columns of 492px, 8 links in 2 columns, product UI collage",
+        "CTA band 618px, older footer 1600px"
+      ],
+      "pages": [
+        "/customers"
+      ]
+    },
+    {
+      "id": "article-list",
+      "name": "Article list",
+      "use": "Blog, newsroom and guide indexes: a header block and a list or grid of posts.",
+      "structure": [
+        "Measured /blog (legacy system): 40px sub-nav with a ghost pill; hero 788 (1215 at 390) with a ribbon and a 460px featured card; category filters as tabs",
+        "Post rows with meta/author column, title (min 72px, 470px max on narrow rows) and a 540px media; highlights band 725 (479 at 390) with five 254x409 colored cards; 'View all posts', subscribe band 460 (760 at 390), white legacy footer"
+      ],
+      "pages": [
+        "/blog",
+        "/newsroom",
+        "/guides"
+      ]
+    },
+    {
+      "id": "directory",
+      "name": "Directory page",
+      "use": "Long link directories and catalogs (sitemap, product catalog, roadmap).",
+      "structure": [
+        "Measured /sitemap: 438px tint hero with the title and decorative skew bars",
+        "Groups of a label plus three link columns (links 18px line height + 2px, 20px row gap, 130px between groups, body padding 124/120); at 390 a single column with 50px label gap and 66px group gap; page 3486 at 1440, 5183 at 390"
+      ],
+      "pages": [
+        "/sitemap",
+        "/resources/more",
+        "/products",
+        "/roadmap"
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal and policy page",
+      "use": "Policies and legal lists: long text with headings and a side table of contents.",
+      "structure": [
+        "Measured /privacy: logo-only white header (76px), white body, tint footer; 270px sticky side nav ('Legal' kicker, current link with an accent bar, 8 links) beside an 810px text column",
+        "221 blocks of h1-h4, paragraphs, an inline table of contents and boxed notes with measured top margins; page 36832 at 1440"
+      ],
+      "pages": [
+        "/privacy",
+        "/spc/licenses",
+        "/legal/restricted-businesses",
+        "/cookie-settings"
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Contact sales page",
+      "use": "The sales contact page: a lead form card over a gradient canvas.",
+      "structure": [
+        "Measured /contact/sales: standalone newer page, 76px header with wordmark and an outline Sign up button; 824px framed main (768 at 390) with a gradient canvas behind a 608x427 card at left 328, top 167",
+        "Card: three-step stepper, 26/300 title, lead, label + field rows (192 + 336px), native select, Continue button; 127px footer (185 at 390)"
+      ],
+      "pages": [
+        "/contact/sales"
+      ]
+    }
+  ]
+}

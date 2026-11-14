@@ -1,0 +1,258 @@
+/* Company template, measured on linear.app/about at 1440 and 390. */
+
+.lr-company-hero {
+  padding-top: 199px;
+}
+
+.lr-company-hero .lr-display {
+  margin-left: -2px;
+}
+
+.lr-company-hero .lr-body {
+  margin-top: 24px;
+}
+
+.lr-company-film {
+  max-width: 1342px;
+  height: 755px;
+  margin: 73px auto 0;
+  border-radius: 8px;
+}
+
+.lr-company-story {
+  padding-top: 128px;
+}
+
+.lr-company-story .lr-body,
+.lr-company-story .lr-intro,
+.lr-company-team-head .lr-intro {
+  max-width: 544px;
+}
+
+.lr-company-story .lr-body {
+  margin-top: 24px;
+}
+
+.lr-company-team-head {
+  padding-top: 314px;
+}
+
+.lr-company-hiring {
+  margin-top: 47px;
+}
+
+.lr-company-leads {
+  max-width: 1344px;
+  margin: 128px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4px;
+  row-gap: 49px;
+}
+
+.lr-company-lead {
+  display: flex;
+  flex-direction: column;
+  height: 328px;
+  padding: 0 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.lr-company-lead__photo {
+  height: 269px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  transition: filter 0.2s var(--lr-ease-out);
+}
+
+.lr-company-lead:hover .lr-company-lead__photo {
+  filter: brightness(1.2);
+}
+
+.lr-company-lead strong {
+  font-weight: 510;
+}
+
+.lr-company-lead span {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: var(--lr-text-3);
+}
+
+.lr-company-names {
+  max-width: 1344px;
+  margin: 96px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 14px;
+}
+
+.lr-company-names li {
+  height: 25px;
+  padding: 3px 32px 0;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--lr-text-3);
+}
+
+.lr-company-backers {
+  display: grid;
+  grid-template-columns: calc(50% + 32px) 1fr;
+  padding-top: 101px;
+  padding-bottom: 133px;
+}
+
+.lr-company-backers .lr-title-1 {
+  margin-left: -2px;
+}
+
+.lr-company-funds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin: 0 -32px;
+}
+
+.lr-company-fund,
+.lr-company-angels li {
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+  font-size: 15px;
+  line-height: 19.95px;
+  letter-spacing: -0.011em;
+}
+
+.lr-company-fund {
+  height: 211px;
+  border-radius: 8px;
+}
+
+.lr-company-fund__logo {
+  height: 147px;
+  margin: 0 -32px 20px;
+  border-radius: 4px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.lr-company-fund strong,
+.lr-company-angels strong {
+  font-weight: 510;
+}
+
+.lr-company-fund strong span {
+  color: var(--lr-text-3);
+}
+
+.lr-company-fund > span,
+.lr-company-angels span {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: var(--lr-text-3);
+}
+
+.lr-company-angels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 24px;
+  margin: 97px -32px 0;
+}
+
+.lr-company-angels li {
+  height: 43px;
+}
+
+@media (max-width: 1023px) {
+  .lr-company-names {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lr-company-backers {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  .lr-company-funds,
+  .lr-company-angels {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .lr-company-hero {
+    padding-top: 91px;
+  }
+  .lr-company-hero .lr-display {
+    font-size: 40px;
+    line-height: 44px;
+    margin-left: -1px;
+  }
+  .lr-company-hero .lr-body {
+    margin-top: 20px;
+  }
+  .lr-company-film {
+    height: 218px;
+    margin: 37px 1px 0;
+  }
+  .lr-company-story {
+    padding-top: 32px;
+  }
+  .lr-company-story .lr-title-1 br,
+  .lr-company-team-head .lr-title-1 br,
+  .lr-company-backers .lr-title-1 br {
+    display: none;
+  }
+  .lr-company-story .lr-title-1,
+  .lr-company-team-head .lr-title-1 {
+    margin-bottom: 20px;
+  }
+  .lr-company-team-head {
+    padding-top: 115px;
+  }
+  .lr-company-hiring {
+    margin-top: 32px;
+  }
+  .lr-company-leads {
+    grid-template-columns: 1fr 1fr;
+    margin: 48px 16px 0;
+    row-gap: 25px;
+  }
+  .lr-company-lead {
+    height: 220px;
+    padding: 0 8px;
+  }
+  .lr-company-lead__photo {
+    height: 161px;
+    margin-bottom: 12px;
+  }
+  .lr-company-names {
+    display: none;
+  }
+  .lr-company-backers {
+    padding: 65px 16px 46px;
+    row-gap: 32px;
+  }
+  .lr-company-backers .lr-title-1 {
+    margin-left: -1px;
+  }
+  .lr-company-funds {
+    gap: 4px;
+  }
+  .lr-company-fund {
+    height: 150px;
+    padding: 0 8px;
+  }
+  .lr-company-fund__logo {
+    height: 90px;
+    margin: 0 -8px 12px;
+  }
+  .lr-company-angels {
+    margin-top: 60px;
+  }
+  .lr-company-angels li {
+    padding: 0 8px;
+  }
+}

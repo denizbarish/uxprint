@@ -1,0 +1,12 @@
+**/node_modules
+.git
+**/.next
+**/out
+**/dist
+captures
+**/.qa
+.env*
+Dockerfile*
+compose*.yaml
+**/.next-*
+apps/web/public/_originals

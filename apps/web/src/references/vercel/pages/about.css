@@ -1,0 +1,178 @@
+/* About template, measured on /about at 1440 and 390. */
+
+.vc-about-hero {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--vc-page);
+  height: 600px;
+  margin: 0 auto;
+  padding: 168px 24px 0;
+}
+
+.vc-about-hero__side {
+  width: 566px;
+  padding-top: 8px;
+}
+
+.vc-about-hero__side .vc-btn {
+  margin-top: 32px;
+}
+
+.vc-about-hero__side .vc-btn svg {
+  margin-left: 6px;
+}
+
+.vc-about-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.vc-about-pillars__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vc-about-pillars__text {
+  max-width: 330px;
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.vc-about-block {
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 240px 24px 0;
+}
+
+.vc-about-block--people {
+  padding-top: 216px;
+}
+
+.vc-about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 120px;
+}
+
+.vc-about-grid li {
+  height: 238px;
+  border-left: 1px solid var(--vc-ring);
+}
+
+.vc-about-grid li:nth-child(3n + 1) {
+  border-left: 0;
+}
+
+.vc-about-grid--people li {
+  height: 260px;
+}
+
+.vc-about-grid--people li.vc-about-tall {
+  height: 280px;
+}
+
+.vc-about-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 0;
+  transition: background 0.15s var(--vc-ease);
+}
+
+.vc-about-cell:hover {
+  background: var(--vc-row-hover);
+}
+
+.vc-about-person {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 56px;
+  text-align: center;
+}
+
+.vc-about-person__photo {
+  width: 88px;
+  height: 88px;
+}
+
+.vc-about-person__name {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vc-about-person__role {
+  max-width: 260px;
+  margin-top: 4px;
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-about-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 49px;
+  padding: 144px 24px;
+}
+
+.vc-about-cta .vc-btn svg {
+  margin-left: 6px;
+}
+
+@media (max-width: 960px) {
+  .vc-about-hero {
+    flex-direction: column;
+    height: auto;
+    padding-top: 80px;
+  }
+  .vc-about-hero br {
+    display: none;
+  }
+  .vc-about-hero__side {
+    width: auto;
+    padding-top: 16px;
+  }
+  .vc-about-pillars {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 80px;
+  }
+  .vc-about-block {
+    padding-top: 160px;
+  }
+  .vc-about-grid {
+    grid-template-columns: 1fr;
+    margin: 72px -24px 0;
+  }
+  .vc-about-grid li,
+  .vc-about-grid--people li,
+  .vc-about-grid--people li.vc-about-tall {
+    height: 201px;
+    border-left: 0;
+    border-top: 1px solid var(--vc-ring);
+  }
+  .vc-about-grid--people li,
+  .vc-about-grid--people li.vc-about-tall {
+    height: 245px;
+  }
+  .vc-about-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 112px 24px 116px;
+  }
+}

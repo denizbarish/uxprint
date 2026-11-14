@@ -1,0 +1,68 @@
+{
+  "login-method": {
+    "desktop": 99.72,
+    "phone": 91.22
+  },
+  "login-email": {
+    "desktop": 99.78
+  },
+  "signup-method": {
+    "desktop": 99.44,
+    "phone": 90.26
+  },
+  "signup-email": {
+    "desktop": 99.78
+  },
+  "home": {
+    "desktop": 94.03,
+    "phone": 88.46
+  },
+  "product": {
+    "desktop": 94.14,
+    "phone": 85.25
+  },
+  "feature": {
+    "desktop": 97.4,
+    "phone": 88.43
+  },
+  "pricing": {
+    "desktop": 97.75,
+    "phone": 90.8
+  },
+  "company": {
+    "desktop": 96.28,
+    "phone": 89.07
+  },
+  "index-grid": {
+    "desktop": 95.53,
+    "phone": 89.05
+  },
+  "changelog": {
+    "desktop": 94.4,
+    "phone": 83.91
+  },
+  "post": {
+    "desktop": 97.54,
+    "phone": 90.29
+  },
+  "legal": {
+    "desktop": 89.83,
+    "phone": 78.66
+  },
+  "hub": {
+    "desktop": 97.11,
+    "phone": 94.76
+  },
+  "docs": {
+    "desktop": 97.5,
+    "phone": 97.53
+  },
+  "centered": {
+    "desktop": 98.06,
+    "phone": 95.33
+  },
+  "integrations": {
+    "desktop": 98.27,
+    "phone": 94.59
+  }
+}

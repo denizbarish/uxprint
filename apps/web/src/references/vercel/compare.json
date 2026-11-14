@@ -1,0 +1,58 @@
+{
+  "home": {
+    "desktop": 85.07,
+    "phone": 94.96
+  },
+  "product": {
+    "desktop": 96.26,
+    "phone": 91.69
+  },
+  "pricing": {
+    "desktop": 97.36,
+    "phone": 90.61
+  },
+  "about": {
+    "desktop": 97.95,
+    "phone": 95.75
+  },
+  "customers": {
+    "desktop": 96.58,
+    "phone": 94.75
+  },
+  "listing": {
+    "desktop": 96.14,
+    "phone": 93.76
+  },
+  "legal": {
+    "desktop": 94.26,
+    "phone": 86.67
+  },
+  "contact": {
+    "desktop": 97.11,
+    "phone": 91.99
+  },
+  "docs": {
+    "desktop": 96.5,
+    "phone": 93.68
+  },
+  "login": {
+    "desktop": 99.25,
+    "phone": 97.04
+  },
+  "signup": {
+    "desktop": 98.57,
+    "phone": 94.21
+  },
+  "solution": {
+    "desktop": 97.01,
+    "phone": 89.87
+  },
+  "careers": {
+    "desktop": 98.28,
+    "phone": 92.76
+  },
+  "catalog": {
+    "desktop": 94.13,
+    "phone": 91.55
+  }
+}

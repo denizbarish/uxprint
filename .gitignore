@@ -1,0 +1,9 @@
+node_modules
+dist
+.next
+out
+captures
+apps/web/public/_originals
+packages/uxprint/prints
+*.tsbuildinfo
+.DS_Store

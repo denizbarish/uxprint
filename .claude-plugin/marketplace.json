@@ -1,0 +1,11 @@
+{
+  "name": "uxprint",
+  "owner": { "name": "uxprint" },
+  "plugins": [
+    {
+      "name": "uxprint",
+      "source": "./plugin",
+      "description": "Give your agent the measured UI/UX of well-designed platforms: tokens, components, motion, flows and libraries."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+/* Card grid template (measured on /customers). */
+
+.rc-cu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1204px;
+  max-width: 100%;
+  margin: 0 auto 72px;
+  padding: 164px 32px 0;
+  text-align: center;
+}
+
+.rc-cu__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  font-feature-settings: "liga" 0, "ss02", "ss08";
+  background: linear-gradient(90deg, #ffffffcc -1.59%, #fff 50%, #ffffffcc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.rc-cu__lead {
+  width: 520px;
+  max-width: 100%;
+  margin-top: 12px;
+  color: #fff9;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.rc-cu__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 1140px;
+  max-width: 100%;
+  padding: 92px 48px 80px;
+  text-align: left;
+}
+
+.rc-cu__card {
+  display: flex;
+  flex-direction: column;
+  height: 296px;
+  padding: 32px;
+  border: 1px solid #ffffff0d;
+  border-radius: 8px;
+  background: radial-gradient(circle at 50% 100%, #ffffff0d 0%, #ffffff00 70%), #0c0d0f;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.rc-cu__card:hover {
+  border-color: #ffffff1f;
+}
+
+.rc-cu__logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #ffffff1a;
+}
+
+.rc-cu__card h3 {
+  margin-top: 42px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.rc-cu__more {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  margin-bottom: 1px;
+  color: var(--rc-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  transition: color 0.2s ease;
+}
+
+.rc-cu__card:hover .rc-cu__more {
+  color: #fff;
+}
+
+.rc-cu__more svg,
+.rc-cu__contact svg {
+  width: 14px;
+}
+
+.rc-cu__contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background: #ffffff0d;
+  box-shadow: inset 0 1px 0 #ffffff14;
+  color: #fff9;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.05px;
+  transition: background-color 0.2s ease;
+}
+
+.rc-cu__contact:hover {
+  background: #ffffff1a;
+}
+
+.rc-cu__contact strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .rc-cu {
+    margin-bottom: 108px;
+    padding: 146px 24px 0;
+  }
+
+  .rc-cu__title {
+    font-size: 27px;
+    line-height: 33px;
+  }
+
+  .rc-cu__lead {
+    width: 310px;
+  }
+
+  .rc-cu__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 92px 20px 50px;
+  }
+
+  .rc-cu__contact {
+    width: 294px;
+  }
+}

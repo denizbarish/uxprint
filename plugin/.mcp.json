@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "uxprint": { "command": "npx", "args": ["-y", "uxprint", "mcp"] }
+  }
+}

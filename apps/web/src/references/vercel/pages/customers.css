@@ -1,0 +1,337 @@
+/* Customer stories template, measured on /customers at 1440 and 390. */
+
+.vc-cust-title {
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 112px 24px 0;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 108px;
+  letter-spacing: -3.6px;
+}
+
+.vc-cust-track {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 0 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.vc-cust-track::-webkit-scrollbar {
+  display: none;
+}
+
+.vc-cust-slide {
+  position: relative;
+  flex: 0 0 974px;
+  height: 548px;
+  scroll-snap-align: start;
+  border-radius: 0;
+}
+
+.vc-cust-slide__img {
+  position: absolute;
+  inset: 0;
+}
+
+.vc-cust-slide__caption {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 475px;
+  color: #f2f2f2;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-cust-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: var(--vc-page);
+  margin: 16px auto 0;
+  padding: 0 24px;
+}
+
+.vc-cust-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  background: #fff;
+  color: var(--vc-ink);
+  transition: all 0.15s var(--vc-ease);
+}
+
+.vc-cust-arrow:disabled {
+  color: var(--vc-muted);
+  cursor: default;
+}
+
+.vc-cust-progress {
+  flex: 1;
+  height: 2px;
+  margin-left: 16px;
+  background: var(--vc-ring);
+}
+
+.vc-cust-progress span {
+  display: block;
+  height: 100%;
+  background: var(--vc-ink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .vc-cust-progress span {
+    transition: width 0.3s var(--vc-ease);
+  }
+}
+
+.vc-cust-list {
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 112px 8px 0;
+  text-align: center;
+}
+
+.vc-cust-row {
+  display: grid;
+  grid-template-columns: 235px 400px 1fr 260px 120px;
+  align-items: center;
+  height: 96px;
+  padding: 0 16px;
+  border-radius: 2px;
+  text-align: left;
+  transition: background 0.15s var(--vc-ease);
+}
+
+.vc-cust-row:hover {
+  background: var(--vc-row-hover);
+}
+
+.vc-cust-row__name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vc-cust-row__text {
+  width: 333px;
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-cust-row__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.vc-cust-row__sector,
+.vc-cust-row__read {
+  color: var(--vc-ink-2);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.vc-cust-row__read {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.vc-cust-all {
+  margin-top: 52px;
+  background: #f2f2f2;
+}
+
+.vc-cust-all:hover {
+  background: #ebebeb;
+}
+
+.vc-cust-quote {
+  width: 961px;
+  margin: 224px auto 0;
+}
+
+.vc-cust-quote p {
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: -1.28px;
+  text-align: center;
+}
+
+.vc-cust-quote__by {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  width: 700px;
+  margin: 73px 0 0 130px;
+  padding-top: 18px;
+  border-top: 1px solid var(--vc-ring);
+}
+
+.vc-cust-quote__by > span:first-child {
+  width: 200px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.vc-cust-quote__desc {
+  width: 264px;
+  color: var(--vc-ink-2);
+}
+
+.vc-cust-logos {
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 301px 24px 208px;
+  text-align: center;
+}
+
+.vc-cust-logos__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.vc-cust-select {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.vc-cust-select select {
+  width: 177px;
+  height: 36px;
+  padding: 0 32px 0 12px;
+  border: 0;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--vc-ring);
+  font-size: 14px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.vc-cust-select select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--vc-focus);
+}
+
+.vc-cust-select svg {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+}
+
+.vc-cust-logos__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 128px;
+}
+
+.vc-cust-logos__grid li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 118px;
+  border-left: 1px solid var(--vc-ring);
+}
+
+.vc-cust-logos__grid li:nth-child(6n + 1) {
+  border-left: 0;
+}
+
+.vc-cust-more {
+  margin-top: 93px;
+  gap: 2px;
+}
+
+@media (max-width: 960px) {
+  .vc-cust-title {
+    padding-top: 64px;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -2.4px;
+  }
+  .vc-cust-slide {
+    flex-basis: calc(100vw - 48px);
+    height: 192px;
+  }
+  .vc-cust-slide__caption {
+    width: auto;
+    right: 16px;
+    left: 16px;
+    bottom: 12px;
+  }
+  .vc-cust-list {
+    padding: 56px 8px 0;
+  }
+  .vc-cust-row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "name logo"
+      "text text"
+      "sector read";
+    gap: 12px;
+    height: auto;
+    padding: 20px 16px;
+  }
+  .vc-cust-row__name { grid-area: name; }
+  .vc-cust-row__text { grid-area: text; width: auto; }
+  .vc-cust-row__logo { grid-area: logo; }
+  .vc-cust-row__sector { grid-area: sector; text-align: left; }
+  .vc-cust-row__read { grid-area: read; }
+  .vc-cust-quote {
+    width: auto;
+    margin: 83px 24px 0;
+  }
+  .vc-cust-quote p {
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: -0.72px;
+    text-align: left;
+  }
+  .vc-cust-quote__by {
+    flex-direction: column;
+    gap: 16px;
+    width: auto;
+    margin: 32px 0 0;
+  }
+  .vc-cust-quote__desc {
+    display: none;
+  }
+  .vc-cust-logos {
+    padding: 262px 24px 180px;
+  }
+  .vc-cust-logos__head {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+  .vc-cust-select select {
+    width: 100%;
+  }
+  .vc-cust-logos__grid {
+    grid-template-columns: 1fr;
+    margin-top: 72px;
+  }
+  .vc-cust-logos__grid li {
+    height: 160px;
+    border-left: 0;
+  }
+  .vc-cust-logos__grid li:nth-child(n + 21) {
+    display: none;
+  }
+}

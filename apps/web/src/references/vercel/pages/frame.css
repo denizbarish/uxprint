@@ -1,0 +1,103 @@
+/*
+ * The framed grid used by legal, careers and solution pages: a 1080px column with hairline
+ * rules, inner guide lines and small plus marks at the corners (measured on /legal/cookie-policy,
+ * /careers and /solutions/platform-engineering at 1440).
+ */
+
+.vc-frame {
+  position: relative;
+  width: 1080px;
+  max-width: calc(100% - 48px);
+  margin: 63px auto 48px;
+  border: 1px solid var(--vc-ring);
+}
+
+.vc-frame__plus {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  pointer-events: none;
+}
+
+.vc-frame__plus::before,
+.vc-frame__plus::after {
+  content: "";
+  position: absolute;
+  background: #a8a8a8;
+}
+
+.vc-frame__plus::before {
+  left: 10px;
+  top: 0;
+  width: 1px;
+  height: 21px;
+}
+
+.vc-frame__plus::after {
+  left: 0;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+}
+
+.vc-frame__plus--tl {
+  left: -11px;
+  top: -11px;
+}
+
+.vc-frame__plus--br {
+  right: -11px;
+  bottom: -11px;
+}
+
+.vc-frame__row {
+  position: relative;
+  border-bottom: 1px solid var(--vc-ring);
+}
+
+.vc-frame__row--guides::before,
+.vc-frame__row--guides::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--vc-ring);
+}
+
+.vc-frame__row--guides::before {
+  left: 90px;
+}
+
+.vc-frame__row--guides::after {
+  right: 90px;
+}
+
+.vc-frame__cols {
+  display: grid;
+}
+
+.vc-frame__cols > * + * {
+  border-left: 1px dashed var(--vc-ring);
+}
+
+@media (max-width: 960px) {
+  .vc-frame {
+    width: auto;
+    max-width: none;
+    margin: 32px 16px 32px;
+  }
+  .vc-frame__row--guides::before {
+    left: 24px;
+  }
+  .vc-frame__row--guides::after {
+    right: 24px;
+  }
+  .vc-frame__cols {
+    grid-template-columns: 1fr !important;
+  }
+  .vc-frame__cols > * + * {
+    border-left: 0;
+    border-top: 1px dashed var(--vc-ring);
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "home": {
+    "desktop": 90.61,
+    "phone": 85.68
+  },
+  "product": {
+    "desktop": 94.24,
+    "phone": 80.25
+  },
+  "platform": {
+    "desktop": 93.68,
+    "phone": 84.5
+  },
+  "solution": {
+    "desktop": 93.67,
+    "phone": 82.7
+  },
+  "pricing": {
+    "desktop": 93.01,
+    "phone": 83.29
+  },
+  "about": {
+    "desktop": 94.72,
+    "phone": 79.53
+  },
+  "customers": {
+    "desktop": 95.64,
+    "phone": 84.28
+  },
+  "legal": {
+    "desktop": 88.89,
+    "phone": 76.52
+  },
+  "contact": {
+    "desktop": 87.92,
+    "phone": 80.71
+  },
+  "blog": {
+    "desktop": 90.92,
+    "phone": 77
+  },
+  "directory": {
+    "desktop": 96.73,
+    "phone": 91.74
+  },
+  "segment": {
+    "desktop": 92.81,
+    "phone": 80.15
+  },
+  "careers": {
+    "desktop": 85.14,
+    "phone": 86.03
+  }
+}

@@ -1,0 +1,482 @@
+/* Pricing template, measured on /pricing at 1440 (rows 53px, bold rows 55px, wrapped cells +12px). */
+
+.vc-pricing-hero {
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 120px 24px 0;
+}
+
+.vc-plans {
+  display: grid;
+  grid-template-columns: 464px 463px 1fr;
+  height: 551px;
+  margin-top: 72px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--vc-ring-alpha);
+}
+
+.vc-plan {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 32px 33px 33px;
+}
+
+.vc-plan--primary {
+  background: var(--vc-surface);
+}
+
+.vc-plan__name {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vc-plan__name .vc-badge {
+  margin: 0;
+}
+
+.vc-plan__price {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+  font-size: 56px;
+  font-weight: 450;
+  line-height: 56px;
+  letter-spacing: -3.36px;
+}
+
+.vc-plan__price .vc-mono {
+  margin-bottom: 4px;
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.vc-plan__text {
+  width: 352px;
+  margin-top: 16px;
+  color: var(--vc-ink-2);
+}
+
+.vc-plan__intro {
+  margin-top: 49px;
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-plan__items {
+  margin-top: 49px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-plan__intro + .vc-plan__items {
+  margin-top: 12px;
+}
+
+.vc-plan__items li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vc-plan__items li + li {
+  margin-top: 12px;
+}
+
+.vc-plan__items svg {
+  color: var(--vc-ink-2);
+}
+
+.vc-plan__action {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.vc-pricing-fine {
+  margin: 24px auto 0;
+  max-width: 1000px;
+  min-height: 36px;
+  color: var(--vc-ink-2);
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.vc-pricing-fine a {
+  color: var(--vc-ink);
+  text-decoration: underline;
+}
+
+.vc-pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: var(--vc-page);
+  margin: 96px auto 0;
+  padding: 0 24px;
+}
+
+.vc-pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  padding: 32px;
+  border: 1px solid var(--vc-edge);
+  border-radius: 2px;
+  transition: border-color 0.15s var(--vc-ease);
+}
+
+.vc-pricing-card:hover {
+  border-color: var(--vc-edge-hover);
+}
+
+.vc-pricing-card__link {
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vc-pricing-card__art {
+  position: absolute;
+  right: 32px;
+  top: 64px;
+  width: 260px;
+  height: 140px;
+}
+
+.vc-pricing-card__title {
+  margin-top: auto;
+}
+
+.vc-pricing-card__text {
+  width: 372px;
+  margin-top: 8px;
+  color: var(--vc-ink-2);
+}
+
+/* Comparison table */
+
+.vc-plan-table {
+  max-width: var(--vc-page);
+  margin: 115px auto 0;
+  padding: 0 24px;
+}
+
+.vc-plan-table__head,
+.vc-plan-table__row,
+.vc-plan-table__cta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.vc-plan-table__head {
+  position: sticky;
+  top: 64px;
+  z-index: 5;
+  align-items: center;
+  height: 36px;
+  margin-bottom: 48px;
+  background: var(--vc-canvas);
+  box-shadow: 0 -16px 0 var(--vc-canvas), 0 16px 0 var(--vc-canvas);
+}
+
+.vc-plan-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 344px;
+  height: 36px;
+  margin-left: 3px;
+  padding: 0 12px;
+  border-radius: 9999px;
+  background: var(--vc-surface);
+  box-shadow: 0 0 0 1px var(--vc-ring);
+  color: var(--vc-muted);
+}
+
+.vc-plan-search:focus-within {
+  box-shadow: 0 0 0 1px var(--vc-ring), 0 0 0 4px rgba(0, 114, 245, 0.24);
+}
+
+.vc-plan-search input {
+  flex: 1;
+  min-width: 0;
+  height: 34px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--vc-ink);
+  font-size: 14px;
+}
+
+.vc-plan-table__name {
+  opacity: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 32px;
+  letter-spacing: -0.96px;
+}
+
+.vc-plan-table__group {
+  padding-top: 43px;
+}
+
+.vc-plan-table__row + .vc-plan-table__group {
+  padding-top: 116px;
+}
+
+.vc-plan-table__group h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 3px;
+}
+
+.vc-plan-table__desc {
+  width: 601px;
+  margin: 8px 0 25px 3px;
+  color: var(--vc-ink-2);
+}
+
+.vc-plan-table__row {
+  align-items: start;
+  height: 53px;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-plan-table__row--bold {
+  height: 55px;
+  padding-top: 17px;
+  border-top: 1px solid var(--vc-ring-alpha);
+}
+
+.vc-plan-table__row--bold + .vc-plan-table__row--bold,
+.vc-plan-table__desc + .vc-plan-table__row--bold {
+  padding-top: 16px;
+}
+
+.vc-plan-table__row > span:not(.vc-plan-table__label) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.vc-plan-table__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 3px;
+  color: var(--vc-ink-2);
+}
+
+.vc-plan-table__row--bold .vc-plan-table__label {
+  color: var(--vc-ink);
+  font-weight: 500;
+}
+
+.vc-plan-table__info {
+  color: var(--vc-muted);
+}
+
+.vc-plan-table__check {
+  color: var(--vc-ink);
+  transition: all 0.2s var(--vc-ease);
+}
+
+.vc-plan-table__dash {
+  display: inline-block;
+  width: 13px;
+  height: 1px;
+  margin-top: 10px;
+  background: var(--vc-ink-2);
+}
+
+.vc-plan-table__more {
+  height: 112px;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.vc-plan-table__more a {
+  margin-left: 250px;
+  text-decoration: underline;
+}
+
+.vc-plan-table__cta {
+  align-items: center;
+  height: 85px;
+  margin-top: 2px;
+  border-top: 1px solid var(--vc-ring-alpha);
+}
+
+.vc-plan-table__cta .vc-btn {
+  justify-self: center;
+}
+
+/* FAQ split */
+
+.vc-faq {
+  display: grid;
+  grid-template-columns: 663px 1fr;
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 264px 24px 0;
+}
+
+.vc-faq > h2 {
+  margin-top: 20px;
+}
+
+.vc-faq__h {
+  margin: 0;
+  font: inherit;
+}
+
+.vc-faq__trigger {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  min-height: 68px;
+  padding: 18px 0;
+  text-align: left;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.vc-faq__num {
+  width: 27px;
+  color: var(--vc-muted);
+}
+
+.vc-faq__q {
+  flex: 1;
+}
+
+.vc-faq__chev {
+  color: var(--vc-ink-2);
+  transition: transform 0.2s ease-out;
+}
+
+.vc-faq__trigger[data-panel-open] .vc-faq__chev {
+  transform: rotate(180deg);
+}
+
+.vc-faq__panel {
+  overflow: hidden;
+  height: var(--accordion-panel-height);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .vc-faq__panel {
+    transition: height 0.2s ease-out;
+  }
+  .vc-faq__panel[data-starting-style],
+  .vc-faq__panel[data-ending-style] {
+    height: 0;
+  }
+}
+
+.vc-faq__a {
+  padding: 0 12px 34px 45px;
+  color: var(--vc-ink-2);
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+.vc-faq__a a {
+  color: var(--vc-ink);
+  text-decoration: underline;
+}
+
+.vc-pricing-cta {
+  padding-top: 192px;
+}
+
+@media (max-width: 960px) {
+  .vc-pricing-hero {
+    padding-top: 40px;
+  }
+  .vc-pricing-hero .vc-display {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2.4px;
+  }
+  .vc-plans {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-top: 48px;
+  }
+  .vc-plan {
+    min-height: 540px;
+    padding: 25px;
+  }
+  .vc-plan__text {
+    width: auto;
+  }
+  .vc-pricing-cards {
+    grid-template-columns: 1fr;
+  }
+  .vc-pricing-card__text,
+  .vc-pricing-card__art {
+    width: auto;
+  }
+  .vc-pricing-card__art {
+    left: 32px;
+  }
+  .vc-plan-search {
+    width: auto;
+    margin-right: 8px;
+  }
+  .vc-plan-table__head {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .vc-plan-table__name {
+    display: none;
+  }
+  .vc-plan-table__row,
+  .vc-plan-table__cta {
+    grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr));
+    font-size: 12px;
+  }
+  .vc-plan-table__cta {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 12px;
+    padding: 24px 0;
+  }
+  .vc-plan-table__desc {
+    width: auto;
+  }
+  .vc-plan-table__more a {
+    margin-left: 0;
+  }
+  .vc-faq {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 120px;
+  }
+  .vc-faq .vc-h56 br,
+  .vc-pricing-hero br {
+    display: none;
+  }
+  .vc-pricing-cta {
+    padding-top: 120px;
+  }
+}

@@ -1,0 +1,344 @@
+/*
+ * Reference screens for the Stripe print. Values come from prints/stripe/print.json and the
+ * measurements under captures/stripe*. Brand, copy and artwork are neutral ("Acme").
+ * Everything is scoped under .stripe-ref so nothing leaks into the gallery.
+ */
+
+.stripe-ref,
+.stripe-ref *,
+.stripe-ref *::before,
+.stripe-ref *::after {
+  box-sizing: border-box;
+}
+
+.stripe-ref {
+  --s-heading: #061b31;
+  --s-body: #50617a;
+  --s-muted: #64748d;
+  --s-violet: #533afd;
+  --s-violet-hover: #4936e1;
+  --s-link-hover: #2e2b8c;
+  --s-focus: #5452fbbf;
+  --s-hairline: #e5edf5;
+  --s-subtle: #f8fafd;
+  --s-navy: #0d1738;
+  --s-wash: #e8e9ff;
+  --s-wash-strong: #e2e4ff;
+  --s-ease: cubic-bezier(0.25, 1, 0.5, 1);
+  --s-ease-header: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --s-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --s-ease-pricing: cubic-bezier(0.215, 0.61, 0.355, 1);
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--s-body);
+  font-family: "Inter Variable", "SF Pro Display", -apple-system, system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  position: relative;
+}
+
+.stripe-ref :where(h1, h2, h3, h4, p, ul, ol, figure, blockquote) {
+  margin: 0;
+  padding: 0;
+}
+
+.stripe-ref :where(ul, ol) {
+  list-style: none;
+}
+
+.stripe-ref :where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.stripe-ref :where(button, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+}
+
+.stripe-ref :where(button) {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.stripe-ref :where(:focus-visible) {
+  outline: 3px solid var(--s-focus);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.stripe-ref [hidden] {
+  display: none !important;
+}
+
+.s-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- Wordmark: our own lowercase mark, masked in comparisons ---------- */
+
+.s-wordmark {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -0.9px;
+  color: var(--s-heading);
+}
+
+/* ---------- Framed column (newer system) ---------- */
+
+.s-frame {
+  position: relative;
+  width: 100%;
+  max-width: 1266px;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-inline: 1px solid var(--s-hairline);
+}
+
+.s-band {
+  position: relative;
+}
+
+.s-rule {
+  height: 1px;
+  background: var(--s-hairline);
+}
+
+/* ---------- Buttons (newer system) ---------- */
+
+.s-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  white-space: nowrap;
+  transition:
+    background-color 0.3s var(--s-ease),
+    color 0.3s var(--s-ease),
+    outline-color 0.3s var(--s-ease),
+    border-color 0.3s var(--s-ease);
+}
+
+.s-btn svg {
+  width: 9px;
+  height: 9px;
+  transition: transform 0.3s var(--s-ease);
+}
+
+.s-btn--sm {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.s-btn--primary {
+  background: var(--s-violet);
+  color: #ffffff;
+}
+
+.s-btn--primary:hover {
+  background: var(--s-violet-hover);
+}
+
+.s-btn--primary:active {
+  background: var(--s-link-hover);
+}
+
+.s-btn--secondary {
+  background: #ffffffa6;
+  border-color: #b9b9f9;
+  color: var(--s-violet);
+}
+
+.s-btn--secondary:hover {
+  border-color: var(--s-violet);
+  color: var(--s-link-hover);
+}
+
+.s-btn--secondary:active {
+  background: var(--s-wash);
+}
+
+.s-btn--onmedia {
+  background: #ffffff;
+  color: var(--s-violet);
+}
+
+.s-btn--onmedia:hover {
+  color: #101010;
+}
+
+.s-btn--ghost-dark {
+  background: transparent;
+  border-color: #4834dbb2;
+  color: #ffffff;
+}
+
+.s-btn--ghost-dark:hover {
+  border-color: #7389ff;
+}
+
+.s-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--s-violet);
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.3s var(--s-ease);
+}
+
+.s-link svg {
+  width: 9px;
+  height: 9px;
+  transition: transform 0.3s var(--s-ease);
+}
+
+.s-link:hover {
+  color: var(--s-link-hover);
+}
+
+.s-link:hover svg,
+.s-btn:hover svg {
+  transform: translateX(2px);
+}
+
+.s-link:active {
+  color: var(--s-link-hover);
+}
+
+.s-dark .s-link {
+  color: #7389ff;
+}
+
+.s-dark .s-link:hover {
+  color: #7e94ff;
+}
+
+.s-dark .s-link:active {
+  color: #a8bfff;
+}
+
+.s-icon-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--s-wash);
+  color: var(--s-violet);
+  transition:
+    background-color 0.3s var(--s-ease),
+    outline-color 0.3s var(--s-ease);
+}
+
+.s-icon-btn:hover,
+.s-icon-btn:active {
+  background: #d6d9fc;
+}
+
+.s-icon-btn:disabled {
+  background: transparent;
+  color: #1010104d;
+  cursor: default;
+}
+
+/* ---------- Type (newer system) ---------- */
+
+.s-title {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 35.2px;
+  letter-spacing: -0.64px;
+  color: var(--s-heading);
+}
+
+.s-title span,
+.s-two-tone span {
+  color: var(--s-muted);
+}
+
+.s-card-title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 29.12px;
+  letter-spacing: -0.26px;
+  color: var(--s-heading);
+}
+
+.s-row-title {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 24.2px;
+  letter-spacing: -0.22px;
+  color: var(--s-heading);
+}
+
+.s-lead {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.4px;
+  color: var(--s-body);
+}
+
+.s-lead strong {
+  font-weight: 400;
+  color: var(--s-heading);
+}
+
+/* ---------- Media placeholders (masked in comparisons) ---------- */
+
+.s-media {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.s-media--soft {
+  background: linear-gradient(135deg, #eef1ff 0%, #f6e9ff 45%, #ffeede 100%);
+}
+
+.s-media--warm {
+  background: linear-gradient(120deg, #c9b8ff 0%, #ff9fd0 40%, #ffb36b 75%, #ffd36b 100%);
+}
+
+.s-media--cool {
+  background: linear-gradient(120deg, #00d4ff 0%, #6f7bff 50%, #a960ee 100%);
+}
+
+.s-media--dark {
+  background: linear-gradient(135deg, #1c2a5a 0%, #2b1f63 60%, #3c2a7a 100%);
+}
+
+.s-media--plain {
+  background: #e5edf5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stripe-ref *,
+  .stripe-ref *::before,
+  .stripe-ref *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

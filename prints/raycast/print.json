@@ -1,0 +1,2512 @@
+{
+  "slug": "raycast",
+  "name": "Raycast",
+  "url": "https://www.raycast.com",
+  "category": "marketing-site",
+  "tags": [
+    "dark",
+    "macos",
+    "launcher",
+    "developer-tool",
+    "product-mockups",
+    "centered",
+    "keyboard-first",
+    "tactile-buttons"
+  ],
+  "summary": "Near-black #07080a canvas, centred Inter headlines with a grey second line, light key-like buttons and full macOS-style product windows (command palette, AI chat, keycaps) as the imagery.",
+  "theme": "dark",
+  "source": {
+    "tool": "craft-anything 0.4.0 + playwright 1.65.0",
+    "mode": "deep",
+    "capturedAt": "2026-11-13",
+    "widths": [
+      1440,
+      768,
+      390
+    ],
+    "pages": [
+      {
+        "name": "home",
+        "url": "https://www.raycast.com"
+      },
+      {
+        "name": "pricing",
+        "url": "https://www.raycast.com/pricing"
+      },
+      {
+        "name": "store",
+        "url": "https://www.raycast.com/store"
+      },
+      {
+        "name": "pro",
+        "url": "https://www.raycast.com/pro"
+      },
+      {
+        "name": "teams",
+        "url": "https://www.raycast.com/teams"
+      },
+      {
+        "name": "login",
+        "url": "https://www.raycast.com/users/sign_in"
+      },
+      {
+        "name": "signup",
+        "url": "https://www.raycast.com/users/sign_up"
+      }
+    ]
+  },
+  "color": {
+    "background": [
+      {
+        "name": "canvas",
+        "value": "#07080a",
+        "use": "Page background everywhere (--grey-900, --background, --color-bg)"
+      },
+      {
+        "name": "surface-1",
+        "value": "#0c0d0f",
+        "use": "--grey-800. Search field fill, inactive pagination cell, hovered grid cell, resting fill of the highlighted resource card"
+      },
+      {
+        "name": "surface-2",
+        "value": "#111214",
+        "use": "--grey-700. The browse-more card at the end of the carousel; start colour of the round-button and social-card gradients"
+      },
+      {
+        "name": "surface-3",
+        "value": "#1b1c1e",
+        "use": "--grey-600. Active pagination cell, active platform chip, the 1px ring around grid cells"
+      },
+      {
+        "name": "header",
+        "value": "#0f1011",
+        "use": "Fill of the floating header bar as rendered in the screenshot (pixel sample, not a computed value)"
+      },
+      {
+        "name": "overlay-faint",
+        "value": "#ffffff0d",
+        "use": "Newsletter field fill, hovered row in product mockups"
+      },
+      {
+        "name": "overlay-tab",
+        "value": "#ffffff17",
+        "use": "Active option in the plan tier segmented control"
+      },
+      {
+        "name": "overlay-selected",
+        "value": "#ffffff1a",
+        "use": "Selected row inside product mockups (AI chat sidebar)"
+      },
+      {
+        "name": "inverse",
+        "value": "#e6e6e6",
+        "use": "--grey-50. Fill of the light button (Download, Start Free Trial, Select Plan, Send)"
+      },
+      {
+        "name": "inverse-hover",
+        "value": "#ffffff",
+        "use": "Light button on hover, active and focus"
+      },
+      {
+        "name": "inverse-soft",
+        "value": "#ffffffe6",
+        "use": "Newsletter submit and the small square light button on the teams page"
+      }
+    ],
+    "text": [
+      {
+        "name": "primary",
+        "value": "#ffffff",
+        "use": "Headlines, first line of every two-tone heading, active tabs, body inside cards"
+      },
+      {
+        "name": "secondary",
+        "value": "#9c9c9d",
+        "use": "--grey-200. Nav and footer links, arrow links, inactive segmented options, author names, list descriptions"
+      },
+      {
+        "name": "tertiary",
+        "value": "#6a6b6c",
+        "use": "--grey-300. Second line of two-tone headings, inactive category tabs, store search placeholder, disabled carousel arrow"
+      },
+      {
+        "name": "quaternary",
+        "value": "#434345",
+        "use": "--grey-400. Not-yet-highlighted words in the large rotating feature sentence"
+      },
+      {
+        "name": "muted-60",
+        "value": "#ffffff99",
+        "use": "Group labels and secondary text inside product mockups"
+      },
+      {
+        "name": "muted-50",
+        "value": "#ffffff80",
+        "use": "Section description under the AI headline"
+      },
+      {
+        "name": "muted-40",
+        "value": "#ffffff66",
+        "use": "Legal text under the newsletter form, store section sub-headers, featured card descriptions"
+      },
+      {
+        "name": "on-inverse",
+        "value": "#2f3031",
+        "use": "--grey-500. Label on the light button"
+      },
+      {
+        "name": "on-inverse-soft",
+        "value": "#000000",
+        "use": "Label on the soft light button and newsletter submit"
+      },
+      {
+        "name": "pagination-active",
+        "value": "#cdcece",
+        "use": "--grey-100. Number in the active pagination cell"
+      },
+      {
+        "name": "inline-link",
+        "value": "#78787c",
+        "use": "Underlined link inside FAQ answers (--color-fg-300)"
+      }
+    ],
+    "border": [
+      {
+        "name": "card",
+        "value": "#ffffff0f",
+        "use": "1px border on cards, carousel arrows, pagination cells and the browse-more card"
+      },
+      {
+        "name": "field",
+        "value": "#2f3031",
+        "use": "1px border of the store search field"
+      },
+      {
+        "name": "field-hover",
+        "value": "#9c9c9d",
+        "use": "Store search field border on hover"
+      },
+      {
+        "name": "input-hover",
+        "value": "#ffffff40",
+        "use": "Newsletter field border on hover"
+      },
+      {
+        "name": "input-focus",
+        "value": "#ffffff66",
+        "use": "Newsletter field border on focus"
+      },
+      {
+        "name": "pill",
+        "value": "#ffffff1a",
+        "use": "1px border of the active store pill tab and of icon buttons in mockups"
+      },
+      {
+        "name": "declared",
+        "value": "#242728",
+        "use": "--color-border is declared on :root; no element using it was isolated"
+      }
+    ],
+    "accent": [
+      {
+        "name": "red",
+        "value": "#ff6363",
+        "use": "--red-dark. Brand colour: logo mark, eyebrow labels above section titles, links and checkboxes inside mockups, validation message. Never a button fill"
+      },
+      {
+        "name": "blue",
+        "value": "#56c2ff",
+        "use": "--blue-dark. Check icons and the first line of plan feature lists on the teams page, the animated three-bar level meter on the pro page"
+      },
+      {
+        "name": "orange",
+        "value": "#ff9217",
+        "use": "Text of the announcement pill on the teams page and the glow keyframe"
+      },
+      {
+        "name": "focus-ring-auto",
+        "value": "#99c8ff",
+        "use": "Computed colour of the browser's own focus ring (outline-style auto, 1px, offset 1px) on most links and cards; Raycast does not set its own colour there"
+      }
+    ],
+    "semantic": [
+      {
+        "name": "yellow",
+        "value": "#ffc533",
+        "use": "--color-yellow, declared; a #ffc531 swatch appears in the clipboard mockup"
+      },
+      {
+        "name": "red-declared",
+        "value": "#ff6161",
+        "use": "--color-red, declared; element use not isolated"
+      },
+      {
+        "name": "blue-declared",
+        "value": "#57c1ff",
+        "use": "--color-blue, declared; element use not isolated"
+      },
+      {
+        "name": "green",
+        "value": "#59d499",
+        "use": "--color-green, declared; one swatch in the clipboard mockup"
+      },
+      {
+        "name": "traffic-red",
+        "value": "#ff625b",
+        "use": "macOS close dot in window mockups"
+      },
+      {
+        "name": "traffic-yellow",
+        "value": "#febc2e",
+        "use": "macOS minimise dot in window mockups"
+      },
+      {
+        "name": "traffic-green",
+        "value": "#27c840",
+        "use": "macOS zoom dot in window mockups"
+      }
+    ]
+  },
+  "typography": {
+    "families": [
+      {
+        "role": "sans",
+        "stack": "Inter, \"Inter Fallback\", sans-serif",
+        "features": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+        "substitute": {
+          "name": "Inter",
+          "source": "same",
+          "note": "Loaded as a variable face \"Inter 100 900\". Display headlines switch to \"liga\" 0, \"ss02\", \"ss08\"; mockup notes use \"tnum\""
+        }
+      },
+      {
+        "role": "mono",
+        "stack": "GeistMono, ui-monospace, SFMono-Regular, \"Roboto Mono\", Menlo, Monaco, \"Liberation Mono\", \"DejaVu Sans Mono\", \"Courier New\", monospace",
+        "substitute": {
+          "name": "Geist Mono",
+          "source": "same",
+          "note": "Loaded as \"GeistMono 100 900\". Used for small captions (system requirement line, price notes, table headers, the developer section)"
+        }
+      },
+      {
+        "role": "mono",
+        "stack": "jetBrainsMono, \"jetBrainsMono Fallback\", Menlo, Monaco, Courier, monospace",
+        "substitute": {
+          "name": "JetBrains Mono",
+          "source": "same",
+          "note": "--monospace-font; loaded as \"jetBrainsMono 100 800\"; only 2 elements use it (code in mockups)"
+        }
+      },
+      {
+        "role": "sans",
+        "stack": "\"SF Pro Text\", \"SF Pro Icons\", Inter, \"Inter Fallback\"",
+        "substitute": {
+          "name": "Inter",
+          "source": "google-fonts",
+          "note": "Declared on 188 elements, which the screenshots place in the macOS-style mockup chrome; the SF Pro face is not served, so it falls back to Inter off Apple devices"
+        }
+      }
+    ],
+    "scale": [
+      {
+        "name": "display-xl",
+        "size": "80px",
+        "weight": 600,
+        "lineHeight": "86px",
+        "tracking": "1.2px",
+        "family": "sans",
+        "use": "Store page title, one word"
+      },
+      {
+        "name": "display-l",
+        "size": "72px",
+        "weight": 700,
+        "lineHeight": "84px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Teams hero headline, two lines"
+      },
+      {
+        "name": "display",
+        "size": "64px",
+        "weight": 600,
+        "lineHeight": "70.4px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Home hero headline, two lines, centred. Features \"liga\" 0, \"ss02\", \"ss08\". 36px at 390"
+      },
+      {
+        "name": "display-light",
+        "size": "56px",
+        "weight": 400,
+        "lineHeight": "65.52px",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Developer section statement, left column"
+      },
+      {
+        "name": "title-xl",
+        "size": "52px",
+        "weight": 600,
+        "lineHeight": "57.2px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Closing call-to-action headline on the teams page"
+      },
+      {
+        "name": "title-l",
+        "size": "48px",
+        "weight": 600,
+        "lineHeight": "normal",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Pro hero headline and the FAQ title on pro. Same features as display"
+      },
+      {
+        "name": "title-m",
+        "size": "40px",
+        "weight": 500,
+        "lineHeight": "46px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Store section title"
+      },
+      {
+        "name": "title-teams",
+        "size": "36px",
+        "weight": 700,
+        "lineHeight": "40px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Teams section headlines, two lines centred"
+      },
+      {
+        "name": "title-s",
+        "size": "32px",
+        "weight": 500,
+        "lineHeight": "38.4px",
+        "tracking": "-0.8px",
+        "family": "sans",
+        "use": "AI section headline under a red mono eyebrow"
+      },
+      {
+        "name": "feature-sentence",
+        "size": "24px",
+        "weight": 500,
+        "lineHeight": "38.4px",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Long rotating sentence of clickable feature phrases; active phrase #ffffff, the rest #434345"
+      },
+      {
+        "name": "heading",
+        "size": "20px",
+        "weight": 500,
+        "lineHeight": "normal",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Two-tone section heading: first line #ffffff as h2, continuation #6a6b6c as p at the same size. 24px line boxes at 1440, 18px size at 390"
+      },
+      {
+        "name": "lead",
+        "size": "20px",
+        "weight": 400,
+        "lineHeight": "28px",
+        "tracking": "0.3px",
+        "family": "sans",
+        "use": "Store and teams hero subtitle, #6a6b6c or #ffffff99"
+      },
+      {
+        "name": "hero-body",
+        "size": "18px",
+        "weight": 400,
+        "lineHeight": "normal",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Home hero subtitle, white, centred, two lines. 14px at 390"
+      },
+      {
+        "name": "section-body",
+        "size": "18px",
+        "weight": 400,
+        "lineHeight": "27px",
+        "tracking": "0.18px",
+        "family": "sans",
+        "use": "Description under the AI headline, #ffffff80"
+      },
+      {
+        "name": "card-title",
+        "size": "16px",
+        "weight": 500,
+        "lineHeight": "24px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Bento card titles below a mockup"
+      },
+      {
+        "name": "question",
+        "size": "16px",
+        "weight": 600,
+        "lineHeight": "24px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "FAQ questions, plan feature headers"
+      },
+      {
+        "name": "body",
+        "size": "16px",
+        "weight": 500,
+        "lineHeight": "25.6px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Card body and chat text in mockups"
+      },
+      {
+        "name": "store-body",
+        "size": "15px",
+        "weight": 400,
+        "lineHeight": "17.25px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Store descriptions, pill tabs, search placeholder"
+      },
+      {
+        "name": "label",
+        "size": "14px",
+        "weight": 500,
+        "lineHeight": "22.4px",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Small body, plan feature items, category tabs, inline links"
+      },
+      {
+        "name": "nav",
+        "size": "14px",
+        "weight": 500,
+        "lineHeight": "normal",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Header nav links and footer links, #9c9c9d (73 uses per page)"
+      },
+      {
+        "name": "button",
+        "size": "14px",
+        "weight": 500,
+        "lineHeight": "16px",
+        "tracking": "0.2px",
+        "family": "sans",
+        "use": "Light and dark buttons"
+      },
+      {
+        "name": "mockup-row",
+        "size": "13px",
+        "weight": 400,
+        "lineHeight": "16px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "List rows inside product mockups"
+      },
+      {
+        "name": "meta",
+        "size": "13px",
+        "weight": 500,
+        "lineHeight": "14.95px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Author name and counts on store cards"
+      },
+      {
+        "name": "mono-label",
+        "size": "14px",
+        "weight": 500,
+        "lineHeight": "22.4px",
+        "tracking": "0.3px",
+        "family": "mono",
+        "use": "Developer section paragraphs, #6a6b6c"
+      },
+      {
+        "name": "mono-caption",
+        "size": "12px",
+        "weight": 400,
+        "lineHeight": "19.2px",
+        "tracking": "0.2px",
+        "family": "mono",
+        "use": "System requirement line and the Homebrew / V1 text buttons under the hero button, price notes"
+      },
+      {
+        "name": "mono-th",
+        "size": "12px",
+        "weight": 500,
+        "lineHeight": "19.2px",
+        "tracking": "0.2px",
+        "family": "mono",
+        "use": "Table column headers on the pro page, #6a6b6c"
+      },
+      {
+        "name": "legal",
+        "size": "12px",
+        "weight": 400,
+        "lineHeight": "18px",
+        "tracking": "0.4px",
+        "family": "sans",
+        "use": "Consent text under the newsletter form, #ffffff66"
+      },
+      {
+        "name": "mockup-micro",
+        "size": "11px",
+        "weight": 400,
+        "lineHeight": "13px",
+        "tracking": "normal",
+        "family": "sans",
+        "use": "Group labels inside mockups (\"Information\"), #ffffff99"
+      }
+    ]
+  },
+  "spacing": {
+    "unit": "8px (--spacing-1; the scale has 4px half steps)",
+    "scale": [
+      "4px",
+      "8px",
+      "12px",
+      "16px",
+      "20px",
+      "24px",
+      "32px",
+      "40px",
+      "48px",
+      "56px",
+      "64px",
+      "80px",
+      "96px",
+      "112px",
+      "168px",
+      "224px"
+    ],
+    "containerMaxWidth": "1204px (--container-width, also --navbar-width). Declared siblings: 1280px (--container-lg-width), 1064px (--container-sm-width), 746px (--container-xs-width). Store content runs 1140px; FAQ column 700px",
+    "pageGutter": {
+      "desktop": "118px at 1440 (the centred 1204px container)",
+      "mobile": "16px for the header bar; content starts 20px to 24px in (390 screenshot)"
+    },
+    "sectionGap": "Large and uneven: the home hero leaves about 450px between its last mono line and the next heading (outline positions); large spacing values in use are 224px (--spacing-13, 16 uses), 168px (--spacing-12, 8 uses), 96px (22) and 64px (22). Per-section assignment was not recorded"
+  },
+  "radius": [
+    {
+      "name": "xs",
+      "value": "4px",
+      "use": "--rounding-xs. Small mono text buttons, focus outline on feature phrases"
+    },
+    {
+      "name": "sm",
+      "value": "6px",
+      "use": "--rounding-sm, --radius-md. Nav links, platform chips, mockup icon buttons, soft light button"
+    },
+    {
+      "name": "normal",
+      "value": "8px",
+      "use": "--rounding-normal. Light and dark buttons, newsletter field and submit, pagination cells"
+    },
+    {
+      "name": "row",
+      "value": "10px",
+      "use": "Rows in the AI chat mockup sidebar"
+    },
+    {
+      "name": "key",
+      "value": "11px",
+      "use": "Keycaps (159 uses)"
+    },
+    {
+      "name": "md",
+      "value": "12px",
+      "use": "--rounding-md. Store cards, grid cells, search field, social cards (171 uses, the most common). The header bar corner traces to about the same radius in the screenshot"
+    },
+    {
+      "name": "lg",
+      "value": "16px",
+      "use": "--rounding-lg. Announcement pills on the teams page"
+    },
+    {
+      "name": "xl",
+      "value": "20px",
+      "use": "--rounding-xl. Extension showcase cards in the home carousel"
+    },
+    {
+      "name": "browse-card",
+      "value": "22px",
+      "use": "The browse-more card closing the carousel"
+    },
+    {
+      "name": "xxl",
+      "value": "24px",
+      "use": "--rounding-xxl, declared (4 uses)"
+    },
+    {
+      "name": "pill",
+      "value": "999px",
+      "use": "Plan tier segmented options. Other pills use 9999px, 100px (store pill tabs) or 86px (round carousel arrows)"
+    },
+    {
+      "name": "full",
+      "value": "100%",
+      "use": "--rounding-full. Avatars and round icons"
+    }
+  ],
+  "shadow": [
+    {
+      "name": "cell-ring",
+      "value": "rgb(27, 28, 30) 0px 0px 0px 1px, rgb(7, 8, 10) 0px 0px 0px 1px inset",
+      "use": "Grid cells that share edges: a 1px ring outside, a canvas-coloured ring inside (216 uses)"
+    },
+    {
+      "name": "keycap",
+      "value": "rgba(0, 0, 0, 0.4) 0px 1.5px 0.5px 2.5px, rgb(0, 0, 0) 0px 0px 0.5px 1px, rgba(0, 0, 0, 0.25) 0px 2px 1px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px 1px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px inset",
+      "use": "Physical keyboard keys in the hero keyboard and hotkey demos (159 uses)"
+    },
+    {
+      "name": "button-light",
+      "value": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+      "use": "Light button: dark 2px ring, soft white halo, top highlight and bottom inner shade, so it reads as a lit key"
+    },
+    {
+      "name": "button-dark",
+      "value": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.25) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset",
+      "use": "Dark button: 25% white ring plus inner top highlight and bottom shade"
+    },
+    {
+      "name": "top-highlight",
+      "value": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset",
+      "use": "Store cards and pagination cells: a 1px lit top edge instead of a drop shadow. 0.06 on segmented options, 0.1 on round buttons and resource cards, 0.15 (with 1px blur) on social cards"
+    },
+    {
+      "name": "warm-halo",
+      "value": "rgba(215, 201, 175, 0.05) 0px 0px 20px 5px, rgba(215, 201, 175, 0.05) 0px 0px 16px -7px",
+      "use": "Resting glow on media tiles in the community strip"
+    },
+    {
+      "name": "hover-glow",
+      "value": "rgba(154, 170, 255, 0.05) 0px 2px 40px 10px, rgba(154, 170, 255, 0.05) 0px 0px 16px -7px",
+      "use": "Cool blue halo added on hover to round buttons and media tiles"
+    },
+    {
+      "name": "window",
+      "value": "rgba(0, 0, 0, 0.2) 0px 16px 48px 8px, rgba(0, 0, 0, 0.75) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 4px 8px 0px, rgba(0, 0, 0, 0.8) 0px 12px 32px 0px",
+      "use": "Floating product windows and panels inside mockups (9 uses)"
+    },
+    {
+      "name": "focus-glow",
+      "value": "rgba(255, 255, 255, 0.5) 0px 0px 0px 2px",
+      "use": "Custom focus ring on store controls, pills and small text buttons"
+    }
+  ],
+  "layout": {
+    "breakpoints": [
+      "480px (min-width, 93 rules)",
+      "720px (min-width 145 rules, max-width 9)",
+      "767px (max-width, 26 rules)",
+      "768px (min-width, 84 rules)",
+      "840px (max-width 21 rules, min-width 12)"
+    ],
+    "patterns": [
+      {
+        "name": "Floating header",
+        "description": "A framed bar, not a full-width strip: 1204px wide, inset 16px from the top (--navbar-container-padding-top), 76px tall at 1440 and 58px (--navbar-height) at 390, corner about 12px (pixel trace, not computed), 1px light edge with a brighter top line, fill about #0f1011. Logo at the left, nine 14px/500 #9c9c9d links grouped centre-right, then a text log-in link and the light Download button (36px) at the right edge. At 390 the links collapse to a hamburger; the mobile panel transitions height and transform 0.3s ease."
+      },
+      {
+        "name": "Centred hero",
+        "description": "Everything centred. Home: two-line 64px/600 headline, a two-line 18px white subtitle, a long empty gap, then the light button with an Apple glyph, a 12px mono requirement line and two mono text buttons separated by a bar. The download block is not shown at 390. Store, pro and teams heroes add an abstract image (blurred diagonal ribbons, an icon cloud, or an orbit of avatars) behind the headline."
+      },
+      {
+        "name": "Two-tone section intro",
+        "description": "A 20px/500 heading in #ffffff followed directly by its continuation in #6a6b6c at the same size and weight, no gap, either centred above a full-width mockup or left-aligned in a narrow column. This replaces separate title and subtitle sizes."
+      },
+      {
+        "name": "Product window as hero image",
+        "description": "A 1204px framed desktop (1184px inner image, 720px tall) containing a full-size launcher window: a macOS menu bar, the command palette with list and detail panes, an action bar and a dock of square tool buttons. Captions sit centred below in the two-tone style."
+      },
+      {
+        "name": "Extension carousel",
+        "description": "Header row with a two-tone intro at the left and a pill tab group at the right. Cards are 360x536px with 56px between them, overflow the container to the right and end with a browse-more card. Below: an arrow text link at the left and two 58x57px round arrow buttons at the right."
+      },
+      {
+        "name": "Bento of mockups",
+        "description": "One full-width card (AI chat window) above two half-width cards (inline prompt, extensions). Each card is mostly mockup with a 16px/500 title and a #9c9c9d description pinned to the bottom-left. Cards are 1px-ringed dark panels; the stack becomes single-column at 390."
+      },
+      {
+        "name": "Ruled grid",
+        "description": "Developer section and feature grids use cells that share 1px rings (cell-ring shadow) with 24px padding and 32px internal gap; hovering a cell fills it with #0c0d0f in 0.15s."
+      },
+      {
+        "name": "Store grid",
+        "description": "1140px column. Featured: three 359x364px cards with 32px gaps, icon tile centred on top. Listing: a toolbar row (pill tabs left, platform chips and a 320px search right), then two columns of 558x186px cards with 24px gaps, then numbered pagination centred."
+      },
+      {
+        "name": "Plan cards",
+        "description": "Three cards side by side; the middle (recommended) card is taller and raised above its neighbours, with a lighter fill. Each card: name, one-line description, an optional tier segmented control, a large price with a mono unit and a mono billed-annually line with a struck-through price, a full-width button, then a checklist with circled check icons and grey sub-lines. A Monthly / Yearly pill toggle with a mono discount chip sits above the cards. Card radius, fill and the raise offset were not isolated by the measurement."
+      },
+      {
+        "name": "Comparison table",
+        "description": "Full 1204px width, a wide first column of feature labels (white label, grey sub-list), five plan columns with centred white check marks or a small grey dot for absent features, 1px vertical rules, a thicker band between groups, and a row of light buttons at the bottom."
+      },
+      {
+        "name": "FAQ list",
+        "description": "Centred 700px column under a two-tone heading. Each row is a 102px button (39px vertical padding) with a 16px/600 white question and a chevron at the right, separated by faint 1px rules."
+      },
+      {
+        "name": "Footer",
+        "description": "Six link columns (14px/500 #9c9c9d, external links followed by a small up-right arrow), then a 1px rule, then a newsletter band: text block at the left, a 430px form at the right (field, submit, 12px legal text)."
+      }
+    ],
+    "responsive": "At 390 the header keeps its framed shape (16px inset, 58px tall) with logo and hamburger; the hero headline drops to 36px and body to 14px, the hero download block disappears, the two-tone headings drop to 18px, and every bento or grid collapses to one column with mockups scaled down inside their cards. Carousels keep horizontal overflow with the round arrows beside the arrow link. At 768 the type sizes stay as at 1440 (h1 64px)."
+  },
+  "components": [
+    {
+      "name": "Button, light",
+      "anatomy": "Key-like rounded rectangle: optional 16px leading glyph (Apple logo, check badge, people icon), then the label.",
+      "spec": {
+        "height": "36px (32px variant on the teams page)",
+        "padding": "8px 12px; 2px 12px in the mockup Send button",
+        "gap": "8px",
+        "radius": "8px",
+        "background": "#e6e6e6",
+        "color": "#2f3031",
+        "font": "14px/500, line-height 16px, tracking 0.2px",
+        "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+        "transition": "background-image 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #ffffff (pricing measurement); the same four shadow layers, reordered"
+        },
+        {
+          "name": "active",
+          "change": "background #ffffff. No transform was measured in the forced active state"
+        },
+        {
+          "name": "focus-visible",
+          "change": "adds rgb(244, 244, 244) 0px 0px 0px 2px in front of the dark ring, outline-offset 1px"
+        }
+      ],
+      "notes": "The page's primary action. Used for Download, Start Free Trial, Select Plan, Close in dialogs and Send in mockups. Full width (303px) in plan cards."
+    },
+    {
+      "name": "Button, dark",
+      "anatomy": "Same shape as the light button on a faint vertical white gradient with a 1px white ring.",
+      "spec": {
+        "height": "36px; 32px for Install in store cards",
+        "padding": "8px 12px; 8px for Install",
+        "radius": "8px",
+        "background": "linear-gradient(rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.1) 100%)",
+        "color": "#ffffff",
+        "font": "14px/500, line-height 16px, tracking 0.2px",
+        "shadow": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.25) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset",
+        "transition": "same as the light button"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "ring rgba(255, 255, 255, 0.5) 1px"
+        },
+        {
+          "name": "active",
+          "change": "ring rgba(255, 255, 255, 0.5) 1px"
+        },
+        {
+          "name": "focus-visible",
+          "change": "ring rgba(255, 255, 255, 0.5) 2px, outline-offset 1px (store Install: box-shadow none)"
+        }
+      ],
+      "notes": "Secondary action next to or instead of a light button: free plan Download, Choose Teams Pro, Contact Us, Install."
+    },
+    {
+      "name": "Button, soft light",
+      "anatomy": "Flat near-white rectangle without the key shadow.",
+      "spec": {
+        "height": "42px (newsletter submit), 32px (teams template button)",
+        "padding": "8px 12px; 8px 16px",
+        "radius": "8px; 6px",
+        "background": "#ffffffe6",
+        "color": "#000000",
+        "opacity": "0.9 on the newsletter submit",
+        "font": "14px/500, tracking 0.2px",
+        "transition": "color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.1s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "active",
+          "change": "transform matrix(0.98, 0, 0, 0.98, 0, 0)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "background #ffffff, outline 0px (newsletter); browser auto ring on the teams button"
+        }
+      ]
+    },
+    {
+      "name": "Nav link",
+      "anatomy": "Text-only link in the header, tall hit area.",
+      "spec": {
+        "height": "41px",
+        "padding": "12px 8px",
+        "radius": "6px",
+        "color": "#9c9c9d",
+        "font": "14px/500, line-height normal, tracking 0.2px",
+        "gap between links": "15px to 17px between hit areas (outline positions)",
+        "transition": "all 0.2s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #ffffff"
+        },
+        {
+          "name": "active",
+          "change": "color #ffffff"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Arrow text link",
+      "anatomy": "Label followed by a right arrow glyph, 3px gap.",
+      "spec": {
+        "color": "#9c9c9d (#ffffff for the centred section links)",
+        "font": "16px/500, line-height 22.4px, tracking 0.3px",
+        "gap": "3px",
+        "transition": "color 0.3s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #ffffff"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px; one variant uses radius 4px with box-shadow rgba(255, 255, 255, 0.5) 0px 0px 0px 2px"
+        }
+      ],
+      "notes": "Closes a section (\"learn more\" pattern) and sits centred under bento grids or left under carousels."
+    },
+    {
+      "name": "Segmented control",
+      "anatomy": "Pill track holding text options; the active one is a raised inner pill.",
+      "spec": {
+        "option height": "30px",
+        "option width": "96px (pricing), 72px to 107px elsewhere",
+        "option padding": "8px",
+        "radius": "999px",
+        "active background": "#ffffff17 with rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset",
+        "active color": "#ffffff",
+        "inactive color": "#9c9c9d",
+        "font": "14px/500, line-height 16.1px",
+        "transition": "all (default duration) ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "inactive option color #ffffff"
+        },
+        {
+          "name": "focus-visible",
+          "change": "outline 2px solid #ffffffb2, offset 1px"
+        }
+      ],
+      "notes": "Plan tiers inside plan cards. The billing toggle (Monthly / Yearly with a mono -20% chip) and the home category tabs share the shape; their labels transition color 0.2s and 0.3s ease, inactive home tabs are #6a6b6c."
+    },
+    {
+      "name": "Pill tabs and platform chips",
+      "anatomy": "Store listing toolbar: large pill tabs on the left, a framed group of small chips (All, Apple glyph, Windows glyph) on the right.",
+      "spec": {
+        "pill height": "43.25px, padding 12px, radius 100px, 15px/400",
+        "pill active": "background radial-gradient(51.07% 92.4% at 51% 7.61%, rgb(90, 90, 90) 0%, rgb(26, 26, 26) 100%), border 1px #ffffff1a, color #ffffff",
+        "pill inactive": "color #9c9c9d, transparent",
+        "chip": "29.25px tall, padding 6px 10px, gap 6px, radius 6px, 15px/400",
+        "chip active": "background #1b1c1e, color #ffffff",
+        "chip inactive": "color #6a6b6c",
+        "transition": "chips: color 0.15s ease, background 0.15s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "inactive pill or chip color #ffffff"
+        },
+        {
+          "name": "focus-visible",
+          "change": "box-shadow rgba(255, 255, 255, 0.5) 0px 0px 0px 2px, outline-offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Search field",
+      "anatomy": "A button styled as a field: placeholder at the left, two small keycaps (command, K) at the right. Opens search; nothing is typed in place.",
+      "spec": {
+        "size": "476x51.25px in the store hero, 320x43.25px in the toolbar",
+        "padding": "16px; 12px",
+        "radius": "12px",
+        "background": "#0c0d0f",
+        "border": "1px #2f3031",
+        "color": "#6a6b6c",
+        "font": "15px/400, line-height 17.25px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "border #9c9c9d"
+        },
+        {
+          "name": "active",
+          "change": "border #9c9c9d"
+        },
+        {
+          "name": "focus-visible",
+          "change": "box-shadow rgba(255, 255, 255, 0.5) 0px 0px 0px 2px"
+        }
+      ],
+      "notes": "What opens on activation was not recorded."
+    },
+    {
+      "name": "Newsletter field",
+      "anatomy": "Text input (type text, not email) beside a soft light submit; a 12px legal paragraph below; an error label appears above the field.",
+      "spec": {
+        "size": "276x42px, 16px gap to the 138x42px submit",
+        "padding": "8px 12px",
+        "radius": "8px",
+        "background": "#ffffff0d",
+        "border": "1px #ffffff0d",
+        "color": "#ffffff",
+        "font": "14px/500, line-height 16.1px, tracking 0.2px",
+        "placeholder": "a famous engineer's email address, different on each page",
+        "transition": "color 0.3s ease, border 0.3s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "border #ffffff40"
+        },
+        {
+          "name": "active",
+          "change": "border #ffffff40"
+        },
+        {
+          "name": "focus-visible",
+          "change": "border #ffffff66"
+        },
+        {
+          "name": "error",
+          "change": "a red (#ff6363) monospace message appears above the field and the border renders #833637 on the canvas (#ff6363 at about half opacity). Pixel samples from the screenshot; computed values not measured. The input's module also ships the shake keyframe"
+        }
+      ]
+    },
+    {
+      "name": "Extension showcase card",
+      "anatomy": "Tall card tinted with the extension's own colour: an icon tile with a dark frame, name (16px), a small square chevron button at the right, a two-line description, a faint divider, then a large animated illustration filling the rest.",
+      "spec": {
+        "size": "360x536px",
+        "radius": "20px",
+        "background": "per-extension gradient (indigo, blue, green), not measured",
+        "font": "name 16px/400, description 16px/500 line-height 25.6px",
+        "transition": "all ease"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "box-shadow rgba(255, 255, 255, 0.5) 0px 0px 0px 2px, outline-offset 1px"
+        }
+      ],
+      "notes": "The last card (browse more) is #111214 with a 1px #ffffff0f border and 22px radius; its hover transitions box-shadow 0.3s ease, focus-visible adds rgba(255, 255, 255, 0.05) 0px 0px 24px 8px, active adds rgba(255, 255, 255, 0.5) 0px 0px 0px 2px."
+    },
+    {
+      "name": "Round arrow button",
+      "anatomy": "Circle with a chevron, used in pairs for carousels.",
+      "spec": {
+        "size": "58x57px",
+        "padding": "20px",
+        "radius": "86px",
+        "background": "linear-gradient(137deg, rgb(17, 18, 20) 4.87%, rgb(12, 13, 15) 75.88%)",
+        "border": "1px #ffffff0f",
+        "shadow": "rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset",
+        "color": "#ffffff, #6a6b6c when there is nothing to scroll to",
+        "transition": "color 0.3s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "box-shadow rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(154, 170, 255, 0.05) 0px 2px 40px 10px, rgba(154, 170, 255, 0.05) 0px 0px 16px -7px"
+        },
+        {
+          "name": "active",
+          "change": "same as hover"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff"
+        }
+      ],
+      "notes": "Both arrows have no accessible name in the served page (4 unnamed controls on home)."
+    },
+    {
+      "name": "Store listing card",
+      "anatomy": "Row-like card: 32px icon, name (bold), dark Install button at the top right, one or two lines of description, then a meta row (author avatar and name, command count, download count, platform note) with 16px line icons.",
+      "spec": {
+        "size": "558x186px",
+        "padding": "32px",
+        "radius": "12px",
+        "border": "1px #ffffff0f",
+        "shadow": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset",
+        "description": "15px/400 #9c9c9d",
+        "meta": "13px/500 #9c9c9d",
+        "transition": "background-color 0.15s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px"
+        },
+        {
+          "name": "author hover",
+          "change": "author link color #ffffff (0.3s ease)"
+        }
+      ],
+      "notes": "No hover background was measured on the card itself even though background-color is transitioned. Featured cards are 359x364px, content centred: icon tile, 20px/500 title, 15px/400 #ffffff66 description, author line, Install Extension button."
+    },
+    {
+      "name": "Pagination",
+      "anatomy": "Square numbered cells, a long dash for skipped pages, the last page number and a narrow next arrow.",
+      "spec": {
+        "cell": "36x36px, radius 8px, border 1px #ffffff0f, shadow rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset",
+        "active": "background #1b1c1e, color #cdcece",
+        "inactive": "background #0c0d0f, color #6a6b6c",
+        "font": "15px/400",
+        "gap": "8px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #1b1c1e"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Grid cell link",
+      "anatomy": "Cell of a ruled grid: icon or illustration, title, mono or grey paragraph.",
+      "spec": {
+        "padding": "24px",
+        "gap": "32px",
+        "shadow": "rgb(27, 28, 30) 0px 0px 0px 1px, rgb(7, 8, 10) 0px 0px 0px 1px inset",
+        "transition": "background-color 0.15s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #0c0d0f"
+        },
+        {
+          "name": "active",
+          "change": "background #0c0d0f"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Resource card with moving highlight",
+      "anatomy": "Teams page grid of 364x207px link cards; one card at a time carries the panel look and the highlight follows the pointer.",
+      "spec": {
+        "padding": "32px",
+        "gap": "16px",
+        "highlighted": "background #0c0d0f, border 1px #ffffff0f, radius 12px, shadow rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset",
+        "resting": "transparent, border 1px #ffffff00, radius 0px",
+        "transition": "background-color 0.2s ease"
+      },
+      "states": [
+        {
+          "name": "hover (other card)",
+          "change": "gains border #ffffff0f, radius 12px and the inset top highlight"
+        },
+        {
+          "name": "hover (highlighted card loses it)",
+          "change": "background becomes transparent"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Announcement pill",
+      "anatomy": "Small rounded link above a hero headline with a tinted gradient fill and a trailing chevron.",
+      "spec": {
+        "height": "38px (teams hero), 30px (Introducing Pro)",
+        "padding": "8px 16px; 6px 12px",
+        "radius": "16px",
+        "background": "linear-gradient(90.33deg, rgba(251, 137, 32, 0.14) 0%, rgba(255, 77, 1, 0.106) 100%); pink variant linear-gradient(90.33deg, rgba(252, 136, 160, 0.25) 0%, rgba(249, 193, 193, 0.25) 100%)",
+        "border": "1px #ffffff0d; #ffffff26 on the pink variant",
+        "color": "#ff9217; #ffffff",
+        "font": "14px/500 line-height 20px; 12px/500 line-height 16px",
+        "transition": "background-position 0.2s ease; transform 0.2s ease"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px"
+        }
+      ],
+      "notes": "Hover changes were not measured (forced hover produced no computed difference)."
+    },
+    {
+      "name": "FAQ row",
+      "anatomy": "Full-width button with the question at the left and a chevron at the right; the answer expands below.",
+      "spec": {
+        "size": "700x102px",
+        "padding": "39px 0",
+        "gap": "32px",
+        "font": "16px/600, line-height 24px, #ffffff",
+        "divider": "1px faint rule between rows",
+        "answer transition": "grid-template-rows 0.2s ease, opacity 0.2s ease",
+        "chevron transition": "transform 0.4s ease (pricing), 0.3s ease (pro)"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff"
+        },
+        {
+          "name": "open",
+          "change": "not observed: the open-state captures were hidden behind a dialog left open by the previous step"
+        }
+      ]
+    },
+    {
+      "name": "Dialog",
+      "anatomy": "Centred dark panel over a dimmed page. Small: centred 16px title, a grey two-line instruction, a mono command field with a copy icon, a full-width light Close button. Large: left-aligned title, close icon at the top right, a data table with white check marks.",
+      "spec": {
+        "small width": "344px (screenshot), vertically centred",
+        "large width": "768px (screenshot), 16px from the top, taller than the viewport",
+        "enter": "overlay-show and dialog-content-show keyframes (translate(-50%, -48%) scale(0.96) to centred)",
+        "close button focus": "browser auto ring framing the close icon target"
+      },
+      "states": [
+        {
+          "name": "copy success",
+          "change": "icon-success keyframe swaps the copy glyph (owner module of the Homebrew trigger); timing not measured"
+        }
+      ],
+      "notes": "Opened from the small mono text buttons under the hero (install via a package manager, previous version) and from the models info link in plan cards. Panel fill, radius and overlay colour were not measured."
+    },
+    {
+      "name": "Keycap",
+      "anatomy": "A physical key: rounded square with the legend (letter, symbol or word like option / command) and the keycap shadow stack; keys light up in sequence.",
+      "spec": {
+        "radius": "11px",
+        "shadow": "rgba(0, 0, 0, 0.4) 0px 1.5px 0.5px 2.5px, rgb(0, 0, 0) 0px 0px 0.5px 1px, rgba(0, 0, 0, 0.25) 0px 2px 1px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px 1px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px inset",
+        "background": "gradient between --key-bg-start-color and --key-bg-end-color",
+        "legend": "23.75px/500 #6a6b6c at rest",
+        "transition": "opacity 0.4s, box-shadow 0.2s, transform 0.2s, color 0.2s, --key-bg-start-color 0.4s, --key-bg-end-color 0.4s, all cubic-bezier(0.23, 1, 0.32, 1)"
+      },
+      "states": [
+        {
+          "name": "pressed (script)",
+          "change": "observed mid-transition: color to rgb(255, 205, 205), --key-bg-start-color rgb(18, 18, 18) to rgb(22, 22, 22), --key-bg-end-color rgb(13, 13, 13) to rgb(34, 34, 34) over 1.5s with 100ms delay, scale(0.9) to scale(1.08) over 1s with 200ms delay"
+        }
+      ],
+      "notes": "Small inline keycaps show shortcuts in search fields and mockup action bars; their size was not measured."
+    },
+    {
+      "name": "Command palette mockup",
+      "anatomy": "Launcher window: search row (back chevron, placeholder, type filter dropdown), a list pane (group label, rows with 22px icon and 13px label, selected row filled) beside a detail pane (preview, an \"Information\" group of label/value rows), and a bottom action bar pill showing the primary action with a return keycap and an actions menu with command K keycaps. A floating chip names the active command at the bottom-left.",
+      "spec": {
+        "row": "about 38px pitch, 13px/400 #ffffff, icon 22px",
+        "selected row": "lighter fill, radius 8px (screenshot)",
+        "group label": "11px/400 #ffffff99",
+        "metadata rows": "11px labels, alternating faint row fills",
+        "dock": "five square buttons below the window, the active one raised with a tooltip label above (screenshot; not measured)"
+      },
+      "states": [],
+      "notes": "Static imagery with scripted motion; it is not an interactive control. Rebuild with cmdk if it must work."
+    },
+    {
+      "name": "AI chat window mockup",
+      "anatomy": "macOS window with traffic lights, a 273px sidebar (search pill, folders, a \"Recent\" header, chat rows) and a main pane (title with model subtitle, user bubble with inline app chips, tool-call rows with spinner icons and counters, a plain assistant reply).",
+      "spec": {
+        "sidebar row": "273x33px, padding 8px 12px, radius 10px, 13px/400 #ffffff",
+        "selected row": "background #ffffff1a",
+        "section header": "13px/500 #ffffff99, gap 8px",
+        "input": "637x36px, 14px/400, padding 4px",
+        "icon button": "32x32px, radius 6px, border 1px #ffffff1a, shadow rgba(0, 0, 0, 0.03) 0px 7px 3px 0px, rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+        "transition": "all ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "row background #ffffff0d"
+        },
+        {
+          "name": "focus-visible",
+          "change": "selected row: outline 2px, offset -2px, solid; other rows browser auto ring"
+        }
+      ],
+      "notes": "Rows further down fade to transparent at the bottom edge of the pane."
+    },
+    {
+      "name": "Footer link",
+      "anatomy": "Plain link in a six-column footer; external links get a small up-right arrow.",
+      "spec": {
+        "color": "#9c9c9d",
+        "font": "14px/500, tracking 0.2px",
+        "gap": "8px between label and arrow",
+        "transition": "color 0.3s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #ffffff"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff, offset 1px"
+        }
+      ]
+    },
+    {
+      "name": "Mono text button",
+      "anatomy": "Bare 12px mono label used for secondary download options under the hero button, separated by a vertical bar.",
+      "spec": {
+        "height": "19.2px",
+        "radius": "4px",
+        "color": "#9c9c9d",
+        "font": "12px/400 mono, line-height 19.2px, tracking 0.2px",
+        "transition": "color 0.2s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #ffffff"
+        },
+        {
+          "name": "focus-visible",
+          "change": "color #ffffff, box-shadow rgba(255, 255, 255, 0.5) 0px 0px 0px 2px"
+        }
+      ],
+      "notes": "Each opens a dialog."
+    },
+    {
+      "name": "Social auth button",
+      "anatomy": "Icon-only square-ish button in a row of three (Apple, GitHub, Google glyphs, 20px, centred); the row sits above a small centred \"or\" divider.",
+      "spec": {
+        "size": "86x44px, 12px gap between buttons (row 282px wide)",
+        "padding": "12px 16px",
+        "radius": "8px",
+        "background": "#ffffff0d",
+        "border": "1px #ffffff0d",
+        "icon": "20px, monochrome glyphs #ffffff99; the Google glyph keeps its own colours",
+        "transition": "opacity 0.3s, color 0.3s, background-color 0.3s, transform 0.1s, all ease-in-out"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #ffffff1a"
+        },
+        {
+          "name": "active",
+          "change": "background #ffffff1a, transform matrix(0.98, 0, 0, 0.98, 0, 0)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "browser auto outline 1px #99c8ff"
+        }
+      ],
+      "notes": "The buttons have no accessible name in the served page (3 unnamed controls on each auth page). Only the first of the three was measured; the other two share its class and box."
+    },
+    {
+      "name": "Auth field",
+      "anatomy": "Full-width text input with the label as placeholder only, no visible label; fields stack 12px apart.",
+      "spec": {
+        "size": "282x42px",
+        "padding": "8px 12px",
+        "radius": "8px",
+        "background": "#ffffff0d",
+        "border": "1px #ffffff0d",
+        "color": "#ffffff",
+        "font": "14px/500, line-height 16.1px, tracking 0.2px",
+        "transition": "color 0.3s ease, border 0.3s ease"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "border #ffffff40"
+        },
+        {
+          "name": "active",
+          "change": "border #ffffff40"
+        },
+        {
+          "name": "focus-visible",
+          "change": "border #ffffff66"
+        },
+        {
+          "name": "invalid",
+          "change": "not observed (see the Log in and Sign up flows)"
+        }
+      ],
+      "notes": "Same input module as the newsletter field. Log in: email (type email, autocomplete email, required) and password (type password, autocomplete current-password, placeholder marks it optional). Sign up adds name (type text, autocomplete name, required) and username (type text, autocomplete username, required), with autocomplete new-password on the password."
+    },
+    {
+      "name": "Auth submit",
+      "anatomy": "Full-width soft light button closing the form (magic link on log in, create account on sign up).",
+      "spec": {
+        "size": "282x42px",
+        "padding": "8px 12px",
+        "radius": "8px",
+        "background": "#ffffffe6",
+        "border": "1px #ffffff0d",
+        "opacity": "0.9",
+        "color": "#000000; #00000066 on sign up while the bot check runs",
+        "font": "14px/500, line-height 20px, tracking 0.2px",
+        "transition": "color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.1s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "active",
+          "change": "transform matrix(0.98, 0, 0, 0.98, 0, 0) (log in; no active change measured on sign up)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "background #ffffff, outline 0px"
+        },
+        {
+          "name": "waiting",
+          "change": "sign up: label #00000066 and the button reads as disabled until the bot check widget above it finishes"
+        }
+      ],
+      "notes": "12px gap below the last field on log in. On sign up a third-party bot-check widget (about 300x65px, light) sits between the password field and this button."
+    },
+    {
+      "name": "Auth alternate link",
+      "anatomy": "Outlined full-width link under the form that switches to the other auth page, label followed by a 14px arrow.",
+      "spec": {
+        "size": "282x44px",
+        "padding": "12px 16px",
+        "radius": "8px",
+        "border": "1px #ffffff1a",
+        "background": "transparent",
+        "color": "#ffffff99",
+        "font": "14px/500, line-height 16.1px, tracking 0.2px",
+        "transition": "color 0.3s ease-in-out, transform 0.1s ease-in-out"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #ffffff"
+        },
+        {
+          "name": "active",
+          "change": "color #ffffff, transform matrix(0.98, 0, 0, 0.98, 0, 0)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "color #ffffff, browser auto outline 1px #99c8ff, offset 1px"
+        }
+      ],
+      "notes": "30px below the submit on log in. The terms link on sign up is 12px/500 #ffffff99 inside a #ffffff66 sentence and turns #ffffff on hover (color 0.3s ease-in-out)."
+    },
+    {
+      "name": "Feature slider panel",
+      "anatomy": "Sign-up left column: a 20px/600 centred title, a rounded dark panel showing one slide (illustration, 16px/600 title, three-line 14px/400 #ffffff99 description, all centred), and pill dots below with the active dot wider and white.",
+      "spec": {
+        "slide width": "382px, slides 528px apart",
+        "illustration": "382x161px (181px on the last slide)",
+        "slide title": "16px/600, line-height 20px, tracking -0.05px",
+        "slide text": "14px/400, line-height 16px, tracking 0.1px, #ffffff99",
+        "track transition": "margin-left 0.3s ease-out (moves by -528px per slide)",
+        "dot transition": "width 0.3s ease-in-out (24px active, 12px inactive)",
+        "fade": "opacity 0.3s ease on the outgoing slide"
+      },
+      "states": [],
+      "notes": "Advances on its own; the interval was not measured. Panel radius and fill were not isolated. Separated from the form column by a faint vertical rule. At 390 it moves below the form."
+    },
+    {
+      "name": "Showcase captions",
+      "anatomy": "Large media box with three captions under it; each caption is a bold lead-in plus dimmed text, the active one bright, with a 1px progress line on top.",
+      "spec": {
+        "box": "1204x784px (635px on phones), media inset 84px",
+        "caption width": "344px",
+        "caption padding": "32px 0",
+        "font": "16px/500, line-height 25.6px",
+        "lead-in color": "#ffffff80, #ffffff when active",
+        "text color": "#2f3031, #6a6b6c when active",
+        "progress line": "1px, #ffffff1a track, #ffffff fill"
+      },
+      "states": [
+        {
+          "name": "active",
+          "change": "lead-in #ffffff, text #6a6b6c, progress fills over the 5s autoplay step"
+        },
+        {
+          "name": "hover",
+          "change": "not observed"
+        }
+      ],
+      "notes": "On phones the captions stack under a full-bleed 352px media box and the progress line is hidden."
+    },
+    {
+      "name": "Changelog release",
+      "anatomy": "Version pill and date in a 240px column, markdown body in a 760px column.",
+      "spec": {
+        "version pill": "padding 4px 16px, radius 6px, background #ff616126, color #ff6161, 16px/400",
+        "date": "16px/400, color #c2c7ca, 17px below the pill",
+        "body text": "16px/400, line-height 25.6px, tracking 0.32px, #ffffffd9",
+        "section heading": "24px/600, line-height 27.6px, 48px top padding after the first",
+        "list": "32px indent, items 16px/24px #ffffffcc, 12.6px apart",
+        "media": "760x278px",
+        "release gap": "192px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "not observed"
+        }
+      ]
+    },
+    {
+      "name": "Color swatch button",
+      "anatomy": "Card button: 40px swatch, name over a note, mono hex value with a copy glyph.",
+      "spec": {
+        "size": "391x74px",
+        "padding": "16px",
+        "gap": "16px",
+        "radius": "16px",
+        "border": "1px #ffffff0f",
+        "background": "#111214",
+        "name": "15px/600, line-height 17.25px",
+        "note": "13px/500, #9c9c9d",
+        "hex": "13px/500 mono, #cdcece"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "not observed"
+        },
+        {
+          "name": "copied",
+          "change": "not observed"
+        }
+      ]
+    },
+    {
+      "name": "Asset download card",
+      "anatomy": "Preview area on a dark or light ground, footer with the asset name and SVG and PNG buttons.",
+      "spec": {
+        "size": "594x397px",
+        "radius": "16px",
+        "border": "1px #ffffff0f",
+        "background": "#111214",
+        "preview": "592x333px, #151515 dark, #f2f2f2 light, 48px padding",
+        "footer": "62px, padding 16px 20px, border-top 1px #ffffff0f, 14px/600 name",
+        "format button": "padding 6px 10px, background #1b1c1e, border 1px #ffffff0f, 13px/500 #cdcece"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "not observed"
+        }
+      ]
+    },
+    {
+      "name": "Category accordion",
+      "anatomy": "Stacked rows, each a heading holding an 18px question button with a 16px chevron at the top right and a 1px divider below.",
+      "spec": {
+        "width": "700px",
+        "row": "85.5px for one line, 105px for two",
+        "question": "18px/500, line-height 27.6px, #ffffffb3 (heading element itself reports 24px/700)",
+        "chevron": "16x16px, 20px from the row top",
+        "divider": "1px #ffffff1a"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "not observed"
+        }
+      ]
+    },
+    {
+      "name": "Hiring steps",
+      "anatomy": "Right-aligned step labels beside numbered circles on a vertical rail, with a tip card to the right of the active step.",
+      "spec": {
+        "circle": "48x48px, border 1px #ffffff1a, color #ffffff99",
+        "active circle": "background #ffffff33, border #ffffff66, color #ffffff",
+        "label": "16px/600, line-height 18.4px; last step #59d499",
+        "step pitch": "114px",
+        "tip card": "322x360px, padding 32px, radius 12px, background #181425, 15px/22px text"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "not observed"
+        }
+      ]
+    },
+    {
+      "name": "Select trigger",
+      "anatomy": "Field-styled button showing the placeholder or chosen option with a chevron.",
+      "spec": {
+        "height": "48px",
+        "padding": "12px 40px 12px 12px",
+        "radius": "6px",
+        "border": "1px #ffffff1a",
+        "background": "#ffffff0d",
+        "placeholder": "16px/400, #ffffff66"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "not observed"
+        }
+      ]
+    },
+    {
+      "name": "File drop zone",
+      "anatomy": "Dashed box with an instruction line and two smaller notes.",
+      "spec": {
+        "height": "143px (209px on phones)",
+        "padding": "24px",
+        "radius": "6px",
+        "border": "2px #ffffff1a",
+        "background": "#ffffff05",
+        "title": "16px/400 #ffffffe6",
+        "notes": "14px/400 #ffffff99"
+      },
+      "states": [
+        {
+          "name": "drag-over",
+          "change": "not observed"
+        }
+      ]
+    }
+  ],
+  "motion": {
+    "durations": [
+      {
+        "name": "press",
+        "value": "0.1s",
+        "use": "transform on buttons (ease-in-out)"
+      },
+      {
+        "name": "quick",
+        "value": "0.15s",
+        "use": "Grid and store card background, platform chips"
+      },
+      {
+        "name": "control",
+        "value": "0.2s",
+        "use": "Buttons, header links, accordion content, mono text buttons, billing labels"
+      },
+      {
+        "name": "link",
+        "value": "0.3s",
+        "use": "Text colour on links and tabs (87 elements on home), newsletter field, round buttons, chevrons"
+      },
+      {
+        "name": "slow",
+        "value": "0.4s",
+        "use": "Keycap fill and opacity, chevrons on pricing"
+      },
+      {
+        "name": "entrance",
+        "value": "1s",
+        "use": "Hero fade-in-up, keycap scale"
+      },
+      {
+        "name": "illustration",
+        "value": "1.5s",
+        "use": "Hero illustration transforms and keycap colour; 2s with staggered delays of 0.5s, 0.65s, 0.85s and 1s for its parts"
+      },
+      {
+        "name": "autoplay",
+        "value": "5s",
+        "use": "One step of an autoplaying feature showcase (progress bar)"
+      }
+    ],
+    "easings": [
+      {
+        "name": "ease",
+        "value": "ease",
+        "use": "Default for colour, background and shadow changes"
+      },
+      {
+        "name": "ease-in-out",
+        "value": "ease-in-out",
+        "use": "Header links, press transforms, newsletter submit"
+      },
+      {
+        "name": "ease-out",
+        "value": "ease-out",
+        "use": "Hero download block opacity and transform, teams carousel margin"
+      },
+      {
+        "name": "ease-out-quint",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "use": "Keycaps and the hero keyboard"
+      },
+      {
+        "name": "ease-out-quart",
+        "value": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+        "use": "Hero illustration parts"
+      },
+      {
+        "name": "ease-out-circ",
+        "value": "cubic-bezier(0.075, 0.82, 0.165, 1)",
+        "use": "Illustration groups (0.5s and 1.2s)"
+      },
+      {
+        "name": "ease-out-cubic",
+        "value": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+        "use": "Carousel cards entering"
+      },
+      {
+        "name": "visual-enter",
+        "value": "cubic-bezier(0.4, 0, 0.22, 0.96)",
+        "use": "Showcase visual fading in (0.4s)"
+      }
+    ],
+    "transitions": [
+      {
+        "target": "Nav link",
+        "properties": "all",
+        "duration": "0.2s",
+        "easing": "ease-in-out"
+      },
+      {
+        "target": "Text links, tabs, author links, footer links",
+        "properties": "color",
+        "duration": "0.3s",
+        "easing": "ease"
+      },
+      {
+        "target": "Button, light and dark",
+        "properties": "background-image, background-color, box-shadow, transform",
+        "duration": "0.2s, 0.2s, 0.2s, 0.1s",
+        "easing": "ease, ease, ease-in-out, ease-in-out"
+      },
+      {
+        "target": "Newsletter field",
+        "properties": "color, border",
+        "duration": "0.3s, 0.3s",
+        "easing": "ease, ease"
+      },
+      {
+        "target": "Newsletter submit",
+        "properties": "color, background-color, transform",
+        "duration": "0.3s, 0.3s, 0.1s",
+        "easing": "ease-in-out, ease-in-out, ease-in-out"
+      },
+      {
+        "target": "Grid cell",
+        "properties": "background-color",
+        "duration": "0.15s",
+        "easing": "ease"
+      },
+      {
+        "target": "Store listing card",
+        "properties": "background-color",
+        "duration": "0.15s",
+        "easing": "ease-in-out"
+      },
+      {
+        "target": "Teams resource card",
+        "properties": "background-color",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Platform chip",
+        "properties": "color, background",
+        "duration": "0.15s, 0.15s",
+        "easing": "ease, ease"
+      },
+      {
+        "target": "Keycap",
+        "properties": "opacity, box-shadow, transform, color, --key-bg-start-color, --key-bg-end-color",
+        "duration": "0.4s, 0.2s, 0.2s, 0.2s, 0.4s, 0.4s",
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)"
+      },
+      {
+        "target": "FAQ answer",
+        "properties": "grid-template-rows, opacity",
+        "duration": "0.2s, 0.2s",
+        "easing": "ease, ease"
+      },
+      {
+        "target": "Chevron icons",
+        "properties": "transform",
+        "duration": "0.3s (0.4s on pricing, 0.2s on teams)",
+        "easing": "ease"
+      },
+      {
+        "target": "Disclosure arrow",
+        "properties": "rotate",
+        "duration": "0.18s",
+        "easing": "ease"
+      },
+      {
+        "target": "Round arrow button, browse-more card",
+        "properties": "color; box-shadow",
+        "duration": "0.3s",
+        "easing": "ease"
+      },
+      {
+        "target": "Testimonial cards",
+        "properties": "box-shadow",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Mono text buttons, billing labels",
+        "properties": "color",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Blog teaser text",
+        "properties": "opacity",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Hero download block",
+        "properties": "opacity, transform",
+        "duration": "0.3s, 0.3s",
+        "easing": "ease-out, ease-out"
+      },
+      {
+        "target": "Mobile nav panel",
+        "properties": "height, transform",
+        "duration": "0.3s, 0.3s",
+        "easing": "ease, ease"
+      },
+      {
+        "target": "Logo images",
+        "properties": "filter",
+        "duration": "0.3s",
+        "easing": "ease"
+      },
+      {
+        "target": "Teams announcement pill",
+        "properties": "background-position",
+        "duration": "0.2s",
+        "easing": "ease"
+      },
+      {
+        "target": "Teams carousel track",
+        "properties": "margin-left",
+        "duration": "0.3s",
+        "easing": "ease-out"
+      },
+      {
+        "target": "Hero illustration parts",
+        "properties": "transform; all",
+        "duration": "1.5s; 2s with delays 0.5s, 0.65s, 0.85s, 1s",
+        "easing": "cubic-bezier(0.165, 0.84, 0.44, 1)"
+      },
+      {
+        "target": "Showcase caption progress",
+        "properties": "width or transform, not observed",
+        "duration": "5s",
+        "easing": "not observed"
+      }
+    ],
+    "keyframes": [
+      {
+        "name": "fade-in-up",
+        "use": "Home hero entrance, staggered: the block runs first, the subtitle starts 1s later. Same body ships under a second module",
+        "css": "@keyframes fade-in-up { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0px); } }",
+        "timing": "1000ms, keyframe easing ease, fill forwards; second element delay 1000ms"
+      },
+      {
+        "name": "carousel-slide-in",
+        "use": "Extension carousel cards arriving",
+        "css": "@keyframes carousel-slide-in { 0% { opacity: 0; transform: translateY(50px) translate(10px) scale(0.98); } 100% { opacity: 1; transform: translate(0px) scale(1); } }",
+        "timing": "700ms, delay 100ms, keyframe easing cubic-bezier(0.215, 0.61, 0.355, 1), fill forwards"
+      },
+      {
+        "name": "blink",
+        "use": "Text cursor in mockup inputs (five modules share it)",
+        "css": "@keyframes blink { 50% { opacity: 0; } }",
+        "timing": "1000ms or 1100ms, steps(1), infinite"
+      },
+      {
+        "name": "overlay-show",
+        "use": "Dialog overlay; the same fade body is reused for reveals and the showcase visual",
+        "css": "@keyframes overlay-show { 0% { opacity: 0; } 100% { opacity: 1; } }",
+        "timing": "Showcase visual: 400ms, cubic-bezier(0.4, 0, 0.22, 0.96), fill both. Dialog timing not measured"
+      },
+      {
+        "name": "dialog-content-show",
+        "use": "Centred dialog panel entering",
+        "css": "@keyframes dialog-content-show { 0% { opacity: 0; transform: translate(-50%, -48%) scale(0.96); } 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); } }"
+      },
+      {
+        "name": "panel-content-show",
+        "use": "Second dialog module (top-anchored panel)",
+        "css": "@keyframes panel-content-show { 0% { opacity: 0; transform: translateY(-2%) scale(0.96); } 100% { opacity: 1; transform: translate(0px) scale(1); } }"
+      },
+      {
+        "name": "content-show-lift",
+        "use": "Popover content entering from below; owner not identified",
+        "css": "@keyframes content-show-lift { 0% { opacity: 0; transform: translateY(10px) scale(0.96); } 100% { opacity: 1; transform: translateY(0px) scale(1); } }"
+      },
+      {
+        "name": "slide-up-and-fade",
+        "use": "Tooltip or popover appearing above its trigger (two modules)",
+        "css": "@keyframes slide-up-and-fade { 0% { opacity: 0; transform: translateY(2px); } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "slide-right-and-fade",
+        "use": "Tooltip appearing on the right",
+        "css": "@keyframes slide-right-and-fade { 0% { opacity: 0; transform: translate(-2px); } 100% { opacity: 1; transform: translate(0px); } }"
+      },
+      {
+        "name": "slide-down-and-fade",
+        "use": "Tooltip appearing below; same body ships as a reveal",
+        "css": "@keyframes slide-down-and-fade { 0% { opacity: 0; transform: translateY(-2px); } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "slide-left-and-fade",
+        "use": "Tooltip appearing on the left",
+        "css": "@keyframes slide-left-and-fade { 0% { opacity: 0; transform: translate(2px); } 100% { opacity: 1; transform: translate(0px); } }"
+      },
+      {
+        "name": "shake",
+        "use": "Newsletter field module; presumably the invalid-submit shake. Not seen running",
+        "css": "@keyframes shake { 0% { transform: translate(0px); } 25% { transform: translate(-3px); } 75% { transform: translate(3px); } 100% { transform: translate(0px); } }"
+      },
+      {
+        "name": "icon-success",
+        "use": "Copy confirmation glyph in the install dialog (two modules)",
+        "css": "@keyframes icon-success { 0% { opacity: 0; transform: scale(0.8); } 50% { transform: scale(1.1); } 100% { opacity: 1; transform: scale(1); } }"
+      },
+      {
+        "name": "header-slide-in",
+        "use": "Header download button module",
+        "css": "@keyframes header-slide-in { 0% { opacity: 0; transform: translateY(-3%); } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "enter-scale",
+        "use": "Element entrance; owner not identified",
+        "css": "@keyframes enter-scale { 0% { opacity: 0; scale: 0.98; } 100% { opacity: 1; scale: 1; } }"
+      },
+      {
+        "name": "open",
+        "use": "Panel opening from 0.97 scale; owner not identified",
+        "css": "@keyframes open { 0% { opacity: 0.6; transform: translate(0px, 0px) scale(0.97); } 100% { opacity: 1; transform: translate(0px, 0px) scale(1); } }"
+      },
+      {
+        "name": "pop-enter",
+        "use": "Small floating element entering; owner not identified",
+        "css": "@keyframes pop-enter { 0% { opacity: 0; transform: translateY(8px) scale(0.95); } 100% { opacity: 1; transform: translate(0px, 0px) scale(1); } }"
+      },
+      {
+        "name": "animate-in-offset",
+        "use": "Staggered list items rising by a per-item --offset",
+        "css": "@keyframes animate-in-offset { 0% { opacity: 0; transform: translateY(var(--offset)); } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "autoplay-progress",
+        "use": "Progress bar of an autoplaying feature showcase; ends at 0.95 so the step change completes it",
+        "css": "@keyframes autoplay-progress { 0% { transform: scaleX(0); } 5% { transform: scaleX(0.1); } 100% { transform: scaleX(0.95); } }",
+        "timing": "5000ms linear"
+      },
+      {
+        "name": "progress",
+        "use": "Plain progress bar; owner not identified",
+        "css": "@keyframes progress { 0% { transform: scaleX(0); } 100% { transform: scaleX(1); } }"
+      },
+      {
+        "name": "shimmer",
+        "use": "Shimmering text on running tool-call rows in the pro page AI mockup",
+        "css": "@keyframes shimmer { 0% { background-position: 100% 0px; } 80%, 100% { background-position: -100% 0px; } }",
+        "timing": "1500ms linear infinite"
+      },
+      {
+        "name": "night-rider",
+        "use": "Indeterminate loading bar bouncing left and right",
+        "css": "@keyframes night-rider { 0%, 100% { left: 0%; transform: translate(0%); } 50% { left: 100%; transform: translate(-100%); } }"
+      },
+      {
+        "name": "loading-sweep",
+        "use": "Loading highlight sweeping into place",
+        "css": "@keyframes loading-sweep { 0% { opacity: 0; left: 0px; } 100% { opacity: 1; left: 26%; } }"
+      },
+      {
+        "name": "level-bar-one",
+        "use": "First bar of a three-bar level meter on the pro page, lights blue in sequence with the next two",
+        "css": "@keyframes level-bar-one { 0% { background-color: rgba(0, 0, 0, 0); } 20% { background-color: rgba(0, 0, 0, 0); } 22% { background-color: rgb(86, 194, 255); } 90% { background-color: rgb(86, 194, 255); } 92% { background-color: rgba(0, 0, 0, 0); } 100% { background-color: rgba(0, 0, 0, 0); } }",
+        "timing": "6000ms, keyframe easing ease, infinite"
+      },
+      {
+        "name": "level-bar-two",
+        "use": "Second bar of the level meter",
+        "css": "@keyframes level-bar-two { 0% { background-color: rgba(0, 0, 0, 0); } 30% { background-color: rgba(0, 0, 0, 0); } 32% { background-color: rgb(86, 194, 255); } 80% { background-color: rgb(86, 194, 255); } 82% { background-color: rgba(0, 0, 0, 0); } 100% { background-color: rgba(0, 0, 0, 0); } }",
+        "timing": "6000ms, keyframe easing ease, infinite"
+      },
+      {
+        "name": "level-bar-three",
+        "use": "Third bar of the level meter",
+        "css": "@keyframes level-bar-three { 0% { background-color: rgba(0, 0, 0, 0); } 40% { background-color: rgba(0, 0, 0, 0); } 42% { background-color: rgb(86, 194, 255); } 70% { background-color: rgb(86, 194, 255); } 72% { background-color: rgba(0, 0, 0, 0); } 100% { background-color: rgba(0, 0, 0, 0); } }",
+        "timing": "6000ms, keyframe easing ease, infinite"
+      },
+      {
+        "name": "store-bg-enter",
+        "use": "Store hero background settling from 1.03 scale",
+        "css": "@keyframes store-bg-enter { 0% { opacity: 0; transform: translate(-50%) scale(1.03); } 100% { opacity: 1; transform: translate(-50%) scale(1); } }"
+      },
+      {
+        "name": "store-fg-enter",
+        "use": "Store hero icon cloud rising into place",
+        "css": "@keyframes store-fg-enter { 0% { opacity: 0; transform: translate(-50%) translateY(20px); } 100% { opacity: 1; transform: translate(-50%) translateY(0px); } }"
+      },
+      {
+        "name": "screen-blink-startup",
+        "use": "Desktop mockup screen flickering on like a display waking",
+        "css": "@keyframes screen-blink-startup { 0% { opacity: 0; } 14% { opacity: 1; } 18% { opacity: 0; } 29% { opacity: 0; } 32% { opacity: 1; } 35% { opacity: 0; } 49% { opacity: 1; } 100% { opacity: 1; } }",
+        "timing": "1500ms, delay 1000ms, keyframe easing ease, fill forwards"
+      },
+      {
+        "name": "float",
+        "use": "Gentle bob of a hero illustration part",
+        "css": "@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(5px); } }",
+        "timing": "3000ms, delay 1500ms, keyframe easing ease-in-out, infinite"
+      },
+      {
+        "name": "bounce-dock-app-icon",
+        "use": "macOS dock icon bounce in a desktop mockup",
+        "css": "@keyframes bounce-dock-app-icon { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }"
+      },
+      {
+        "name": "glow",
+        "use": "Orange frame pulse around a mockup element (same module as the dock bounce)",
+        "css": "@keyframes glow { 0% { opacity: 0; border: 4px solid rgb(255, 146, 23); box-shadow: rgba(255, 146, 23, 0.5) 0px 0px 40px 40px inset; } 20% { opacity: 1; border: 4px solid rgb(255, 146, 23); box-shadow: rgba(255, 146, 23, 0.5) 0px 0px 60px 60px inset; } 100% { opacity: 0; border: 4px solid rgb(255, 146, 23); box-shadow: rgba(255, 146, 23, 0.5) 0px 0px 40px 40px inset; } }"
+      },
+      {
+        "name": "fade-slide-down-desktop",
+        "use": "Notification dropping in from the top of a desktop mockup",
+        "css": "@keyframes fade-slide-down-desktop { 0% { opacity: 0; transform: translateY(-100%) translate(-50%) translate(0px, 0px); } 100% { opacity: 1; transform: translateY(0px) translate(-50%) translate(0px, 0px); } }"
+      },
+      {
+        "name": "fade-slide-down-mobile",
+        "use": "Same notification at 2x scale for small screens",
+        "css": "@keyframes fade-slide-down-mobile { 0% { opacity: 0; transform: translateY(-100%) translate(-50%) translate(0px, 0px) scale(2); } 100% { opacity: 1; transform: translateY(0px) translate(-50%) translate(0px, 0px) scale(2); } }"
+      },
+      {
+        "name": "spin",
+        "use": "Spinner",
+        "css": "@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }"
+      },
+      {
+        "name": "dash",
+        "use": "Circular progress stroke rotating from the top",
+        "css": "@keyframes dash { 0% { transform: rotate(-90deg); } 100% { transform: rotate(270deg); } }"
+      },
+      {
+        "name": "bounce",
+        "use": "Small hop, same module as dash",
+        "css": "@keyframes bounce { 0% { transform: translateY(0px); } 30% { transform: translateY(-5px); } 60% { transform: translateY(0px); } }"
+      },
+      {
+        "name": "fade-in-blur",
+        "use": "Pricing content focusing in from a 10px blur",
+        "css": "@keyframes fade-in-blur { 0% { filter: blur(10px); opacity: 0; transform: translate(0px, 0px); } 100% { filter: blur(); opacity: 1; transform: translate(0px, 0px); } }"
+      },
+      {
+        "name": "fade-in-rise",
+        "use": "Pricing element rising 10px",
+        "css": "@keyframes fade-in-rise { 0% { opacity: 0; translate: 0px 10px; } 100% { opacity: 1; translate: 0px; } }"
+      },
+      {
+        "name": "rotate-right",
+        "use": "Teams hero: a ring of avatars and icons orbiting clockwise",
+        "css": "@keyframes rotate-right { 0% { transform: rotate(var(--rotation)); } 100% { transform: rotate(calc(var(--rotation) + 1turn)); } }",
+        "timing": "180000ms linear infinite"
+      },
+      {
+        "name": "rotate-left",
+        "use": "Teams hero: the counter-rotating ring",
+        "css": "@keyframes rotate-left { 0% { transform: rotate(var(--rotation)); } 100% { transform: rotate(calc(var(--rotation) - 1turn)); } }",
+        "timing": "180000ms linear infinite"
+      },
+      {
+        "name": "compensate-rotation-right",
+        "use": "Keeps each avatar upright while its ring turns right",
+        "css": "@keyframes compensate-rotation-right { 0% { transform: translateY(-50%) translateX(50%) rotate(calc(var(--rotation) * -1)); } 100% { transform: translateY(-50%) translateX(50%) rotate(calc(var(--rotation) * -1 - 1turn)); } }",
+        "timing": "180000ms linear infinite"
+      },
+      {
+        "name": "compensate-rotation-left",
+        "use": "Keeps each avatar upright while its ring turns left",
+        "css": "@keyframes compensate-rotation-left { 0% { transform: translateY(-50%) translateX(50%) rotate(calc(var(--rotation) * -1)); } 100% { transform: translateY(-50%) translateX(50%) rotate(calc(var(--rotation) * -1 + 1turn)); } }",
+        "timing": "180000ms linear infinite"
+      }
+    ],
+    "unmeasured": [
+      "--spring-1 is a CSS linear() spring easing on :root, but the capture truncated its value after the first points (\"linear(0 0%, .005927 1%, .022466 2%, ...\"), so the curve is not reproduced here and no element using it was identified.",
+      "Running durations of the dialog, tooltip, shake, icon-success and most entrance keyframes: they are in the served CSS but were not running when measured.",
+      "Hover states that are script-driven did not register under forced hover: the home nav link and light button showed no hover difference on home while the same controls did on pricing; announcement pills and showcase cards showed none.",
+      "The hero keyboard plays a scripted typing sequence (keys lighting and scaling with the keycap transition). Sequence and timing are script-driven and only partly visible as running transitions.",
+      "Extension card illustrations (status rings, scrolling translations, a media player) and the command palette mockup animate by script; not specified.",
+      "Teams and pro heroes use WebGL or large images with blurred ribbons; the moving parts are not specified.",
+      "FAQ open state, the plan tooltip and their entrance motion: the captures after the models dialog were taken with that dialog still open.",
+      "Mobile nav panel contents and its open state were not captured.",
+      "Header collapse to the menu button happens between 870px and 880px wide; the exact breakpoint was not observed.",
+      "Store sort pill, category accordion, blog filters and changelog platform switch: hover and open transitions were not observed.",
+      "Careers timeline, hiring steps and sign-up highlight carousel are script-driven; their timing was not observed."
+    ]
+  },
+  "flows": [
+    {
+      "name": "Log in",
+      "entry": "/users/sign_in (the header's log-in link)",
+      "layout": "Normal site header and footer on the dark canvas. One centred 282px column: 48px brand mark, 40px gap, 24px/600 title (line-height 28px, tracking -0.05px), 40px gap, the social button row, a 12px/500 #ffffff66 \"or\", then the form (fields 12px apart), then the outlined alternate link 30px below the submit. The column starts 271px down at 1440 and is the same at 768 and 390.",
+      "steps": [
+        {
+          "name": "Choose a method",
+          "screen": [
+            "Brand mark",
+            "Title naming the action (\"Log in to <product>\")",
+            "Three icon-only social buttons: Apple, GitHub, Google",
+            "Small \"or\" divider",
+            "Email field (type email, autocomplete email, required, placeholder only)",
+            "Password field (type password, autocomplete current-password, placeholder says optional)",
+            "Full-width soft light submit sending a magic link",
+            "Outlined link to sign up with an arrow"
+          ],
+          "actions": [
+            "A social button hands off to that provider's sign-in page (the Apple one was observed opening)",
+            "Submit with an email and no password sends a magic link; with a password it signs in (labels only, not exercised)",
+            "The alternate link goes to /users/sign_up"
+          ],
+          "validation": "The capture read the browser's native message \"Please fill out this field.\" on the email and password fields. The submit attempt then left the page for the third-party Apple sign-in screen, so how the page itself shows the error was not seen. No custom inline error was recorded."
+        }
+      ],
+      "notRecorded": "The magic-link confirmation screen, the password sign-in result, provider consent screens and everything after signing in sit behind an account."
+    },
+    {
+      "name": "Sign up",
+      "entry": "/users/sign_up (the alternate link on the log-in page)",
+      "layout": "Two columns under the normal header at 1440: at the left a feature slider panel with its own title and dots; at the right the same 282px auth column as log in (brand mark, 24px/600 title, social row, \"or\", form, terms line, alternate link), separated by a faint vertical rule. At 390 the form comes first and the slider panel follows below.",
+      "steps": [
+        {
+          "name": "Enter details",
+          "screen": [
+            "Brand mark",
+            "Title (\"Create your account\")",
+            "Three icon-only social buttons: Apple, GitHub, Google",
+            "Small \"or\" divider",
+            "Name field (type text, autocomplete name, required)",
+            "Username field (type text, autocomplete username, required)",
+            "Email field (type email, autocomplete email, required)",
+            "Password field (type password, autocomplete new-password, placeholder says optional)",
+            "Third-party bot-check widget, light, showing a verifying state",
+            "Full-width soft light submit, label dimmed to #00000066 while the check runs",
+            "12px/500 #ffffff66 terms sentence with a #ffffff99 terms link",
+            "Outlined link back to log in"
+          ],
+          "actions": [
+            "A social button hands off to the provider (Apple observed)",
+            "Create account submits once the bot check passes (not exercised)",
+            "The alternate link goes to /users/sign_in"
+          ],
+          "validation": "No native or custom message was recorded. The empty-submit attempt left the page for the third-party Apple sign-in screen, so the page's own handling of empty required fields was not seen."
+        }
+      ],
+      "notRecorded": "Account creation, email confirmation and onboarding sit behind a real account and the bot check."
+    },
+    {
+      "name": "Newsletter subscribe",
+      "entry": "Footer of every page (/, /pricing, /store, /pro, /teams)",
+      "layout": "Footer band below a 1px rule, under the six link columns. Left: a 14px/500 white title and a two-line 14px/500 #9c9c9d description. Right: a 430px form, the 276x42px field and 138x42px soft light submit on one row 16px apart, and a three-line 12px/400 #ffffff66 consent paragraph with an inline privacy link below.",
+      "steps": [
+        {
+          "name": "Enter email",
+          "screen": [
+            "Title and short description at the left",
+            "Text field with a placeholder that is a famous engineer's email address (different per page)",
+            "Subscribe button, soft light",
+            "Consent paragraph with a privacy policy link"
+          ],
+          "actions": [
+            "Subscribe submits the form in place; the page stays where it is"
+          ],
+          "validation": "The field is type text, so the browser shows no native bubble. Submitting it empty showed a custom message (\"Email Address is invalid\") in red #ff6363 monospace above the field, and the field border turned red; the page stayed. The field's module ships a 3px shake keyframe; whether it ran was not recorded. Recorded on home, pricing, store and pro; no validation was recorded on teams."
+        }
+      ],
+      "notRecorded": "The success state after a valid address and any confirmation email: recording them would subscribe a real address. Log in and sign up live at /users/sign_in and /users/sign_up (see their flows); /login returns 404."
+    }
+  ],
+  "principles": [
+    "Paint every page on #07080a. Separate surfaces with 1px light rings, inner top highlights (rgba(255, 255, 255, 0.05 to 0.15) 0px 1px 0px 0px inset) and #0c0d0f to #1b1c1e fills, not with drop shadows.",
+    "Centre the hero and most section intros. Write section intros as one 20px/500 sentence in #ffffff followed by its continuation in #6a6b6c at the same size.",
+    "Use the product itself as the imagery: full macOS-style windows (command palette, AI chat, notes), keycaps and docks, built from the same tokens, larger than the text column.",
+    "Make the main button feel like a lit key: #e6e6e6 fill, #2f3031 label, 8px radius, a dark 2px ring, a soft white halo and inner highlights. It turns #ffffff on hover. Use the dark ringed button for everything secondary.",
+    "Keep text grey by default. Links and tabs rest at #9c9c9d or #6a6b6c and turn #ffffff on hover in 0.3s ease. Card hovers are fills (#0c0d0f) in 0.15s.",
+    "Interface text is 14px/500 with 0.2px tracking in Inter with ss03. Put small facts in 12px mono: requirements, price notes and table headers. Section eyebrows are short uppercase red mono labels (seen in screenshots; size not measured).",
+    "Red #ff6363 is the brand mark and the eyebrow colour; blue #56c2ff marks included features. Neither ever fills a button.",
+    "Show shortcuts as keycaps (command K in search fields, return and command K in action bars), so the site reads as keyboard-first."
+  ],
+  "avoid": [
+    "Coloured or gradient primary buttons; the primary is always the light grey key",
+    "Light page sections or white cards",
+    "Generic stock illustrations instead of product UI",
+    "Large drop shadows on cards resting on the canvas",
+    "Left-aligned marketing heroes with side images",
+    "Separate subtitle sizes under section headings instead of the two-tone continuation",
+    "Bright borders: card edges stay at #ffffff0f to #ffffff40"
+  ],
+  "libraries": {
+    "detected": [
+      {
+        "name": "Next.js",
+        "npm": "next",
+        "purpose": "Framework",
+        "evidence": "\"__NEXT_DATA__\" and \"next/dist/\" in site scripts; window.next defined on all five pages"
+      },
+      {
+        "name": "React",
+        "npm": "react",
+        "purpose": "UI runtime",
+        "evidence": "\"react.transitional.element\" in a site script on all five pages"
+      },
+      {
+        "name": "Radix UI",
+        "npm": "radix-ui",
+        "purpose": "Dialogs, tooltips, accordion primitives",
+        "evidence": "\"data-radix-\" in a site script and data-state on rendered elements; keyframe names (overlayShow, contentShow, slide*AndFade) follow Radix examples. The attribute alone is moderate evidence"
+      },
+      {
+        "name": "Motion",
+        "npm": "motion",
+        "purpose": "Script-driven animation",
+        "evidence": "\"framerAppearId\" in a site script on all five pages. A string in a script, weaker than an attribute"
+      },
+      {
+        "name": "Embla Carousel",
+        "npm": "embla-carousel-react",
+        "purpose": "Carousel",
+        "evidence": "\"embla__\" in a site script on all five pages. Weak: the measured home carousel uses hashed module classes, not embla__ classes"
+      },
+      {
+        "name": "three.js",
+        "npm": "three",
+        "purpose": "WebGL scenes",
+        "evidence": "\"WebGLRenderer\" in a script on home, store, pro and teams. Weak: a bare word in a script"
+      },
+      {
+        "name": "CSS Modules",
+        "purpose": "Scoped styling",
+        "evidence": "Every class is hash_name (e.g. a nav link class ending in _navLink, a button class ending in _button _light or _dark). Inferred from the naming pattern, weak"
+      },
+      {
+        "name": "Inter",
+        "npm": "@fontsource-variable/inter",
+        "purpose": "Text face, variable 100 to 900",
+        "evidence": "loaded font face \"Inter 100 900 normal\" with \"Inter Fallback\""
+      },
+      {
+        "name": "Geist Mono",
+        "npm": "geist",
+        "purpose": "Mono captions",
+        "evidence": "loaded font face \"GeistMono 100 900 normal\""
+      },
+      {
+        "name": "JetBrains Mono",
+        "npm": "@fontsource-variable/jetbrains-mono",
+        "purpose": "Code in mockups (--monospace-font)",
+        "evidence": "loaded font face \"jetBrainsMono 100 800 normal\""
+      }
+    ],
+    "recommended": [
+      {
+        "name": "Lucide",
+        "npm": "lucide-react",
+        "purpose": "16px line icons for meta rows, nav glyphs and checklists; no icon library was detected"
+      },
+      {
+        "name": "cmdk",
+        "npm": "cmdk",
+        "purpose": "A working command palette in place of the static launcher mockup"
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "home",
+      "name": "Home",
+      "use": "Brand front page: product promise, interactive mockups, proof and a developer story in one long scroll.",
+      "structure": [
+        "Floating header bar 1204x76 (58 on phones), fixed 16px from the top",
+        "Hero 895px (655 on phones): two-tone 64px headline, keycap illustration, download block",
+        "Product window mockup, then a time-saved statement",
+        "Extension reel: tabs, 360x536 cards with a 56px gap, round arrow buttons",
+        "AI bento: three mockup cards, margin 181px (81 on phones)",
+        "Proof: 314px quote band, 104px margin",
+        "Feature grid (rows 220/341) and a 986px 'more' section",
+        "Social block 795px (1006 on phones): two 168px community cards, video row",
+        "Developer grid: 5 columns 161.5/355/355/355/161.5, ten fixed rows",
+        "Closing CTA, footer 1239px (2199 on phones)"
+      ],
+      "pages": [
+        "/"
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product Landing",
+      "use": "One product or plan explained with mockups, feature cards, plans and an FAQ.",
+      "structure": [
+        "Hero 751px (803 on phones): 300px masked art, pill, 48px gradient title, lead, Compare Plans CTA with mono note",
+        "AI bento shared with home",
+        "Models section: 424px centered head (min 181px), 1000x728 chart, 180px top margin (80 on phones)",
+        "Features: 54px icon, 460px head, 917x400 media with a 300px text column, three 463px cards, 350px themes row",
+        "Plan cards and enterprise card (74px apart)",
+        "FAQ with a 48px title, list 80px below, 232px bottom padding"
+      ],
+      "pages": [
+        "/pro",
+        "/teams",
+        "/ios",
+        "/windows",
+        "/new",
+        "/keyboard",
+        "/developers",
+        "/browser-extension",
+        "/raycast-vs-alfred",
+        "/enterprise"
+      ]
+    },
+    {
+      "id": "core-feature",
+      "name": "Core Feature",
+      "use": "Deep dive into one built-in feature with alternating text and media sections.",
+      "structure": [
+        "Hero 930px (772 on phones): 364x277 window art at 188px, feature chip, 48px title (27px on phones), 520px lead, two buttons",
+        "Two-column section: 481.6/722.4px grid, 64px gap, 506px tall; quote row below the copy",
+        "Showcase: two-tone head, 1204x784 box, three 344px captions with a 5s progress line",
+        "Second two-column (538px) and second showcase",
+        "Export section 655px: format chips, two-tone head, 520px text",
+        "Grid section: 1260x326 grid, three 419px cells with 1px gaps",
+        "FAQ (1027px) and CTA (546px; 314px with no download block on phones)",
+        "Sections pad 168px 24px (96px 16px on phones)"
+      ],
+      "pages": [
+        "/core-features/ai",
+        "/core-features/focus",
+        "/core-features/notes",
+        "/core-features/system",
+        "/core-features/calendar",
+        "/core-features/snippets",
+        "/core-features/calculator",
+        "/core-features/quicklinks",
+        "/core-features/file-search",
+        "/core-features/emoji-picker",
+        "/core-features/clipboard-history",
+        "/core-features/window-management"
+      ]
+    },
+    {
+      "id": "pricing",
+      "name": "Pricing",
+      "use": "Plan selection with a billing toggle, plan cards, a feature table and an FAQ.",
+      "structure": [
+        "Masked glow art at the top, visually hidden h1",
+        "Billing toggle (Monthly / Yearly with a -20% chip)",
+        "Three plan cards; the featured card is offset -16px and 1152px tall",
+        "Enterprise card with three feature columns and custom pricing",
+        "Comparison table: five plan columns, rows 70/93/123/160/205/227px, divider rows, action row",
+        "FAQ, 224px top margin"
+      ],
+      "pages": [
+        "/pricing"
+      ]
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "use": "Marketplace landing: search, featured picks, sortable listing and pagination.",
+      "structure": [
+        "1064x560 masked icon art behind the hero",
+        "Hero: 80px title at 558px (44px at 345px on phones), 560px lead, 476x51 search trigger 64px below",
+        "Explore heading 40px (32px on phones), 112px below the hero",
+        "Featured: three 359x364 cards with a 32px gap (one column on phones)",
+        "Controls row 143px below: 421x56 sort pill, 126x44 platform switch, 320x43 search (hidden on phones)",
+        "Extensions: 558x186 cards in two columns, 24px gap (16px, one column on phones)",
+        "Pagination 64px below the grid, 128px bottom padding"
+      ],
+      "pages": [
+        "/store"
+      ]
+    },
+    {
+      "id": "store-category",
+      "name": "Store Category",
+      "use": "One category of the marketplace with featured picks, the full listing and SEO copy.",
+      "structure": [
+        "Centered 40px title at 268px (32px at 210px on phones) and a 888px lead",
+        "Featured head 112px below; three 359x364 featured cards (300px horizontal scroll on phones)",
+        "'All' head 128px below with a 240x43 search on the right",
+        "25 extension cards, 558x186, two columns",
+        "Pagination 64px below (wraps to two rows on phones)",
+        "700px accordion, rows 85.5px (105px for two lines)",
+        "Related links 256px below (64px on phones), 128px bottom padding"
+      ],
+      "pages": [
+        "/store/category/ai",
+        "/store/category/transcript",
+        "/store/category/translation",
+        "/store/category/design-tools",
+        "/store/category/productivity",
+        "/store/category/pomodoro-timer",
+        "/store/category/work-from-home",
+        "/store/category/developer-tools",
+        "/store/category/time-management",
+        "/store/category/project-management"
+      ]
+    },
+    {
+      "id": "blog",
+      "name": "Blog Index",
+      "use": "List of posts with one featured post and category filters.",
+      "structure": [
+        "48px title at 156px (138px on phones)",
+        "Featured post 1000x346: 659px image and a 317px details column (342x400 stacked on phones)",
+        "Filter pills and RSS icon, 40px row, 70px below",
+        "Post grid: three 317px columns, 24px gap, rows 170/198/226px by title length; one column on phones",
+        "Card: 24px padding, 20/28 title, two-line 14/22.4 excerpt, avatars and mono date pinned to the bottom"
+      ],
+      "pages": [
+        "/blog"
+      ]
+    },
+    {
+      "id": "changelog",
+      "name": "Changelog",
+      "use": "Chronological release notes with a version column and long markdown bodies.",
+      "structure": [
+        "52px title aligned to the body column at 204px, platform switch pill on the right",
+        "Release: 240px meta column (version pill, date 17px below) and a 760px body; stacked on phones",
+        "Body: 760x278 media, paragraphs 16/25.6, 24px section headings with 48px top spacing, lists with 12.6px item gaps",
+        "Releases 192px apart",
+        "Pagination 193px below the last release, 128px above the footer"
+      ],
+      "pages": [
+        "/changelog"
+      ]
+    },
+    {
+      "id": "card-grid",
+      "name": "Card Grid",
+      "use": "Short index of stories or showcases as linked cards.",
+      "structure": [
+        "48px gradient title at 164px (27px at 146px on phones), 520px lead",
+        "Three 327x296 story cards, 32px gap (one column, 24px gap on phones)",
+        "Card: 60px logo, 20/26 title 42px below, 'Read story' link pinned to the bottom",
+        "Contact pill 24px below the grid, 72px above the footer"
+      ],
+      "pages": [
+        "/customers",
+        "/community-stories"
+      ]
+    },
+    {
+      "id": "media-kit",
+      "name": "Media Kit",
+      "use": "Downloadable brand material: colors, logos, screenshots, photos and coverage.",
+      "structure": [
+        "1064x385 masked art, hero 475px with 48px gradient title, lead and two actions",
+        "Sections pad 168px 24px with a 64px gap; heading block 82px (24px two-tone)",
+        "Color buttons 391x74, then logo, wordmark and icon blocks with 594x397 asset cards (333px preview, 62px footer)",
+        "Screenshot groups: 594x486 figures (444px image, 40px caption), four-column phone group",
+        "Founder photo 1019x680, coverage list of 63px rows with 16px gaps",
+        "CTA card 1204x553, 96px section padding"
+      ],
+      "pages": [
+        "/press",
+        "/wallpapers"
+      ]
+    },
+    {
+      "id": "company",
+      "name": "Company",
+      "use": "Long-form company story: mission, values, team and hiring.",
+      "structure": [
+        "Masked glow art, hero 582px: 80px title at 236px (44px at 218px on phones), 560px lead, framed CTA",
+        "Timeline 984x340 with years, ticks and milestone captions",
+        "Values: 3 columns of 172px cards (255px horizontal scroll on phones)",
+        "Team: 60px gradient initials in a 860px wrap, photo and four gradient stats",
+        "How we work: three-column masonry of 48px-padded cards",
+        "Full-bleed photo strip 416px, benefits 4x238px cards",
+        "Open positions, hiring steps (48px numbered circles, 322x360 tip card), investors, community cards",
+        "Sections 160px apart (128px on phones)"
+      ],
+      "pages": [
+        "/why",
+        "/careers",
+        "/ambassadors"
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal Document",
+      "use": "Long policy and help text in a single reading column.",
+      "structure": [
+        "746px container, padding 204px 16px 96px",
+        "48/600 title, body starts 153px below (108px on phones) with a rule 68px above it",
+        "Headings, italic h3, paragraphs and lists in one column"
+      ],
+      "pages": [
+        "/aup",
+        "/dpa",
+        "/privacy",
+        "/terms-of-service",
+        "/faq"
+      ]
+    },
+    {
+      "id": "form",
+      "name": "Form",
+      "use": "Single centered form on a lighter #1a1a1a page.",
+      "structure": [
+        "800px container, 32px 24px padding; title at 140px (32px on phones, under the header)",
+        "32/600 title, 16/25.6 lead",
+        "Fields: 18px labels, 44px inputs, 48px select trigger, 120px textarea, 143px drop zone with a 2px dashed border",
+        "180x42 red submit centered"
+      ],
+      "pages": [
+        "/feedback"
+      ]
+    },
+    {
+      "id": "auth",
+      "name": "Auth",
+      "use": "Log in and sign up; sign-up adds a highlight carousel beside the form.",
+      "structure": [
+        "Content 900px tall, panel vertically centered (282px wide; full width minus 24px on phones)",
+        "48px mark, 24/600 title 40px below, three 86x44 provider buttons 40px below",
+        "'or' divider, 42px fields with 12px gaps, 42px light submit",
+        "44px outlined switch link 30px below",
+        "Sign-up: 480px carousel column (382x161 art, title, text, dots) left of the form, name/username/email/password and a verification widget"
+      ],
+      "pages": [
+        "/users/sign_in",
+        "/users/sign_up"
+      ]
+    }
+  ]
+}

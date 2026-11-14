@@ -1,0 +1,222 @@
+/* Feature page template, measured on /products/previews at 1440 and 390. */
+
+.vc-prod-hero {
+  position: relative;
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 120px 24px 0;
+  height: 552px;
+}
+
+.vc-prod-hero__copy {
+  width: 566px;
+}
+
+.vc-prod-hero__lead {
+  width: 557px;
+  margin-top: 24px;
+  color: var(--vc-ink-2);
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.vc-prod-hero__actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.vc-prod-tri {
+  width: 12px;
+  height: 11px;
+  margin-left: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.vc-prod-hero__art {
+  position: absolute;
+  inset: 0 0 0 24px;
+  pointer-events: none;
+}
+
+.vc-prod-chip {
+  position: absolute;
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 8px;
+  background: #8f8f8f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.vc-prod-chip--0 { left: 749px; top: 188px; transform: rotate(-4deg); }
+.vc-prod-chip--1 { left: 883px; top: 176px; }
+.vc-prod-chip--2 { left: 1021px; top: 176px; }
+.vc-prod-chip--3 { left: 1167px; top: 189px; transform: rotate(4deg); }
+.vc-prod-chip--4 { left: 781px; top: 322px; }
+.vc-prod-chip--5 { left: 936px; top: 331px; }
+.vc-prod-chip--6 { left: 1089px; top: 322px; transform: rotate(-3deg); }
+
+.vc-prod-bar {
+  position: absolute;
+  left: 821px;
+  top: 247px;
+  width: 340px;
+  height: 42px;
+  border-radius: 9999px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.145);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .vc-prod-chip {
+    animation: vc-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes vc-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.vc-prod-features {
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 80px 24px 0;
+}
+
+.vc-prod-features__title {
+  max-width: 770px;
+}
+
+.vc-prod-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 72px;
+  margin-top: 120px;
+}
+
+.vc-prod-card__frame {
+  position: relative;
+  height: 252px;
+  overflow: hidden;
+  border: 1px solid var(--vc-edge);
+  border-radius: 2px;
+  transition: border-color 0.15s var(--vc-ease);
+}
+
+.vc-prod-card:hover .vc-prod-card__frame {
+  border-color: var(--vc-edge-hover);
+}
+
+.vc-prod-card__art {
+  position: absolute;
+  left: 33px;
+  right: 33px;
+  top: 33px;
+  height: 200px;
+}
+
+.vc-prod-card__text {
+  margin-top: 32px;
+  color: var(--vc-ink-2);
+  font-size: 18px;
+  line-height: 28px;
+  min-height: 84px;
+}
+
+.vc-prod-card:nth-child(n + 4):nth-child(-n + 6) .vc-prod-card__text {
+  min-height: 56px;
+}
+
+.vc-prod-card__text strong {
+  color: var(--vc-ink);
+  font-weight: 500;
+}
+
+/* Closing row: headline left, two pills right */
+
+.vc-cta-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 216px 24px 96px;
+}
+
+.vc-cta-row__actions {
+  display: flex;
+  gap: 16px;
+  padding-top: 10px;
+}
+
+@media (max-width: 960px) {
+  .vc-prod-hero {
+    height: auto;
+    padding-top: 40px;
+  }
+  .vc-prod-hero__copy,
+  .vc-prod-hero__lead {
+    width: auto;
+  }
+  .vc-prod-hero__art {
+    display: none;
+  }
+  .vc-prod-hero .vc-display {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2.4px;
+  }
+  .vc-prod-hero__lead {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .vc-prod-features {
+    padding-top: 124px;
+  }
+  .vc-prod-features .vc-h48 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2.4px;
+  }
+  .vc-prod-features__title br {
+    display: none;
+  }
+  .vc-prod-grid {
+    grid-template-columns: 1fr;
+    row-gap: 72px;
+    margin-top: 64px;
+  }
+  .vc-prod-card__frame {
+    height: auto;
+    aspect-ratio: 448 / 252;
+  }
+  .vc-prod-card__art {
+    height: 80%;
+  }
+  .vc-prod-card__text {
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 0 !important;
+  }
+  .vc-cta-row {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 160px;
+    padding-bottom: 64px;
+  }
+  .vc-cta-row .vc-h48 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2.4px;
+  }
+  .vc-cta-row__actions {
+    padding-top: 0;
+  }
+}

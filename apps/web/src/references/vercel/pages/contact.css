@@ -1,0 +1,248 @@
+/* Contact and support form template, measured on /contact/sales at 1440 and 390. */
+
+.vc-contact {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--vc-page);
+  margin: 0 auto;
+  padding: 134px 24px 192px;
+}
+
+.vc-contact__intro {
+  width: 684px;
+  padding-top: 10px;
+}
+
+.vc-contact__lead {
+  margin-top: 32px;
+}
+
+.vc-contact__proof {
+  margin-top: 48px;
+}
+
+.vc-contact__proof li {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.vc-contact__proof li + li {
+  margin-top: 34px;
+}
+
+.vc-contact__logo {
+  width: 144px;
+}
+
+.vc-contact__proof p {
+  color: #7d7d7d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+
+.vc-contact__proof p span {
+  color: var(--vc-ink);
+}
+
+.vc-contact__form {
+  display: grid;
+  grid-template-columns: repeat(2, 275px);
+  column-gap: 16px;
+  row-gap: 32px;
+  align-content: start;
+  width: 566px;
+}
+
+.vc-contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vc-contact-field--wide,
+.vc-contact-consent,
+.vc-contact-submit {
+  grid-column: 1 / -1;
+}
+
+.vc-contact-field label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-contact-field input,
+.vc-contact-field textarea,
+.vc-contact-select select {
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--vc-ring);
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  transition: box-shadow 0.15s var(--vc-ease);
+}
+
+.vc-contact-field textarea {
+  height: 150px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.vc-contact-field input::placeholder,
+.vc-contact-field textarea::placeholder {
+  color: var(--vc-muted);
+}
+
+.vc-contact-field input:hover,
+.vc-contact-field textarea:hover,
+.vc-contact-select select:hover {
+  box-shadow: 0 0 0 1px var(--vc-edge-hover);
+}
+
+.vc-contact-field input:focus-visible,
+.vc-contact-field textarea:focus-visible,
+.vc-contact-select select:focus-visible {
+  box-shadow: 0 0 0 1px #a8a8a8, 0 0 0 4px rgba(0, 0, 0, 0.16);
+}
+
+.vc-contact-field input:user-invalid {
+  box-shadow: 0 0 0 1px #e00, 0 0 0 4px rgba(238, 0, 0, 0.16);
+}
+
+.vc-contact-select select {
+  appearance: none;
+  cursor: pointer;
+  background: #fff
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23171717' stroke-width='1.5'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E")
+    no-repeat right 10px center;
+}
+
+.vc-contact-consent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 122px;
+  padding: 16px;
+  border: 1px solid var(--vc-ring-alpha);
+  border-radius: 6px;
+}
+
+.vc-contact-consent__title {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+
+.vc-contact-consent__text {
+  margin-top: 5px;
+  color: var(--vc-ink-2);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vc-contact-consent__text a {
+  color: var(--vc-ink);
+}
+
+.vc-switch {
+  position: relative;
+  flex-shrink: 0;
+  width: 32px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #ebebeb;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: background 0.2s var(--vc-ease);
+}
+
+.vc-switch[data-checked] {
+  background: var(--vc-ink);
+}
+
+.vc-switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s var(--vc-ease);
+}
+
+.vc-switch__thumb[data-checked] {
+  transform: translateX(14px);
+}
+
+.vc-switch:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--vc-focus);
+}
+
+.vc-contact-submit {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.vc-contact-sent {
+  color: var(--vc-ink-2);
+  font-size: 14px;
+}
+
+@media (max-width: 960px) {
+  .vc-contact {
+    flex-direction: column;
+    gap: 24px;
+    padding: 54px 24px 88px;
+  }
+  .vc-contact__proof li {
+    align-items: flex-start;
+    height: auto;
+  }
+  .vc-contact__proof li + li {
+    margin-top: 28px;
+  }
+  /* The phone view keeps three of the five proof rows. */
+  .vc-contact__proof li:nth-child(3),
+  .vc-contact__proof li:nth-child(4) {
+    display: none;
+  }
+  .vc-contact__logo {
+    flex-shrink: 0;
+    width: 120px;
+  }
+  .vc-contact__proof p {
+    width: 222px;
+  }
+  .vc-contact__intro,
+  .vc-contact__form {
+    width: auto;
+  }
+  .vc-contact .vc-display {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2.4px;
+  }
+  .vc-contact__form {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  .vc-contact__form > span:empty {
+    display: none;
+  }
+  .vc-contact-consent {
+    height: auto;
+  }
+}

@@ -1,0 +1,464 @@
+/* Older-system pages (product, solution, segment). Offsets measured at 1440 on /capital and /use-cases/saas. */
+
+.p-container {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.p-display {
+  max-width: 460px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: -1.12px;
+  color: #0a2540;
+}
+
+.p-lead {
+  max-width: 412px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+}
+
+.p-body {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #425466;
+}
+
+.p-body a {
+  color: var(--accent);
+  font-weight: 425;
+}
+
+.p-eyebrow {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: var(--accent);
+}
+
+.p-h2 {
+  max-width: 682px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
+}
+
+.p-eyebrow + .p-h2 {
+  margin-top: 24px;
+}
+
+.p-h3 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #0a2540;
+}
+
+.p-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.p-grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 -16px;
+}
+
+.p-feature {
+  position: relative;
+  padding: 0 32px 0 16px;
+}
+
+.p-feature__icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00d4ff, var(--accent));
+}
+
+.p-feature__title {
+  position: relative;
+  font-size: 15px;
+  font-weight: 425;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #0a2540;
+  margin-bottom: 8px;
+}
+
+.p-feature__title::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 4px;
+  width: 1px;
+  height: 16px;
+  background: var(--accent);
+}
+
+/* ---------- Product hero ---------- */
+
+.p-hero {
+  position: relative;
+  height: 663px;
+}
+
+.p-hero__copy {
+  padding-top: 80px;
+}
+
+.p-hero__copy .p-lead {
+  margin-top: 32px;
+}
+
+.p-hero__copy .p-actions {
+  margin-top: 32px;
+}
+
+.p-ribbon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 410px;
+  height: 556px;
+  border-radius: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 45%, 0 100%);
+}
+
+.p-features {
+  position: relative;
+  background: #ffffff;
+  height: 755px;
+  padding-top: 399px;
+}
+
+.p-features::before {
+  content: "";
+  position: absolute;
+  inset: -303px 0 auto;
+  height: 304px;
+  background: #ffffff;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: -1;
+}
+
+/* ---------- How it works ---------- */
+
+.p-how {
+  position: relative;
+  padding: 128px 0 254px;
+}
+
+.p-how__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #f6f9fc;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 153px), 0 100%);
+}
+
+.p-steps {
+  margin-top: 104px;
+}
+
+.p-step__num {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: #d5f7e0;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 425;
+}
+
+.p-demo {
+  height: 536px;
+  margin: 96px -16px 0;
+  border: 1px solid #cbd6e0;
+  border-radius: 8px;
+}
+
+.p-how__more {
+  margin-top: 96px;
+}
+
+.p-how__lead {
+  max-width: 682px;
+  margin: 16px 0 32px;
+}
+
+.p-shard {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: 315px;
+  height: 90px;
+  border-radius: 0;
+  clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
+}
+
+/* ---------- Testimonial ---------- */
+
+.p-quote {
+  background: #ffffff;
+  padding: 261px 0 128px;
+  margin-top: -153px;
+}
+
+.p-quote__card {
+  position: relative;
+  height: 300px;
+  margin: 0 -16px;
+  padding: 56px 560px 0 40px;
+  border-radius: 8px;
+  background: #03293b;
+  color: #ffffff;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+}
+
+.p-quote__card blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.p-quote__card figcaption {
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.p-quote__card strong {
+  font-weight: 425;
+}
+
+.p-quote__logo {
+  position: absolute;
+  left: 540px;
+  top: 120px;
+  width: 540px;
+  height: 60px;
+}
+
+.p-quote__dots {
+  position: absolute;
+  left: 486px;
+  bottom: 7px;
+  display: flex;
+  gap: 4px;
+}
+
+.p-quote__dots i {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff55;
+}
+
+.p-quote__dots i:first-child {
+  background: #ffffff;
+}
+
+.p-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px -16px 0;
+}
+
+.p-logos__item {
+  display: grid;
+  place-items: center;
+  height: 40px;
+}
+
+.p-logos__mark {
+  width: 200px;
+  height: 40px;
+}
+
+/* ---------- Closing call to action ---------- */
+
+.p-cta {
+  position: relative;
+  padding: 128px 0 0;
+  height: 733px;
+}
+
+.p-cta__grid {
+  display: grid;
+  grid-template-columns: 540px 270px 270px;
+  margin: 0 -16px;
+}
+
+.p-cta__grid > div:first-child {
+  padding: 0 16px;
+}
+
+.p-cta__grid .p-lead {
+  margin: 16px 0 60px;
+}
+
+.p-cta__grid .p-feature {
+  padding-top: 8px;
+}
+
+.p-cta__grid .p-feature .p-body {
+  margin-bottom: 8px;
+}
+
+.p-legal {
+  margin-top: 128px;
+  font-size: 12px;
+  line-height: 17.4px;
+  color: #707f98;
+}
+
+.p-legal strong {
+  font-weight: 425;
+}
+
+.p-legal p + p {
+  margin-top: 8px;
+}
+
+@media (max-width: 1039px) {
+  .p-grid4 {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 48px;
+  }
+
+  .p-cta__grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .p-cta__grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .p-container {
+    padding: 0 32px;
+  }
+
+  .s-subnav {
+    padding: 24px 32px 0;
+  }
+
+  .s-subnav__links {
+    gap: 16px;
+  }
+
+  .p-hero {
+    height: auto;
+    padding-bottom: 720px;
+  }
+
+  .p-hero__copy {
+    padding-top: 44px;
+  }
+
+  .p-display {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+  }
+
+  .p-ribbon {
+    top: 680px;
+    height: 420px;
+  }
+
+  .p-features {
+    height: auto;
+    padding: 0 0 120px;
+  }
+
+  .p-features::before {
+    display: none;
+  }
+
+  .p-grid4 {
+    grid-template-columns: 1fr;
+    margin: 0;
+    row-gap: 40px;
+  }
+
+  .p-feature {
+    padding: 0;
+  }
+
+  .p-feature__title::before {
+    left: -32px;
+  }
+
+  .p-h2 {
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.1px;
+  }
+
+  .p-demo {
+    height: 670px;
+    margin: 64px -16px 0;
+  }
+
+  .p-quote__card {
+    height: 470px;
+    padding: 40px 24px;
+  }
+
+  .p-quote__logo {
+    left: 24px;
+    top: auto;
+    bottom: 40px;
+    width: 200px;
+    height: 40px;
+  }
+
+  .p-logos {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    margin: 30px 0 0;
+  }
+
+  .p-logos__mark {
+    width: 150px;
+  }
+
+  .p-cta {
+    height: auto;
+    padding-bottom: 96px;
+  }
+
+  .p-cta__grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .p-cta__grid > div:first-child {
+    padding: 0;
+  }
+}

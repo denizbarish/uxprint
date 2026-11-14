@@ -1,0 +1,158 @@
+/* Pricing template (measured on /pricing). */
+
+.rc-pricing {
+  position: relative;
+  padding: 156px 0 0;
+}
+
+.rc-pricing__art {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1064px;
+  height: 385px;
+  margin-left: -532px;
+  -webkit-mask-image: linear-gradient(#000 40%, #0000);
+  mask-image: linear-gradient(#000 40%, #0000);
+}
+
+.rc-pricing .rc-plans {
+  position: relative;
+}
+
+.rc-table-scroll {
+  width: 1204px;
+  max-width: 100%;
+  margin: 224px auto 0;
+  overflow-x: auto;
+}
+
+.rc-table {
+  width: 1204px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.rc-table col,
+.rc-table th,
+.rc-table td {
+  padding: 24px 16px;
+  background: var(--rc-canvas);
+  box-shadow: inset 0 0 0 0.5px #1b1c1e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rc-table thead th {
+  height: 72px;
+  position: sticky;
+  top: 0;
+}
+
+.rc-table thead th:nth-child(1) { width: 230px; }
+.rc-table thead th:nth-child(2) { width: 184px; }
+.rc-table thead th:nth-child(3) { width: 184px; }
+.rc-table thead th:nth-child(4) { width: 217.5px; }
+.rc-table thead th:nth-child(5) { width: 204.5px; }
+.rc-table thead th:nth-child(6) { width: 184px; }
+
+.rc-table tbody th {
+  text-align: left;
+  vertical-align: top;
+}
+
+.rc-table__note {
+  color: var(--rc-text-3);
+}
+
+.rc-table__yes {
+  display: inline-flex;
+  color: #fff;
+}
+
+.rc-table__no {
+  display: inline-block;
+  width: 12px;
+  height: 1px;
+  overflow: hidden;
+  background: var(--rc-text-4);
+  color: transparent;
+  vertical-align: middle;
+}
+
+.rc-table__text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rc-table__divider td {
+  height: 8px;
+  padding: 0;
+  background: #1b1b1f;
+  box-shadow: none;
+}
+
+.rc-table__actions td {
+  height: 84px;
+  padding: 24px 16px;
+}
+
+.rc-table__actions .rc-btn {
+  width: 140px;
+  max-width: 100%;
+}
+
+.rc-pricing__faq {
+  margin-top: 224px;
+  padding: 0 32px 64px;
+}
+
+@media (max-width: 767px) {
+  .rc-pricing {
+    padding-top: 138px;
+  }
+
+  .rc-pricing__art {
+    width: 600px;
+    height: 217px;
+    margin-left: -405px;
+  }
+
+  .rc-table-scroll {
+    margin-top: 223px;
+  }
+
+  .rc-table {
+    width: 984px;
+  }
+
+  .rc-table tbody tr {
+    height: auto !important;
+  }
+
+  .rc-table thead th,
+  .rc-table thead th:nth-child(n) {
+    width: 164px;
+    height: 64px;
+  }
+
+  .rc-table__note {
+    display: none;
+  }
+
+  .rc-table th,
+  .rc-table td {
+    padding: 20px 12px;
+  }
+
+  .rc-pricing__faq {
+    margin-top: 224px;
+    padding: 0 0 64px;
+  }
+}

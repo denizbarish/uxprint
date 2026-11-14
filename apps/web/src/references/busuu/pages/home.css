@@ -1,0 +1,686 @@
+/* Legacy home template (measured on the root page). */
+
+:where(.busuu-ref).bu-home {
+  position: relative;
+  color: var(--bu-ink);
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+/* ---------- Bar ---------- */
+
+:where(.busuu-ref) .bu-hm {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px;
+}
+
+:where(.busuu-ref) .bu-hm__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px;
+}
+
+:where(.busuu-ref) .bu-logo--home {
+  color: #fff;
+  font-size: 24px;
+  --bu-logo-cut: #6a3cf0;
+}
+
+:where(.busuu-ref) .bu-logo--home svg {
+  width: 34px;
+  height: 34px;
+}
+
+:where(.busuu-ref) .bu-hm__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+:where(.busuu-ref) .bu-pill--white {
+  border-color: #fff;
+  background: #fff;
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-pill--white:hover {
+  border-color: #e7f0fd;
+  background: #e7f0fd;
+}
+
+:where(.busuu-ref) .bu-pill--line {
+  border-color: #fff;
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-pill--line:hover {
+  background: #fff;
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-hm__more {
+  position: relative;
+  padding: 4px 0;
+}
+
+:where(.busuu-ref) .bu-hm__kebab {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 25px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+:where(.busuu-ref) .bu-hm__kebab svg {
+  width: 23px;
+  height: 23px;
+  fill: currentColor;
+}
+
+:where(.busuu-ref) .bu-hm__kebab:focus-visible,
+:where(.busuu-ref) .bu-pill:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* The panel hangs 70px below the bar row and overshoots the trigger by 35px, as measured. */
+:where(.busuu-ref) .bu-hm__panel {
+  position: absolute;
+  top: 33px;
+  right: -35px;
+  width: 270px;
+  padding: 37px 10px 10px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out,
+    visibility 0s linear 0.2s;
+}
+
+:where(.busuu-ref) .bu-hm__panel[data-open="true"] {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-hm__panel ul {
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+:where(.busuu-ref) .bu-hm__panel a {
+  display: block;
+  height: 55px;
+  padding: 14px 20px;
+  color: var(--bu-ink);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23.8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-hm__panel a:hover,
+:where(.busuu-ref) .bu-hm__panel a:focus-visible {
+  background: var(--bu-legacy);
+  outline: none;
+}
+
+/* ---------- Hero ---------- */
+
+:where(.busuu-ref) .bu-hh {
+  height: 557px;
+  margin-bottom: 64px;
+  background: var(--bu-gradient);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-hh__inner {
+  display: flex;
+  justify-content: center;
+  height: 542px;
+}
+
+:where(.busuu-ref) .bu-hh__text {
+  width: 688px;
+  padding: 120px 0 20px 184px;
+}
+
+:where(.busuu-ref) .bu-hh h1 {
+  width: 504px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+}
+
+:where(.busuu-ref) .bu-hh p {
+  width: 470px;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 30.6px;
+}
+
+:where(.busuu-ref) .bu-lbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 12px 40px;
+  border: 2px solid transparent;
+  border-radius: 45.04px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-lbtn--mint {
+  border-color: var(--bu-mint);
+  background: var(--bu-mint);
+  color: var(--bu-ink);
+}
+
+:where(.busuu-ref) .bu-lbtn--mint:hover {
+  border-color: var(--bu-mint-hover);
+  background: var(--bu-mint-hover);
+}
+
+:where(.busuu-ref) .bu-lbtn--mint:active {
+  border-color: var(--bu-mint-active);
+  background: var(--bu-mint-active);
+}
+
+:where(.busuu-ref) .bu-lbtn:focus-visible {
+  outline: 2px solid var(--bu-ink);
+  outline-offset: 2px;
+}
+
+:where(.busuu-ref) .bu-hh__cta {
+  width: 290px;
+  margin-top: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+:where(.busuu-ref) .bu-hh__trust {
+  width: 430px;
+  height: 20px;
+  margin: 38px 0 0 -4px;
+}
+
+:where(.busuu-ref) .bu-hh__art {
+  flex: none;
+  width: 504px;
+  height: 416px;
+  margin: 79px 0 0 14px;
+  border-radius: 24px;
+}
+
+/* ---------- Language strip ---------- */
+
+:where(.busuu-ref) .bu-strip {
+  height: 233px;
+}
+
+:where(.busuu-ref) .bu-strip h2 {
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 40.8px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-strip__row {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+:where(.busuu-ref) .bu-strip__arrow {
+  flex: none;
+  width: 40px;
+  height: 120px;
+  cursor: pointer;
+}
+
+:where(.busuu-ref) .bu-strip__arrow::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+  border-bottom: 2px solid #c3cad3;
+  border-left: 2px solid #c3cad3;
+  transform: rotate(45deg);
+  transition: border-color 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-strip__arrow--next::before {
+  transform: rotate(-135deg);
+}
+
+:where(.busuu-ref) .bu-strip__arrow:hover::before {
+  border-color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-strip__arrow:focus-visible,
+:where(.busuu-ref) .bu-strip__item:focus-visible {
+  outline: 2px solid var(--bu-blue);
+  outline-offset: -2px;
+}
+
+:where(.busuu-ref) .bu-strip__track {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+:where(.busuu-ref) .bu-strip__item {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 152px;
+  height: 114px;
+  padding: 15px 0;
+  border-radius: 16px;
+  color: var(--bu-muted);
+  font-weight: 800;
+  line-height: 24px;
+  scroll-snap-align: start;
+  transition: background-color 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-strip__item:hover {
+  background: var(--bu-legacy);
+}
+
+:where(.busuu-ref) .bu-strip__item .bu-flag {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Method rows ---------- */
+
+:where(.busuu-ref) .bu-how {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 0;
+}
+
+:where(.busuu-ref) .bu-how > h2 {
+  margin-bottom: 68px;
+  color: #000;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 41px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-how__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+:where(.busuu-ref) .bu-how__row--flip {
+  flex-direction: row-reverse;
+}
+
+:where(.busuu-ref) .bu-how__media {
+  flex: none;
+  width: 540px;
+  height: var(--media-h);
+  border-radius: 16px;
+}
+
+:where(.busuu-ref) .bu-how__info {
+  width: 540px;
+  padding-bottom: 24px;
+}
+
+:where(.busuu-ref) .bu-how__eyebrow {
+  color: var(--bu-muted);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+:where(.busuu-ref) .bu-how h3 {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+:where(.busuu-ref) .bu-how h3 + p {
+  margin-top: 16px;
+}
+
+:where(.busuu-ref) .bu-how__badges {
+  display: flex;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+:where(.busuu-ref) .bu-how__badges .bu-badge {
+  margin: 0;
+}
+
+/* ---------- Trust, awards, companies ---------- */
+
+:where(.busuu-ref) .bu-htrust {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+:where(.busuu-ref) .bu-htrust h2,
+:where(.busuu-ref) .bu-b2b h2,
+:where(.busuu-ref) .bu-awards h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 46.8px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-htrust h2 {
+  width: 960px;
+  margin: 0 auto 14px;
+  color: #000;
+}
+
+:where(.busuu-ref) .bu-htrust__slot {
+  margin: 0;
+}
+
+:where(.busuu-ref) .bu-awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 367px;
+  background: var(--bu-gradient);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-awards__badges {
+  display: flex;
+  gap: 66px;
+  height: 126px;
+}
+
+:where(.busuu-ref) .bu-awards__badge {
+  width: 190px;
+  height: 101px;
+  border-radius: 12px;
+}
+
+:where(.busuu-ref) .bu-awards h2 {
+  margin-top: 29px;
+}
+
+:where(.busuu-ref) .bu-awards p {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+:where(.busuu-ref) .bu-awards__cta {
+  width: 290px;
+  margin-top: 32px;
+}
+
+:where(.busuu-ref) .bu-b2b {
+  width: 1200px;
+  height: 417px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-b2b h2 {
+  color: #000;
+}
+
+:where(.busuu-ref) .bu-b2b__link {
+  display: inline-block;
+  margin-top: 32px;
+  color: var(--bu-blue);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30.6px;
+}
+
+:where(.busuu-ref) .bu-b2b__link:hover {
+  text-decoration: underline;
+}
+
+:where(.busuu-ref) .bu-b2b__logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+:where(.busuu-ref) .bu-b2b__logo {
+  width: 190px;
+  height: 143px;
+  border-radius: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.busuu-ref) .bu-hm__panel {
+    transform: none;
+  }
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 767px) {
+  :where(.busuu-ref) .bu-hm {
+    padding: 18px 1px;
+  }
+
+  :where(.busuu-ref) .bu-hm__nav {
+    padding: 0 15px;
+  }
+
+  :where(.busuu-ref) .bu-logo--home {
+    font-size: 20px;
+  }
+
+  :where(.busuu-ref) .bu-logo--home svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  :where(.busuu-ref) .bu-hm .bu-pill--line {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-hm .bu-pill--white {
+    height: 40px;
+  }
+
+  :where(.busuu-ref) .bu-hm__actions {
+    gap: 10px;
+  }
+
+  :where(.busuu-ref) .bu-hh {
+    height: 726px;
+    margin-bottom: 40px;
+  }
+
+  :where(.busuu-ref) .bu-hh__inner {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 16px;
+  }
+
+  :where(.busuu-ref) .bu-hh__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 117px 5px 5px;
+    text-align: center;
+  }
+
+  :where(.busuu-ref) .bu-hh h1 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  :where(.busuu-ref) .bu-hh p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+
+  :where(.busuu-ref) .bu-hh__cta {
+    width: 193px;
+    height: 43px;
+    margin-top: 24px;
+    padding: 6px 40px;
+  }
+
+  :where(.busuu-ref) .bu-hh__trust {
+    width: 348px;
+    margin: 26px 0 0;
+  }
+
+  :where(.busuu-ref) .bu-hh__art {
+    width: 300px;
+    height: 207px;
+    margin: 5px 0 0;
+  }
+
+  :where(.busuu-ref) .bu-strip {
+    height: 223px;
+  }
+
+  :where(.busuu-ref) .bu-strip h2 {
+    padding-bottom: 39px;
+    font-size: 18px;
+    line-height: 30.6px;
+  }
+
+  :where(.busuu-ref) .bu-strip__row {
+    width: 100%;
+    padding-left: 19px;
+  }
+
+  :where(.busuu-ref) .bu-strip__arrow {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-how {
+    width: 100%;
+    padding: 40px 15px 10px;
+  }
+
+  :where(.busuu-ref) .bu-how > h2 {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  :where(.busuu-ref) .bu-how__row,
+  :where(.busuu-ref) .bu-how__row--flip {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  :where(.busuu-ref) .bu-how__media {
+    width: 100%;
+    height: var(--media-h-sm);
+  }
+
+  :where(.busuu-ref) .bu-how__info {
+    width: 100%;
+  }
+
+  :where(.busuu-ref) .bu-htrust {
+    width: 100%;
+    padding: 70px 15px 20px;
+  }
+
+  :where(.busuu-ref) .bu-htrust h2,
+  :where(.busuu-ref) .bu-b2b h2 {
+    width: 288px;
+    margin: 0 auto 14px;
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  :where(.busuu-ref) .bu-awards {
+    height: 438px;
+    padding: 0 22px 35px;
+  }
+
+  :where(.busuu-ref) .bu-awards__badges {
+    gap: 10px;
+    height: 118px;
+  }
+
+  :where(.busuu-ref) .bu-awards__badge {
+    width: 158px;
+    height: 93px;
+  }
+
+  :where(.busuu-ref) .bu-awards h2 {
+    width: 294px;
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 40.8px;
+  }
+
+  :where(.busuu-ref) .bu-awards p {
+    width: 294px;
+    text-align: center;
+  }
+
+  :where(.busuu-ref) .bu-awards__cta {
+    width: 175px;
+    height: 43px;
+    margin-top: 31px;
+    padding: 6px 40px;
+  }
+
+  :where(.busuu-ref) .bu-b2b {
+    width: 100%;
+    height: 371px;
+    padding: 70px 15px 0;
+  }
+
+  :where(.busuu-ref) .bu-b2b__link {
+    margin-top: 18px;
+  }
+
+  :where(.busuu-ref) .bu-b2b__logos {
+    width: 270px;
+    margin: 31px auto 0;
+  }
+
+  :where(.busuu-ref) .bu-b2b__logo {
+    width: 45px;
+    height: 41px;
+    border-radius: 6px;
+  }
+}

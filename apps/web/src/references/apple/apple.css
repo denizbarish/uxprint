@@ -1,0 +1,1327 @@
+/*
+ * Reference screens for the Apple print. Values come from prints/apple/print.json and the measurements
+ * under captures/apple*, captures/_survey/apple. Brand, copy and imagery are neutral.
+ * Every rule is scoped under :where(.apple-ref) so nothing leaks into the gallery.
+ */
+
+:where(.apple-ref),
+:where(.apple-ref) *,
+:where(.apple-ref) *::before,
+:where(.apple-ref) *::after {
+  box-sizing: border-box;
+}
+
+:where(.apple-ref) {
+  --ap-text: #1d1d1f;
+  --ap-text-2: #6e6e73;
+  --ap-text-3: #86868b;
+  --ap-link: #0066cc;
+  --ap-link-dark: #2997ff;
+  --ap-blue: #0071e3;
+  --ap-bg: #ffffff;
+  --ap-bg-alt: #f5f5f7;
+  --ap-black: #000000;
+  --ap-dark-1: #161617;
+  --ap-dark-2: #1d1d1f;
+  --ap-line: #d2d2d7;
+  --ap-ease: cubic-bezier(0.4, 0, 0.6, 1);
+  --ap-ease-std: cubic-bezier(0.25, 0.1, 0.3, 1);
+  --ap-font: -apple-system, BlinkMacSystemFont, system-ui, "SF Pro Text", "Inter Variable", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --ap-font-display: -apple-system, BlinkMacSystemFont, system-ui, "SF Pro Display", "Inter Variable", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: clip;
+  background: var(--ap-bg);
+  color: var(--ap-text);
+  font-family: var(--ap-font);
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  -webkit-font-smoothing: antialiased;
+  text-align: start;
+}
+
+:where(.apple-ref) :is(h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd) {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+:where(.apple-ref) :is(ul, ol) {
+  list-style: none;
+}
+
+:where(.apple-ref) a {
+  color: var(--ap-link);
+  text-decoration: none;
+}
+
+:where(.apple-ref) a:hover {
+  text-decoration: underline;
+}
+
+:where(.apple-ref) :is(button, input, select) {
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+:where(.apple-ref) button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+:where(.apple-ref) :is(a, button, input, select, summary):focus-visible {
+  outline: 2px solid #0071e3;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+:where(.apple-ref) .ap-chev {
+  width: 11px;
+  height: 11px;
+  flex: none;
+}
+
+/* ---------- Media placeholder (masked in pixel comparison) ---------- */
+
+:where(.apple-ref) .ap-media {
+  display: block;
+  background: linear-gradient(160deg, #e8e8ed 0%, #d2d2d7 100%);
+}
+
+:where(.apple-ref) .ap-media--dark {
+  background: linear-gradient(160deg, #2c2c2e 0%, #1d1d1f 100%);
+}
+
+/* ---------- Buttons and links ---------- */
+
+:where(.apple-ref) .ap-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  padding: 11px 21px;
+  border-radius: 980px;
+  border: 1px solid transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+  letter-spacing: -0.022em;
+  font-weight: 400;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.1s linear, color 0.1s linear, border-color 0.1s linear;
+}
+
+:where(.apple-ref) .ap-btn:hover {
+  text-decoration: none;
+}
+
+:where(.apple-ref) .ap-btn--sm {
+  padding: 8px 15px;
+  font-size: 14px;
+  line-height: 1.28577;
+  letter-spacing: -0.016em;
+}
+
+:where(.apple-ref) .ap-btn--primary {
+  background: var(--ap-blue);
+  color: #ffffff;
+}
+
+:where(.apple-ref) .ap-btn--primary:hover {
+  background: #0077ed;
+}
+
+:where(.apple-ref) .ap-btn--primary:active {
+  background: #006edb;
+}
+
+:where(.apple-ref) .ap-btn--secondary {
+  border-color: var(--ap-blue);
+  color: var(--ap-link);
+}
+
+:where(.apple-ref) .ap-btn--secondary:hover {
+  background: var(--ap-blue);
+  color: #ffffff;
+}
+
+:where(.apple-ref) .ap-on-dark .ap-btn--secondary {
+  border-color: var(--ap-link-dark);
+  color: var(--ap-link-dark);
+}
+
+:where(.apple-ref) .ap-on-dark .ap-btn--secondary:hover {
+  background: var(--ap-link-dark);
+  color: #000000;
+}
+
+:where(.apple-ref) .ap-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+:where(.apple-ref) .ap-more .ap-chev {
+  width: 9px;
+  height: 9px;
+}
+
+/* ---------- Region banner ---------- */
+
+:where(.apple-ref) .ap-region {
+  position: relative;
+  z-index: 10000;
+  background: #fafafc;
+  height: 70px;
+  transition: background-color 0.24s var(--ap-ease);
+}
+
+:where(.apple-ref) .ap-region__inner {
+  display: flex;
+  align-items: center;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+:where(.apple-ref) .ap-region__copy {
+  width: 450px;
+  padding-right: 19.6px;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+:where(.apple-ref) .ap-region__actions {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 29px;
+  gap: 13px;
+}
+
+:where(.apple-ref) .ap-region__select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 42px;
+  padding: 0 14px;
+  border: 3px solid rgba(0, 0, 0, 0.04);
+  border-radius: 11px;
+  background: #fafafc;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+:where(.apple-ref) .ap-region__select select {
+  appearance: none;
+  flex: 1;
+  height: 36px;
+  padding-left: 29px;
+  border: 0;
+  background: transparent;
+  font-size: 17px;
+  letter-spacing: normal;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+:where(.apple-ref) .ap-region__check {
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+:where(.apple-ref) .ap-region__select .ap-chev {
+  position: absolute;
+  right: 14px;
+  width: 12px;
+  height: 12px;
+}
+
+:where(.apple-ref) .ap-region__go {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: #1d1d1f;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.28577;
+  letter-spacing: -0.016em;
+}
+
+:where(.apple-ref) .ap-region__go:hover {
+  text-decoration: none;
+  background: #000000;
+}
+
+:where(.apple-ref) .ap-region__close {
+  width: 18px;
+  height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+:where(.apple-ref) .ap-region__close svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Global navigation ---------- */
+
+:where(.apple-ref) .ap-gn {
+  position: relative;
+  z-index: 9999;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.24s var(--ap-ease);
+}
+
+:where(.apple-ref) .ap-gn[data-flyout] {
+  background: #fafafc;
+}
+
+:where(.apple-ref) .ap-gn__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1024px;
+  height: 44px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+:where(.apple-ref) .ap-gn__list {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  margin: 0 -8px;
+}
+
+:where(.apple-ref) .ap-gn__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+:where(.apple-ref) .ap-gn__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+  transition: color 0.32s var(--ap-ease);
+}
+
+:where(.apple-ref) .ap-gn__link:hover,
+:where(.apple-ref) .ap-gn__item[data-open] > .ap-gn__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+:where(.apple-ref) .ap-gn__logo svg {
+  width: 14px;
+  height: 16px;
+}
+
+:where(.apple-ref) .ap-gn__icon svg {
+  width: 15px;
+  height: 16px;
+}
+
+:where(.apple-ref) .ap-gn__item--bag .ap-gn__icon svg {
+  width: 14px;
+}
+
+/* The chevron button only shows to keyboard users, as on the original. */
+:where(.apple-ref) .ap-gn__reveal {
+  position: absolute;
+  right: -6px;
+  top: 14px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+:where(.apple-ref) .ap-gn__reveal:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+:where(.apple-ref) .ap-gn__reveal .ap-chev {
+  width: 9px;
+  height: 9px;
+}
+
+:where(.apple-ref) .ap-gn__item--trigger {
+  display: none;
+}
+
+/* Flyout: one shared panel whose height follows its content. */
+:where(.apple-ref) .ap-gn-flyout {
+  interpolate-size: allow-keywords;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 44px;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  background: #fafafc;
+  transition:
+    height 0.24s var(--ap-ease) 0.12s,
+    visibility 0.24s step-end 0.12s;
+}
+
+:where(.apple-ref) .ap-gn-flyout[data-open] {
+  height: auto;
+  visibility: visible;
+  transition:
+    height 0.24s var(--ap-ease),
+    visibility 0.24s step-start;
+}
+
+:where(.apple-ref) .ap-gn-flyout__inner {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 22px 84px;
+}
+
+:where(.apple-ref) .ap-gn-group {
+  max-width: 25%;
+  padding-right: 44px;
+  margin-bottom: -4px;
+  --gd: calc(var(--g) * 40ms + 40ms);
+}
+
+:where(.apple-ref) .ap-gn-group--elevated {
+  max-width: 50%;
+  padding-right: 88px;
+  --gd: 0ms;
+}
+
+:where(.apple-ref) .ap-gn-group__header {
+  display: block;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  color: #6e6e73;
+  margin-bottom: 0;
+}
+
+:where(.apple-ref) .ap-gn-group:not(.ap-gn-group--elevated) .ap-gn-group__header {
+  margin-bottom: 14px;
+}
+
+:where(.apple-ref) .ap-gn-group ul li {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 -11px;
+}
+
+:where(.apple-ref) .ap-gn-group ul li a {
+  display: inline-block;
+  padding: 4px 11px;
+  color: #333336;
+}
+
+:where(.apple-ref) .ap-gn-group ul li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+:where(.apple-ref) .ap-gn-group--elevated ul {
+  margin-top: 14px;
+}
+
+:where(.apple-ref) .ap-gn-group--elevated ul li {
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: 0.009em;
+}
+
+:where(.apple-ref) .ap-gn-group--elevated ul li a {
+  padding: 5px 11px;
+}
+
+:where(.apple-ref) .ap-gn-group--elevated ul.ap-gn-group__extra {
+  margin-top: 14px;
+}
+
+:where(.apple-ref) .ap-gn-group--elevated ul.ap-gn-group__extra li {
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+}
+
+:where(.apple-ref) .ap-gn-group--elevated ul.ap-gn-group__extra li a {
+  padding: 4px 11px;
+}
+
+/* Items fade in and drop 4px, staggered per group and per item (0.32s, 20ms per item). */
+:where(.apple-ref) .ap-gn-flyout :is(.ap-gn-group__header, li, .ap-gn-search__form, .ap-gn-bag__title, .ap-gn-bag__note) {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    opacity 0.24s var(--ap-ease),
+    transform 0.24s var(--ap-ease);
+}
+
+:where(.apple-ref) .ap-gn-flyout[data-open] :is(.ap-gn-group__header, li, .ap-gn-search__form, .ap-gn-bag__title, .ap-gn-bag__note) {
+  opacity: 1;
+  transform: none;
+  transition-duration: 0.32s;
+  transition-delay: calc(var(--gd, 0ms) + var(--i, 0) * 20ms + 80ms);
+}
+
+:where(.apple-ref) .ap-gn-flyout[data-open] .ap-gn-group__header {
+  transition-delay: calc(var(--gd, 0ms) + 80ms);
+}
+
+:where(.apple-ref) .ap-gn-search,
+:where(.apple-ref) .ap-gn-bag {
+  flex-direction: column;
+  max-width: 1024px;
+}
+
+:where(.apple-ref) .ap-gn-search .ap-gn-group,
+:where(.apple-ref) .ap-gn-bag .ap-gn-group {
+  max-width: none;
+  margin-top: 40px;
+}
+
+:where(.apple-ref) .ap-gn-search__form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6e6e73;
+}
+
+:where(.apple-ref) .ap-gn-search__form svg {
+  width: 24px;
+  height: 24px;
+}
+
+:where(.apple-ref) .ap-gn-search__form input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16667;
+  letter-spacing: 0.009em;
+  color: #1d1d1f;
+  outline: none;
+}
+
+:where(.apple-ref) .ap-gn-search__form input::placeholder {
+  color: #86868b;
+}
+
+:where(.apple-ref) .ap-gn-bag__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16667;
+  letter-spacing: 0.009em;
+}
+
+:where(.apple-ref) .ap-gn-bag__note {
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  color: #333336;
+}
+
+:where(.apple-ref) .ap-gn-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(232, 232, 237, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.32s var(--ap-ease) 80ms,
+    visibility 0.32s step-end 80ms;
+}
+
+:where(.apple-ref) .ap-gn-curtain[data-open] {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.32s var(--ap-ease) 80ms,
+    visibility 0.32s step-start 80ms;
+}
+
+:where(.apple-ref) .ap-gn-menu {
+  display: none;
+}
+
+@media (max-width: 833px) {
+  :where(.apple-ref) .ap-region {
+    height: 135px;
+  }
+
+  :where(.apple-ref) .ap-region__inner {
+    position: relative;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  :where(.apple-ref) .ap-region__copy {
+    width: auto;
+    padding-right: 42px;
+  }
+
+  :where(.apple-ref) .ap-region__actions {
+    padding: 0;
+    margin: 29px -2px 0;
+  }
+
+  :where(.apple-ref) .ap-region__close {
+    position: absolute;
+    top: 17px;
+    right: 14px;
+  }
+
+  :where(.apple-ref) .ap-gn {
+    height: 48px;
+    background: rgba(250, 250, 252, 0.8);
+  }
+
+  :where(.apple-ref) .ap-gn__content {
+    height: 48px;
+    padding: 0;
+  }
+
+  :where(.apple-ref) .ap-gn__list {
+    height: 48px;
+    margin: 0;
+    padding-right: 48px;
+  }
+
+  :where(.apple-ref) .ap-gn__item--menu {
+    display: none;
+  }
+
+  :where(.apple-ref) .ap-gn__item--logo {
+    flex: 1;
+  }
+
+  :where(.apple-ref) .ap-gn__link {
+    height: 48px;
+    width: 48px;
+    padding: 0;
+  }
+
+  :where(.apple-ref) .ap-gn__logo {
+    width: auto;
+    padding: 0 16px;
+  }
+
+  :where(.apple-ref) .ap-gn__logo svg {
+    width: 17px;
+    height: 19px;
+  }
+
+  :where(.apple-ref) .ap-gn__icon svg {
+    width: 17px;
+    height: 19px;
+  }
+
+  :where(.apple-ref) .ap-gn__item--bag .ap-gn__icon svg {
+    width: 17px;
+  }
+
+  :where(.apple-ref) .ap-gn-flyout,
+  :where(.apple-ref) .ap-gn-curtain {
+    display: none;
+  }
+
+  :where(.apple-ref) .ap-gn__item--trigger {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  :where(.apple-ref) .ap-gn__trigger {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    color: #000000;
+    opacity: 0.8;
+    transition: opacity 0.32s var(--ap-ease);
+  }
+
+  :where(.apple-ref) .ap-gn__trigger:hover {
+    opacity: 1;
+  }
+
+  :where(.apple-ref) .ap-gn__trigger span {
+    position: absolute;
+    left: 16px;
+    width: 16px;
+    height: 1.2px;
+    border-radius: 1px;
+    background: currentColor;
+    transition: transform 0.24s var(--ap-ease);
+  }
+
+  :where(.apple-ref) .ap-gn__trigger span:first-child {
+    top: 20px;
+  }
+
+  :where(.apple-ref) .ap-gn__trigger span:last-child {
+    top: 27px;
+  }
+
+  :where(.apple-ref) .ap-gn[data-menu] .ap-gn__trigger span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  :where(.apple-ref) .ap-gn[data-menu] .ap-gn__trigger span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  :where(.apple-ref) .ap-gn[data-menu] {
+    background: #fafafc;
+  }
+
+  :where(.apple-ref) .ap-gn[data-menu] .ap-gn__item--icon .ap-gn__link {
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.24s var(--ap-ease),
+      visibility 0.24s step-end;
+  }
+
+  :where(.apple-ref) .ap-gn-menu {
+    display: block;
+    position: fixed;
+    inset: 0;
+    top: 0;
+    z-index: 1;
+    padding: 48px 0 0;
+    background: #fafafc;
+    overflow-y: auto;
+    animation: ap-menu-open 0.24s var(--ap-ease) both;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__list {
+    padding: 8px 0 0;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__list button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px 48px 4px;
+    margin-bottom: -7px;
+    font-family: var(--ap-font-display);
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    color: #333336;
+    text-align: left;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__list button:hover {
+    color: #000000;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__list li {
+    padding-bottom: 14px;
+    opacity: 0;
+    transform: translateY(-8px);
+    animation: ap-menu-item 0.24s var(--ap-ease) both;
+    animation-delay: calc(0.2s + var(--i) * 20ms);
+  }
+
+  :where(.apple-ref) .ap-gn-menu__list .ap-chev {
+    width: 14px;
+    height: 14px;
+    margin-top: 10px;
+    margin-right: -29px;
+    opacity: 0;
+    transition: opacity 0.24s var(--ap-ease);
+  }
+
+  :where(.apple-ref) .ap-gn-menu__list button:hover .ap-chev,
+  :where(.apple-ref) .ap-gn-menu__list button:focus-visible .ap-chev {
+    opacity: 1;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333336;
+    animation: ap-menu-back 0.24s var(--ap-ease) 0.16s both;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__back .ap-chev {
+    width: 14px;
+    height: 14px;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__sub {
+    padding: 8px 48px 0;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__sub .ap-gn-group {
+    max-width: none;
+    padding: 0 0 52px;
+    margin: 0;
+    animation: ap-menu-item 0.24s var(--ap-ease) both;
+    animation-delay: calc(var(--g) * 40ms + 0.1s);
+  }
+
+  :where(.apple-ref) .ap-gn-menu__sub .ap-gn-group--elevated .ap-gn-group__header {
+    display: none;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__sub .ap-gn-group__header {
+    font-size: 17px;
+    line-height: 1.23536;
+    letter-spacing: -0.022em;
+    margin-bottom: 14px;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__sub ul li {
+    font-size: 17px;
+    line-height: 1.47059;
+    letter-spacing: -0.022em;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__sub .ap-gn-group--elevated ul li {
+    font-family: var(--ap-font-display);
+    font-size: 28px;
+    line-height: 1.14286;
+    letter-spacing: 0.007em;
+  }
+
+  :where(.apple-ref) .ap-gn-menu__sub .ap-gn-group--elevated ul {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 833px) {
+  :where(.apple-ref) .ap-region {
+    height: 82px;
+  }
+
+  :where(.apple-ref) .ap-region__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  :where(.apple-ref) .ap-region__copy {
+    width: 50%;
+  }
+
+  :where(.apple-ref) .ap-region__actions {
+    margin: 0 28px 0 0;
+  }
+}
+
+@keyframes ap-menu-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ap-menu-item {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ap-menu-back {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Footer ---------- */
+
+:where(.apple-ref) .ap-gf {
+  background: #f5f5f7;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.56);
+}
+
+:where(.apple-ref) .ap-gf__content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+/* Help columns above the footnotes: 56px top padding, 56px icon, centred copy. */
+:where(.apple-ref) .ap-gf__buystrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  color: rgba(0, 0, 0, 0.88);
+  text-align: center;
+}
+
+:where(.apple-ref) .ap-gf__buy {
+  min-height: 263px;
+  padding: 56px 15px 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.016em;
+}
+
+:where(.apple-ref) .ap-gf__buy-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 8px auto 8px;
+  border: 2px solid #1d1d1f;
+  border-radius: 10px;
+}
+
+:where(.apple-ref) .ap-gf__buy h3 {
+  margin-top: 10px;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 600;
+  letter-spacing: 0.012em;
+}
+
+:where(.apple-ref) .ap-gf__buy p {
+  margin-top: 6px;
+}
+
+:where(.apple-ref) .ap-gf__buy a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 11px;
+}
+
+:where(.apple-ref) .ap-gf__buy a .ap-chev {
+  width: 8px;
+  height: 8px;
+}
+
+:where(.apple-ref) .ap-gf__notes {
+  padding: 17px 0 11px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+:where(.apple-ref) .ap-gf__notes ol {
+  padding: 0 17px;
+  list-style: decimal;
+}
+
+:where(.apple-ref) .ap-gf__notes li,
+:where(.apple-ref) .ap-gf__notes p {
+  padding-bottom: 9.6px;
+}
+
+:where(.apple-ref) .ap-gf__crumbs {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 17px 0 0;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+:where(.apple-ref) .ap-gf__crumbs svg:first-child {
+  width: 12px;
+  height: 14px;
+}
+
+:where(.apple-ref) .ap-gf__crumbs .ap-chev {
+  width: 8px;
+  height: 8px;
+  color: rgba(0, 0, 0, 0.56);
+}
+
+:where(.apple-ref) .ap-gf__dir {
+  display: flex;
+  padding-top: 20px;
+}
+
+:where(.apple-ref) .ap-gf__col {
+  width: 20%;
+}
+
+:where(.apple-ref) .ap-gf__section summary {
+  display: block;
+  list-style: none;
+  pointer-events: none;
+}
+
+:where(.apple-ref) .ap-gf__section summary::-webkit-details-marker {
+  display: none;
+}
+
+:where(.apple-ref) .ap-gf__section summary .ap-chev {
+  display: none;
+}
+
+:where(.apple-ref) .ap-gf__section h3 {
+  margin: 0 20px 9.6px 0;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+:where(.apple-ref) .ap-gf__section::details-content {
+  content-visibility: visible;
+  height: auto;
+}
+
+:where(.apple-ref) .ap-gf__section ul {
+  margin: 0 20px 24px 0;
+}
+
+:where(.apple-ref) .ap-gf__section li {
+  margin-bottom: 9.6px;
+}
+
+:where(.apple-ref) .ap-gf__section a,
+:where(.apple-ref) .ap-gf__links a,
+:where(.apple-ref) .ap-gf__locale {
+  color: rgba(0, 0, 0, 0.72);
+}
+
+:where(.apple-ref) .ap-gf__section a:hover,
+:where(.apple-ref) .ap-gf__links a:hover,
+:where(.apple-ref) .ap-gf__locale:hover {
+  color: rgba(0, 0, 0, 0.88);
+  text-decoration: underline;
+}
+
+:where(.apple-ref) .ap-gf__bottom {
+  padding: 37px 0 11px;
+}
+
+:where(.apple-ref) .ap-gf__shop {
+  margin-bottom: 16px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+:where(.apple-ref) .ap-gf__shop a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+:where(.apple-ref) .ap-gf__legal {
+  display: flex;
+  align-items: flex-start;
+}
+
+:where(.apple-ref) .ap-gf__copy {
+  margin: 5px 30px 0 0;
+}
+
+:where(.apple-ref) .ap-gf__links {
+  display: flex;
+  flex: 1;
+  margin-top: 5px;
+}
+
+:where(.apple-ref) .ap-gf__links li {
+  padding: 0 9px;
+  line-height: 1;
+  border-left: 1px solid #d2d2d7;
+}
+
+:where(.apple-ref) .ap-gf__links li:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+:where(.apple-ref) .ap-gf__locale {
+  margin-top: 5px;
+}
+
+@media (max-width: 833px) {
+  :where(.apple-ref) .ap-gf__content {
+    padding: 0 16px;
+  }
+
+  :where(.apple-ref) .ap-gf__buystrip {
+    grid-template-columns: 1fr;
+    padding: 8px 0 0;
+  }
+
+  :where(.apple-ref) .ap-gf__buy {
+    min-height: 265px;
+    padding: 24px 40px 0;
+  }
+
+  :where(.apple-ref) .ap-gf__buy + .ap-gf__buy {
+    border-top: 1px solid rgba(0, 0, 0, 0.16);
+  }
+
+  :where(.apple-ref) .ap-gf__dir {
+    flex-direction: column;
+  }
+
+  :where(.apple-ref) .ap-gf__col {
+    width: auto;
+  }
+
+  :where(.apple-ref) .ap-gf__section {
+    border-bottom: 1px solid #d2d2d7;
+  }
+
+  :where(.apple-ref) .ap-gf__section summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 37px;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  :where(.apple-ref) .ap-gf__section summary .ap-chev {
+    display: block;
+    width: 10px;
+    height: 10px;
+    color: rgba(0, 0, 0, 0.56);
+    transition: transform 0.3s var(--ap-ease);
+  }
+
+  :where(.apple-ref) .ap-gf__section[open] summary .ap-chev {
+    transform: rotate(180deg);
+  }
+
+  :where(.apple-ref) .ap-gf__section h3 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  :where(.apple-ref) .ap-gf__section::details-content {
+    content-visibility: hidden;
+    height: 0;
+    overflow: clip;
+    transition:
+      height 0.3s var(--ap-ease),
+      content-visibility 0.3s allow-discrete;
+    interpolate-size: allow-keywords;
+  }
+
+  :where(.apple-ref) .ap-gf__section[open]::details-content {
+    content-visibility: visible;
+    height: auto;
+  }
+
+  :where(.apple-ref) .ap-gf__section ul {
+    margin: 0;
+    padding: 4px 0 11px 14px;
+  }
+
+  :where(.apple-ref) .ap-gf__section li {
+    margin: 0;
+  }
+
+  :where(.apple-ref) .ap-gf__section li a {
+    display: block;
+    padding: 6px 0;
+  }
+
+  :where(.apple-ref) .ap-gf__bottom {
+    padding: 17px 0 9px;
+  }
+
+  :where(.apple-ref) .ap-gf__shop {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+
+  :where(.apple-ref) .ap-gf__legal {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  :where(.apple-ref) .ap-gf__locale {
+    order: -1;
+    margin: 5px 0 0;
+    padding: 4px 0 12px;
+    border-bottom: 1px solid #d2d2d7;
+    width: 100%;
+  }
+
+  :where(.apple-ref) .ap-gf__copy {
+    margin: 17px 0 0;
+  }
+
+  :where(.apple-ref) .ap-gf__links {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.apple-ref) *,
+  :where(.apple-ref) *::before,
+  :where(.apple-ref) *::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+  }
+}
+
+/* ---------- Dark chrome (service and platform pages) ---------- */
+
+:where(.apple-ref)[data-theme="dark"] .ap-region {
+  background: #282829;
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-region__copy,
+:where(.apple-ref)[data-theme="dark"] .ap-region__close {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-region__select {
+  background: #282829;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-region__go {
+  background: #f5f5f7;
+  color: #000000;
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-gn {
+  background: var(--ap-gn-dark, #121212);
+}
+
+:where(.apple-ref)[data-theme="dark"]:has(.ap-ft-welcome) {
+  --ap-gn-dark: #000000;
+}
+
+/* Press room: translucent black bar over the light page reads as #333333. */
+:where(.apple-ref)[data-theme="dark"]:has(.ap-nr) {
+  --ap-gn-dark: #333333;
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-gn__link,
+:where(.apple-ref)[data-theme="dark"] .ap-gn__trigger {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-gn__link:hover,
+:where(.apple-ref)[data-theme="dark"] .ap-gn__item[data-open] > .ap-gn__link {
+  color: #ffffff;
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-gn[data-flyout],
+:where(.apple-ref)[data-theme="dark"] .ap-gn-flyout,
+:where(.apple-ref)[data-theme="dark"] .ap-gn-menu,
+:where(.apple-ref)[data-theme="dark"] .ap-gn[data-menu] {
+  background: #161617;
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-gn-group ul li a,
+:where(.apple-ref)[data-theme="dark"] .ap-gn-menu__list button,
+:where(.apple-ref)[data-theme="dark"] .ap-gn-bag__title,
+:where(.apple-ref)[data-theme="dark"] .ap-gn-search__form input {
+  color: #e8e8ed;
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-gn-group__header {
+  color: #86868b;
+}
+
+:where(.apple-ref)[data-theme="dark"] .ap-gn-curtain {
+  background: rgba(0, 0, 0, 0.48);
+}
+
+/* Dark footer variant (measured on the audience hub): #1d1d1f with white alpha text. */
+:where(.apple-ref) .ap-gf--dark {
+  background: #1d1d1f;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+:where(.apple-ref) .ap-gf--dark .ap-gf__notes,
+:where(.apple-ref) .ap-gf--dark .ap-gf__shop {
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+:where(.apple-ref) .ap-gf--dark .ap-gf__crumbs,
+:where(.apple-ref) .ap-gf--dark .ap-gf__section h3 {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+:where(.apple-ref) .ap-gf--dark .ap-gf__section a,
+:where(.apple-ref) .ap-gf--dark .ap-gf__links a,
+:where(.apple-ref) .ap-gf--dark .ap-gf__locale {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+:where(.apple-ref) .ap-gf--dark .ap-gf__section a:hover,
+:where(.apple-ref) .ap-gf--dark .ap-gf__links a:hover,
+:where(.apple-ref) .ap-gf--dark .ap-gf__locale:hover {
+  color: #ffffff;
+}
+
+:where(.apple-ref) .ap-gf--dark .ap-gf__shop a {
+  color: #2997ff;
+}
+
+:where(.apple-ref) .ap-gf--dark .ap-gf__links li {
+  border-color: rgba(255, 255, 255, 0.24);
+}

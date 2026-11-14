@@ -6,6 +6,7 @@
 // Without --url it serves apps/web/out itself. The screen list comes from
 // apps/web/src/references/<slug>/registry.json. A screen is compared with
 //   capture: a viewport screenshot under captures/<slug>/ (1440x900), and/or
+//   capturePhone: the same at 390x844 (wins over the survey at phone width), and/or
 //   survey:  the full-page screenshots under captures/_survey/<slug>/<page>/ at 1440 and 390.
 // Similarity is the share of pixels whose largest channel difference is below the threshold (16/255).
 // Boxes marked [data-compare-mask] in the reference are left out; where one page is taller than the
@@ -43,7 +44,7 @@ if (!existsSync(registryFile)) {
 const registry = JSON.parse(readFileSync(registryFile, "utf8"));
 const print = JSON.parse(readFileSync(join(root, "prints", slug, "print.json"), "utf8"));
 const only = option("screen", "");
-const screens = registry.screens.filter((screen) => (screen.capture || screen.survey) && (!only || screen.id === only));
+const screens = registry.screens.filter((screen) => (screen.capture || screen.capturePhone || screen.survey) && (!only || screen.id === only));
 const MAX_HEIGHT = 12000;
 const originalsDir = join(root, "apps/web/public/_originals", slug);
 mkdirSync(originalsDir, { recursive: true });
@@ -146,11 +147,8 @@ try {
       ...(screen.capture ? [{ kind: "desktop", width: 1440, height: 900, full: false, file: join(root, "captures", slug, screen.capture) }] : []),
       // A viewport capture shows the exact state of the screen, so it wins over the survey at desktop width.
       ...(screen.survey && !screen.capture ? [{ kind: "desktop", width: 1440, height: 900, full: true, file: join(root, "captures", "_survey", slug, screen.survey, "full-1440.png") }] : []),
-      ...(screen.survey
-        ? [
-            { kind: "phone", width: 390, height: 844, full: true, file: join(root, "captures", "_survey", slug, screen.survey, "full-390.png") },
-          ]
-        : []),
+      ...(screen.capturePhone ? [{ kind: "phone", width: 390, height: 844, full: false, file: join(root, "captures", slug, screen.capturePhone) }] : []),
+      ...(screen.survey && !screen.capturePhone ? [{ kind: "phone", width: 390, height: 844, full: true, file: join(root, "captures", "_survey", slug, screen.survey, "full-390.png") }] : []),
     ];
     for (const job of jobs) {
       const row = { screen: screen.id, kind: job.kind };

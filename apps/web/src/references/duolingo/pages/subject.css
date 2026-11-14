@@ -1,0 +1,344 @@
+/* Single-subject landing (measured on /math). */
+
+:where(.duolingo-ref) .dl-subj__wrap {
+  width: 1065px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+:where(.duolingo-ref) .dl-subj__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1065px;
+  max-width: 100%;
+  height: 86px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+:where(.duolingo-ref) .dl-subj__logo {
+  height: 46px;
+  font-size: 30px;
+}
+
+:where(.duolingo-ref) .dl-subj__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  height: 501px;
+}
+
+:where(.duolingo-ref) .dl-subj__herocopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 428px;
+  flex: none;
+  padding: 120px 0 112px;
+}
+
+:where(.duolingo-ref) .dl-subj__h1 {
+  color: var(--dl-ink-2);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+:where(.duolingo-ref) .dl-subj__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+:where(.duolingo-ref) .dl-subj__btn {
+  width: 300px;
+  height: 48px;
+  padding: 0 12px;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+}
+
+:where(.duolingo-ref) .dl-subj__heroart {
+  width: 522px;
+  height: 445px;
+}
+
+:where(.duolingo-ref) .dl-subj__main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 120px 0;
+}
+
+:where(.duolingo-ref) .dl-subj__rule {
+  height: 0;
+  margin: 0;
+  border: 0;
+  border-top: 2px solid var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-subj__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+:where(.duolingo-ref) .dl-subj__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 910px;
+  height: 583px;
+  margin: 0 auto;
+}
+
+:where(.duolingo-ref) .dl-subj__row--flip {
+  flex-direction: row-reverse;
+}
+
+:where(.duolingo-ref) .dl-subj__rowcopy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 442px;
+  text-align: center;
+}
+
+:where(.duolingo-ref) .dl-subj__rowcopy h2 {
+  color: var(--dl-ink-2);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+:where(.duolingo-ref) .dl-subj__rowcopy p {
+  margin-top: 16px;
+  color: var(--dl-muted);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+:where(.duolingo-ref) .dl-subj__rowcopy .dl-btn {
+  margin-top: 36px;
+}
+
+:where(.duolingo-ref) .dl-subj__phone {
+  width: 295px;
+  height: 583px;
+  flex: none;
+  border-radius: 32px;
+}
+
+:where(.duolingo-ref) .dl-subj__grades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:where(.duolingo-ref) .dl-subj__h2 {
+  color: var(--dl-ink-2);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+:where(.duolingo-ref) .dl-subj__sub {
+  width: 700px;
+  max-width: 100%;
+  margin-top: 24px;
+  color: var(--dl-muted);
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+:where(.duolingo-ref) .dl-subj__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 339px);
+  gap: 16px 24px;
+  margin-top: 72px;
+}
+
+:where(.duolingo-ref) .dl-subj__card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 342px;
+  height: 110px;
+  padding: 28px 35px;
+  border: 2px solid var(--dl-line);
+  border-radius: 16px;
+  color: var(--dl-ink-2);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+:where(.duolingo-ref) .dl-subj__icon {
+  width: 54px;
+  height: 54px;
+  flex: none;
+  border-radius: 12px;
+}
+
+:where(.duolingo-ref) .dl-subj__faq {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 643px;
+  margin: 0 auto;
+}
+
+:where(.duolingo-ref) .dl-faq--rule {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 54px;
+}
+
+:where(.duolingo-ref) .dl-faq--rule .dl-faq__item {
+  padding-bottom: 32px;
+  border-bottom: 2px solid var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-faq--rule .dl-faq__item:last-child {
+  padding-bottom: 32px;
+}
+
+:where(.duolingo-ref) .dl-subj__final {
+  padding: 32px 16px 72px;
+}
+
+:where(.duolingo-ref) .dl-subj__hero--final {
+  height: 400px;
+}
+
+:where(.duolingo-ref) .dl-subj__finalart {
+  width: 500px;
+  height: 348px;
+}
+
+:where(.duolingo-ref) .dl-subj__foot {
+  width: 643px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 72px 16px 56px;
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-subj__nav {
+    padding: 20px 24px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__lang {
+    display: none;
+  }
+
+  :where(.duolingo-ref) .dl-subj__hero {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 32px;
+    height: 525px;
+    padding: 0 16px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__herocopy {
+    align-items: center;
+    width: 358px;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  :where(.duolingo-ref) .dl-subj__actions {
+    align-items: center;
+  }
+
+  :where(.duolingo-ref) .dl-subj__heroart {
+    width: 359px;
+    max-width: 100%;
+    height: 261px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__main {
+    gap: 86px;
+    padding: 72px 16px 56px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__rows {
+    gap: 86px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__row,
+  :where(.duolingo-ref) .dl-subj__row--flip {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 36px;
+    width: 358px;
+    max-width: 100%;
+    height: 675px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__rowcopy {
+    width: 358px;
+    max-width: 100%;
+  }
+
+  :where(.duolingo-ref) .dl-subj__phone {
+    width: 220px;
+    height: 435px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__h2 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__grid {
+    grid-template-columns: repeat(2, 170px);
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__card {
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    height: 160px;
+    padding: 16px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  :where(.duolingo-ref) .dl-subj__faq {
+    width: 358px;
+    max-width: 100%;
+  }
+
+  :where(.duolingo-ref) .dl-faq--rule {
+    margin-top: 31px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__final {
+    padding: 32px 16px 72px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__hero--final {
+    flex-direction: column;
+    height: 494px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__finalart {
+    width: 358px;
+    height: 250px;
+  }
+
+  :where(.duolingo-ref) .dl-subj__foot {
+    padding: 60px 16px 56px;
+  }
+}

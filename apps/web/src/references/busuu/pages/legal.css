@@ -1,0 +1,46 @@
+/* Policy page template (measured on /en/privacy). */
+
+:where(.busuu-ref).bu-mk.bu-legal main > :first-child {
+  margin-top: 30px;
+}
+
+:where(.busuu-ref).bu-legal .bu-prose h1 {
+  margin-bottom: 16px;
+  color: var(--bu-ink);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+}
+
+:where(.busuu-ref).bu-legal .bu-prose p {
+  margin-bottom: 24px;
+}
+
+:where(.busuu-ref).bu-legal .bu-prose strong {
+  font-weight: 700;
+}
+
+:where(.busuu-ref).bu-legal .bu-prose a {
+  color: var(--bu-blue);
+  text-decoration: underline;
+}
+
+:where(.busuu-ref).bu-legal .bu-prose a:hover {
+  color: var(--bu-blue-hover);
+}
+
+:where(.busuu-ref) .bu-prose ul.bu-legal__list {
+  gap: 9px;
+  margin: 16px 0;
+}
+
+:where(.busuu-ref) .bu-legal__list li {
+  line-height: 22px;
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref).bu-legal .bu-prose h1 {
+    font-size: 32px;
+    line-height: 41.6px;
+  }
+}

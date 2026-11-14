@@ -1,0 +1,16 @@
+{
+  "screens": [
+    { "id": "home", "title": "Home", "theme": "light", "template": "home", "url": "https://www.duolingo.com", "survey": "home" },
+    { "id": "course", "title": "Course Landing", "theme": "light", "template": "course", "url": "https://www.duolingo.com/course/es/en/Learn-Spanish", "survey": "course-es-en-Learn-Spanish" },
+    { "id": "subscription", "title": "Subscription Landing", "theme": "dark", "template": "subscription", "url": "https://www.duolingo.com/super", "survey": "super" },
+    { "id": "subject", "title": "Subject Landing", "theme": "light", "template": "subject", "url": "https://www.duolingo.com/math", "survey": "math" },
+    { "id": "business", "title": "Teams Landing", "theme": "light", "template": "business", "url": "https://www.duolingo.com/business", "survey": "business" },
+    { "id": "efficacy", "title": "Research Hub", "theme": "light", "template": "research", "url": "https://www.duolingo.com/efficacy", "survey": "efficacy" },
+    { "id": "help", "title": "Help Center", "theme": "light", "template": "help", "url": "https://www.duolingo.com/help", "survey": "help" },
+    { "id": "legal", "title": "Legal Document", "theme": "light", "template": "legal", "url": "https://www.duolingo.com/terms", "survey": "terms" },
+    { "id": "courses", "title": "Course Catalog", "theme": "light", "template": "catalog", "url": "https://www.duolingo.com/courses", "survey": "courses" },
+    { "id": "register", "title": "Sign Up Course Picker", "theme": "light", "template": "register", "url": "https://www.duolingo.com/register", "survey": "register" },
+    { "id": "login", "title": "Log In", "theme": "light", "template": "login", "url": "https://www.duolingo.com/log-in", "capture": "log-in/screenshot-1440.png" }
+  ],
+  "components": {}
+}

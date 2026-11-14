@@ -1,0 +1,97 @@
+/* Course catalogue (measured on /courses). */
+
+:where(.duolingo-ref) .dl-courses {
+  width: 912px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 94px 12px 0;
+}
+
+:where(.duolingo-ref) .dl-courses__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 12px;
+}
+
+:where(.duolingo-ref) .dl-courses__head h1 {
+  color: var(--dl-ink-2);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+:where(.duolingo-ref) .dl-courses__lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 144px;
+  height: 40px;
+  color: var(--dl-faint);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+:where(.duolingo-ref) .dl-courses__lang svg {
+  width: 15px;
+  height: 9px;
+}
+
+:where(.duolingo-ref) .dl-courses__lang select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+:where(.duolingo-ref) .dl-courses__lang:focus-within {
+  outline: 3px solid var(--dl-blue);
+  outline-offset: 1px;
+}
+
+:where(.duolingo-ref) .dl-courses__grid {
+  grid-template-columns: repeat(4, 222px);
+  row-gap: 24px;
+  /* The original grid box runs past its last row (2711px for 11 rows); the trailing space is kept. */
+  padding-bottom: 90px;
+}
+
+:where(.duolingo-ref) .dl-courses__grid li {
+  padding: 0 11px;
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-courses {
+    padding: 94px 24px 106px;
+  }
+
+  :where(.duolingo-ref) .dl-courses__head {
+    justify-content: flex-end;
+    height: 18px;
+  }
+
+  :where(.duolingo-ref) .dl-courses__head h1 {
+    display: none;
+  }
+
+  :where(.duolingo-ref) .dl-courses__lang {
+    height: 18px;
+  }
+
+  :where(.duolingo-ref) .dl-courses__grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 316px;
+  }
+
+  :where(.duolingo-ref) .dl-courses__grid li {
+    padding: 0 6px;
+  }
+}

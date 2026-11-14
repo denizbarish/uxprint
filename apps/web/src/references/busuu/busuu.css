@@ -1,0 +1,194 @@
+/*
+ * Reference screens for this platform's print. Values come from the print file and the captured
+ * measurements. Brand, copy and artwork are neutral placeholders.
+ * Every rule is scoped under .busuu-ref so nothing leaks into the gallery or other platforms.
+ */
+
+:where(.busuu-ref),
+:where(.busuu-ref) *,
+:where(.busuu-ref) *::before,
+:where(.busuu-ref) *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:where(.busuu-ref) {
+  --bu-blue: #116eee;
+  --bu-blue-hover: #418bf1;
+  --bu-blue-active: #0e58be;
+  --bu-mint: #11ee92;
+  --bu-mint-hover: #88f7c8;
+  --bu-mint-active: #0ebe75;
+  --bu-navy: #1e2d40;
+  --bu-navy-hover: #4b5766;
+  --bu-ink: #252b2f;
+  --bu-ink-deep: #121b26;
+  --bu-muted: #666e7e;
+  --bu-muted-2: #6d7783;
+  --bu-surface: #f3f5f8;
+  --bu-legacy: #f2f7fd;
+  --bu-field: #d6dee6;
+  --bu-yellow: #ffca3a;
+  --bu-focus: #005fcc;
+  --bu-gradient: linear-gradient(20.78deg, #6e00f8 3.3%, #563ce9 27.67%, #116eee 93.23%);
+  --bu-font: NistaFonts, "Inter Variable", Inter, "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: clip;
+  background: #fff;
+  color: var(--bu-navy);
+  font-family: var(--bu-font);
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.busuu-ref) :where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(.busuu-ref) :where(button, input, select) {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+}
+
+:where(.busuu-ref) :where(button) {
+  cursor: pointer;
+}
+
+:where(.busuu-ref) :where(ul, ol) {
+  list-style: none;
+}
+
+:where(.busuu-ref) :where(a, button, input, select):focus-visible {
+  outline: 1px auto var(--bu-focus);
+  outline-offset: 1px;
+}
+
+/* Neutral stand-in for artwork, photos and video: flat tinted surface. */
+:where(.busuu-ref) .bu-media {
+  display: block;
+  background: linear-gradient(135deg, #dce8fb, #c9daf6);
+  border-radius: inherit;
+}
+
+:where(.busuu-ref) .bu-media--on-blue {
+  background: linear-gradient(135deg, #3d88f2, #5a9af4);
+}
+
+:where(.busuu-ref) .bu-flag {
+  display: inline-block;
+  flex: none;
+  border-radius: 50%;
+  background: conic-gradient(var(--flag-a, #e04f4f) 0 50%, var(--flag-b, #f4f4f4) 0);
+  box-shadow: inset 0 0 0 1px #0000000f;
+}
+
+/* Pill buttons (marketing pages): measured all 0.2s ease-in-out. */
+:where(.busuu-ref) .bu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 12px 24px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-btn--lg {
+  height: 64px;
+  font-size: 20px;
+}
+
+:where(.busuu-ref) .bu-btn--mint {
+  background: var(--bu-mint);
+  border-color: var(--bu-mint);
+  color: var(--bu-navy);
+}
+
+:where(.busuu-ref) .bu-btn--mint:hover {
+  background: var(--bu-mint-hover);
+  border-color: var(--bu-mint-hover);
+}
+
+:where(.busuu-ref) .bu-btn--mint:active {
+  background: var(--bu-mint-active);
+  border-color: var(--bu-mint-active);
+}
+
+:where(.busuu-ref) .bu-btn--navy {
+  background: var(--bu-navy);
+  border-color: var(--bu-navy);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-btn--navy:hover {
+  background: var(--bu-navy-hover);
+  border-color: var(--bu-navy-hover);
+}
+
+:where(.busuu-ref) .bu-btn--navy:active {
+  background: #000;
+  border-color: #000;
+}
+
+:where(.busuu-ref) .bu-btn--blue {
+  background: var(--bu-blue);
+  border-color: var(--bu-blue);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-btn--blue:hover {
+  background: var(--bu-blue-hover);
+  border-color: var(--bu-blue-hover);
+}
+
+:where(.busuu-ref) .bu-btn--blue:active {
+  background: var(--bu-blue-active);
+  border-color: var(--bu-blue-active);
+}
+
+:where(.busuu-ref) .bu-btn--ghost {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-btn--ghost:hover {
+  color: var(--bu-blue-hover);
+}
+
+:where(.busuu-ref) .bu-btn--outline {
+  border-color: var(--bu-blue);
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-btn--outline:hover {
+  border-color: var(--bu-blue-hover);
+  color: var(--bu-blue-hover);
+}
+
+:where(.busuu-ref) .bu-link {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-link:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.busuu-ref) *,
+  :where(.busuu-ref) *::before,
+  :where(.busuu-ref) *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

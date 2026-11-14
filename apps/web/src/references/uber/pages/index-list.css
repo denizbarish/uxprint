@@ -1,0 +1,173 @@
+/* Index pages: policy library and place directory. Measured on /legal/document and /tr/en/r/cities. */
+
+:where(.uber-ref) .ub-idx-hero {
+  padding: 40px 0 20px;
+}
+
+:where(.uber-ref) .ub-idx-hero[data-kind="directory"] {
+  padding-bottom: 40px;
+}
+
+:where(.uber-ref) .ub-idx-hero .ub-body {
+  margin-top: 20px;
+}
+
+:where(.uber-ref) .ub-idx-hero__more {
+  display: inline-block;
+  margin-top: 32px;
+  padding-bottom: 6px;
+  line-height: 26px;
+  box-shadow: inset 0 -1px 0 #e2e2e2;
+  transition: box-shadow 0.2s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-idx-hero__more:hover {
+  box-shadow: inset 0 -1px 0 currentColor;
+}
+
+:where(.uber-ref) .ub-idx-list {
+  padding: 40px 0;
+}
+
+:where(.uber-ref) .ub-idx-filters {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+:where(.uber-ref) .ub-idx-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+:where(.uber-ref) .ub-idx-filter__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+:where(.uber-ref) .ub-idx-filter__field select {
+  width: 100%;
+  height: 48px;
+  padding: 0 40px 0 14px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: var(--ub-grey);
+  font: inherit;
+  font-size: 14px;
+  color: var(--ub-ink);
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-idx-filter__field select:hover {
+  background: #eeeeee;
+}
+
+:where(.uber-ref) .ub-idx-filter__field select:focus-visible {
+  outline: none;
+  border-color: var(--ub-ink);
+}
+
+:where(.uber-ref) .ub-idx-filter__field svg {
+  position: absolute;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+:where(.uber-ref) .ub-idx-group + .ub-idx-group {
+  margin-top: 56px;
+}
+
+:where(.uber-ref) .ub-idx-group__title {
+  font-family: var(--ub-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+:where(.uber-ref) .ub-idx-group__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+:where(.uber-ref) .ub-idx-group__links a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--ub-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-idx-group__links a:hover {
+  text-decoration-thickness: 2px;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-idx-filters {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-idx-hero {
+    padding: 64px 0 32px;
+  }
+
+  :where(.uber-ref) .ub-idx-hero[data-kind="directory"] {
+    padding-bottom: 60px;
+  }
+
+  :where(.uber-ref) .ub-idx-hero .ub-wrap > * {
+    max-width: 756px;
+  }
+
+  :where(.uber-ref) .ub-idx-hero .ub-body {
+    margin-top: 32px;
+  }
+
+  :where(.uber-ref) .ub-idx-list {
+    padding: 64px 0;
+  }
+
+  :where(.uber-ref) .ub-idx-filters {
+    grid-template-columns: repeat(3, 350px);
+    margin-bottom: 64px;
+  }
+
+  :where(.uber-ref) .ub-idx-group {
+    display: grid;
+    grid-template-columns: 396px 1fr;
+    align-items: start;
+  }
+
+  :where(.uber-ref) .ub-idx-group + .ub-idx-group {
+    margin-top: 34px;
+  }
+
+  :where(.uber-ref) .ub-idx-group__links {
+    margin-top: 2px;
+  }
+
+  :where(.uber-ref) .ub-idx-group__links[data-split] {
+    display: block;
+    columns: 2;
+    column-gap: 36px;
+  }
+
+  :where(.uber-ref) .ub-idx-group__links[data-split] li {
+    break-inside: avoid;
+    padding-bottom: 12px;
+  }
+}

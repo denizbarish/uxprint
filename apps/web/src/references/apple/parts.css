@@ -1,0 +1,219 @@
+/* Shared parts: tile copy, section heads, paddles and dots. */
+
+:where(.apple-ref) .ap-ctas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+:where(.apple-ref) .ap-ctas .ap-btn--sm + .ap-btn--sm {
+  margin-left: -2px;
+}
+
+:where(.apple-ref) .ap-tile__copy {
+  text-align: center;
+}
+
+:where(.apple-ref) .ap-tile__title {
+  font-family: var(--ap-font-display);
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+:where(.apple-ref) .ap-tile__sub {
+  margin-top: 6px;
+  font-family: var(--ap-font-display);
+  font-size: 28px;
+  line-height: 1.14286;
+  letter-spacing: 0.007em;
+}
+
+:where(.apple-ref) .ap-tile__copy .ap-ctas {
+  margin-top: 17px;
+}
+
+:where(.apple-ref) h3.ap-tile__title {
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+:where(.apple-ref) h3.ap-tile__title + .ap-tile__sub {
+  margin-top: 3px;
+  font-size: 21px;
+  line-height: 1.19048;
+  letter-spacing: 0.011em;
+}
+
+:where(.apple-ref) h3.ap-tile__title ~ .ap-ctas {
+  margin-top: 12px;
+}
+
+:where(.apple-ref) .ap-on-dark {
+  color: #f5f5f7;
+}
+
+:where(.apple-ref) .ap-on-dark a:not(.ap-btn) {
+  color: var(--ap-link-dark);
+}
+
+:where(.apple-ref) .ap-shead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+:where(.apple-ref) .ap-shead__title {
+  font-family: var(--ap-font-display);
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+:where(.apple-ref) .ap-shead__more {
+  font-size: 17px;
+  white-space: nowrap;
+  padding-bottom: 6px;
+}
+
+:where(.apple-ref) .ap-paddles {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+:where(.apple-ref) .ap-paddles button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(210, 210, 215, 0.64);
+  color: rgba(0, 0, 0, 0.56);
+  transition:
+    background-color 0.1s linear,
+    color 0.1s linear,
+    opacity 0.1s linear;
+}
+
+:where(.apple-ref) .ap-paddles button:hover {
+  background: rgba(223, 223, 227, 0.698);
+  color: rgba(0, 0, 0, 0.64);
+}
+
+:where(.apple-ref) .ap-paddles button:active {
+  background: rgba(193, 193, 198, 0.698);
+}
+
+:where(.apple-ref) .ap-paddles button .ap-chev {
+  width: 14px;
+  height: 14px;
+}
+
+:where(.apple-ref) .ap-paddles--dark button {
+  background: rgba(66, 66, 69, 0.72);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+:where(.apple-ref) .ap-dots ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14px;
+  height: 56px;
+  border-radius: 28px;
+}
+
+:where(.apple-ref) .ap-dots li a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+:where(.apple-ref) .ap-dots li a::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.42);
+  transition:
+    width 0.5s var(--ap-ease),
+    background-color 0.1s linear;
+}
+
+:where(.apple-ref) .ap-dots li a:hover::before {
+  background: rgba(0, 0, 0, 0.64);
+}
+
+:where(.apple-ref) .ap-dots li a[aria-current]::before {
+  width: 32px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+:where(.apple-ref) .ap-dots li:has(a[aria-current]) {
+  width: 48px;
+}
+
+@media (max-width: 833px) {
+  :where(.apple-ref) .ap-tile__title {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0;
+  }
+
+  :where(.apple-ref) .ap-tile__sub {
+    font-size: 21px;
+    line-height: 1.19048;
+    letter-spacing: 0.011em;
+  }
+
+  :where(.apple-ref) .ap-shead__title {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 734px) {
+  :where(.apple-ref) .ap-tile__title,
+  :where(.apple-ref) h3.ap-tile__title {
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: 0.004em;
+  }
+
+  :where(.apple-ref) .ap-tile__sub,
+  :where(.apple-ref) h3.ap-tile__title + .ap-tile__sub {
+    margin-top: 4px;
+    font-size: 19px;
+    line-height: 1.21053;
+    letter-spacing: 0.012em;
+  }
+
+  :where(.apple-ref) .ap-tile__copy .ap-ctas,
+  :where(.apple-ref) h3.ap-tile__title ~ .ap-ctas {
+    margin-top: 11px;
+  }
+
+  :where(.apple-ref) .ap-shead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  :where(.apple-ref) .ap-shead__title {
+    font-size: 28px;
+    line-height: 1.14286;
+    letter-spacing: 0.007em;
+  }
+}

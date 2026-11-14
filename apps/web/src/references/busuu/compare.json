@@ -1,0 +1,46 @@
+{
+  "course": {
+    "desktop": 90.07,
+    "phone": 70.99
+  },
+  "content": {
+    "desktop": 92.43,
+    "phone": 71.84
+  },
+  "app-landing": {
+    "desktop": 85,
+    "phone": 76.18
+  },
+  "home": {
+    "desktop": 95.81,
+    "phone": 87.81
+  },
+  "paywall": {
+    "desktop": 77.22,
+    "phone": 85.81
+  },
+  "legal": {
+    "desktop": 88.09,
+    "phone": 73.35
+  },
+  "auth": {
+    "desktop": 98.64,
+    "phone": 87.42
+  },
+  "statement": {
+    "desktop": 93.54,
+    "phone": 82.15
+  },
+  "language-picker": {
+    "desktop": 97.56,
+    "phone": 97.46
+  },
+  "press": {
+    "desktop": 81.45,
+    "phone": 67.84
+  },
+  "careers": {
+    "desktop": 88.83,
+    "phone": 77.55
+  }
+}

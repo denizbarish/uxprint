@@ -1,0 +1,425 @@
+{
+  "slug": "spotify",
+  "name": "Spotify",
+  "url": "https://open.spotify.com",
+  "category": "product-app",
+  "tags": ["dark", "app-shell", "media-player", "music", "three-panel", "inner-scroll", "card-shelves", "pill-buttons", "logged-out-preview"],
+  "summary": "A black app frame holding rounded #121212 panels: a library rail, one inner-scrolling main view of square cover shelves and colour-washed entity headers, a gradient sign-up strip at the bottom and green round play buttons.",
+  "theme": "dark",
+  "source": {
+    "tool": "craft-anything 0.4.0 + playwright 1.65.0",
+    "mode": "deep",
+    "capturedAt": "2026-11-14",
+    "widths": [1440, 768, 390],
+    "pages": [
+      { "name": "home", "url": "https://open.spotify.com" },
+      { "name": "album", "url": "https://open.spotify.com/album/07yiI9ScrZV7DXiObRz6Sp" },
+      { "name": "artist", "url": "https://open.spotify.com/artist/08mjMUUjyTchMHCW7evc3R" },
+      { "name": "playlist", "url": "https://open.spotify.com/playlist/37i9dQZEVXbIVYVBNw9D5K" },
+      { "name": "section", "url": "https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B" },
+      { "name": "genre", "url": "https://open.spotify.com/genre/podcasts-web" },
+      { "name": "popular-in", "url": "https://open.spotify.com/popular-in/tr" },
+      { "name": "search", "url": "https://open.spotify.com/search" },
+      { "name": "download", "url": "https://open.spotify.com/download" }
+    ]
+  },
+  "color": {
+    "background": [
+      { "name": "frame", "value": "#000000", "use": "The app frame behind the panels and the top bar; 8px gutters between panels show it" },
+      { "name": "panel", "value": "#121212", "use": "Library rail, main view, collapsed right rail, footer; every panel has an 8px corner" },
+      { "name": "control", "value": "#1f1f1f", "use": "Home button, search field, library prompt cards, library create button, carousel arrow" },
+      { "name": "control-hover", "value": "#2a2a2a", "use": "Hovered home button, focused search field, hovered library create button" },
+      { "name": "social", "value": "#292929", "use": "Footer social icon discs" },
+      { "name": "social-hover", "value": "#727272", "use": "Hovered footer social disc" },
+      { "name": "dialog", "value": "#282828", "use": "Language picker dialog" },
+      { "name": "row-hover", "value": "#ffffff1a", "use": "Hovered track row; explicit badge fill" },
+      { "name": "callout", "value": "#0c69d8", "use": "Logged-out callouts (create playlist, save to library)" },
+      { "name": "white", "value": "#ffffff", "use": "Primary pill buttons: log in, sign up free, create playlist" }
+    ],
+    "text": [
+      { "name": "base", "value": "#ffffff", "use": "Titles, card titles, track names, headings" },
+      { "name": "subdued", "value": "#b3b3b3", "use": "Body default: card subtitles, artists, nav buttons, footer links, durations" },
+      { "name": "header-meta", "value": "#ffffffb3", "use": "Meta line and list-view toggle over a colour-washed header" },
+      { "name": "on-white", "value": "#000000", "use": "Labels on white pills" },
+      { "name": "tinted-meta", "value": "#ffbdb6", "use": "Playlist description and meta when the header wash is red (a tint of the wash, computed per entity)" },
+      { "name": "rule", "value": "#7c7c7c", "use": "Border of the outlined language button" }
+    ],
+    "border": [
+      { "name": "hr", "value": "#292929", "use": "Footer rules (1px top border on an hr)" },
+      { "name": "tracklist-head", "value": "#ffffff1a", "use": "Bottom border of the track list column header" },
+      { "name": "outline", "value": "#7c7c7c", "use": "Outlined pill (language button); white on hover" },
+      { "name": "divider", "value": "#ffffff", "use": "1x25px divider between the text nav and the install link" }
+    ],
+    "accent": [
+      { "name": "green", "value": "#1ed760", "use": "Play buttons (card 48px, header 56px)" },
+      { "name": "green-hover", "value": "#3be477", "use": "Hovered play button" }
+    ],
+    "semantic": [
+      { "name": "signup-start", "value": "#af2896", "use": "Left stop of the bottom sign-up strip gradient (90deg)" },
+      { "name": "signup-end", "value": "#509bf5", "use": "Right stop of the bottom sign-up strip gradient" },
+      { "name": "link-visited", "value": "#9e9eff", "use": "Computed colour of the library browse link (hidden behind its white pill)" }
+    ]
+  },
+  "typography": {
+    "families": [
+      {
+        "role": "sans",
+        "stack": "SpotifyMixUI, SpotifyMixUI-Arab, SpotifyMixUI-Cyrl, SpotifyMixUI-Grek, SpotifyMixUI-Hebr, SpotifyMixUI-Thai, DevanagariFallback, \"Helvetica Neue\", helvetica, arial, \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", Meiryo, \"MS Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Noto Color Emoji\"",
+        "substitute": { "name": "Inter", "source": "fontsource", "note": "Proprietary face (400 and 700 loaded). Line height stays 'normal' almost everywhere" }
+      },
+      {
+        "role": "display",
+        "stack": "SpotifyMixUITitle, SpotifyMixUITitle-Arab, SpotifyMixUITitle-Cyrl, SpotifyMixUITitle-Grek, SpotifyMixUITitle-Hebr, SpotifyMixUITitle-Thai, DevanagariFallback, \"Helvetica Neue\", helvetica, arial",
+        "substitute": { "name": "Inter", "source": "fontsource", "note": "Title cut used only for 96px/72px/48px/32px entity and hero titles at weight 800" }
+      }
+    ],
+    "scale": [
+      { "name": "entity-title", "size": "96px", "weight": 800, "lineHeight": "normal (116px box)", "family": "display", "use": "Album, playlist, artist, genre and region titles in a 1045px main view" },
+      { "name": "entity-title-m", "size": "72px", "weight": 800, "lineHeight": "normal", "family": "display", "use": "Artist title when the main view is 456px" },
+      { "name": "entity-title-s", "size": "48px", "weight": 800, "lineHeight": "normal", "family": "display", "use": "Long region title in a 456px main view" },
+      { "name": "entity-title-xs", "size": "32px", "weight": 800, "lineHeight": "normal", "family": "display", "use": "Album and playlist titles in a 456px main view" },
+      { "name": "page-title", "size": "32px", "weight": 700, "lineHeight": "normal", "family": "sans", "use": "Section (show all) page title, download headline, login modal heading" },
+      { "name": "shelf-title", "size": "24px", "weight": 700, "lineHeight": "normal", "family": "sans", "use": "Shelf headings, browse tile labels; 20px when the main view is 456px" },
+      { "name": "body", "size": "16px", "weight": 400, "lineHeight": "normal", "family": "sans", "use": "Card titles, track names, footer links, sign-up strip body" },
+      { "name": "body-bold", "size": "16px", "weight": 700, "lineHeight": "normal", "family": "sans", "use": "Top bar text nav, library title, footer column heads, large pills" },
+      { "name": "small", "size": "14px", "weight": 400, "lineHeight": "normal", "family": "sans", "use": "Card subtitles, artist names, durations, header meta" },
+      { "name": "small-bold", "size": "14px", "weight": 700, "lineHeight": "normal", "family": "sans", "use": "Show all links, small pills, install link, strip title" },
+      { "name": "micro", "size": "12px", "weight": 400, "lineHeight": "normal", "family": "sans", "use": "Library legal links, copyright lines under an album" }
+    ]
+  },
+  "spacing": {
+    "unit": "8px (4px half steps)",
+    "scale": ["4px", "8px", "12px", "16px", "20px", "24px", "32px", "40px", "64px"],
+    "containerMaxWidth": "none: the main view fills the space between the 331px library and the 40px right rail (1045px at 1440)",
+    "pageGutter": { "desktop": "8px frame gutter; 40px inside the home view, 24px inside entity pages", "mobile": "8px frame gutter; 16px inside a 456px main view" },
+    "sectionGap": "24px between home shelves (16px in a 456px view); entity-page shelves carry 40px bottom padding"
+  },
+  "radius": [
+    { "name": "panel", "value": "8px", "use": "Library, main view, right rail, library prompt cards, browse tiles, dialogs, callouts" },
+    { "name": "card", "value": "6px", "use": "Card cover and the card hit area, shelf header row" },
+    { "name": "small", "value": "4px", "use": "Track rows, 40px row thumbnails, header cover button, list toggle, keyboard hints" },
+    { "name": "strip", "value": "16px", "use": "Bottom sign-up strip" },
+    { "name": "pill", "value": "9999px", "use": "Every button and the search field (500px)" },
+    { "name": "round", "value": "50%", "use": "Artist covers, home button, social discs, carousel arrows" }
+  ],
+  "shadow": [
+    { "name": "cover", "value": "rgba(0, 0, 0, 0.5) 0px 8px 24px 0px", "use": "Card covers (84 uses on home)" },
+    { "name": "play", "value": "rgba(0, 0, 0, 0.3) 0px 8px 8px 0px", "use": "Card play button" },
+    { "name": "tile-art", "value": "rgba(0, 0, 0, 0.2) 0px 2px 4px 0px", "use": "Tilted artwork in browse tiles" },
+    { "name": "callout", "value": "rgba(0, 0, 0, 0.3) 0px 4px 40px 0px", "use": "Blue logged-out callouts" },
+    { "name": "header-cover", "value": "rgba(0, 0, 0, 0.5) 0px 4px 60px 0px", "use": "232px entity cover" }
+  ],
+  "layout": {
+    "breakpoints": ["800px min-width app frame: below it the frame keeps 800px and the viewport crops it (no separate phone layout)", "Main view width drives the content: 1045px gives 5 grid columns and 96px titles, 456px gives 2 columns and 32px titles"],
+    "patterns": [
+      { "name": "App frame", "description": "The document never scrolls. A black grid (padding 8px, gap 8px): 64px top bar across, then three columns (library 331px, main 1045px, right rail 40px at 1440; 280px / 456px / 32px when the frame is 800px), then an 82px bottom row (84px+16px when the strip text wraps). Each column is a #121212 panel with an 8px corner; only the main panel scrolls, inside itself." },
+      { "name": "Top bar", "description": "64px, padding 8px. 32px mark at x28; 48px round #1f1f1f home button; 474x48 pill search field (#1f1f1f, padding 12px 96px 12px 48px, keyboard hint chips and a browse icon after a divider). Right: three 16px/700 #b3b3b3 text buttons 8px apart, a 1x25 white divider, an install link (14px/700 with a 16px icon), a sign-up text button and a 108x48 white log-in pill. In an 800px frame the search shrinks to a 48px icon button." },
+      { "name": "Library rail", "description": "Header 59px (16px 16px 8px padding): 16px/700 white title and a 35px round #1f1f1f plus button. Two #1f1f1f prompt cards (8px corner, padding 16px 20px, gap 20px): 16px/700 title, 14px line, small white pill. Footer pinned at the bottom: 12px #b3b3b3 legal links in rows (16px gap), one white cookie link, then the outlined language pill 32px tall." },
+      { "name": "Main view", "description": "Inner scroller with the page content then the footer. Home starts with a 256px grey wash fading to #121212 behind the first shelf. Entity pages start with a colour-washed header (276px album/playlist, 360px artist image, 270px genre) followed by a 173px lighter wash behind the action bar." },
+      { "name": "Footer", "description": "Inside the main view: 1px #292929 rule, then a 4-column link list (columns 193px apart from x24, heading 16px/700 white with 8px bottom padding, links 16px #b3b3b3 30px apart: 3, 7, 5, 5 links) with three 40px social discs at the right; another rule and a 14px copyright line at the right. 421px tall at 1045px, 1039px in a 456px view (columns stack). Links point to the marketing origin (www.spotify.com, support, newsroom, developer, ads, investors): listed, not rebuilt." },
+      { "name": "Sign-up strip", "description": "Bottom row: 66px strip with a 16px corner, linear-gradient(90deg, #af2896, #509bf5), padding 11px 24px 7px 15px; 14px/700 title over a 16px line, white 153x48 pill at the right." },
+      { "name": "Collapsed right rail", "description": "40px #121212 panel (32px in an 800px frame) holding a chevron that opens the now-playing view; the open state is login-gated and not recorded." }
+    ],
+    "responsive": "There is no phone layout: below 800px the frame keeps 800px and the viewport shows its left part (top bar mark, home and search buttons, the 280px library, 94px of the main view, the strip's left half). Between 800px and 1440px the library and main view resize; the main view switches its grid to 2 columns, 20px shelf titles and 32px entity titles at 456px."
+  },
+  "components": [
+    {
+      "name": "Pill button, white",
+      "anatomy": "Rounded label on white; used for log in, sign up free, create playlist and browse podcasts.",
+      "spec": { "height": "48px (large) or 32px (small)", "padding": "8px 32px (large), 4px 16px (small)", "radius": "9999px", "background": "#ffffff", "color": "#000000", "font": "16px/700 (large), 14px/700 (small)", "transition": "background-color, transform 0.15s cubic-bezier(0.3, 0, 0, 1)" },
+      "states": [
+        { "name": "hover", "change": "scale(1.04)" },
+        { "name": "active", "change": "scale(1), opacity 0.7 on the text variants" },
+        { "name": "focus-visible", "change": "outline-offset 1px" }
+      ]
+    },
+    {
+      "name": "Text button, top bar",
+      "anatomy": "Bold grey label without a fill (Premium-style links, sign up).",
+      "spec": { "height": "48px (text nav) / 32px (sign up)", "padding": "8px 0 / 4px 16px 4px 8px", "font": "16px/700 or 14px/700", "color": "#b3b3b3", "transition": "color, transform 0.15s cubic-bezier(0.3, 0, 0, 1)" },
+      "states": [
+        { "name": "hover", "change": "color #ffffff, scale(1.04)" },
+        { "name": "active", "change": "color #ffffff, opacity 0.7, scale(1)" }
+      ]
+    },
+    {
+      "name": "Round icon button",
+      "anatomy": "48px #1f1f1f disc with a 24px glyph (home); 35px disc with a plus (library create).",
+      "spec": { "size": "48px / 35px", "padding": "12px / 8px", "radius": "50%", "background": "#1f1f1f", "transition": "background-color, color 0.2s ease-in-out" },
+      "states": [
+        { "name": "hover", "change": "background #2a2a2a, color #ffffff, scale(1.04) (home)" },
+        { "name": "active", "change": "opacity 0.7, scale(1)" }
+      ]
+    },
+    {
+      "name": "Search field",
+      "anatomy": "Pill input with a 24px search icon at the left, keyboard hint chips and a browse icon behind a 1px divider at the right.",
+      "spec": { "size": "474x48", "padding": "12px 96px 12px 48px", "radius": "500px", "background": "#1f1f1f", "font": "16px/400 #ffffff, placeholder #b3b3b3", "transition": "box-shadow, background, color 0.22s ease-in" },
+      "states": [{ "name": "focus-visible", "change": "background #2a2a2a, box-shadow #ffffff 0 0 0 2px inset" }]
+    },
+    {
+      "name": "Media card",
+      "anatomy": "12px padded hit area: square cover (6px corner, cover shadow), a hidden 48px green play button at the cover's bottom right, a one-line 16px title and a 14px grey subtitle (one or two lines).",
+      "spec": { "width": "195.5px column in a carousel (172px cover), 204px column in a grid (180px cover), 224px (200px cover) in a 456px view", "padding": "12px", "radius": "6px", "gap": "8px between cover and text", "title": "16px/400 #ffffff, 22px box", "subtitle": "14px/400 #b3b3b3, 20px box, up to 2 lines" },
+      "states": [
+        { "name": "hover", "change": "play button opacity 0 to 1 and translateY(8px) to 0, 0.2s ease-out. A card background on hover was not observed in computed style" },
+        { "name": "play hover", "change": "green #3be477, 0.05s cubic-bezier(0.3, 0, 0, 1)" }
+      ],
+      "notes": "Artist cards use a round cover and the fixed subtitle 'Artist'; radio and chart cards drop the title and keep a two-line subtitle."
+    },
+    {
+      "name": "Shelf",
+      "anatomy": "Header row (48px tall, title bottom-aligned, 24px/700 link-title at left, 14px/700 grey 'show all' at right), then a single-row carousel (home) or a 5-column grid (entity and hub pages).",
+      "spec": { "header": "48px + 8px gap", "carousel": "padding-left 28px, columns 195.5px, overflow hidden", "grid": "204px columns starting 12px left of the title", "heights": "329 (two-line text cards), 306 (artists), 326, 268, 304 on home" },
+      "states": [{ "name": "hover (title link)", "change": "underline" }]
+    },
+    {
+      "name": "Entity header",
+      "anatomy": "Colour wash (entity colour, linear-gradient to transparent) with a 232px cover at x24/y20, then a 14px type label, a 96px/800 title, an optional 14px description and a 14px meta line (24px avatar, bold creator, dot-separated facts).",
+      "spec": { "height": "276px (album, playlist), 360px with a full-bleed image (artist), 270px (genre/region)", "cover": "232x232, 4px corner", "title": "96px/800, 116px box", "below": "173px lighter wash behind the 104px action bar" }
+    },
+    {
+      "name": "Action bar",
+      "anatomy": "56px green play, 32px shuffle, add (+), more (...) icons 24px apart; a 'List' view toggle at the right; artist pages swap add for an outlined Follow pill.",
+      "spec": { "padding": "24px", "height": "104px", "gap": "24px", "play": "56px #1ed760 disc with a black glyph", "toggle": "14px #ffffffb3, 4px corner, padding 0 8px" },
+      "states": [{ "name": "hover (toggle)", "change": "color #ffffff" }]
+    },
+    {
+      "name": "Track list",
+      "anatomy": "Sticky 37px column header (#, Title, optional Plays and Album, clock icon) with a 1px #ffffff1a bottom border, then 56px rows: index, optional 40px thumbnail, title over artist, extra columns, duration.",
+      "spec": { "row": "56px, padding 0 16px, gap 16px, radius 4px", "columns": "[index] 16px [first] 4fr [var1] 2fr [var2] 2fr [last] 120px (playlist); album uses index, first, last", "title": "16px #ffffff", "artist": "14px #b3b3b3", "duration": "14px #b3b3b3" },
+      "states": [{ "name": "hover", "change": "background #ffffff1a; index turns into a play glyph; heart and more buttons appear" }]
+    },
+    {
+      "name": "Browse tile",
+      "anatomy": "Coloured 8px tile with a 24px/700 label (padding 16px 69px 0 16px) and a 138px artwork tilted 25deg at the bottom right.",
+      "spec": { "tile": "231x130 inside a 255px column, 12px padding around", "label": "24px/700 #ffffff", "art": "138px, 4px corner, shadow rgba(0,0,0,.2) 0 2px 4px" }
+    },
+    {
+      "name": "Login prompt modal",
+      "anatomy": "Opened by any play button when logged out: 90% black overlay, an 810x428 panel coloured with the entity wash (8px corner, padding 64px) holding the 300px cover at left and, at right, a 32px/700 centred heading, a green 'sign up' pill, an outlined 'download' pill and a 14px log-in line; a bold 'Close' text button below the panel.",
+      "spec": { "overlay": "rgba(0, 0, 0, 0.9), fade-in 0.2s", "panel": "810x428, radius 8px, padding 64px, rise translateY(20px) to 0 with fade over 0.4s", "heading": "32px/700" },
+      "states": [{ "name": "escape", "change": "closes the modal" }]
+    },
+    {
+      "name": "Logged-out callout",
+      "anatomy": "Blue #0c69d8 floating card (8px corner, padding 16px, 332px wide) with an arrow: 16px/700 title, 14px line, then 'not now' text button and a white 'log in' pill (create playlist); or a title, a line and a close cross (save to library, anchored under the top bar at the right).",
+      "spec": { "width": "332px", "padding": "16px", "font": "16px/700 title, 14px/19.6px body", "shadow": "rgba(0, 0, 0, 0.3) 0px 4px 40px 0px", "transition": "transform, visibility, opacity 0.3s" }
+    },
+    {
+      "name": "Language dialog",
+      "anatomy": "978x588 #282828 dialog with an 8px corner: 24px heading, a 32px round close button, then a 4-column grid of 232.5x81 language entries (padding 16px).",
+      "spec": { "size": "978x588", "background": "#282828", "radius": "8px" },
+      "states": [{ "name": "escape", "change": "closes the dialog" }]
+    },
+    {
+      "name": "Sign-up strip",
+      "anatomy": "Gradient strip pinned in the bottom row: title, one line of copy, white pill at the right.",
+      "spec": { "height": "66px (84px when the copy wraps)", "radius": "16px", "padding": "11px 24px 7px 15px", "background": "linear-gradient(90deg, rgb(175, 40, 150), rgb(80, 155, 245))" }
+    }
+  ],
+  "motion": {
+    "durations": [
+      { "name": "instant", "value": "0.05s", "use": "Play button colour and scale" },
+      { "name": "control", "value": "0.15s", "use": "Pills, text buttons, footer and legal links (120+ elements)" },
+      { "name": "reveal", "value": "0.2s", "use": "Card play button reveal, modal overlay fade, home button background" },
+      { "name": "field", "value": "0.22s", "use": "Search field focus" },
+      { "name": "callout", "value": "0.3s", "use": "Blue callouts (transform, visibility, opacity)" },
+      { "name": "modal", "value": "0.4s", "use": "Login prompt panel rise" }
+    ],
+    "easings": [
+      { "name": "encore", "value": "cubic-bezier(0.3, 0, 0, 1)", "use": "Buttons and links" },
+      { "name": "ease-out", "value": "ease-out", "use": "Card play reveal, library create button" },
+      { "name": "ease-in", "value": "ease-in", "use": "Search field, search icon colour" }
+    ],
+    "transitions": [
+      { "target": "Pills (log in, sign up free, create playlist)", "properties": "background-color, transform", "duration": "0.15s", "easing": "cubic-bezier(0.3, 0, 0, 1)" },
+      { "target": "Top bar text buttons, install link, browse icon", "properties": "color, transform", "duration": "0.15s", "easing": "cubic-bezier(0.3, 0, 0, 1)" },
+      { "target": "Footer and library legal links", "properties": "color", "duration": "0.15s", "easing": "cubic-bezier(0.3, 0, 0, 1)" },
+      { "target": "Home button", "properties": "background-color, color", "duration": "0.2s", "easing": "ease-in-out" },
+      { "target": "Card play button", "properties": "transform, opacity", "duration": "0.2s", "easing": "ease-out" },
+      { "target": "Search field", "properties": "box-shadow, background, color", "duration": "0.22s", "easing": "ease-in" },
+      { "target": "Language pill", "properties": "border-color, transform", "duration": "0.15s", "easing": "cubic-bezier(0.3, 0, 0, 1)" }
+    ],
+    "keyframes": [
+      { "name": "overlay-fade-in", "use": "Login prompt overlay", "css": "@keyframes overlay-fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }", "timing": "0.2s" },
+      { "name": "dialog-rise", "use": "Login prompt panel", "css": "@keyframes dialog-rise { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: none; } }", "timing": "0.4s" }
+    ],
+    "unmeasured": [
+      "Carousel paging on the home shelves (script-driven scroll, arrow buttons appear on hover)",
+      "Header colour of the sticky title bar that fades in while the main view scrolls past the entity header",
+      "Panel resize by dragging the 8px resize bar"
+    ]
+  },
+  "flows": [
+    {
+      "name": "Play while logged out",
+      "entry": "Any play button (card, action bar, track row)",
+      "layout": "App frame stays; a full-viewport 90% black overlay covers it, the prompt panel sits centred.",
+      "steps": [
+        {
+          "name": "Prompt",
+          "screen": ["Entity cover 300px", "32px/700 heading inviting a free account", "Green sign-up pill", "Outlined download pill", "14px line with a log-in link", "Close text button under the panel"],
+          "actions": ["Sign up: leaves for the sign-up site", "Download: opens /download", "Log in: leaves for the log-in site", "Close or Escape: dismisses"]
+        }
+      ],
+      "notRecorded": "Playback, the now-playing view, queue, likes, playlists and every logged-in screen are behind an account and not recorded."
+    },
+    {
+      "name": "Create a playlist while logged out",
+      "entry": "Library create playlist pill or the plus button",
+      "layout": "Blue callout anchored to the right of the pill, arrow pointing at it.",
+      "steps": [
+        {
+          "name": "Callout",
+          "screen": ["16px/700 title", "14px line asking to log in", "'Not now' text button and white 'Log in' pill"],
+          "actions": ["Not now: closes", "Log in: leaves for the log-in site"]
+        }
+      ],
+      "notRecorded": "Playlist creation and editing need an account; drag and drop into the library is not recorded."
+    }
+  ],
+  "templates": [
+    {
+      "id": "home",
+      "name": "Home",
+      "use": "Logged-out start view: a stack of horizontal shelves of covers.",
+      "structure": [
+        "Grey wash 256px tall behind the top, fading to #121212",
+        "Section padding 4px 0 32px; shelves 0 40px apart by 24px rows",
+        "Shelf 1 (two-line track cards): header 48px, carousel 273px, total 329px",
+        "Shelf 2 (round artist cards): 306px",
+        "Shelf 3 (album cards): 326px",
+        "Shelf 4 (radio cards, subtitle only): 268px",
+        "Shelf 5 (chart cards, subtitle only): 304px",
+        "Footer from y1728 (rule) to the end; scroll height 2174px at 1440"
+      ],
+      "pages": ["/"]
+    },
+    {
+      "id": "album",
+      "name": "Album",
+      "use": "A release with its numbered track list and more releases by the same creator.",
+      "structure": [
+        "Entity header 276px: 232px cover at x24 y20, type label at y84, 96px title at y104, meta line at y228",
+        "Action bar 104px over a 173px lighter wash",
+        "Track list: sticky 37px column header, then 11 rows of 56px",
+        "Release lines: 14px date, two 12px rights lines (y1083)",
+        "Grid shelf of 5 releases (314px)",
+        "Footer; scroll height 2025px"
+      ],
+      "pages": ["/album/07yiI9ScrZV7DXiObRz6Sp", "/album/0fHt0Y1DlFqaQutf89vqZK", "/album/0flBR9Gz8N0UXPplEbrP1p"]
+    },
+    {
+      "id": "playlist",
+      "name": "Playlist",
+      "use": "Curated list: like the album, plus a description, thumbnails and Plays/Album columns.",
+      "structure": [
+        "Entity header 276px: cover, 14px type label at y64, 96px title at y84, description at y200 (#ffbdb6), meta line with avatar at y228",
+        "Action bar 104px",
+        "Track list with 5 columns (16px, 4fr, 2fr, 2fr, 120px): 50 rows of 56px with 40px thumbnails",
+        "Footer from y3380; scroll height 3801px"
+      ],
+      "pages": ["/playlist/37i9dQZEVXbIVYVBNw9D5K", "/playlist/37i9dQZEVXbJARRcHjHcAr", "/playlist/37i9dQZEVXbMDoHDwVN2tF"]
+    },
+    {
+      "id": "artist",
+      "name": "Artist",
+      "use": "A creator: full-bleed image header, popular tracks and many shelves.",
+      "structure": [
+        "Image header 360px: 96px title at y184, 16px monthly-listener line at y309",
+        "Action bar 104px with play, shuffle, outlined Follow pill and more",
+        "Popular: 24px heading then 5 track rows (with plays column)",
+        "Shelves with 40px bottom padding: discography (432px with filter chips), featuring (396px), videos (275px), tour dates, about card (y2353), discovered on (400px), fans also like (354px), appears on (376px)",
+        "Footer from y3963; scroll height 4384px"
+      ],
+      "pages": ["/artist/08mjMUUjyTchMHCW7evc3R", "/artist/0LotUVstjAcEx88hsoDR3D", "/artist/0o370GMjPTWUz6gv8lasfs"]
+    },
+    {
+      "id": "section-grid",
+      "name": "Section (Show All)",
+      "use": "Every item of one home shelf as a wrapping grid.",
+      "structure": [
+        "32px/700 title row at y64 (title top y73)",
+        "Grid from y144: 5 columns of 204px, 24px row gap, 20 cards in 4 rows (1147px)",
+        "Footer from y1412; scroll height 1833px"
+      ],
+      "pages": ["/section/0JQ5DAnM3wGh0gz1MXnu3B", "/section/0JQ5DAnM3wGh0gz1MXnu3C", "/section/0JQ5DAnM3wGh0gz1MXnu4h", "/section/0JQ5DAzQHECxDlYNI6xD1g", "/section/0JQ5DB5E8N831KzFzsBBQ2"]
+    },
+    {
+      "id": "genre",
+      "name": "Genre",
+      "use": "A browse category: colour hero and a grid of sub-category tiles.",
+      "structure": [
+        "Colour hero 270px with a 96px title at y130",
+        "232px wash of the same colour fading into #121212",
+        "Categories shelf: 24px heading at y337, 4-column tile grid (231x130 tiles, 9 tiles)",
+        "Footer from y1021; scroll height 1442px"
+      ],
+      "pages": ["/genre/podcasts-web"]
+    },
+    {
+      "id": "region",
+      "name": "Popular In (Region Hub)",
+      "use": "Country hub: colour hero with a description, a location chip, then grid shelves.",
+      "structure": [
+        "Colour hero 276px: 96px title at y116, 14px line at y232",
+        "Location chip (outlined pill), then 4 grid shelves of 312 to 316px (charts, albums, artists, songs)",
+        "Footer from y1717; scroll height 2138px"
+      ],
+      "pages": ["/popular-in/tr"]
+    },
+    {
+      "id": "search",
+      "name": "Search (Browse All)",
+      "use": "Empty search: browse every category.",
+      "structure": [
+        "Search field in the top bar becomes active (browse icon filled)",
+        "24px 'browse all' heading at y67",
+        "4-column tile grid from y104, rows 154px apart, 70 tiles",
+        "Footer from y2982; scroll height 3403px"
+      ],
+      "pages": ["/search"]
+    },
+    {
+      "id": "download",
+      "name": "Download",
+      "use": "Desktop app promotion inside the app frame.",
+      "structure": [
+        "Framed promo 1045x609: outer gradient (teal top to pink bottom), 40px padding, inner gradient (pink top to teal bottom) with 40px padding",
+        "Left column 354px: 99x27 wordmark at y120, 32px/700 black two-line headline at y179, 20px black paragraph (4 lines) at y289, white 266x56 pill at y433",
+        "Right: 860x449 laptop screenshot cropped by the frame",
+        "Footer from y698; scroll height 1119px"
+      ],
+      "pages": ["/download"]
+    }
+  ],
+  "principles": [
+    "Build an app frame, not a page: black 8px gutters, rounded #121212 panels, the document never scrolls, only the main view does.",
+    "Every action is a pill (9999px). White pill for the primary, grey text for secondary, green only for play.",
+    "Covers carry the colour: entity headers take a wash of the cover's dominant colour and fade it into #121212 under the action bar.",
+    "Use two greys for text: #ffffff for names and headings, #b3b3b3 for everything else; no other text greys.",
+    "Keep line height 'normal' and type sizes on 12/14/16/24/32/96; weight 700 for UI labels, 800 only for giant titles.",
+    "Hover is quiet: links underline, buttons scale to 1.04, the card play button rises 8px into place."
+  ],
+  "avoid": [
+    "Borders around panels or cards; separation comes from the black gutter",
+    "Square or slightly rounded buttons",
+    "Green used for anything except play",
+    "A document-level scroll or a separate phone layout",
+    "Card hover shadows or lifts"
+  ],
+  "libraries": {
+    "detected": [
+      { "name": "React", "npm": "react", "purpose": "UI runtime", "evidence": "\"react.element\" in vendor~web-player.eda92aec.js" },
+      { "name": "React Aria", "npm": "react-aria-components", "purpose": "Accessible primitives (buttons, dialogs, combobox search)", "evidence": "\"data-rac\" in encore~web-player.3ebd9bb6.js; id^=react-aria attributes" },
+      { "name": "Floating UI", "npm": "@floating-ui/react", "purpose": "Callout and tooltip positioning", "evidence": "\"floating-ui\" in web-player.c078a389.js" },
+      { "name": "Motion", "npm": "motion", "purpose": "Animation", "evidence": "\"framerAppearId\" in web-player.c078a389.js" },
+      { "name": "TanStack Query", "npm": "@tanstack/react-query", "purpose": "Server state", "evidence": "\"No QueryClient set\" in web-player.c078a389.js" },
+      { "name": "styled-components", "npm": "styled-components", "purpose": "Styling", "evidence": "\"data-styled\" in vendor~web-player.eda92aec.js" }
+    ],
+    "recommended": [
+      { "name": "Base UI", "npm": "@base-ui/react", "purpose": "Dialog and popover primitives for the login prompt, language dialog and callouts" }
+    ]
+  }
+}

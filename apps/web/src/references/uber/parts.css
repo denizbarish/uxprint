@@ -1,0 +1,611 @@
+/* Shared section parts for the Uber reference screens. Scoped under .uber-ref. */
+
+/* ---------- two-column feature ---------- */
+
+:where(.uber-ref) .ub-feature {
+  padding: var(--pt-s, 32px) 0 var(--pb-s, 32px);
+}
+
+:where(.uber-ref) .ub-feature__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s, 40px);
+}
+
+:where(.uber-ref) .ub-feature[data-media-first] .ub-feature__media {
+  order: -1;
+}
+
+:where(.uber-ref) .ub-feature__body {
+  margin-top: var(--bt, 24px);
+}
+
+:where(.uber-ref) .ub-feature__body p + p {
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-feature__action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  margin-top: var(--at, 32px);
+}
+
+:where(.uber-ref) .ub-feature__media > .ub-media {
+  width: 100%;
+  aspect-ratio: var(--ar, 558 / 372);
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-feature {
+    padding: var(--pt, 64px) 0 var(--pb, 64px);
+  }
+
+  :where(.uber-ref) .ub-feature .ub-feature__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    align-items: center;
+  }
+
+  :where(.uber-ref) .ub-feature .ub-feature__grid > .ub-feature__text {
+    order: 0;
+    align-self: var(--ta, center);
+    width: var(--tw, 459px);
+  }
+
+  :where(.uber-ref) .ub-feature .ub-feature__grid > .ub-feature__media {
+    order: 1;
+    align-self: var(--ma, center);
+  }
+
+  :where(.uber-ref) .ub-feature[data-side="right"] .ub-feature__grid > .ub-feature__text {
+    order: 1;
+    justify-self: end;
+  }
+
+  :where(.uber-ref) .ub-feature[data-side="right"] .ub-feature__grid > .ub-feature__media {
+    order: 0;
+  }
+}
+
+/* ---------- hero booking parts ---------- */
+
+:where(.uber-ref) .ub-cityline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+:where(.uber-ref) .ub-cityline svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 0;
+}
+
+:where(.uber-ref) .ub-cityline b {
+  font-weight: 500;
+}
+
+:where(.uber-ref) .ub-cityline__change {
+  height: 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: box-shadow 0.2s cubic-bezier(0, 0, 1, 1);
+}
+
+:where(.uber-ref) .ub-cityline__change:hover {
+  box-shadow: var(--ub-tint-light);
+}
+
+:where(.uber-ref) .ub-when svg {
+  width: 16px;
+  height: 16px;
+}
+
+:where(.uber-ref) .ub-when {
+  gap: 12px;
+}
+
+:where(.uber-ref) .ub-loc {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  max-width: 396px;
+}
+
+:where(.uber-ref) .ub-loc__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px 0 48px;
+  border: 0 solid var(--ub-grey);
+  border-radius: 8px;
+  background: var(--ub-grey);
+  color: var(--ub-ink);
+  transition: border 0.2s var(--ub-ease-base), box-shadow 0.2s var(--ub-ease-base), background-color 0.2s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-loc__field:focus-within {
+  box-shadow: inset 0 0 0 2px #000000;
+}
+
+:where(.uber-ref) .ub-loc__field input {
+  flex: 1;
+  min-width: 0;
+  height: 24px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--ub-ink);
+  outline: none;
+}
+
+:where(.uber-ref) .ub-loc__field input::placeholder {
+  color: var(--ub-placeholder);
+}
+
+:where(.uber-ref) .ub-loc__dot,
+:where(.uber-ref) .ub-loc__square {
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ub-ink);
+  box-shadow: 0 0 0 3px var(--ub-grey), 0 0 0 4.5px var(--ub-ink);
+}
+
+:where(.uber-ref) .ub-loc__square {
+  border-radius: 1px;
+  box-shadow: 0 0 0 3px var(--ub-ink);
+}
+
+:where(.uber-ref) .ub-loc__line {
+  position: absolute;
+  left: 23.5px;
+  top: 34px;
+  width: 1px;
+  height: 58px;
+  background: var(--ub-ink);
+}
+
+:where(.uber-ref) .ub-loc__locate {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+/* ---------- service tiles ---------- */
+
+:where(.uber-ref) .ub-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 12px;
+}
+
+:where(.uber-ref) .ub-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 96px;
+  border-radius: 12px;
+  background: var(--tile, #f3f3f3);
+  transition: background-color 0.5s ease;
+}
+
+:where(.uber-ref) .ub-tile:hover {
+  background: var(--tile-hover, #eeeeee);
+}
+
+:where(.uber-ref) .ub-tile__art {
+  width: 48px;
+  height: 40px;
+}
+
+:where(.uber-ref) .ub-tile__title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+:where(.uber-ref) .ub-tile__desc,
+:where(.uber-ref) .ub-tile__more {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-tiles {
+    gap: 18px;
+  }
+
+  :where(.uber-ref) .ub-tile {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 160px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  :where(.uber-ref) .ub-tile__text {
+    display: flex;
+    flex-direction: column;
+    height: 128px;
+    width: 212px;
+    padding-right: 8px;
+  }
+
+  :where(.uber-ref) .ub-tile__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  :where(.uber-ref) .ub-tile__desc {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  :where(.uber-ref) .ub-tile__more {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 10px 12px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  :where(.uber-ref) .ub-tile__art {
+    width: 128px;
+    height: 128px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1135px) {
+  :where(.uber-ref) .ub-tile__art {
+    width: 96px;
+    height: 96px;
+  }
+
+  :where(.uber-ref) .ub-tile__text {
+    width: auto;
+  }
+}
+
+/* ---------- FAQ ---------- */
+
+:where(.uber-ref) .ub-faq__row {
+  border-bottom: 1px solid var(--ub-rule);
+}
+
+:where(.uber-ref) .ub-faq__row summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.2s cubic-bezier(0, 0, 1, 1);
+}
+
+:where(.uber-ref) .ub-faq__row summary::-webkit-details-marker {
+  display: none;
+}
+
+:where(.uber-ref) .ub-faq__row summary:hover {
+  color: var(--ub-ink);
+}
+
+:where(.uber-ref) .ub-faq__row summary svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+:where(.uber-ref) .ub-faq__row[open] summary svg {
+  transform: rotate(180deg);
+}
+
+:where(.uber-ref) .ub-faq__row p {
+  padding: 0 24px 24px;
+  color: var(--ub-faq);
+}
+
+/* ---------- app cards ---------- */
+
+:where(.uber-ref) .ub-apps {
+  display: grid;
+  gap: 36px;
+}
+
+:where(.uber-ref) .ub-appcard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 118px;
+  padding: 16px;
+  background: #ffffff;
+  color: #000000;
+}
+
+:where(.uber-ref) .ub-appcard__code,
+:where(.uber-ref) .ub-appcard__tile {
+  flex: none;
+  width: 84px;
+  height: 84px;
+}
+
+:where(.uber-ref) .ub-appcard__code {
+  background:
+    repeating-linear-gradient(90deg, #000 0 6px, transparent 6px 12px),
+    repeating-linear-gradient(0deg, #000 0 6px, #fff 6px 12px);
+  background-blend-mode: difference;
+  outline: 10px solid #fff;
+  outline-offset: -10px;
+}
+
+:where(.uber-ref) .ub-appcard__tile {
+  border-radius: 16px;
+  background: #000000;
+}
+
+:where(.uber-ref) .ub-appcard__text {
+  flex: 1;
+}
+
+:where(.uber-ref) .ub-appcard__title {
+  display: block;
+  font-family: var(--ub-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+:where(.uber-ref) .ub-appcard__caption {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+:where(.uber-ref) .ub-appcard > svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-apps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-appcard {
+    height: 198px;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  :where(.uber-ref) .ub-appcard__code,
+  :where(.uber-ref) .ub-appcard__tile {
+    width: 150px;
+    height: 150px;
+  }
+
+  :where(.uber-ref) .ub-appcard__tile {
+    border-radius: 24px;
+  }
+}
+
+/* ---------- carousel nav ---------- */
+
+:where(.uber-ref) .ub-carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+:where(.uber-ref) .ub-carousel-nav span {
+  margin-right: 16px;
+}
+
+:where(.uber-ref) .ub-carousel-nav button {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--ub-grey);
+  color: var(--ub-ink);
+  transition: box-shadow 0.2s cubic-bezier(0, 0, 1, 1);
+}
+
+:where(.uber-ref) .ub-carousel-nav button:hover:not(:disabled) {
+  box-shadow: var(--ub-tint-light);
+}
+
+:where(.uber-ref) .ub-carousel-nav button:disabled {
+  background: rgba(224, 224, 224, 0.6);
+  color: #c4c4c4;
+  cursor: default;
+}
+
+:where(.uber-ref) .ub-carousel-nav svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ---------- three-up card row ---------- */
+
+:where(.uber-ref) .ub-cards {
+  display: grid;
+  gap: 40px;
+}
+
+:where(.uber-ref) .ub-card__media {
+  width: 100%;
+  aspect-ratio: 360 / var(--mh, 360);
+}
+
+:where(.uber-ref) .ub-card__title {
+  margin-top: 20px;
+}
+
+:where(.uber-ref) .ub-card__text {
+  margin-top: 12px;
+}
+
+:where(.uber-ref) .ub-card__btn {
+  margin-top: 32px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+}
+
+/* ---------- section heading block ---------- */
+
+:where(.uber-ref) .ub-sec {
+  padding: var(--pt-s, 32px) 0 var(--pb-s, 32px);
+}
+
+:where(.uber-ref) .ub-sec__head {
+  margin-bottom: var(--hb-s, 32px);
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-sec {
+    padding: var(--pt, 64px) 0 var(--pb, 64px);
+  }
+
+  :where(.uber-ref) .ub-sec__head {
+    margin-bottom: var(--hb, 36px);
+  }
+}
+
+@media (max-width: 1135px) {
+  :where(.uber-ref) .ub-appcard__code {
+    border-radius: 16px;
+    background: #000000;
+    outline: 0;
+  }
+}
+
+/* ---------- tabs ---------- */
+
+:where(.uber-ref) .ub-tabs {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid #e2e2e2;
+  scrollbar-width: none;
+}
+
+:where(.uber-ref) .ub-tabs button {
+  flex: none;
+  height: 48px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  box-shadow: inset 0 0 0 0 #000000;
+  transition: box-shadow 0.2s var(--ub-ease-base), background-color 0.2s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-tabs button:hover {
+  background: rgba(17, 17, 17, 0.04);
+}
+
+:where(.uber-ref) .ub-tabs button[aria-selected="true"] {
+  box-shadow: inset 0 -3px 0 0 #000000;
+}
+
+:where(.uber-ref) .ub-tabs button:focus-visible {
+  box-shadow: var(--ub-focus);
+}
+
+/* Icon columns */
+:where(.uber-ref) .ub-icols {
+  display: grid;
+  gap: 40px;
+  margin-top: 68px;
+}
+
+:where(.uber-ref) .ub-icols__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #111111;
+}
+
+:where(.uber-ref) .ub-icols[data-big] .ub-icols__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #276ef1;
+}
+
+:where(.uber-ref) .ub-icols h3 {
+  margin-top: 20px;
+}
+
+:where(.uber-ref) .ub-icols[data-big] h3 {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-icols p {
+  margin-top: 12px;
+}
+
+:where(.uber-ref) .ub-icols__link {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+:where(.uber-ref) .ub-icols[data-big] .ub-icols__link {
+  margin-top: 32px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-icols {
+    grid-template-columns: repeat(3, 360px);
+    gap: 36px;
+    margin-top: 48px;
+  }
+}
+

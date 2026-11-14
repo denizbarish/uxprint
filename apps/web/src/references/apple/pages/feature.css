@@ -1,0 +1,537 @@
+/* Platform feature story (/os/ios): 1260px content, 144px section padding, eyebrow + 48px headline intros. */
+
+:where(.apple-ref) .ap-ft-wrap {
+  width: 87.5%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+:where(.apple-ref) .ap-ft-welcome {
+  position: relative;
+  height: 960px;
+  padding: 85px calc((100% - min(87.5%, 1260px)) / 2) 0;
+  background: #000000;
+  overflow: hidden;
+}
+
+:where(.apple-ref) .ap-ft-welcome__eyebrow,
+:where(.apple-ref) .ap-ft-intro__eyebrow {
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+}
+
+:where(.apple-ref) .ap-ft-welcome__title,
+:where(.apple-ref) .ap-ft-head,
+:where(.apple-ref) .ap-ft-intro__title {
+  font-family: var(--ap-font-display);
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+:where(.apple-ref) .ap-ft-welcome__title {
+  margin-top: 8px;
+}
+
+:where(.apple-ref) .ap-ft-welcome__note {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 600;
+  color: #86868b;
+}
+
+:where(.apple-ref) .ap-ft-welcome__media {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 1260px;
+  max-width: 100%;
+  height: 520px;
+  transform: translateX(-50%);
+}
+
+:where(.apple-ref) .ap-ft-sec {
+  position: relative;
+  padding: 144px 0;
+  background: #ffffff;
+}
+
+:where(.apple-ref) .ap-ft-sec--charcoal {
+  background: #1d1d1f;
+  color: #f5f5f7;
+}
+
+:where(.apple-ref) .ap-ft-sec--alt {
+  background: #f5f5f7;
+}
+
+:where(.apple-ref) .ap-ft-sec--highlights {
+  padding: 144px 0 216px;
+}
+
+:where(.apple-ref) .ap-ft-sec--highlights .ap-ft-head {
+  width: 87.5%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+:where(.apple-ref) .ap-ft-sec--flush-top {
+  padding-top: 0;
+}
+
+:where(.apple-ref) .ap-ft-sec--no-bottom {
+  padding-bottom: 0;
+}
+
+:where(.apple-ref) .ap-ft-sec--overlap {
+  margin-top: -30px;
+}
+
+:where(.apple-ref) .ap-ft-sec--small-top {
+  padding-top: 20px;
+}
+
+:where(.apple-ref) .ap-ft-intro {
+  width: 840px;
+  max-width: 100%;
+}
+
+:where(.apple-ref) .ap-ft-intro__title {
+  margin-top: 12px;
+}
+
+:where(.apple-ref) .ap-ft-intro__body {
+  margin-top: 24px;
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+  color: #6e6e73;
+}
+
+:where(.apple-ref) .ap-on-dark .ap-ft-intro__body {
+  color: #86868b;
+}
+
+:where(.apple-ref) .ap-ft-intro__link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+:where(.apple-ref) .ap-ft-hl {
+  position: relative;
+  margin-top: 44px;
+}
+
+:where(.apple-ref) .ap-ft-hl__media {
+  height: 710px;
+}
+
+:where(.apple-ref) .ap-ft-hl__pass {
+  position: absolute;
+  left: 50%;
+  bottom: -116px;
+  display: flex;
+  gap: 16px;
+  transform: translateX(-50%);
+}
+
+:where(.apple-ref) .ap-ft-hl__dots {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 28px;
+  background: rgba(66, 66, 69, 0.72);
+  backdrop-filter: blur(7px);
+}
+
+:where(.apple-ref) .ap-ft-hl__dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.42);
+  transition: width 0.5s var(--ap-ease);
+}
+
+:where(.apple-ref) .ap-ft-hl__dots span[data-active] {
+  width: 48px;
+  background: #ffffff;
+}
+
+:where(.apple-ref) .ap-ft-hl__play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 32px;
+  background: rgba(66, 66, 69, 0.72);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+:where(.apple-ref) .ap-ft-hl__play svg {
+  width: 14px;
+  height: 14px;
+}
+
+:where(.apple-ref) .ap-ft-wide {
+  width: 1260px;
+  max-width: 87.5%;
+  height: 732px;
+  margin: 40px auto 0;
+  border-radius: 28px;
+}
+
+:where(.apple-ref) .ap-ft-gallery {
+  position: relative;
+  margin-top: 38px;
+}
+
+:where(.apple-ref) .ap-ft-gallery ul {
+  display: flex;
+  gap: 20px;
+  padding: 0 calc((100% - min(87.5%, 1260px)) / 2);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+:where(.apple-ref) .ap-ft-gallery li {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+}
+
+:where(.apple-ref) .ap-ft-gallery__media {
+  flex: none;
+  height: 452px;
+  border-radius: 28px;
+}
+
+:where(.apple-ref) .ap-ft-gallery__cap {
+  max-width: 560px;
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 600;
+  color: #6e6e73;
+}
+
+:where(.apple-ref) .ap-ft-gallery__controls {
+  width: 87.5%;
+  max-width: 1260px;
+  margin: 0 auto;
+  position: relative;
+}
+
+:where(.apple-ref) .ap-ft-gallery__controls .ap-paddles {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+:where(.apple-ref) .ap-ft-more {
+  display: grid;
+  grid-template-columns: repeat(3, 390px);
+  gap: 48px 37px;
+  margin-top: 108px;
+}
+
+:where(.apple-ref) .ap-ft-more > div::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #e8e8ed;
+}
+
+:where(.apple-ref) .ap-ft-more h3,
+:where(.apple-ref) .ap-ft-more p {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 600;
+}
+
+:where(.apple-ref) .ap-ft-more p {
+  color: #6e6e73;
+}
+
+:where(.apple-ref) .ap-ft-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 523px;
+  padding: 120px 40px 0;
+  border-radius: 28px;
+  background: #f5f5f7;
+  text-align: center;
+  overflow: hidden;
+}
+
+:where(.apple-ref) .ap-ft-card--tall {
+  height: 878px;
+  padding-top: 120px;
+}
+
+:where(.apple-ref) .ap-ft-card h2 {
+  max-width: 735px;
+  font-family: var(--ap-font-display);
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+:where(.apple-ref) .ap-ft-card .ap-btn {
+  margin-top: 30px;
+}
+
+:where(.apple-ref) .ap-ft-card__links {
+  display: flex;
+  gap: 36px;
+  margin-top: 48px;
+}
+
+:where(.apple-ref) .ap-ft-card__links a {
+  color: #6e6e73;
+}
+
+:where(.apple-ref) .ap-ft-card__media {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 0;
+  height: 440px;
+}
+
+:where(.apple-ref) .ap-ft-card__icon {
+  width: 120px;
+  height: 120px;
+  margin: -40px 0 20px;
+  border-radius: 26px;
+}
+
+:where(.apple-ref) .ap-ft-card__more {
+  margin-top: 12px;
+}
+
+@media (max-width: 734px) {
+  :where(.apple-ref) .ap-ft-welcome {
+    height: 738px;
+    padding: 80px 24px 0;
+  }
+
+  :where(.apple-ref) .ap-ft-welcome__title,
+  :where(.apple-ref) .ap-ft-head,
+  :where(.apple-ref) .ap-ft-intro__title,
+  :where(.apple-ref) .ap-ft-card h2 {
+    font-size: 32px;
+    line-height: 1.125;
+  }
+
+  :where(.apple-ref) .ap-ft-intro__body {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  :where(.apple-ref) .ap-ft-welcome__media {
+    bottom: 169px;
+    height: 272px;
+  }
+
+  /* Phone sections use fixed heights; galleries pin to the section bottom so copy length does not move them. */
+  :where(.apple-ref) .ap-ft-sec {
+    padding: 0;
+  }
+
+  :where(.apple-ref) .ap-ft-sec--highlights {
+    padding: 5px 0 227px;
+  }
+
+  :where(.apple-ref) .ap-ft-sec--highlights .ap-ft-head {
+    width: auto;
+    margin: 0 24px;
+  }
+
+  :where(.apple-ref) .ap-ft-hl {
+    margin: 30px 24px 0;
+  }
+
+  :where(.apple-ref) .ap-ft-hl__media {
+    height: 480px;
+    border-radius: 28px;
+  }
+
+  :where(.apple-ref) .ap-ft-sec--overlap {
+    margin-top: 0;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-label="Assistant"] {
+    height: 1009px;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-label="Smart features"] {
+    height: 1047px;
+    padding-top: 112px;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-label="Family safety"] {
+    height: 1069px;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-label="Improvements"] {
+    height: 853px;
+  }
+
+  :where(.apple-ref) .ap-ft-wrap {
+    width: auto;
+    margin: 0 24px;
+  }
+
+  :where(.apple-ref) .ap-ft-wide {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 48px;
+    width: auto;
+    max-width: none;
+    height: 583px;
+    margin: 0;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery {
+    height: 663px !important;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-label="Family safety"] .ap-ft-gallery {
+    height: 772px !important;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery ul {
+    padding: 0 24px;
+    scroll-padding-inline: 24px;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery li {
+    width: 260px !important;
+    height: auto !important;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery__media {
+    flex: none;
+    height: 316px;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery__cap {
+    width: auto;
+    margin-top: 26px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery__controls {
+    position: absolute;
+    right: 24px;
+    bottom: 48px;
+    width: auto;
+  }
+
+  :where(.apple-ref) .ap-ft-gallery__controls .ap-paddles {
+    position: static;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-label="Improvements"] .ap-ft-gallery {
+    height: 631px !important;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-labelledby="ft-more"] {
+    height: 1763px;
+    padding-top: 111px;
+    overflow: hidden;
+  }
+
+  :where(.apple-ref) .ap-ft-sec[aria-labelledby="ft-more"] .ap-ft-head {
+    font-size: 28px;
+  }
+
+  :where(.apple-ref) .ap-ft-more {
+    grid-template-columns: 1fr;
+    gap: 54px;
+    margin-top: 44px;
+  }
+
+  :where(.apple-ref) .ap-ft-more > div::before {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #e8e8ed;
+  }
+
+  :where(.apple-ref) .ap-ft-more > div::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #e8e8ed;
+}
+
+:where(.apple-ref) .ap-ft-more h3,
+  :where(.apple-ref) .ap-ft-more p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  :where(.apple-ref) .ap-ft-card,
+  :where(.apple-ref) .ap-ft-card--tall {
+    height: 323px;
+    padding: 54px 24px 0;
+  }
+
+  :where(.apple-ref) .ap-ft-card--tall {
+    height: 1233px;
+  }
+
+  :where(.apple-ref) .ap-ft-card__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+  }
+
+  :where(.apple-ref) .ap-ft-card__media {
+    left: 24px;
+    right: 24px;
+    height: 360px;
+  }
+
+  :where(.apple-ref) .ap-ft-card__icon {
+    width: 80px;
+    height: 80px;
+    margin: -20px 0 16px;
+  }
+
+  :where(.apple-ref) .ap-ft-sec--small-top {
+    padding: 40px 0 122px;
+  }
+}

@@ -1,0 +1,179 @@
+/* App landing template (measured on /en/mobile). */
+
+:where(.busuu-ref).bu-applanding .bu-hero__art {
+  height: 427px;
+}
+
+:where(.busuu-ref) .bu-laurel {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 32px;
+  border: 3px solid #ffffff80;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+:where(.busuu-ref) .bu-laurel--right {
+  transform: scaleX(-1);
+}
+
+:where(.busuu-ref).bu-applanding .bu-hero__action {
+  margin-top: 20px;
+}
+
+:where(.busuu-ref).bu-mk.bu-applanding main > .bu-hero + * {
+  margin-top: 60px;
+}
+
+:where(.busuu-ref).bu-applanding .bu-feature__body {
+  padding-bottom: 48px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-applanding__why + .bu-features {
+  margin-top: 54px;
+}
+
+:where(.busuu-ref).bu-mk.bu-applanding main > .bu-steps {
+  margin-top: 59px;
+}
+
+:where(.busuu-ref).bu-mk.bu-applanding main > .bu-download {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  :where(.busuu-ref) .bu-applanding__stats .bu-stat {
+    padding: 50px 85px;
+  }
+}
+
+:where(.busuu-ref).bu-mk main > .bu-applanding__media {
+  margin-top: 150px;
+}
+
+:where(.busuu-ref) .bu-applanding__shot {
+  width: 500px;
+  height: 293px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+:where(.busuu-ref) .bu-applanding__media .bu-bluecard p + p {
+  margin-top: 24px;
+}
+
+:where(.busuu-ref) .bu-applanding__media .bu-btn {
+  margin-top: 24px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-applanding__why {
+  margin-top: 90px;
+}
+
+:where(.busuu-ref) .bu-applanding__why strong {
+  font-weight: 700;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-applanding__love {
+  margin-top: 90px;
+}
+
+:where(.busuu-ref) .bu-applanding__love h2 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 44.2px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-applanding__trust {
+  margin-top: 105px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-applanding__trust + .bu-download {
+  margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref).bu-applanding .bu-hero__inner {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  :where(.busuu-ref).bu-applanding .bu-hero__trust {
+    display: block;
+    width: 300px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  :where(.busuu-ref).bu-applanding .bu-hero__art {
+    display: block;
+    width: 100%;
+    height: 286px;
+  }
+
+  :where(.busuu-ref).bu-mk.bu-applanding main > .bu-hero + * {
+    margin-top: 30px;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-applanding__media {
+    margin-top: 90px;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-applanding__why {
+    margin-top: 60px;
+  }
+
+  :where(.busuu-ref).bu-mk.bu-applanding main > .bu-steps,
+  :where(.busuu-ref).bu-mk main > .bu-applanding__love {
+    margin-top: 30px;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-applanding__trust {
+    margin-top: 49px;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-applanding__trust + .bu-download {
+    margin-top: 60px;
+  }
+
+  :where(.busuu-ref).bu-mk.bu-applanding main > .bu-download {
+    margin-bottom: 30px;
+  }
+
+  :where(.busuu-ref).bu-applanding .bu-feature {
+    flex: none;
+    height: 488px;
+    padding: 24px;
+  }
+
+  :where(.busuu-ref).bu-applanding .bu-feature__body {
+    gap: 12px;
+    margin-top: 21px;
+    padding-bottom: 0;
+  }
+
+  :where(.busuu-ref).bu-applanding .bu-feature__body h3 {
+    font-size: 21px;
+    line-height: 25.6px;
+  }
+
+  :where(.busuu-ref).bu-applanding .bu-feature__body p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  :where(.busuu-ref) .bu-applanding__shot {
+    width: 100%;
+    height: 186px;
+  }
+
+  :where(.busuu-ref) .bu-laurel {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-applanding__love h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+}

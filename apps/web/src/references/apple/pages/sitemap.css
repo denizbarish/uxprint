@@ -1,0 +1,84 @@
+/* Site index (/sitemap): 980px column, 32px category titles, three 332px link columns with 32px link pitch. */
+
+:where(.apple-ref) .ap-sm {
+  width: 980px;
+  max-width: calc(100% - 44px);
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+
+:where(.apple-ref) .ap-sm__cat {
+  padding-top: 100px;
+}
+
+:where(.apple-ref) .ap-sm__cat--first {
+  padding-top: 0;
+}
+
+:where(.apple-ref) .ap-sm__cat h2 {
+  padding-bottom: 46px;
+  font-family: var(--ap-font-display);
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+}
+
+:where(.apple-ref) .ap-sm__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0;
+}
+
+:where(.apple-ref) .ap-sm__col {
+  padding-right: 32px;
+}
+
+:where(.apple-ref) .ap-sm__group + .ap-sm__group {
+  margin-top: 26px;
+}
+
+:where(.apple-ref) .ap-sm__group h3 {
+  padding-bottom: 7px;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+}
+
+:where(.apple-ref) .ap-sm__group li {
+  padding: 3.5px 0;
+  font-size: 17px;
+  line-height: 1.47059;
+  letter-spacing: -0.022em;
+}
+
+:where(.apple-ref) .ap-sm__group a {
+  color: #0066cc;
+}
+
+:where(.apple-ref) .ap-sm__group a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 734px) {
+  :where(.apple-ref) .ap-sm {
+    padding-top: 24px;
+  }
+
+  :where(.apple-ref) .ap-sm__cols {
+    grid-template-columns: 1fr;
+  }
+
+  :where(.apple-ref) .ap-sm__col + .ap-sm__col {
+    margin-top: 26px;
+  }
+
+  :where(.apple-ref) .ap-sm__group {
+    margin-top: 0 !important;
+  }
+
+  :where(.apple-ref) .ap-sm__group + .ap-sm__group {
+    margin-top: 26px !important;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "screens": [
+    { "id": "home", "title": "Home", "theme": "light", "template": "home", "url": "https://www.busuu.com", "survey": "home" },
+    { "id": "course", "title": "Course Landing", "theme": "light", "template": "course", "url": "https://www.busuu.com/en/course/learn-spanish-online", "survey": "en-course-learn-spanish-online" },
+    { "id": "content", "title": "Content Page", "theme": "light", "template": "content", "url": "https://www.busuu.com/en/about", "survey": "en-about" },
+    { "id": "app-landing", "title": "App Landing", "theme": "light", "template": "app-landing", "url": "https://www.busuu.com/en/mobile", "survey": "en-mobile" },
+    { "id": "paywall", "title": "Plan Picker", "theme": "dark", "template": "paywall", "url": "https://www.busuu.com/en/premium", "survey": "en-premium" },
+    { "id": "legal", "title": "Policy Page", "theme": "light", "template": "legal", "url": "https://www.busuu.com/en/privacy", "survey": "en-privacy" },
+    { "id": "auth", "title": "Log In", "theme": "light", "template": "auth", "url": "https://www.busuu.com/en/login", "survey": "en-login" },
+    { "id": "statement", "title": "Statement Page", "theme": "light", "template": "statement", "url": "https://www.busuu.com/en/modern-slavery-statement", "survey": "en-modern-slavery-statement" },
+    { "id": "language-picker", "title": "Language Picker", "theme": "light", "template": "language-picker", "url": "https://www.busuu.com/en/choose-your-language", "survey": "en-choose-your-language" },
+    { "id": "press", "title": "Press Centre", "theme": "light", "template": "press", "url": "https://www.busuu.com/en/press", "survey": "en-press" },
+    { "id": "careers", "title": "Careers", "theme": "light", "template": "careers", "url": "https://www.busuu.com/en/careers", "survey": "en-careers" }
+  ],
+  "components": {}
+}

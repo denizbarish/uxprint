@@ -1,0 +1,361 @@
+/* Full-screen plan picker (measured on /en/premium). */
+
+:where(.busuu-ref).bu-pw {
+  --bu-pw-deep: #221658;
+  --bu-pw-ink: #5438dc;
+  position: relative;
+  min-height: 1168px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Painted backdrop: 900px tall deep violet with two lighter arcs (stands in for the curve artwork). */
+:where(.busuu-ref) .bu-pw__wash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 900px;
+  overflow: hidden;
+  background: var(--bu-pw-deep);
+}
+
+:where(.busuu-ref) .bu-pw__wash::before,
+:where(.busuu-ref) .bu-pw__wash::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+:where(.busuu-ref) .bu-pw__wash::before {
+  top: -620px;
+  width: 2600px;
+  height: 1000px;
+  background: #3a26a0;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+:where(.busuu-ref) .bu-pw__wash::after {
+  top: -820px;
+  width: 2200px;
+  height: 960px;
+  background: #4a33b6;
+}
+
+:where(.busuu-ref) .bu-pw__bar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+:where(.busuu-ref) .bu-pw__close {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  color: #fff;
+  transition: opacity 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-pw__close:hover {
+  opacity: 0.7;
+}
+
+:where(.busuu-ref) .bu-pw__close svg {
+  width: 24px;
+  height: 24px;
+}
+
+:where(.busuu-ref) .bu-pw__main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 20px;
+}
+
+:where(.busuu-ref) .bu-pw__eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+:where(.busuu-ref) .bu-pw__title {
+  margin-top: 12px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44.8px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-pw__title span {
+  white-space: nowrap;
+}
+
+:where(.busuu-ref) .bu-pw__toggle {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  height: 42px;
+  margin-top: 24px;
+  padding: 4px;
+  border-radius: 26px;
+  background: #918bac;
+}
+
+:where(.busuu-ref) .bu-pw__thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 170px;
+  height: 34px;
+  border-radius: 22px;
+  background: var(--bu-pw-deep);
+  transition:
+    transform 0.2s ease-in-out,
+    width 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-pw__toggle[data-period="month"] .bu-pw__thumb {
+  width: 152px;
+  transform: translateX(184px);
+}
+
+:where(.busuu-ref) .bu-pw__toggle button {
+  position: relative;
+  height: 34px;
+  padding: 6px 46px;
+  border-radius: 22px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+:where(.busuu-ref) .bu-pw__toggle button:focus-visible,
+:where(.busuu-ref) .bu-pw__close:focus-visible,
+:where(.busuu-ref) .bu-pw__cta:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+:where(.busuu-ref) .bu-pw__cards {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+:where(.busuu-ref) .bu-pw__card {
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+  padding: 24px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: var(--bu-pw-deep);
+}
+
+:where(.busuu-ref) .bu-pw__banner {
+  height: 28px;
+  margin: -26px -26px 24px;
+  padding: 2px;
+  border-radius: 8px 8px 0 0;
+  background: #fff;
+  color: var(--bu-navy);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+:where(.busuu-ref) .bu-pw__banner--empty {
+  height: 32px;
+  background: transparent;
+}
+
+:where(.busuu-ref) .bu-pw__name {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+:where(.busuu-ref) .bu-pw__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+:where(.busuu-ref) .bu-pw__text strong {
+  font-weight: 700;
+}
+
+:where(.busuu-ref) .bu-pw__price {
+  min-height: 69px;
+  margin-top: 24px;
+}
+
+:where(.busuu-ref) .bu-pw__save {
+  color: var(--bu-yellow);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+:where(.busuu-ref) .bu-pw__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 30px;
+}
+
+:where(.busuu-ref) .bu-pw__row s {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+:where(.busuu-ref) .bu-pw__now {
+  color: var(--bu-yellow);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+:where(.busuu-ref) .bu-pw__note {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+:where(.busuu-ref) .bu-pw__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  margin-top: 24px;
+  padding: 12px 24px;
+  border: 2px solid #fff;
+  border-radius: 26px;
+  background: #fff;
+  color: var(--bu-pw-ink);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-pw__cta:hover {
+  border-color: #e4defb;
+  background: #e4defb;
+}
+
+:where(.busuu-ref) .bu-pw__cta:active {
+  border-color: #cfc5f7;
+  background: #cfc5f7;
+}
+
+:where(.busuu-ref) .bu-pw__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+:where(.busuu-ref) .bu-pw__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+:where(.busuu-ref) .bu-pw__check {
+  flex: none;
+  width: 24px;
+  height: 24px;
+}
+
+:where(.busuu-ref) .bu-pw__list li.bu-pw__rule {
+  align-items: center;
+  gap: 12px;
+  height: 18px;
+  margin: 4px 0;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+:where(.busuu-ref) .bu-pw__rule::before,
+:where(.busuu-ref) .bu-pw__rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #fff;
+}
+
+:where(.busuu-ref) .bu-pw__foot {
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.busuu-ref) .bu-pw__thumb {
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref).bu-pw {
+    min-height: 1827px;
+  }
+
+  :where(.busuu-ref) .bu-pw__wash::before {
+    top: -760px;
+    width: 1100px;
+    height: 900px;
+  }
+
+  :where(.busuu-ref) .bu-pw__wash::after {
+    top: -860px;
+    width: 900px;
+    height: 900px;
+  }
+
+  :where(.busuu-ref) .bu-pw__title {
+    width: 350px;
+  }
+
+  :where(.busuu-ref) .bu-pw__toggle button {
+    padding: 6px 16px;
+  }
+
+  :where(.busuu-ref) .bu-pw__thumb {
+    width: 110px;
+  }
+
+  :where(.busuu-ref) .bu-pw__toggle[data-period="month"] .bu-pw__thumb {
+    width: 92px;
+    transform: translateX(124px);
+  }
+
+  /* Same as the original: the recommended plan comes first on phones. */
+  :where(.busuu-ref) .bu-pw__cards {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  :where(.busuu-ref) .bu-pw__card {
+    width: 100%;
+  }
+}

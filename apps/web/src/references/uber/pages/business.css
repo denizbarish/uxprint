@@ -1,0 +1,342 @@
+/* Teams sub-brand landing (business). Measured on /tr/en/business at 1440 and 390. */
+
+:where(.uber-ref) .ub-biz-blue {
+  color: #068bee;
+}
+
+:where(.uber-ref) .ub-biz-center {
+  text-align: center;
+}
+
+:where(.uber-ref) .ub-biz-narrow {
+  max-width: 756px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero */
+:where(.uber-ref) .ub-biz-hero {
+  padding: 40px 0;
+}
+
+:where(.uber-ref) .ub-biz-hero__text p {
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-biz-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+:where(.uber-ref) .ub-biz-hero__art {
+  width: 100%;
+  aspect-ratio: 558 / 372;
+  margin-top: 36px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-biz-hero {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    padding: 0;
+  }
+
+  :where(.uber-ref) .ub-biz-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    align-items: center;
+  }
+
+  :where(.uber-ref) .ub-biz-hero__text {
+    width: 459px;
+  }
+
+  :where(.uber-ref) .ub-biz-hero__text p {
+    margin-top: 24px;
+  }
+
+  :where(.uber-ref) .ub-biz-hero__art {
+    margin-top: 0;
+  }
+}
+
+/* Boxes (dark perks and light team cards) */
+:where(.uber-ref) .ub-biz-boxes {
+  display: grid;
+  gap: 16px;
+}
+
+:where(.uber-ref) .ub-biz-boxes li {
+  padding: 20px 21px 24px;
+  border-radius: 8px;
+}
+
+:where(.uber-ref) .ub-biz-boxes[data-tone="dark"] li {
+  background: #282828;
+}
+
+:where(.uber-ref) .ub-biz-boxes[data-tone="light"] li {
+  padding-top: 20px;
+  border: 1px solid #e2e2e2;
+}
+
+:where(.uber-ref) .ub-biz-boxes p {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-biz-boxes__media {
+  width: 100%;
+  aspect-ratio: 224 / 168;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+:where(.uber-ref) .ub-biz-boxes[data-tone="light"] p {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-biz-boxes .ub-biz-block__link {
+  display: inline-block;
+  margin-top: 24px;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-biz-boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-biz-boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Logo strip */
+:where(.uber-ref) .ub-biz-logos {
+  padding: 32px 0 64px;
+}
+
+:where(.uber-ref) .ub-biz-logos__strip {
+  height: 50px;
+  margin-top: 64px;
+  background: repeating-linear-gradient(90deg, #3a3a3a 0 150px, transparent 150px 250px);
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-biz-logos {
+    padding: 64px 0 121px;
+  }
+}
+
+/* Solution blocks */
+:where(.uber-ref) .ub-biz-block {
+  padding: 40px 0;
+}
+
+:where(.uber-ref) .ub-biz-diagram {
+  width: 100%;
+  aspect-ratio: 342 / 200;
+}
+
+:where(.uber-ref) .ub-biz-block__title {
+  margin-top: 64px;
+}
+
+:where(.uber-ref) .ub-biz-cols {
+  display: grid;
+  gap: 32px;
+  margin-top: 36px;
+}
+
+:where(.uber-ref) .ub-biz-cols__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #276ef1;
+}
+
+:where(.uber-ref) .ub-biz-cols h3 {
+  margin-top: 20px;
+}
+
+:where(.uber-ref) .ub-biz-cols p {
+  margin-top: 12px;
+}
+
+:where(.uber-ref) .ub-biz-block__link {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-biz-block {
+    padding: 64px 0;
+  }
+
+  :where(.uber-ref) .ub-biz-diagram {
+    aspect-ratio: auto;
+    height: 270px;
+  }
+
+  :where(.uber-ref) .ub-biz-cols {
+    grid-template-columns: repeat(3, 360px);
+    gap: 36px;
+  }
+
+  :where(.uber-ref) .ub-biz-cols[data-count="2"] {
+    grid-template-columns: repeat(2, 558px);
+  }
+}
+
+/* Carousels */
+:where(.uber-ref) .ub-biz-carousel,
+:where(.uber-ref) .ub-biz-dash {
+  --biz-pitch: 326px;
+  overflow: hidden;
+}
+
+:where(.uber-ref) .ub-biz-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 1s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-biz-ind {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 277px;
+  padding-bottom: 24px;
+  background: #ffffff;
+  color: #276ef1;
+}
+
+:where(.uber-ref) .ub-biz-ind__media {
+  width: 197px;
+  height: 197px;
+  margin: 0 auto 24px;
+}
+
+:where(.uber-ref) .ub-biz-ind .ub-h3 {
+  padding: 0 24px;
+  text-align: center;
+}
+
+:where(.uber-ref) .ub-biz-nav {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-biz-dash__lead {
+  max-width: 756px;
+  margin: 24px auto 64px;
+}
+
+:where(.uber-ref) .ub-biz-dash__card {
+  flex: none;
+  width: 310px;
+}
+
+:where(.uber-ref) .ub-biz-dash__media {
+  height: 443px;
+  margin-bottom: 20px;
+}
+
+:where(.uber-ref) .ub-biz-dash__card p {
+  margin-top: 12px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-biz-carousel {
+    --biz-pitch: 386px;
+  }
+
+  :where(.uber-ref) .ub-biz-dash {
+    --biz-pitch: 390px;
+  }
+
+  :where(.uber-ref) .ub-biz-track {
+    gap: 36px;
+  }
+
+  :where(.uber-ref) .ub-biz-ind {
+    width: 350px;
+  }
+
+  :where(.uber-ref) .ub-biz-dash__card {
+    width: 354px;
+  }
+
+  :where(.uber-ref) .ub-biz-nav {
+    margin-top: 53px;
+  }
+}
+
+/* Wide image band before the console section */
+:where(.uber-ref) .ub-biz-band__media {
+  height: 200px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-biz-band__media {
+    height: 350px;
+  }
+}
+
+/* Image + text split */
+:where(.uber-ref) .ub-biz-split__grid {
+  display: grid;
+  gap: 36px;
+}
+
+:where(.uber-ref) .ub-biz-split__grid p {
+  margin: 24px 0 32px;
+}
+
+:where(.uber-ref) .ub-biz-split__media {
+  width: 100%;
+  aspect-ratio: 558 / 314;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-biz-split__grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  :where(.uber-ref) .ub-biz-split__grid > div {
+    width: 459px;
+    justify-self: end;
+  }
+
+  :where(.uber-ref) .ub-biz-split__grid[data-flip] > div {
+    justify-self: start;
+  }
+
+  :where(.uber-ref) .ub-biz-split__grid[data-flip] .ub-biz-split__media {
+    aspect-ratio: 558 / 372;
+  }
+}
+
+:where(.uber-ref) .ub-biz-signup {
+  margin-top: 32px;
+}
+
+:where(.uber-ref) .ub-biz-notes p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+:where(.uber-ref) .ub-biz-notes p + p {
+  margin-top: 16px;
+}

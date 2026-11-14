@@ -1,0 +1,1612 @@
+{
+  "slug": "apple",
+  "name": "Apple",
+  "url": "https://www.apple.com",
+  "category": "marketing-site",
+  "tags": [
+    "light",
+    "product-marketing",
+    "full-bleed-tiles",
+    "frosted-nav",
+    "mega-menu",
+    "pill-buttons",
+    "system-font",
+    "footnotes"
+  ],
+  "summary": "Light, product-first marketing site: a frosted 44px global nav with tall flyouts, full-bleed promo tiles, 980px pill buttons, SF Pro type and long footnote footers.",
+  "theme": "light",
+  "source": {
+    "tool": "craft-anything 0.4.0 + playwright 1.65.0",
+    "mode": "deep",
+    "capturedAt": "2026-11-14",
+    "widths": [
+      1440,
+      768,
+      390
+    ],
+    "pages": [
+      {
+        "name": "Home",
+        "url": "https://www.apple.com"
+      },
+      {
+        "name": "Phone family",
+        "url": "https://www.apple.com/iphone"
+      },
+      {
+        "name": "Phone detail",
+        "url": "https://www.apple.com/iphone-17"
+      },
+      {
+        "name": "Phone compare",
+        "url": "https://www.apple.com/iphone/compare"
+      },
+      {
+        "name": "Services",
+        "url": "https://www.apple.com/services"
+      },
+      {
+        "name": "Desk family",
+        "url": "https://www.apple.com/mac"
+      },
+      {
+        "name": "Pencil detail",
+        "url": "https://www.apple.com/apple-pencil"
+      },
+      {
+        "name": "Desk compare",
+        "url": "https://www.apple.com/mac/compare"
+      },
+      {
+        "name": "Store",
+        "url": "https://www.apple.com/us/shop/goto/store"
+      },
+      {
+        "name": "Arcade service",
+        "url": "https://www.apple.com/apple-arcade"
+      },
+      {
+        "name": "OS story",
+        "url": "https://www.apple.com/os/ios"
+      },
+      {
+        "name": "Accessibility",
+        "url": "https://www.apple.com/accessibility"
+      },
+      {
+        "name": "Business",
+        "url": "https://www.apple.com/business"
+      },
+      {
+        "name": "Contact",
+        "url": "https://www.apple.com/contact"
+      },
+      {
+        "name": "Legal",
+        "url": "https://www.apple.com/legal"
+      },
+      {
+        "name": "Sitemap",
+        "url": "https://www.apple.com/sitemap"
+      },
+      {
+        "name": "Newsroom",
+        "url": "https://www.apple.com/newsroom"
+      }
+    ]
+  },
+  "color": {
+    "background": [
+      {
+        "name": "page",
+        "value": "#ffffff",
+        "use": "Default page and light chapters"
+      },
+      {
+        "name": "surface-alt",
+        "value": "#f5f5f7",
+        "use": "Promo tiles, store canvas, grey sections, footer"
+      },
+      {
+        "name": "nav-opened",
+        "value": "#fafafc",
+        "use": "Global nav and flyout once a menu is open; region banner"
+      },
+      {
+        "name": "fill",
+        "value": "#e8e8ed",
+        "use": "Segmented controls, chips, store filter pills"
+      },
+      {
+        "name": "paddle",
+        "value": "#d2d2d7a3",
+        "use": "Round gallery paddles (rgba(210,210,215,.64))"
+      },
+      {
+        "name": "curtain",
+        "value": "#e8e8ed66",
+        "use": "Page curtain behind an open flyout (rgba(232,232,237,.4)) with blur(20px)"
+      },
+      {
+        "name": "black",
+        "value": "#000000",
+        "use": "Dark promo tiles, dark chapters, hub bands"
+      },
+      {
+        "name": "charcoal",
+        "value": "#1d1d1f",
+        "use": "Charcoal chapters, dark footer, primary dark button"
+      },
+      {
+        "name": "nav-dark-opened",
+        "value": "#161617",
+        "use": "Dark global nav when a flyout is open; dark region banner"
+      },
+      {
+        "name": "localnav-dark",
+        "value": "#111111",
+        "use": "Dark local nav on service pages"
+      },
+      {
+        "name": "card-dark",
+        "value": "#333336",
+        "use": "Dark cards and dark segmented fills"
+      }
+    ],
+    "text": [
+      {
+        "name": "primary",
+        "value": "#1d1d1f",
+        "use": "Headlines and body on light"
+      },
+      {
+        "name": "secondary",
+        "value": "#6e6e73",
+        "use": "Subheads, captions, flyout group headers"
+      },
+      {
+        "name": "tertiary",
+        "value": "#86868b",
+        "use": "Dark-surface secondary text, notes"
+      },
+      {
+        "name": "nav",
+        "value": "#000000cc",
+        "use": "Global nav links (rgba(0,0,0,.8)); #000000 on hover"
+      },
+      {
+        "name": "footer",
+        "value": "#0000008f",
+        "use": "Footer body (rgba(0,0,0,.56))"
+      },
+      {
+        "name": "footer-link",
+        "value": "#000000b8",
+        "use": "Footer directory links (rgba(0,0,0,.72))"
+      },
+      {
+        "name": "footer-heading",
+        "value": "#000000e0",
+        "use": "Footer headings and breadcrumb (rgba(0,0,0,.88))"
+      },
+      {
+        "name": "flyout-link",
+        "value": "#333336",
+        "use": "Flyout and mobile menu links"
+      },
+      {
+        "name": "on-dark",
+        "value": "#f5f5f7",
+        "use": "Text on black and charcoal"
+      },
+      {
+        "name": "on-dark-strong",
+        "value": "#ffffff",
+        "use": "Titles on media"
+      },
+      {
+        "name": "on-dark-nav",
+        "value": "#ffffffcc",
+        "use": "Dark global nav links (rgba(255,255,255,.8))"
+      }
+    ],
+    "border": [
+      {
+        "name": "hairline",
+        "value": "#d2d2d7",
+        "use": "Table rules, FAQ separators, legal link separators"
+      },
+      {
+        "name": "footer-rule",
+        "value": "#00000029",
+        "use": "Footnotes and shop-line rule (rgba(0,0,0,.16))"
+      },
+      {
+        "name": "field",
+        "value": "#0000000a",
+        "use": "Region select 3px border (rgba(0,0,0,.04))"
+      },
+      {
+        "name": "field-strong",
+        "value": "#86868b",
+        "use": "Store inputs 1px ring"
+      },
+      {
+        "name": "footer-rule-dark",
+        "value": "#ffffff3d",
+        "use": "Dark footer rules (rgba(255,255,255,.24))"
+      }
+    ],
+    "accent": [
+      {
+        "name": "blue",
+        "value": "#0071e3",
+        "use": "Primary pill buttons, Buy pill, focus ring"
+      },
+      {
+        "name": "link",
+        "value": "#0066cc",
+        "use": "Text links and chevron links on light"
+      },
+      {
+        "name": "link-dark",
+        "value": "#2997ff",
+        "use": "Text links on dark"
+      },
+      {
+        "name": "store-orange",
+        "value": "#b64400",
+        "use": "Store 'New' eyebrows and availability notes"
+      }
+    ],
+    "semantic": [
+      {
+        "name": "service-red",
+        "value": "#ff413b",
+        "use": "Game service accent: eyebrow and pills on the measured service page"
+      },
+      {
+        "name": "store-title",
+        "value": "#810831",
+        "use": "Store head title tint on the measured store page"
+      },
+      {
+        "name": "availability",
+        "value": "#bf4800",
+        "use": "Product 'New' labels on family pages"
+      }
+    ],
+    "alternate": {
+      "name": "dark chrome",
+      "appliesTo": "Service, feature-story and audience-hub pages: global nav on #000000/#161617, local nav #111111, links rgba(255,255,255,.8), dark footer #1d1d1f with rgba(255,255,255,.56) text",
+      "tokens": [
+        {
+          "name": "nav",
+          "value": "#161617",
+          "use": "Opened dark global nav"
+        },
+        {
+          "name": "localnav",
+          "value": "#111111",
+          "use": "Dark local nav"
+        },
+        {
+          "name": "footer",
+          "value": "#1d1d1f",
+          "use": "Dark footer"
+        },
+        {
+          "name": "footer-heading",
+          "value": "#ffffffeb",
+          "use": "Dark footer headings (rgba(255,255,255,.92))"
+        },
+        {
+          "name": "footer-link",
+          "value": "#ffffffcc",
+          "use": "Dark footer links (rgba(255,255,255,.8))"
+        },
+        {
+          "name": "link",
+          "value": "#2997ff",
+          "use": "Links on dark"
+        }
+      ]
+    }
+  },
+  "typography": {
+    "families": [
+      {
+        "role": "sans",
+        "stack": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "substitute": {
+          "name": "Inter",
+          "source": "google-fonts",
+          "note": "SF Pro is proprietary; on Apple devices system-ui / -apple-system resolves to it. Inter at -0.01em reads closest elsewhere."
+        }
+      },
+      {
+        "role": "display",
+        "stack": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "substitute": {
+          "name": "Inter",
+          "source": "google-fonts",
+          "note": "Used from 21px up. Inter Display or Inter with tighter tracking stands in."
+        }
+      }
+    ],
+    "scale": [
+      {
+        "name": "hero-hub",
+        "size": "96px",
+        "weight": 800,
+        "family": "display",
+        "use": "Audience hub welcome title",
+        "lineHeight": "100px",
+        "tracking": "-1.44px"
+      },
+      {
+        "name": "statement",
+        "size": "90px",
+        "weight": 600,
+        "family": "display",
+        "use": "Service statement headline"
+      },
+      {
+        "name": "hero",
+        "size": "80px",
+        "weight": 600,
+        "family": "display",
+        "use": "Family and store heads, values hero",
+        "lineHeight": "84px",
+        "tracking": "-1.2px"
+      },
+      {
+        "name": "detail-hero",
+        "size": "72px",
+        "weight": 700,
+        "family": "display",
+        "use": "Product detail hero title"
+      },
+      {
+        "name": "headline-xl",
+        "size": "56px",
+        "weight": 600,
+        "family": "display",
+        "use": "Home hero tiles, values section titles",
+        "lineHeight": "60px",
+        "tracking": "-0.28px"
+      },
+      {
+        "name": "headline-l",
+        "size": "48px",
+        "weight": 600,
+        "family": "display",
+        "use": "Chapter headlines on detail, story and hub pages",
+        "lineHeight": "52.0077px",
+        "tracking": "-0.144px"
+      },
+      {
+        "name": "headline-m",
+        "size": "40px",
+        "weight": 600,
+        "family": "display",
+        "use": "Promo grid tiles, contact and legal titles",
+        "lineHeight": "44px",
+        "tracking": "normal"
+      },
+      {
+        "name": "headline-s",
+        "size": "32px",
+        "weight": 600,
+        "family": "display",
+        "use": "Comparison section heads, sitemap categories, legal blocks",
+        "lineHeight": "36px",
+        "tracking": "0.128px"
+      },
+      {
+        "name": "title",
+        "size": "28px",
+        "weight": 600,
+        "family": "display",
+        "use": "Card titles, contact headings, hero subheads (400)",
+        "lineHeight": "32.0001px",
+        "tracking": "0.196px"
+      },
+      {
+        "name": "elevated-link",
+        "size": "24px",
+        "weight": 600,
+        "family": "display",
+        "use": "Flyout elevated links (first group)",
+        "tracking": "0.009em"
+      },
+      {
+        "name": "mobile-menu",
+        "size": "28px",
+        "weight": 600,
+        "family": "display",
+        "use": "Mobile menu top-level links",
+        "tracking": "0.007em"
+      },
+      {
+        "name": "lead",
+        "size": "21px",
+        "weight": 600,
+        "family": "display",
+        "use": "Eyebrows and story body copy",
+        "lineHeight": "28.9999px",
+        "tracking": "0.231px"
+      },
+      {
+        "name": "intro",
+        "size": "19px",
+        "weight": 600,
+        "family": "sans",
+        "use": "Contact office names, legal intro (400)",
+        "lineHeight": "23.0001px",
+        "tracking": "0.228px"
+      },
+      {
+        "name": "body",
+        "size": "17px",
+        "weight": 400,
+        "family": "sans",
+        "use": "Body copy, sitemap links, buttons",
+        "lineHeight": "25px",
+        "tracking": "-0.374px"
+      },
+      {
+        "name": "body-strong",
+        "size": "17px",
+        "weight": 600,
+        "family": "sans",
+        "use": "Card titles in shelves, sitemap group heads",
+        "lineHeight": "21.0012px",
+        "tracking": "-0.374px"
+      },
+      {
+        "name": "small",
+        "size": "14px",
+        "weight": 400,
+        "family": "sans",
+        "use": "Small buttons, store copy",
+        "lineHeight": "20.0001px",
+        "tracking": "-0.224px"
+      },
+      {
+        "name": "nav",
+        "size": "12px",
+        "weight": 400,
+        "family": "sans",
+        "use": "Global nav, footer, footnotes, region banner",
+        "lineHeight": "16.0005px",
+        "tracking": "-0.12px"
+      },
+      {
+        "name": "flyout-link",
+        "size": "12px",
+        "weight": 600,
+        "family": "sans",
+        "use": "Flyout group links",
+        "tracking": "-0.01em"
+      }
+    ]
+  },
+  "spacing": {
+    "unit": "4px (with 22px nav gutters and 9.6px footer rhythm)",
+    "scale": [
+      "4px",
+      "8px",
+      "12px",
+      "20px",
+      "22px",
+      "24px",
+      "28px",
+      "32px",
+      "40px",
+      "48px",
+      "64px",
+      "80px",
+      "88px",
+      "144px",
+      "160px"
+    ],
+    "containerMaxWidth": "980px text column; 1260px (87.5%) chapter column; 1024px nav content",
+    "pageGutter": {
+      "desktop": "22px nav / 6.25% sections",
+      "mobile": "16px nav / 6.25% sections"
+    },
+    "sectionGap": "144px or 160px vertical padding per chapter (88px on phones); promo tiles 12px apart"
+  },
+  "radius": [
+    {
+      "name": "pill",
+      "value": "980px",
+      "use": "Every button and the Buy pill"
+    },
+    {
+      "name": "card",
+      "value": "28px",
+      "use": "Shelf cards, gallery cards, story cards"
+    },
+    {
+      "name": "tile-large",
+      "value": "36px",
+      "use": "Large hero and service cards"
+    },
+    {
+      "name": "news",
+      "value": "18px",
+      "use": "Newsroom tiles"
+    },
+    {
+      "name": "field",
+      "value": "11px",
+      "use": "Region select and store fields"
+    },
+    {
+      "name": "button-square",
+      "value": "8px",
+      "use": "Region banner Continue button"
+    },
+    {
+      "name": "chip",
+      "value": "6px",
+      "use": "Chapter nav and small chips"
+    },
+    {
+      "name": "round",
+      "value": "50%",
+      "use": "Paddles and the play/pause control"
+    }
+  ],
+  "shadow": [
+    {
+      "name": "card",
+      "value": "rgba(0, 0, 0, 0.08) 2px 4px 12px 0px",
+      "use": "Store and newsroom cards"
+    },
+    {
+      "name": "hairline-inset",
+      "value": "rgba(0, 0, 0, 0.11) 0px 0px 0.5px 0px inset",
+      "use": "Media frames on the home page"
+    },
+    {
+      "name": "float",
+      "value": "rgba(0, 0, 0, 0.22) 3px 5px 30px 0px",
+      "use": "Floating product images on the home page"
+    }
+  ],
+  "layout": {
+    "breakpoints": [
+      "1068px (large to medium)",
+      "833px (global nav collapses to the menu button)",
+      "734px (small: phones)",
+      "480px"
+    ],
+    "patterns": [
+      {
+        "name": "Global nav",
+        "description": "44px frosted bar (rgba(255,255,255,.8), saturate(180%) blur(20px)), content max 1024px with 22px padding: logo, eleven 12px links, search and bag icons. Hovering a link opens one shared flyout panel under the bar; its height animates 0 to auto (516 to 552px measured) and its background turns #fafafc, while a curtain rgba(232,232,237,.4) with blur(20px) dims the page."
+      },
+      {
+        "name": "Flyout content",
+        "description": "Padding 40px top. Groups max 25% wide with 44px end padding; the first group is elevated (50%, 88px end padding) with 24px/600 links. Group headers 12px #6e6e73, links 12px/600 #333336. Items fade down 4px over 0.32s, each 20ms after the last, from an 80ms delay; closing waits 0.12s."
+      },
+      {
+        "name": "Mobile menu",
+        "description": "At 833px and below the bar is 48px with search, bag and a two-line menu button. The menu fills the screen: 28px/600 links fade down 8px over 0.24s from a 0.2s delay, 20ms apart. A category slides the next level in 8px from the right with a Back chevron (0.24s, 0.16s delay, scale .8 to 1)."
+      },
+      {
+        "name": "Region banner",
+        "description": "70px #fafafc bar above the nav (135px stacked on phones): 12px copy, a 42px select (radius 11, 3px border rgba(0,0,0,.04)), a #1d1d1f Continue button (radius 8) and a close button."
+      },
+      {
+        "name": "Local nav",
+        "description": "52px sticky bar under the global nav (48 on phones): 21px/600 title, 12px chapter links and a 24px blue Buy pill. Transparent over the hero, frosted once scrolled 114px."
+      },
+      {
+        "name": "Promo tile column",
+        "description": "Full-bleed tiles 692px tall stacked 12px apart, then a 2-column grid of 702x580 tiles. Copy is centred at the top: headline, subhead, two pill buttons; media fills the rest."
+      },
+      {
+        "name": "Chapter column",
+        "description": "Story pages use an 87.5% / 1260px column with 144 or 160px vertical padding, eyebrow + 48px headline intros and full-bleed media; tone alternates white, #f5f5f7, #000000 and #1d1d1f."
+      },
+      {
+        "name": "Card shelf",
+        "description": "Horizontal scrolling row of 372px (or 400/696px) cards with radius 28 starting at the column edge and bleeding off the right; 36px round paddles under the row at the right."
+      },
+      {
+        "name": "Footer",
+        "description": "#f5f5f7, 12px/1.33337 rgba(0,0,0,.56). Footnotes (17px top, 11px bottom, 1px rule), breadcrumb, five 196px directory columns with 600 headings and 9.6px link gaps, a shop line with a #0066cc link, then copyright and five legal links split by 1px rules. On phones each section becomes a 37px accordion row."
+      }
+    ],
+    "responsive": "Three tiers: large above 1068px, medium to 734px, small below. The global nav collapses at 833px. Tiles keep their order and shrink (692 to 500px), grids drop to one column, shelves keep scrolling horizontally with 300px cards, type steps down (56 to 32px, 48 to 32px) and the footer directory turns into an accordion."
+  },
+  "components": [
+    {
+      "name": "Pill button",
+      "anatomy": "Text label in a fully rounded rectangle; primary filled, secondary outlined.",
+      "spec": {
+        "radius": "980px",
+        "regular": "17px/400, padding 11px 21px",
+        "small": "14px/400, padding 8px 15px",
+        "primary": "background #0071e3, color #ffffff",
+        "secondary": "1px solid #0066cc, color #0066cc, transparent",
+        "on-dark": "secondary border and text #2997ff",
+        "dark": "#1d1d1f fill (region banner), radius 8"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "primary background rgb(0, 118, 223); secondary fills rgb(0, 118, 223) with white text; dark fill rgb(39, 39, 41)"
+        },
+        {
+          "name": "active",
+          "change": "background rgb(0, 110, 219); dark fill rgb(24, 24, 26)"
+        },
+        {
+          "name": "focus-visible",
+          "change": "2px solid #0071e3 outline, 3px offset"
+        }
+      ]
+    },
+    {
+      "name": "Global nav link",
+      "anatomy": "12px text link in the 44px bar; a small chevron button follows each item for keyboard users.",
+      "spec": {
+        "font": "12px/400, tracking -0.01em",
+        "color": "rgba(0, 0, 0, 0.8)",
+        "padding": "0 8px",
+        "height": "44px",
+        "transition": "color 0.32s cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "color #000000 and the flyout opens"
+        },
+        {
+          "name": "focus-visible",
+          "change": "reveal chevron appears (globalnav-chevron-slide-in-hover) and opens the flyout on Enter"
+        },
+        {
+          "name": "open",
+          "change": "bar background #fafafc"
+        }
+      ]
+    },
+    {
+      "name": "Flyout panel",
+      "anatomy": "Panel under the bar, groups of links in columns; one panel shared by every menu item.",
+      "spec": {
+        "background": "#fafafc",
+        "padding": "40px 0 84px",
+        "height": "0 to auto, 516 to 552px",
+        "transition": "height 0.24s cubic-bezier(0.4, 0, 0.6, 1)",
+        "curtain": "rgba(232, 232, 237, 0.4) + blur(20px), opacity 0.32s, 80ms delay"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "items fade down 4px, 20ms stagger"
+        },
+        {
+          "name": "switch",
+          "change": "height morphs (globalnav-scrim-height-change), content swaps"
+        },
+        {
+          "name": "close",
+          "change": "0.12s delay before collapse; Escape closes"
+        }
+      ],
+      "notes": "Search and bag flyouts reuse the panel: search has a 24px/600 input and quick links; bag shows an empty state with sign-in and account links."
+    },
+    {
+      "name": "Local nav",
+      "anatomy": "Sticky bar: title link, chapter links, Buy pill.",
+      "spec": {
+        "height": "52px (48 on phones)",
+        "title": "21px/600",
+        "links": "12px; current item #1d1d1f",
+        "buy": "24px pill, #0071e3, 12px, radius 120px",
+        "background": "transparent over the hero, frosted with a bottom rule once stuck; frost values not observed separately"
+      },
+      "states": [
+        {
+          "name": "scrolled",
+          "change": "frost and rule appear after 114px of scroll"
+        },
+        {
+          "name": "hover",
+          "change": "link hover color not observed"
+        },
+        {
+          "name": "phone",
+          "change": "links collapse into a chevron menu"
+        }
+      ]
+    },
+    {
+      "name": "Promo tile",
+      "anatomy": "Full-bleed block: centred headline, subhead, pill buttons, media below.",
+      "spec": {
+        "height": "692px (500 on phones) / grid 580px",
+        "gap": "12px",
+        "headline": "56px/600 (40px in the grid, 32 on phones)",
+        "subhead": "28px/400",
+        "background": "#f5f5f7, #ffffff or #000000"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "none; only the buttons react"
+        }
+      ]
+    },
+    {
+      "name": "Shelf card",
+      "anatomy": "Rounded card in a horizontal shelf: eyebrow, title, media.",
+      "spec": {
+        "size": "372x495 (family), 400x500 (store), 372x720 (values)",
+        "radius": "28px",
+        "padding": "28px 30px",
+        "shadow": "rgba(0,0,0,.08) 2px 4px 12px on store",
+        "background": "#ffffff on grey sections, #f5f5f7 on white"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "store cards transition box-shadow and transform over 0.3s cubic-bezier(0, 0, 0.5, 1); the hover values were not observed"
+        },
+        {
+          "name": "focus-visible",
+          "change": "2px #0071e3 outline, offset -3px"
+        }
+      ]
+    },
+    {
+      "name": "Paddle",
+      "anatomy": "36px round previous/next buttons under a shelf.",
+      "spec": {
+        "size": "36px",
+        "radius": "50%",
+        "background": "rgba(210, 210, 215, 0.64)",
+        "icon": "chevron rgba(0,0,0,.56)"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background rgba(223, 223, 227, 0.698), icon rgba(0, 0, 0, 0.64)"
+        },
+        {
+          "name": "active",
+          "change": "background rgba(193, 193, 198, 0.655), scale(0.95)"
+        },
+        {
+          "name": "disabled",
+          "change": "dimmed; exact value not observed"
+        },
+        {
+          "name": "focus-visible",
+          "change": "2px #0071e3 outline, 1px offset"
+        }
+      ]
+    },
+    {
+      "name": "Dot navigation",
+      "anatomy": "Row of 8px dots in a pill, beside a play/pause button.",
+      "spec": {
+        "dot": "8px",
+        "active": "widens from 8px to 32px (dotnav-timed-dot-expand)",
+        "container": "56px pill, rgba(66,66,69,.72) with blur(7px) on dark"
+      },
+      "states": [
+        {
+          "name": "active",
+          "change": "dotnav-timed-dot-expand fills over the slide duration"
+        },
+        {
+          "name": "paused",
+          "change": "play icon replaces pause"
+        }
+      ]
+    },
+    {
+      "name": "Region banner",
+      "anatomy": "Top bar suggesting another country site.",
+      "spec": {
+        "height": "70px (135 on phones)",
+        "background": "#fafafc (#161617 dark)",
+        "select": "42px, radius 11, 3px rgba(0,0,0,.04) border, 17px",
+        "button": "#1d1d1f, radius 8, 14px"
+      },
+      "states": [
+        {
+          "name": "close",
+          "change": "removed from the flow"
+        }
+      ]
+    },
+    {
+      "name": "Comparison picker",
+      "anatomy": "Sticky header of three selects over product images.",
+      "spec": {
+        "select": "17px with a chevron",
+        "sticky": "top 52px under the local nav"
+      },
+      "states": [
+        {
+          "name": "change",
+          "change": "column re-renders with the chosen model"
+        },
+        {
+          "name": "stuck",
+          "change": "condensed state not observed"
+        }
+      ]
+    },
+    {
+      "name": "Accordion",
+      "anatomy": "Question rows with a chevron; one open at a time.",
+      "spec": {
+        "row": "24px/600 on service and hub pages, 17px/600 in grey cards",
+        "rule": "1px #d2d2d7",
+        "icon": "chevron (rotation not observed)"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "panel with 17px copy appears"
+        },
+        {
+          "name": "focus-visible",
+          "change": "2px #0071e3 outline"
+        }
+      ]
+    },
+    {
+      "name": "Footer directory section",
+      "anatomy": "Heading plus a list of 12px links; an accordion row on phones.",
+      "spec": {
+        "column": "196px",
+        "heading": "12px/600 rgba(0,0,0,.88)",
+        "links": "12px rgba(0,0,0,.72), 9.6px apart",
+        "phone": "37px rows with a plus chevron, details/summary"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "link underline"
+        },
+        {
+          "name": "phone open",
+          "change": "list expands under its heading"
+        }
+      ]
+    }
+  ],
+  "motion": {
+    "durations": [
+      {
+        "name": "color",
+        "value": "0.32s",
+        "use": "Nav link color, flyout item fade"
+      },
+      {
+        "name": "flyout-height",
+        "value": "0.24s",
+        "use": "Flyout height, mobile menu levels"
+      },
+      {
+        "name": "button",
+        "value": "0.1s",
+        "use": "Button background and color"
+      },
+      {
+        "name": "card",
+        "value": "0.3s",
+        "use": "Store card lift, carousel slides"
+      },
+      {
+        "name": "fade",
+        "value": "0.3s",
+        "use": "Generic opacity changes"
+      },
+      {
+        "name": "slide",
+        "value": "0.4s",
+        "use": "Gallery transform"
+      },
+      {
+        "name": "close-delay",
+        "value": "0.12s",
+        "use": "Wait before a flyout collapses"
+      },
+      {
+        "name": "stagger",
+        "value": "20ms",
+        "use": "Between flyout items and mobile menu items"
+      }
+    ],
+    "easings": [
+      {
+        "name": "apple-ease",
+        "value": "cubic-bezier(0.4, 0, 0.6, 1)",
+        "use": "Nav, flyout, curtain"
+      },
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0, 0, 0.5, 1)",
+        "use": "Card lifts and scrolling galleries"
+      },
+      {
+        "name": "gallery",
+        "value": "cubic-bezier(0.25, 0.1, 0.3, 1)",
+        "use": "Gallery slide transforms"
+      },
+      {
+        "name": "shimmer",
+        "value": "cubic-bezier(0.37, 0, 0.63, 1)",
+        "use": "Store loading shimmer (background-position 1.3s)"
+      },
+      {
+        "name": "ease",
+        "value": "ease",
+        "use": "Menu item fades"
+      },
+      {
+        "name": "linear",
+        "value": "linear",
+        "use": "Button color and fills"
+      }
+    ],
+    "transitions": [
+      {
+        "target": "Global nav link",
+        "properties": "color",
+        "duration": "0.32s",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "target": "Flyout panel",
+        "properties": "height (0 to auto)",
+        "duration": "0.24s",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "target": "Flyout items",
+        "properties": "opacity, transform translateY(-4px)",
+        "duration": "0.32s, delay 80ms + 20ms per item",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "target": "Curtain",
+        "properties": "opacity",
+        "duration": "0.32s, 80ms delay",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "target": "Mobile menu items",
+        "properties": "opacity, transform translateY(-8px)",
+        "duration": "0.24s, delay 0.2s + 20ms per item",
+        "easing": "ease"
+      },
+      {
+        "target": "Mobile menu back button",
+        "properties": "opacity, transform scale(.8)",
+        "duration": "0.24s, 0.16s delay",
+        "easing": "ease"
+      },
+      {
+        "target": "Menu button lines",
+        "properties": "transform",
+        "duration": "0.24s, 0.08s delay",
+        "easing": "ease"
+      },
+      {
+        "target": "Ribbon link",
+        "properties": "background, color, opacity",
+        "duration": "0.1s",
+        "easing": "linear"
+      },
+      {
+        "target": "Store card",
+        "properties": "box-shadow, transform",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0, 0, 0.5, 1)"
+      },
+      {
+        "target": "Gallery track",
+        "properties": "transform",
+        "duration": "0.4s",
+        "easing": "ease"
+      },
+      {
+        "target": "Unattributed control (store page)",
+        "properties": "background-color",
+        "duration": "0.344s",
+        "easing": "ease"
+      },
+      {
+        "target": "Local nav frost",
+        "properties": "background-color, backdrop-filter",
+        "duration": "instant at 114px scroll",
+        "easing": "steps(1)"
+      }
+    ],
+    "keyframes": [
+      {
+        "name": "globalnav-chevron-slide-in-hover",
+        "use": "Global nav: the small reveal chevron next to a hovered menu item slides in",
+        "css": "@keyframes globalnav-chevron-slide-in-hover { 0% { opacity: 0; transform: translate(-4px); } 100% { opacity: 1; transform: translate(0px); } }"
+      },
+      {
+        "name": "globalnav-chevron-hover-off",
+        "use": "Global nav: reveal chevron leaves when the pointer moves off",
+        "css": "@keyframes globalnav-chevron-hover-off { 0% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.8); } }"
+      },
+      {
+        "name": "globalnav-flyout-slide-forward-next",
+        "use": "Mobile menu: next level slides in from the right (8px) when a category opens",
+        "css": "@keyframes globalnav-flyout-slide-forward-next { 0% { opacity: 0; transform: translate(8px); } 100% { opacity: 1; transform: translate(0px); } }",
+        "timing": "0.24s, cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "name": "globalnav-flyout-slide-forward-previous",
+        "use": "Mobile menu: current level leaves to the left (8px) when a category opens",
+        "css": "@keyframes globalnav-flyout-slide-forward-previous { 0% { opacity: 1; transform: translate(0px); } 100% { opacity: 0; transform: translate(-8px); } }",
+        "timing": "0.24s, cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "name": "globalnav-flyout-slide-back-previous",
+        "use": "Mobile menu: sub level leaves to the right when Back is pressed",
+        "css": "@keyframes globalnav-flyout-slide-back-previous { 0% { opacity: 1; transform: translate(0px); } 100% { opacity: 0; transform: translate(8px); } }",
+        "timing": "0.24s"
+      },
+      {
+        "name": "globalnav-flyout-slide-back-next",
+        "use": "Mobile menu: parent level returns from the left when Back is pressed",
+        "css": "@keyframes globalnav-flyout-slide-back-next { 0% { opacity: 0; transform: translate(-8px); } 100% { opacity: 1; transform: translate(0px); } }",
+        "timing": "0.24s"
+      },
+      {
+        "name": "globalnav-scrim-height-change",
+        "use": "Global nav: flyout panel height morphs between two open menus",
+        "css": "@keyframes globalnav-scrim-height-change { 0% { height: var(--r-globalnav-previous-flyout-height); } 100% { height: var(--r-globalnav-next-flyout-height); } }",
+        "timing": "0.24s, cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "name": "globalnav-fade-in",
+        "use": "Global nav: curtain and flyout background fade in",
+        "css": "@keyframes globalnav-fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }",
+        "timing": "0.32s, 80ms delay"
+      },
+      {
+        "name": "globalnav-search-fade-and-slide",
+        "use": "Search flyout: header and each quick link fade down 4px, staggered 20ms from a 200ms delay",
+        "css": "@keyframes globalnav-search-fade-and-slide { 0% { opacity: 0; transform: translateY(calc(var(--r-globalnav-search-shift-vertical) * -1)); } 100% { opacity: 1; transform: translateY(0px); } }",
+        "timing": "0.32s, cubic-bezier(0.4, 0, 0.6, 1)"
+      },
+      {
+        "name": "globalnav-search-input-intro",
+        "use": "Search flyout: the input fades in while sliding up",
+        "css": "@keyframes globalnav-search-input-intro { 0% { opacity: 0; transform: translateY(var(--r-globalnav-search-input-vertical-shift)); } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "globalnav-search-input-outro",
+        "use": "Search flyout: the input leaves on close",
+        "css": "@keyframes globalnav-search-input-outro { 0% { opacity: 1; transform: translateY(0px); } 100% { opacity: 0; transform: translateY(var(--r-globalnav-search-input-vertical-shift)); } }"
+      },
+      {
+        "name": "segment-out",
+        "use": "Global message segment bar collapses upward",
+        "css": "@keyframes segment-out { 0% { top: 0px; } 100% { top: calc(-1 * var(--r-globalmessage-segment-height)); } }"
+      },
+      {
+        "name": "dotnav-become-visible",
+        "use": "Dot navigation under galleries: a dot scales in",
+        "css": "@keyframes dotnav-become-visible { 0% { opacity: 0; scale: 0; } 100% { opacity: 1; scale: 1; } }"
+      },
+      {
+        "name": "dotnav-timed-dot-expand",
+        "use": "Dot navigation: the active dot widens from 8px to 32px while its slide plays",
+        "css": "@keyframes dotnav-timed-dot-expand { 0% { left: calc(50% - var(--sk-dotnav-size)/2); width: 8px; } 100% { left: calc(50% - 16px); width: 32px; } }"
+      },
+      {
+        "name": "dotnav-timed-dot-shrink",
+        "use": "Dot navigation: the previous dot narrows back to 8px",
+        "css": "@keyframes dotnav-timed-dot-shrink { 0% { left: calc(50% - 16px); width: 32px; } 100% { left: calc(50% - var(--sk-dotnav-size)/2); width: 8px; } }"
+      },
+      {
+        "name": "dotnav-shift-start-1",
+        "use": "Dot navigation: dots shift 8px when the active dot changes",
+        "css": "@keyframes dotnav-shift-start-1 { 0% { translate: calc(8px*var(--sk-dotnav-logical-factor)); } 100% { translate: 0px; } }"
+      },
+      {
+        "name": "inline-media-spin",
+        "use": "Inline video controls: loading spinner",
+        "css": "@keyframes inline-media-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }",
+        "timing": "linear, infinite"
+      },
+      {
+        "name": "ribbon-drop",
+        "use": "Ribbon (promo bar under the nav) drops in from above on load",
+        "css": "@keyframes ribbon-drop { 0% { transform: translateY(-100%); } 100% { transform: translateY(0px); } }"
+      },
+      {
+        "name": "ribbon-animate-background",
+        "use": "Ribbon: background eases from the blue start color to its resting color",
+        "css": "@keyframes ribbon-animate-background { 0% { background-color: var(--ribbon-background-color-initial); } 100% { background-color: var(--ribbon-background-color); } }"
+      },
+      {
+        "name": "ribbon-animate-text-color",
+        "use": "Ribbon: text color eases to its resting color",
+        "css": "@keyframes ribbon-animate-text-color { 0% { color: var(--ribbon-text-color-initial); } 100% { color: var(--ribbon-text-color); } }"
+      },
+      {
+        "name": "link-in",
+        "use": "Inline link groups fade down 4px into place",
+        "css": "@keyframes link-in { 0% { opacity: 0; transform: translateY(-4px); } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "chapternav-slidein",
+        "use": "Chapter nav (icon strip under family headers) slides in 160px from the right on load",
+        "css": "@keyframes chapternav-slidein { 0% { transform: translateY(var(--chapternav-slidein-offset,8px)); } 100% { transform: translateY(0px); } }"
+      },
+      {
+        "name": "chapternav-fadein",
+        "use": "Chapter nav items fade in",
+        "css": "@keyframes chapternav-fadein { 0% { opacity: 0; } 100% { opacity: 1; } }"
+      },
+      {
+        "name": "captions-selector-pop-in",
+        "use": "Video captions menu opens upward 8px",
+        "css": "@keyframes captions-selector-pop-in { 0% { transform: translateY(8px); opacity: 0; } 100% { transform: translateY(0px); opacity: 1; } }"
+      },
+      {
+        "name": "captions-selector-pop-out",
+        "use": "Video captions menu closes",
+        "css": "@keyframes captions-selector-pop-out { 0% { transform: translateY(0px); opacity: 1; } 100% { transform: translateY(8px); opacity: 0; } }"
+      },
+      {
+        "name": "loading-fade",
+        "use": "Store: loading indicator segments fade",
+        "css": "@keyframes loading-fade { 0% { opacity: 1; } 12.5% { opacity: 0.9; } 25% { opacity: 0.7; } 37.5% { opacity: 0.6; } 50% { opacity: 0.4; } 62.5% { opacity: 0.3; } 75% { opacity: 0.2; } 87.5% { opacity: 0.13; } }"
+      },
+      {
+        "name": "progress-indicator-animating",
+        "use": "Store: 8-segment progress spinner",
+        "css": "@keyframes progress-indicator-animating { 0% { opacity: 1; } 12.5% { opacity: 0.9; } 25% { opacity: 0.7; } 37.5% { opacity: 0.6; } 50% { opacity: 0.4; } 62.5% { opacity: 0.3; } 75% { opacity: 0.2; } 87.5% { opacity: 0.13; } }",
+        "timing": "infinite"
+      },
+      {
+        "name": "ios-container-slide-y",
+        "use": "Feature story: device frame rises 70px into view when its section enters",
+        "css": "@keyframes ios-container-slide-y { 0% { transform: translateY(70px); } 100% { transform: translateY(0px); } }"
+      },
+      {
+        "name": "anim-copy",
+        "use": "Feature story: copy block fades up 60px after its media",
+        "css": "@keyframes anim-copy { 10% { opacity: 0; transform: translateY(60px); } 25% { opacity: 0; } 100% { opacity: 1; transform: translateY(0px); } }"
+      },
+      {
+        "name": "fade-in",
+        "use": "Generic fade in of revealed blocks",
+        "css": "@keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }"
+      },
+      {
+        "name": "fade-out",
+        "use": "Generic fade out",
+        "css": "@keyframes fade-out { 0% { opacity: 1; } 100% { opacity: 0; } }"
+      }
+    ],
+    "unmeasured": [
+      "Scroll-driven script animations on product detail and story pages (pinned hero media scrubbing frames, headline reveals tied to scroll position, sticky device frames): not measured.",
+      "Video playback in hero tiles and galleries, including autoplay and the timing of the dot navigation, is script-driven: not measured.",
+      "WebGL scenes on product pages (three.js) for 3D product views: not measured.",
+      "Store loading states beyond the shimmer and the progress spinner: not measured (store paths behind certificate errors were not forced).",
+      "Values hero sticky media: the frame stays pinned for a 1480px track while the headline changes; the script-driven crossfade is not measured."
+    ]
+  },
+  "flows": [
+    {
+      "name": "Open the global menu on a phone",
+      "entry": "/",
+      "layout": "48px bar with the logo left and search, bag and a two-line menu button right; the menu covers the screen below the bar in #fafafc.",
+      "steps": [
+        {
+          "name": "Top level",
+          "screen": [
+            "Bar with a close button replacing the menu button",
+            "Eleven 28px/600 category links",
+            "Smaller secondary links under them"
+          ],
+          "actions": [
+            "Tap a category: the next level slides in from the right",
+            "Tap close or press Escape: the menu folds and focus returns to the menu button"
+          ]
+        },
+        {
+          "name": "Category level",
+          "screen": [
+            "Back chevron at the top left of the bar",
+            "Group header 12px #6e6e73",
+            "Large links of the first group, then the smaller groups"
+          ],
+          "actions": [
+            "Back: the parent level slides back from the left",
+            "Tap a link: navigates"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bag",
+      "entry": "/us/shop/goto/bag",
+      "layout": "Store chrome on white, centred 980px column.",
+      "steps": [
+        {
+          "name": "Empty bag",
+          "screen": [
+            "Title stating the bag is empty",
+            "Sign-in prompt link",
+            "Continue shopping link"
+          ],
+          "actions": [
+            "Sign in (account flow)",
+            "Continue to the store"
+          ]
+        }
+      ],
+      "notRecorded": "Bag with items, checkout, sign-in and account pages need an account or cart state; not recorded. Store paths that failed on certificate errors were not forced."
+    }
+  ],
+  "templates": [
+    {
+      "id": "home",
+      "name": "Home",
+      "use": "Front page: a column of full-bleed promo tiles, a two-up promo grid and a media carousel.",
+      "structure": [
+        "Region banner 70px (#fafafc, 135px on phones) above the global nav",
+        "Global nav 44px (48 on phones), frosted rgba(255,255,255,.8) with saturate(180%) blur(20px)",
+        "Three full-width hero tiles, 692px tall (500 on phones), 12px apart; centred 56px/600 headline, 28px/400 subhead, two 17px pill buttons",
+        "Promo grid: two columns, tiles 702x580 with 12px gaps and 12px outer padding, 40px/600 headline (32 on phones); light #f5f5f7 and dark #000000 tiles alternate",
+        "Media carousel section 957px: 930x523 cards with 416x235 small cards, dot navigation and a play/pause button",
+        "Footer: footnotes, five-column directory (accordion on phones), legal row"
+      ],
+      "pages": [
+        "/",
+        "/tr"
+      ]
+    },
+    {
+      "id": "product-family",
+      "name": "Product family",
+      "use": "Category landing: a product lineup shelf, reasons to buy, banners and a help accordion.",
+      "structure": [
+        "Local nav 52px, sticky, frosted after 114px of scroll",
+        "Header: 80px/600 title with a chapter nav strip of product icons below",
+        "Lineup shelf: 372px cards with a segmented filter, paddles under the row",
+        "Reasons shelf: 372x495 cards with radius 28",
+        "Wide banner card, then two pairs of banner cards",
+        "Grey card with an accordion of help topics, then a quick-links row",
+        "Long footnotes block before the directory"
+      ],
+      "pages": [
+        "/mac",
+        "/ipad",
+        "/iphone",
+        "/watch",
+        "/airpods",
+        "/home"
+      ]
+    },
+    {
+      "id": "product-detail",
+      "name": "Product detail",
+      "use": "Single product story: sticky local nav with a Buy pill, dark and light chapters, a feature matrix and a finder.",
+      "structure": [
+        "Local nav 52px (48 on phones) with the title left, chapter links and a 24px blue Buy pill right; background frosts once the page scrolls past the hero",
+        "Hero: 72px/700 title over a full-bleed media frame",
+        "Dark chapter (#000000) and light chapter, each a 1260px column with 48px/600 headlines",
+        "Feature matrix: 14 rows of 110px",
+        "Finder row and a values row, then footnotes"
+      ],
+      "pages": [
+        "/imac",
+        "/airtag",
+        "/ipad-11",
+        "/displays",
+        "/ipad-air",
+        "/ipad-pro",
+        "/mac-mini",
+        "/airpods-5",
+        "/ipad-mini",
+        "/iphone-17",
+        "/iphone-17e",
+        "/iphone-air",
+        "/iphone-duo",
+        "/airpods-max",
+        "/airpods-pro",
+        "/apple-tv-4k",
+        "/macbook-air",
+        "/macbook-neo",
+        "/macbook-pro",
+        "/apple-pencil",
+        "/homepod-mini",
+        "/ipad-keyboards",
+        "/iphone-18-pro",
+        "/apple-vision-pro",
+        "/apple-watch-nike",
+        "/apple-watch-se-3",
+        "/apple-watch-hermes",
+        "/apple-watch-ultra-4",
+        "/apple-watch-series-12",
+        "/apple-homeview"
+      ]
+    },
+    {
+      "id": "compare",
+      "name": "Model comparison",
+      "use": "Side-by-side spec table for three models chosen from sticky pickers.",
+      "structure": [
+        "Local nav 52px",
+        "Sticky picker row: three selects over product images, price and Buy rows",
+        "Sections headed 32px/600 in a 63px row with a 1px bottom border",
+        "Rows of three cells with measured heights; quick-look rows show a big value or a glyph",
+        "Footnotes block (1610px at 1440 on the desk comparison)"
+      ],
+      "pages": [
+        "/mac/compare",
+        "/ipad/compare",
+        "/iphone/compare",
+        "/airpods/compare",
+        "/mac/best-mac"
+      ]
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "use": "Shop front and buy pages: a grey canvas with shelves of 400x500 cards.",
+      "structure": [
+        "No region banner; ribbon 58px",
+        "Head: 80px/600 title in the store accent (#810831 on the measured page) beside help links",
+        "Chapter strip of category icons",
+        "Seven horizontal shelves of 400x500 cards, radius 28, shadow rgba(0,0,0,.08) 2px 4px 12px",
+        "Quick links row, then footnotes",
+        "Not recorded: bag contents, checkout and sign-in (behind account and cart state); 54 store paths failed on certificate errors and were not forced"
+      ],
+      "pages": [
+        "/us/shop/goto/store",
+        "/us_epp_55499/store",
+        "/us_epp_67909/store",
+        "/us/shop/goto/buy_mac",
+        "/us/shop/goto/buy_home",
+        "/us/shop/goto/buy_ipad",
+        "/us/shop/goto/accessories/all/headphones_speakers",
+        "/us/shop/goto/help",
+        "/us/shop/goto/bag",
+        "/retail/instore-shopping-session/session-selection"
+      ]
+    },
+    {
+      "id": "service",
+      "name": "Subscription service",
+      "use": "Service page: dark local nav and hero, offer cards, statement bands, tile grid, FAQ and a bundle band.",
+      "structure": [
+        "Dark global nav (#161617 opened) and dark local nav (#111111)",
+        "Hero 856px: ribbon, full-bleed art, title and a pill in the service accent",
+        "Offers: three 405x311 cards",
+        "Statement: 90px/600 two-line headline, a feature card and a 12-tile grid",
+        "Black band 1613px with three cards",
+        "Device row, FAQ accordion, bundle band with masked partner marks"
+      ],
+      "pages": [
+        "/apple-arcade",
+        "/services",
+        "/apple-one",
+        "/apple-music",
+        "/apple-tv",
+        "/apple-books",
+        "/apple-podcasts",
+        "/apple-fitness-plus",
+        "/icloud",
+        "/apple-pay",
+        "/applecare",
+        "/app-store",
+        "/apple-tv-app",
+        "/apple-creator-studio"
+      ]
+    },
+    {
+      "id": "feature-story",
+      "name": "Feature story",
+      "use": "Software or capability story: black welcome, charcoal highlights reel, alternating galleries, a text grid and closing cards.",
+      "structure": [
+        "Local nav 60px on the measured page (52 elsewhere)",
+        "Welcome 960px on #000000: 21px eyebrow, 48px/600 headline, 17px note, media at the bottom",
+        "Charcoal (#1d1d1f) highlights: 710px media with a dots pill and a 56px play/pause button",
+        "Grey (#f5f5f7) chapters: eyebrow + 48px headline + 21px/600 grey body, then 1000px-wide gallery cards (radius 28)",
+        "Six-cell text grid (3 x 390px), compatibility card 878px and a developer card 523px",
+        "Footnotes block"
+      ],
+      "pages": [
+        "/os/ios",
+        "/os/macos",
+        "/os/visionos",
+        "/apple-intelligence",
+        "/macos/continuity",
+        "/mac/mac-does-that",
+        "/home-app",
+        "/airplay",
+        "/apps",
+        "/wallet"
+      ]
+    },
+    {
+      "id": "values",
+      "name": "Values editorial",
+      "use": "Company values page: sticky media hero, card shelves, resources, stories and value cards.",
+      "structure": [
+        "Local nav 52px",
+        "Hero track 1480px with a sticky dark media frame and an 80px/600 centred headline",
+        "Features: 56px/600 headline, shelf of 372x720 cards (radius 28), some dark",
+        "Resources (160px padding): 48px headline, three cards with 28px/600 titles",
+        "Stories on #f5f5f7, news tiles, value cards",
+        "Footnotes 615px"
+      ],
+      "pages": [
+        "/accessibility",
+        "/privacy",
+        "/environment",
+        "/diversity",
+        "/supply-chain",
+        "/education-initiative"
+      ]
+    },
+    {
+      "id": "audience-hub",
+      "name": "Audience hub",
+      "use": "Pages for a group (business, education, retail visitors): black welcome, alternating dark and light bands, FAQ and a router.",
+      "structure": [
+        "Dark chrome; local nav 52px",
+        "Welcome 804px on #000000 with a 96px/800 title",
+        "Fact shelf on #f5f5f7: 372x500 cards",
+        "Dark news band, charcoal (#1d1d1f) band of 372/696 x 612 cards, black story band",
+        "Split section with a 25.5px/600 text column, comparison of three models, next-step cards",
+        "FAQ on #f5f5f7, black router band",
+        "Dark footer #1d1d1f with white-alpha text"
+      ],
+      "pages": [
+        "/business",
+        "/business/mac",
+        "/education",
+        "/healthcare",
+        "/government",
+        "/retail/business",
+        "/careers/us",
+        "/retail",
+        "/retail/geniusbar",
+        "/today",
+        "/today/camp",
+        "/today/groups"
+      ]
+    },
+    {
+      "id": "newsroom",
+      "name": "Newsroom index",
+      "use": "Press index: grey feed of story tiles, gallery strip, stories module and a more-news list.",
+      "structure": [
+        "Local nav 52px",
+        "Feed on #f5f5f7 (52px top, 80px bottom): 32px/700 title, hero tile, two-up and three-up tiles",
+        "Gallery strip 783px",
+        "Stories module on white with a 177x44 mark",
+        "More from the newsroom on #f5f5f7, then a short footer (no footnotes)"
+      ],
+      "pages": [
+        "/newsroom",
+        "/apple-events"
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Contact directory",
+      "use": "Plain text directory: 40px section titles over two 408px columns of 28px headings and 17px copy.",
+      "structure": [
+        "H1 40px/600 at 194px from the top",
+        "Sales section: two columns at x 230 and 720 (408px each, 82px gap)",
+        "Corporate section: 19px/600 office names with addresses",
+        "Support section, then a grey (#f5f5f7) 982px card with a three-column grid of 245px blocks headed 19px/600",
+        "Short footer (622px)"
+      ],
+      "pages": [
+        "/contact"
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal hub",
+      "use": "Notices hub: sticky local nav, a 500px band with the title, then 327px notice blocks in pairs and full-width rows.",
+      "structure": [
+        "Local nav 52px",
+        "Band 500px with a 40px/600 title and a 19px intro (817px)",
+        "Pairs of 327px blocks at x 312 and 802: icon, 32px/600 title, 17px copy, links with a chevron",
+        "Full-width centred rows between pairs",
+        "Footer without footnotes (536px)"
+      ],
+      "pages": [
+        "/legal",
+        "/compliance"
+      ]
+    },
+    {
+      "id": "sitemap",
+      "name": "Site index",
+      "use": "Full directory of the site: category titles over three columns of linked groups.",
+      "structure": [
+        "Local nav 44px, not sticky; visually hidden H1",
+        "Eleven categories: 32px/600 title, then three columns (x 230/562/895) of groups",
+        "Group: 17px/600 heading, 17px #0066cc links with a 32px pitch",
+        "Footer 622px"
+      ],
+      "pages": [
+        "/sitemap",
+        "/choose-country-region"
+      ]
+    }
+  ],
+  "principles": [
+    "The product is the hero: full-bleed media fills each tile or chapter and copy stays short, centred and above it.",
+    "One accent: #0071e3 for actions, #0066cc for links; everything else is grey scale from #1d1d1f to #f5f5f7, black and charcoal for drama.",
+    "Every button is a 980px pill; regular 17px, small 14px; two at most side by side.",
+    "Type is SF Pro with tight display tracking: 56/48/40px 600 headlines, 17px body with -0.022em, 12px chrome.",
+    "Chrome is frosted: the global nav, local nav and flyout curtain blur what is under them instead of using solid bars.",
+    "Spacing is generous and fixed per tier: 144-160px between chapters, 12px between tiles, 1260px or 980px columns.",
+    "Motion is short and quiet: 0.24-0.32s with cubic-bezier(0.4, 0, 0.6, 1), small 4-8px offsets and 20ms staggers.",
+    "Legal and footnote text is part of the design: numbered footnotes, a full directory and a legal row close every page."
+  ],
+  "avoid": [
+    "Shadows on most surfaces; only store and news cards carry a soft 12px shadow.",
+    "Square or slightly rounded buttons; buttons are always pills.",
+    "Multiple accent colors in one view; tints like the store title or service red stay on one page family.",
+    "Dense paragraphs in tiles; tiles carry a headline, one line and buttons.",
+    "Opaque sticky bars; the nav must stay translucent with blur."
+  ],
+  "libraries": {
+    "detected": [
+      {
+        "name": "React",
+        "npm": "react",
+        "purpose": "Global header and footer components",
+        "evidence": "\"react.transitional.element\" in react.production.min.js; \"react.element\" in globalheader.umd.js"
+      },
+      {
+        "name": "Next.js",
+        "npm": "next",
+        "purpose": "Store and newsroom front ends",
+        "evidence": "\"__NEXT_DATA__\" in a main-*.js bundle on the store page"
+      },
+      {
+        "name": "MobX",
+        "npm": "mobx",
+        "purpose": "State in the comparison tool",
+        "evidence": "\"[MobX]\" in lotus.min.js"
+      },
+      {
+        "name": "three.js",
+        "npm": "three",
+        "purpose": "3D product views",
+        "evidence": "\"THREE.WebGLRenderer\" in autofilms.built.js"
+      }
+    ],
+    "recommended": [
+      {
+        "name": "Inter",
+        "npm": "@fontsource-variable/inter",
+        "purpose": "Open substitute for SF Pro Text and Display"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "home": {
+    "desktop": 95.28,
+    "phone": 91
+  },
+  "album": {
+    "desktop": 96.28,
+    "phone": 90.61
+  },
+  "playlist": {
+    "desktop": 93.91,
+    "phone": 90.71
+  },
+  "artist": {
+    "desktop": 95.86,
+    "phone": 89.22
+  },
+  "section": {
+    "desktop": 94.61,
+    "phone": 90.49
+  },
+  "genre": {
+    "desktop": 95.3,
+    "phone": 90.3
+  },
+  "region": {
+    "desktop": 93.6,
+    "phone": 90.82
+  },
+  "search": {
+    "desktop": 95.25,
+    "phone": 91.36
+  },
+  "download": {
+    "desktop": 81.87,
+    "phone": 81.76
+  }
+}

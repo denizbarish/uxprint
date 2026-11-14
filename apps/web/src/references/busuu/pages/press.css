@@ -1,0 +1,146 @@
+/* Press page template (measured on /en/press). */
+
+:where(.busuu-ref) .bu-hero--press {
+  padding-top: 0;
+}
+
+:where(.busuu-ref) .bu-hero--press .bu-hero__art {
+  display: none;
+}
+
+:where(.busuu-ref) .bu-hero--press .bu-hero__text {
+  width: 492px;
+}
+
+:where(.busuu-ref) .bu-hero--press .bu-hero__title {
+  padding-top: 24px;
+}
+
+:where(.busuu-ref) .bu-hero--press .bu-hero__action {
+  margin-top: 20px;
+}
+
+:where(.busuu-ref).bu-press .bu-prose a {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref).bu-press .bu-prose a:hover {
+  text-decoration: underline;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-press__intro {
+  margin-bottom: 24px;
+}
+
+:where(.busuu-ref) .bu-factcard {
+  display: flex;
+  gap: 172px;
+  width: calc(100% - 124px);
+  margin-right: 62px;
+  margin-left: 62px;
+  padding: 64px 119px;
+  border-radius: 44px;
+  background: var(--bu-blue);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-factcard__col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 280px;
+}
+
+:where(.busuu-ref) .bu-factcard h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 62.4px;
+}
+
+:where(.busuu-ref) .bu-factcard__lead {
+  margin-top: 17px;
+  color: var(--bu-ink);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+:where(.busuu-ref) .bu-factcard__btn {
+  height: 64px;
+  margin-top: auto;
+  padding: 12px 48px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-press__news {
+  margin-top: 90px;
+  margin-bottom: 24px;
+}
+
+:where(.busuu-ref) .bu-press__news h2 {
+  font-size: 34px;
+  line-height: 44.2px;
+}
+
+:where(.busuu-ref) .bu-prose ul.bu-coverage {
+  gap: 16px;
+  margin-top: 24px;
+}
+
+:where(.busuu-ref) .bu-coverage h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+:where(.busuu-ref) .bu-coverage a:focus-visible {
+  outline: 2px solid var(--bu-focus);
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref) .bu-hero--press .bu-hero__action {
+    margin-top: 44px;
+  }
+
+  :where(.busuu-ref) .bu-factcard {
+    flex-direction: column;
+    gap: 72px;
+    width: calc(100% - 32px);
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 61px 19px;
+  }
+
+  :where(.busuu-ref) .bu-press__news h2 {
+    font-size: 26px;
+    line-height: 33.8px;
+  }
+
+  :where(.busuu-ref) .bu-coverage h3 {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  :where(.busuu-ref) .bu-factcard__col {
+    min-height: 0;
+  }
+
+  :where(.busuu-ref) .bu-factcard__btn {
+    height: 48px;
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  :where(.busuu-ref) .bu-factcard h2 {
+    font-size: 34px;
+    line-height: 44.2px;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-press__news {
+    margin-top: 60px;
+  }
+}

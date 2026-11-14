@@ -1,0 +1,121 @@
+/* About hub. Measured on /tr/en/about at 1440 and 390. */
+
+:where(.uber-ref) .ub-about-hero,
+:where(.uber-ref) .ub-about-letter {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+:where(.uber-ref) .ub-about-bg {
+  position: absolute;
+  inset: 0;
+}
+
+:where(.uber-ref) .ub-about-hero {
+  align-items: flex-end;
+  height: 480px;
+  padding-bottom: 40px;
+}
+
+:where(.uber-ref) .ub-about-hero__text,
+:where(.uber-ref) .ub-about-letter__text {
+  position: relative;
+}
+
+:where(.uber-ref) .ub-about-letter {
+  align-items: center;
+  height: 480px;
+}
+
+:where(.uber-ref) .ub-about-letter__text p {
+  max-width: 459px;
+  margin: 24px 0 32px;
+}
+
+:where(.uber-ref) .ub-about-letter__text .ub-h1 {
+  max-width: 459px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-about-hero {
+    height: 700px;
+    padding-bottom: 64px;
+  }
+
+  :where(.uber-ref) .ub-about-letter {
+    height: 600px;
+  }
+
+  :where(.uber-ref) .ub-about-letter__text p {
+    margin: 32px 0 28px;
+  }
+}
+
+:where(.uber-ref) .ub-about-intro,
+:where(.uber-ref) .ub-about-grey,
+:where(.uber-ref) .ub-about-note,
+:where(.uber-ref) .ub-about-grey .ub-icols {
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-about-intro .ub-h2 {
+  max-width: 308px;
+}
+
+:where(.uber-ref) .ub-about-intro p {
+  max-width: 756px;
+  margin-top: 16px;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-about-intro .ub-h2 {
+    max-width: 756px;
+  }
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-about-intro p {
+    margin-top: 24px;
+  }
+}
+
+:where(.uber-ref) .ub-about-cards {
+  display: grid;
+  gap: 40px;
+}
+
+:where(.uber-ref) .ub-about-cards__media {
+  width: 100%;
+  aspect-ratio: 558 / 372;
+  margin-bottom: 20px;
+}
+
+:where(.uber-ref) .ub-about-cards h3 a:hover {
+  text-decoration: underline;
+}
+
+:where(.uber-ref) .ub-about-cards p {
+  margin-top: 12px;
+}
+
+:where(.uber-ref) .ub-about-cards__link {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-about-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+:where(.uber-ref) .ub-about-join .ub-h1 {
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-about-note p {
+  font-size: 14px;
+  line-height: 24px;
+}

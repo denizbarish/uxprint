@@ -1,0 +1,111 @@
+/* Legacy statement template (measured on /en/modern-slavery-statement). */
+
+:where(.busuu-ref).bu-stmt {
+  color: var(--bu-ink);
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+:where(.busuu-ref).bu-stmt .bu-lh {
+  display: flow-root;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+:where(.busuu-ref) .bu-stmt__band {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 450px;
+  overflow: hidden;
+}
+
+:where(.busuu-ref) .bu-stmt__bg {
+  position: absolute;
+  inset: 0;
+}
+
+:where(.busuu-ref) .bu-stmt__titles {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-stmt__titles h1 {
+  width: 600px;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+:where(.busuu-ref) .bu-stmt__titles p {
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+:where(.busuu-ref) .bu-stmt__body {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 0 20px;
+}
+
+:where(.busuu-ref) .bu-stmt__body h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 39px;
+}
+
+:where(.busuu-ref) .bu-stmt__body p {
+  margin-bottom: 20px;
+}
+
+:where(.busuu-ref) .bu-stmt__body strong {
+  font-weight: 700;
+}
+
+:where(.busuu-ref) .bu-stmt__body a {
+  color: var(--bu-blue);
+  transition: color 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-stmt__body a:hover {
+  color: var(--bu-blue-active);
+  text-decoration: underline;
+}
+
+:where(.busuu-ref) .bu-stmt__body a:focus-visible {
+  outline: 2px solid var(--bu-focus);
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref) .bu-stmt__band {
+    height: 300px;
+  }
+
+  :where(.busuu-ref) .bu-stmt__titles,
+  :where(.busuu-ref) .bu-stmt__titles h1 {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  :where(.busuu-ref) .bu-stmt__titles h1 {
+    padding: 0;
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  :where(.busuu-ref) .bu-stmt__body {
+    padding: 40px 16px 20px;
+  }
+
+  :where(.busuu-ref) .bu-stmt__body h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+}

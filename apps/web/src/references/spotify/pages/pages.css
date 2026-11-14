@@ -1,0 +1,467 @@
+/* Page-level layout of each template (positions measured in the main view at 1440x900). */
+
+/* ---------- Home ---------- */
+
+:where(.spotify-ref) .sp-home-wash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 256px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, #121212 100%), #535353;
+  pointer-events: none;
+}
+
+:where(.spotify-ref) .sp-home-page {
+  position: relative;
+  padding: 4px 0 32px;
+}
+
+:where(.spotify-ref) .sp-home-shelves {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 40px;
+}
+
+@container sp-main (max-width: 700px) {
+  :where(.spotify-ref) .sp-home-page {
+    padding-bottom: 24px;
+  }
+
+  :where(.spotify-ref) .sp-home-shelves {
+    gap: 16px;
+  }
+}
+
+/* ---------- Entity pages (album, playlist, artist) ---------- */
+
+:where(.spotify-ref) .sp-entity-page {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+:where(.spotify-ref) .sp-entity-page .sp-wash {
+  top: 276px;
+}
+
+:where(.spotify-ref) .sp-release {
+  margin: 32px 24px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:where(.spotify-ref) .sp-release p + p {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+:where(.spotify-ref) .sp-entity-page > .sp-shelf--grid {
+  position: relative;
+  margin: 48px 24px 0;
+}
+
+/* Playlist header text takes a light tint of the wash. */
+:where(.spotify-ref) .sp-playlist-page .sp-entity__desc,
+:where(.spotify-ref) .sp-playlist-page .sp-entity__meta {
+  color: #ffbdb6;
+}
+
+/* ---------- Artist ---------- */
+
+:where(.spotify-ref) .sp-artist-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 360px;
+  padding: 0 24px 24px;
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-artist-hero__image {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5)), linear-gradient(120deg, #2b2b2b, #3a3a3a 55%, #1d1d1d);
+}
+
+:where(.spotify-ref) .sp-artist-hero h1 {
+  position: relative;
+  padding: 0 2px;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 116px;
+  letter-spacing: -0.04em;
+}
+
+:where(.spotify-ref) .sp-artist-hero p {
+  position: relative;
+  margin-top: 9px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+:where(.spotify-ref) .sp-artist-page .sp-wash {
+  top: 360px;
+}
+
+:where(.spotify-ref) .sp-artist-body {
+  position: relative;
+  padding: 8px 24px 0;
+}
+
+:where(.spotify-ref) .sp-artist-body > h2 {
+  margin-bottom: 16px;
+  color: var(--sp-text);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+:where(.spotify-ref) .sp-artist-body .sp-tracks {
+  margin: 0;
+}
+
+:where(.spotify-ref) .sp-seemore {
+  margin: 24px 0 0 16px;
+  color: var(--sp-subdued);
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:where(.spotify-ref) .sp-seemore:hover {
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-artist-body .sp-shelf {
+  padding-bottom: 40px;
+}
+
+:where(.spotify-ref) .sp-artist-body .sp-shelf:first-of-type {
+  margin-top: 49px;
+}
+
+:where(.spotify-ref) .sp-chips {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+
+:where(.spotify-ref) .sp-chip {
+  height: 32px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: #ffffff1a;
+  color: var(--sp-text);
+  font-size: 14px;
+  line-height: 14px;
+  transition: background-color 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-chip:hover {
+  background: #ffffff26;
+}
+
+:where(.spotify-ref) .sp-chip[aria-pressed="true"] {
+  background: var(--sp-text);
+  color: #000000;
+}
+
+:where(.spotify-ref) .sp-tour {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0 -8px;
+}
+
+:where(.spotify-ref) .sp-tour a {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-tour a:hover {
+  background: #ffffff1a;
+}
+
+:where(.spotify-ref) .sp-tour time:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 64px;
+  margin-top: 1px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #ffffff1a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:where(.spotify-ref) .sp-tour time:first-child strong {
+  font-size: 24px;
+}
+
+:where(.spotify-ref) .sp-tour h3 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+:where(.spotify-ref) .sp-tour p {
+  margin-top: 4px;
+  color: var(--sp-subdued);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:where(.spotify-ref) .sp-about {
+  display: block;
+  width: 793px;
+  max-width: 100%;
+  height: 330px;
+  margin-top: 16px;
+  padding: 40px;
+  border-radius: 8px;
+  background: #282828;
+  text-align: left;
+}
+
+:where(.spotify-ref) .sp-about__photo {
+  width: 204px;
+  height: 204px;
+  border-radius: 50%;
+  background: #3e3e3e;
+}
+
+:where(.spotify-ref) .sp-about strong {
+  display: block;
+  margin-top: 24px;
+  color: var(--sp-text);
+  font-size: 16px;
+}
+
+/* ---------- Section (show all) ---------- */
+
+:where(.spotify-ref) .sp-section-page {
+  padding: 64px 24px 32px;
+}
+
+:where(.spotify-ref) .sp-section-page .sp-grid {
+  row-gap: 24px;
+}
+
+/* ---------- Genre and region hubs ---------- */
+
+:where(.spotify-ref) .sp-hub-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 270px;
+  padding: 0 24px 24px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), var(--tone);
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-hub-hero--tall {
+  height: 276px;
+}
+
+:where(.spotify-ref) .sp-hub-hero h1 {
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 116px;
+  letter-spacing: -0.04em;
+}
+
+:where(.spotify-ref) .sp-hub-hero p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:where(.spotify-ref) .sp-hub-body {
+  position: relative;
+  padding: 16px 24px 32px;
+}
+
+:where(.spotify-ref) .sp-hub-wash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 232px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, #121212 100%), var(--tone);
+  pointer-events: none;
+}
+
+:where(.spotify-ref) .sp-hub-body--genre {
+  padding-top: 48px;
+}
+
+:where(.spotify-ref) .sp-hub-body > :not(.sp-hub-wash) {
+  position: relative;
+}
+
+:where(.spotify-ref) .sp-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  margin: 16px 0 0;
+  padding: 4px 16px 4px 12px;
+  border: 1px solid var(--sp-outline);
+  border-radius: 9999px;
+  color: var(--sp-text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:where(.spotify-ref) .sp-hub-body .sp-grid {
+  row-gap: 0;
+}
+
+/* ---------- Search (browse all) ---------- */
+
+:where(.spotify-ref) .sp-search-page {
+  padding: 48px 24px 32px;
+}
+
+/* ---------- Download ---------- */
+
+:where(.spotify-ref) .sp-dl {
+  height: 609px;
+  padding: 40px;
+  border-radius: 8px;
+  background: linear-gradient(#6bac9e, #dba0c7);
+}
+
+:where(.spotify-ref) .sp-dl__inner {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding: 40px;
+  background: linear-gradient(#eda1ca, #a7a9b2 50%, #64ab98);
+  color: #000000;
+}
+
+:where(.spotify-ref) .sp-dl__copy {
+  position: relative;
+  z-index: 1;
+  width: 354px;
+  padding-top: 40px;
+}
+
+:where(.spotify-ref) .sp-dl__wordmark {
+  display: block;
+  width: 99px;
+  height: 27px;
+  border-radius: 14px;
+  background: #000000;
+}
+
+:where(.spotify-ref) .sp-dl h1 {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+:where(.spotify-ref) .sp-dl__copy p {
+  margin-top: 32px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+:where(.spotify-ref) .sp-dl .sp-pill {
+  height: 56px;
+  margin-top: 32px;
+  padding: 12px 48px;
+}
+
+:where(.spotify-ref) .sp-dl__shot {
+  position: absolute;
+  top: 40px;
+  left: 410px;
+  width: 860px;
+  height: 449px;
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(#1b1b1b, #101010);
+}
+
+@container sp-main (max-width: 700px) {
+  :where(.spotify-ref) .sp-artist-hero {
+    height: 338px;
+    padding: 0 16px 16px;
+  }
+
+  :where(.spotify-ref) .sp-artist-hero h1 {
+    font-size: 72px;
+    line-height: 87px;
+  }
+
+  :where(.spotify-ref) .sp-artist-page .sp-wash {
+    top: 338px;
+  }
+
+  :where(.spotify-ref) .sp-artist-body,
+  :where(.spotify-ref) .sp-hub-body,
+  :where(.spotify-ref) .sp-search-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  :where(.spotify-ref) .sp-tour {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :where(.spotify-ref) .sp-section-page {
+    padding: 72px 16px 32px;
+  }
+
+  :where(.spotify-ref) .sp-hub-hero {
+    height: 186px;
+    padding: 0 16px 16px;
+  }
+
+  :where(.spotify-ref) .sp-hub-hero h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  :where(.spotify-ref) .sp-entity-page .sp-wash {
+    top: 186px;
+  }
+
+  :where(.spotify-ref) .sp-entity-page > .sp-shelf--grid {
+    margin: 48px 16px 0;
+  }
+
+  :where(.spotify-ref) .sp-dl {
+    height: auto;
+    padding: 16px;
+  }
+
+  :where(.spotify-ref) .sp-dl__inner {
+    padding: 24px;
+  }
+
+  :where(.spotify-ref) .sp-dl__copy {
+    width: auto;
+  }
+
+  :where(.spotify-ref) .sp-dl h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  :where(.spotify-ref) .sp-dl__shot {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 220px;
+    margin-top: 32px;
+  }
+}

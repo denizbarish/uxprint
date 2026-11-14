@@ -1,0 +1,498 @@
+/* Shared chrome: top bars, language popover, course strip, footers. Measured on /, /courses, /super. */
+
+/* ------------------------------------------------------------- white top bar */
+
+:where(.duolingo-ref) .dl-topbar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  height: 72px;
+  background: #fff;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+:where(.duolingo-ref) .dl-topbar[data-scrolled] {
+  border-bottom-color: var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-topbar__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 988px;
+  max-width: 100%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+:where(.duolingo-ref) .dl-topbar__logo {
+  height: 46px;
+  font-size: 38px;
+}
+
+:where(.duolingo-ref) .dl-topbar__cta {
+  border-radius: 12px;
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-topbar__nav {
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  :where(.duolingo-ref) .dl-topbar__end {
+    display: none;
+  }
+
+  :where(.duolingo-ref) .dl-topbar__logo {
+    height: 42px;
+    font-size: 34px;
+  }
+}
+
+/* --------------------------------------------------------- language popover */
+
+:where(.duolingo-ref) .dl-lang {
+  position: relative;
+}
+
+:where(.duolingo-ref) .dl-lang__trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 17px;
+  color: var(--dl-faint);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.25px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: filter 0.2s ease;
+}
+
+:where(.duolingo-ref) .dl-lang--white .dl-lang__trigger {
+  color: #fff;
+}
+
+:where(.duolingo-ref) .dl-lang--muted .dl-lang__trigger {
+  color: var(--dl-muted);
+}
+
+:where(.duolingo-ref) .dl-lang__trigger:hover {
+  filter: brightness(1.1);
+}
+
+:where(.duolingo-ref) .dl-lang__trigger svg {
+  width: 14px;
+  height: 10px;
+  transition: transform 0.4s var(--dl-ease-menu);
+}
+
+:where(.duolingo-ref) .dl-lang[data-open] .dl-lang__trigger svg {
+  transform: rotate(180deg);
+}
+
+/* The popover hangs 14px under the trigger, right-aligned, with a notch pointing up. */
+:where(.duolingo-ref) .dl-lang__pop {
+  position: absolute;
+  top: 100%;
+  right: -12px;
+  z-index: 30;
+  padding-top: 14px;
+}
+
+:where(.duolingo-ref) .dl-lang__pop[hidden] {
+  display: none;
+}
+
+:where(.duolingo-ref) .dl-lang__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: 188.7px 188.7px;
+  width: 411px;
+  padding: 15px;
+  border: 2px solid var(--dl-line);
+  border-radius: 15px;
+  background: #fff;
+  animation: dl-pop-in 0.4s var(--dl-ease-menu);
+}
+
+:where(.duolingo-ref) .dl-lang__list::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: 92px;
+  width: 16px;
+  height: 16px;
+  border: solid var(--dl-line);
+  border-width: 2px 0 0 2px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+:where(.duolingo-ref) .dl-lang__list a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 10px;
+  color: var(--dl-muted);
+  font-size: 15px;
+  line-height: 20px;
+}
+
+:where(.duolingo-ref) .dl-lang__list a:hover {
+  background: var(--dl-wash);
+}
+
+:where(.duolingo-ref) .dl-lang__flag {
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+@keyframes dl-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+/* ------------------------------------------------------------- course strip */
+
+:where(.duolingo-ref) .dl-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 40px;
+  border-block: 2px solid var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-strip--dark {
+  height: 74px;
+  border: 0;
+  background: var(--dl-super-2);
+}
+
+:where(.duolingo-ref) .dl-strip__nav {
+  display: grid;
+  grid-template-columns: 14px 1002px 14px;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+}
+
+:where(.duolingo-ref) .dl-strip--dark .dl-strip__nav {
+  grid-template-columns: 22px 916px 22px;
+  gap: 22px;
+}
+
+:where(.duolingo-ref) .dl-strip__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  color: var(--dl-faint);
+}
+
+:where(.duolingo-ref) .dl-strip--dark .dl-strip__arrow {
+  color: #fff;
+}
+
+:where(.duolingo-ref) .dl-strip__arrow:disabled {
+  cursor: default;
+}
+
+:where(.duolingo-ref) .dl-strip__arrow svg {
+  width: 10px;
+  height: 16px;
+}
+
+:where(.duolingo-ref) .dl-strip__viewport {
+  overflow: hidden;
+}
+
+:where(.duolingo-ref) .dl-strip__list {
+  display: flex;
+  gap: 23px;
+  transition: transform 0.5s ease-in-out;
+}
+
+:where(.duolingo-ref) .dl-strip--dark .dl-strip__list {
+  gap: 20px;
+}
+
+:where(.duolingo-ref) .dl-strip__item {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  color: var(--dl-muted);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+:where(.duolingo-ref) .dl-strip--dark .dl-strip__item {
+  color: #fff;
+  font-size: 13px;
+}
+
+:where(.duolingo-ref) .dl-strip__item .dl-flag {
+  margin-right: 10px;
+}
+
+:where(.duolingo-ref) .dl-strip--dark .dl-strip__item .dl-flag {
+  width: 30px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-strip {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------------- green footer */
+
+:where(.duolingo-ref) .dl-gfoot {
+  background: var(--dl-green);
+}
+
+:where(.duolingo-ref) .dl-gfoot__cols {
+  display: grid;
+  grid-template-columns: repeat(5, 178px);
+  gap: 24px;
+  width: 988px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 96px 0 64px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__col {
+  display: grid;
+  align-content: start;
+  gap: 32px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__head {
+  margin-bottom: 11px;
+  color: var(--dl-footer-head);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 26.6px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__links a,
+:where(.duolingo-ref) .dl-gfoot__langs a {
+  color: var(--dl-footer-link);
+  font-weight: 700;
+}
+
+:where(.duolingo-ref) .dl-gfoot__links a {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__links a:hover,
+:where(.duolingo-ref) .dl-gfoot__langs a:hover {
+  color: #fff;
+}
+
+:where(.duolingo-ref) .dl-gfoot__langs {
+  width: 988px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0 64px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__langwrap {
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+:where(.duolingo-ref) .dl-gfoot__lhead {
+  color: var(--dl-footer-head);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__langs ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__langs li {
+  margin: 8px 12px;
+  line-height: 20px;
+}
+
+:where(.duolingo-ref) .dl-gfoot__langs a {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-gfoot__cols {
+    grid-template-columns: 216px;
+    gap: 32px;
+    width: 375px;
+    padding: 96px 32px 64px;
+  }
+
+  :where(.duolingo-ref) .dl-gfoot__langs {
+    width: auto;
+    margin: 0;
+    padding: 40px 32px 64px 40px;
+  }
+}
+
+/* ------------------------------------------------------------------ link row */
+
+:where(.duolingo-ref) .dl-linkrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+:where(.duolingo-ref) .dl-linkrow a {
+  margin: 0 12px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+:where(.duolingo-ref) .dl-linkrow--light a {
+  color: var(--dl-faint);
+}
+
+:where(.duolingo-ref) .dl-linkrow a:hover {
+  opacity: 0.8;
+}
+
+/* ---------------------------------------------------------------- blue bar */
+
+:where(.duolingo-ref) .dl-bluebar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  height: 70px;
+  background: var(--dl-blue);
+}
+
+:where(.duolingo-ref) .dl-bluebar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1065px;
+  max-width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+:where(.duolingo-ref) .dl-bluebar__logo {
+  height: 40px;
+  color: #fff;
+  font-size: 38px;
+}
+
+:where(.duolingo-ref) .dl-bluebar__end {
+  display: flex;
+  align-items: center;
+}
+
+:where(.duolingo-ref) .dl-bluebar__end > .dl-lang {
+  margin-right: 24px;
+}
+
+:where(.duolingo-ref) .dl-bluebar__login {
+  margin-right: 9px;
+  color: #0b3e71;
+}
+
+:where(.duolingo-ref) .dl-bluebar__login::before {
+  box-shadow: 0 4px 0 #ddf4ff;
+}
+
+:where(.duolingo-ref) .dl-bluebar__mobile {
+  position: relative;
+  display: none;
+}
+
+:where(.duolingo-ref) .dl-bluebar__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0 4px;
+}
+
+:where(.duolingo-ref) .dl-bluebar__burger span {
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+:where(.duolingo-ref) .dl-bluebar__panel {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: -18px;
+  display: flex;
+  flex-direction: column;
+  width: 214px;
+  border: 2px solid var(--dl-line);
+  border-radius: 12px;
+  background: #fff;
+  animation: dl-pop-in 0.4s var(--dl-ease-menu);
+}
+
+:where(.duolingo-ref) .dl-bluebar__panel[hidden] {
+  display: none;
+}
+
+:where(.duolingo-ref) .dl-bluebar__panel a {
+  padding: 12px 24px;
+  color: var(--dl-ink-2);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+:where(.duolingo-ref) .dl-bluebar__panel a + a {
+  border-top: 2px solid var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-bluebar__panel a:hover {
+  background: var(--dl-wash);
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-bluebar__end {
+    display: none;
+  }
+
+  :where(.duolingo-ref) .dl-bluebar__mobile {
+    display: block;
+  }
+}

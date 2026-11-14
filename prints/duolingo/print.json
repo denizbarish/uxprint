@@ -1,0 +1,478 @@
+{
+  "slug": "duolingo",
+  "name": "Duolingo",
+  "url": "https://www.duolingo.com",
+  "category": "marketing-site",
+  "tags": ["education", "playful", "rounded", "light", "illustration-led", "consumer"],
+  "summary": "Bright white pages in owl green and sky blue, rounded type, lowercase display headlines and chunky buttons whose solid bottom edge disappears as they press down.",
+  "theme": "both",
+  "source": {
+    "tool": "craft-anything + playwright (tools/capture.mjs, tools/measure.mjs, scratch probes)",
+    "mode": "deep",
+    "capturedAt": "2026-11-14",
+    "widths": [1440, 768, 390],
+    "pages": [
+      { "name": "home", "url": "https://www.duolingo.com" },
+      { "name": "super", "url": "https://www.duolingo.com/super" },
+      { "name": "register", "url": "https://www.duolingo.com/register" },
+      { "name": "log-in", "url": "https://www.duolingo.com/log-in" },
+      { "name": "course-es-en-Learn-Spanish", "url": "https://www.duolingo.com/course/es/en/Learn-Spanish" },
+      { "name": "math", "url": "https://www.duolingo.com/math" },
+      { "name": "business", "url": "https://www.duolingo.com/business" },
+      { "name": "efficacy", "url": "https://www.duolingo.com/efficacy" },
+      { "name": "help", "url": "https://www.duolingo.com/help" },
+      { "name": "terms", "url": "https://www.duolingo.com/terms" },
+      { "name": "courses", "url": "https://www.duolingo.com/courses" },
+      { "name": "gift", "url": "https://www.duolingo.com/gift" }
+    ]
+  },
+  "color": {
+    "background": [
+      { "name": "canvas", "value": "#ffffff", "use": "Page ground on every light page, cards, field wells on top of wash" },
+      { "name": "wash", "value": "#f7f7f7", "use": "Text-field fill on the sign-in sheet, course tile image rim on /courses" },
+      { "name": "footer-green", "value": "#58cc02", "use": "Site footer, /business hero and footer, the hill under the closing call to action" },
+      { "name": "catalog-blue", "value": "#1cb0f6", "use": "Fixed 70px top bar of /courses, /terms, /privacy, /guidelines" },
+      { "name": "super-navy", "value": "#000437", "use": "Ground of /super and /gift, Free and Family tier bodies" },
+      { "name": "super-band", "value": "#1a1e4c", "use": "Alternating bands on /super: course strip, stats, give-back band, footer" },
+      { "name": "plus-band", "value": "#100f3e", "use": "Subscription teaser band on the home page (900px tall)" },
+      { "name": "rule", "value": "#e5e5e5", "use": "Button rims and floors, card borders, list dividers (also a background on a few separators)" }
+    ],
+    "text": [
+      { "name": "ink", "value": "#3c3c3c", "use": "Legal and help headings, sign-in title, FAQ questions on /help and /business" },
+      { "name": "ink-2", "value": "#4b4b4b", "use": "Hero headline (32px), course tile names, store-badge labels" },
+      { "name": "muted", "value": "#777777", "use": "Body copy under green headlines, course strip labels, learner counts" },
+      { "name": "faint", "value": "#afafaf", "use": "Site-language trigger, footer link row on light pages, sign-in legal lines, FORGOT? link" },
+      { "name": "legal-grey", "value": "#999999", "use": "Body text of /terms and /privacy (17px/22.1px, justified)" },
+      { "name": "footer-link", "value": "#a5ed6e", "use": "Links on the green footer (15px/22px 700) and the site-language list (13px)" },
+      { "name": "footer-head", "value": "#d7ffb8", "use": "Column headings and 'Site language:' label in the green footer" },
+      { "name": "navy-ink", "value": "#042c60", "use": "'learn anytime, anywhere' 64px headline on the home page" },
+      { "name": "on-color", "value": "#ffffff", "use": "Text on green, blue and navy grounds; primary button labels" }
+    ],
+    "border": [
+      { "name": "rim", "value": "#e5e5e5", "use": "2px rims and floors of outline buttons, tiles, accordions, the scrolled top bar rule" },
+      { "name": "green-floor", "value": "#58a700", "use": "4px floor (box-shadow) under the green primary button" },
+      { "name": "blue-floor", "value": "#1899d6", "use": "4px floor under blue primary buttons (/math, sign-in); also the pressed label colour of thin-rim buttons" }
+    ],
+    "accent": [
+      { "name": "owl-green", "value": "#58cc02", "use": "Primary buttons, lowercase display headlines, business step titles" },
+      { "name": "sky-blue", "value": "#1cb0f6", "use": "Secondary button labels, inline links, active research tab, help group headings" }
+    ],
+    "semantic": [
+      { "name": "google-blue", "value": "#4285f4", "use": "Label colour of the Google sign-in button" },
+      { "name": "facebook-blue", "value": "#3b5998", "use": "Label colour of the Facebook sign-in button" }
+    ],
+    "alternate": {
+      "name": "super",
+      "appliesTo": "/super and /gift: navy ground, white type, white-faced buttons with a 40% white floor and gradient labels",
+      "tokens": [
+        { "name": "ground", "value": "#000437", "use": "Page and tier bodies" },
+        { "name": "band", "value": "#1a1e4c", "use": "Alternating bands and footer" },
+        { "name": "label-ink", "value": "#042c60", "use": "Solid colour under the gradient button label" },
+        { "name": "panel", "value": "#ffffff1a", "use": "Active feature tab and feature caption panel" }
+      ]
+    }
+  },
+  "typography": {
+    "families": [
+      {
+        "role": "sans",
+        "stack": "duolingo-sans, sans-serif",
+        "substitute": { "name": "Nunito", "source": "google-fonts", "note": "Proprietary rounded sans (variable 100-900). The gallery has no hosted rounded face, so the reference screens fall back to ui-rounded (SF Rounded in Safari) and system-ui elsewhere; Nunito is the closest free match." }
+      },
+      {
+        "role": "display",
+        "stack": "feather, sans-serif",
+        "substitute": { "name": "Fredoka", "source": "google-fonts", "note": "Proprietary heavy rounded display face, 700 only, set lowercase. Reference screens use the macOS system face Arial Rounded MT Bold, which runs narrower, so line breaks can differ." }
+      }
+    ],
+    "scale": [
+      { "name": "business-hero", "size": "80px", "weight": 700, "lineHeight": "88px", "tracking": "-2.4px", "family": "display", "use": "/business hero headline, lowercase, white on green" },
+      { "name": "display-xl", "size": "64px", "weight": 700, "lineHeight": "normal", "tracking": "-1.28px", "family": "display", "use": "Home band headlines and the closing call to action; /efficacy page title" },
+      { "name": "display-l", "size": "62px", "weight": 700, "lineHeight": "66.96px", "family": "display", "use": "/super hero and section headlines (68.2px line height and -1.86px tracking on /business)" },
+      { "name": "display-m", "size": "48px", "weight": 700, "lineHeight": "normal", "family": "display", "use": "Green feature headlines on home and course pages (36px at 390)" },
+      { "name": "stat", "size": "49.3px", "weight": 700, "lineHeight": "57.681px", "family": "sans", "use": "Stat values on /super" },
+      { "name": "subject-hero", "size": "40px", "weight": 700, "lineHeight": "44px", "family": "sans", "use": "/math hero and closing headline, section titles (40px/48px)" },
+      { "name": "hero", "size": "32px", "weight": 700, "lineHeight": "normal", "family": "sans", "use": "Home and course hero headline, register title (32px/40px), legal h1" },
+      { "name": "sub-title", "size": "28px", "weight": 700, "lineHeight": "32px", "family": "sans", "use": "/math feature row headings" },
+      { "name": "lead", "size": "24px", "weight": 400, "lineHeight": "31.92px", "family": "sans", "use": "/super hero lead; 25px/34px on /business" },
+      { "name": "body-l", "size": "20px", "weight": 400, "lineHeight": "28px", "family": "sans", "use": "/math and /efficacy paragraphs" },
+      { "name": "heading-s", "size": "19px", "weight": 700, "lineHeight": "20px", "family": "sans", "use": "Legal section headings, help group headings, footer column headings (19px/26.6px)" },
+      { "name": "body", "size": "17px", "weight": 400, "lineHeight": "24px", "family": "sans", "use": "Body copy under feature headlines; 17px/22.1px justified on legal pages" },
+      { "name": "button", "size": "15px", "weight": 700, "lineHeight": "normal", "tracking": "0.8px", "family": "sans", "use": "Every button label, uppercase; also the site-language trigger and link rows" },
+      { "name": "footer-link", "size": "15px", "weight": 700, "lineHeight": "22px", "family": "sans", "use": "Green footer links" },
+      { "name": "small", "size": "13px", "weight": 700, "lineHeight": "16px", "family": "sans", "use": "Site-language list in the footer" }
+    ]
+  },
+  "spacing": {
+    "unit": "4px",
+    "scale": ["4px", "8px", "10px", "12px", "16px", "24px", "32px", "40px", "48px", "56px", "80px", "96px", "101px", "112px"],
+    "containerMaxWidth": "988px (home, course, footer, register); 1100px on /super and /help, 1065px on /math and the blue bar, 1048px on /efficacy",
+    "pageGutter": { "desktop": "226px each side at 1440 (988px column)", "mobile": "15px (home), 16px (/super, /math, /help), 24px (/courses, /business)" },
+    "sectionGap": "96px vertical padding on home bands; 112px on /super; 100px on /business; 100px flex gap between /math sections"
+  },
+  "radius": [
+    { "name": "button", "value": "12px", "use": "Home and course buttons (330x50)" },
+    { "name": "button-round", "value": "16px", "use": "Buttons on /super, /math, /business, sign-in, top bars; course tiles; accordions; tier cards" },
+    { "name": "panel", "value": "15px", "use": "Site-language popover" },
+    { "name": "legal-card", "value": "10px", "use": "White document card on /terms" },
+    { "name": "circle", "value": "50%", "use": "Decorative bubbles on the /super stats band" }
+  ],
+  "shadow": [
+    { "name": "green-floor", "value": "rgb(88, 167, 0) 0px 4px 0px 0px", "use": "Primary button ::before; removed while pressed" },
+    { "name": "blue-floor", "value": "rgb(24, 153, 214) 0px 4px 0px 0px", "use": "Blue primary button ::before" },
+    { "name": "rim-floor", "value": "rgb(229, 229, 229) 0px 2px 0px 0px", "use": "Outline button ::before (with a 2px #e5e5e5 border)" },
+    { "name": "thin-rim-floor", "value": "rgb(229, 229, 229) 0px 3px 0px 1px", "use": "Thin-rim outline button ::before on /math" },
+    { "name": "white-floor", "value": "rgba(255, 255, 255, 0.4) 0px 4px 0px 0px", "use": "White-faced buttons on navy and green grounds" },
+    { "name": "ghost-floor", "value": "rgba(255, 255, 255, 0.5) 0px 2px 0px 0px", "use": "LOG IN button on /super (transparent face, half-white rim)" }
+  ],
+  "layout": {
+    "breakpoints": ["700px (single column, centred copy; observed between the 768 and 390 captures, exact value not observed)"],
+    "patterns": [
+      { "name": "Fixed white top bar", "description": "72px bar (70px + 2px bottom rule that turns #e5e5e5 once the page scrolls, border-color 0.3s ease). Logo left, uppercase 'site language' trigger right; past the hero the trigger is replaced by a compact primary button. Centred logo only at 390." },
+      { "name": "Fixed blue bar", "description": "70px #1cb0f6 bar on catalogue and document pages: white logo, white language trigger, white LOGIN (83x44) and green GET STARTED (133x44) buttons; at 390 a 40px menu button opens a three-item popover." },
+      { "name": "Hero pair", "description": "988px row, justify end, 80px gap: 424px square illustration, then a 480px column with a centred 32px headline and two stacked 330x50 buttons 12px apart." },
+      { "name": "Course strip", "description": "80px band between 2px rules: 14px arrows either side of a 1002px window of course links (flag 36x28 + 15px uppercase label, 23px gap); arrows page the list with transform 0.5s ease-in-out. Hidden at 390." },
+      { "name": "Alternating feature rows", "description": "Rows of 530px height in the 988px column: 473px copy (48px green lowercase headline, 24px gap, 17px/24px grey body) and a 530px illustration, 101px apart, flipping sides every row. Stacked and centred at 390 with 32px gaps and 96px between rows." },
+      { "name": "Green site footer", "description": "Five 178px columns, 24px gap, 96px top and 64px bottom padding; 35 links in 15px/22px 700 #a5ed6e under #d7ffb8 headings; then a full-width rule and a wrapping 37-entry site-language list (13px, 8px 12px item margins)." },
+      { "name": "Link-row footer", "description": "Single centred row of eight uppercase 15px links (12px side margins) under /super, /math, /efficacy and /business; white on dark grounds, #afafaf on white." },
+      { "name": "Tile grid", "description": "Course tiles 200x217 with a 2px rim and 4px floor (#e5e5e5), 16px radius, 88x68 image, 17px name and learner count; four per row at 1440 (222px or 213px tracks), two per row at 390." }
+    ],
+    "responsive": "At 390 every two-column row stacks with copy first and centred; display headlines step down (48px to 36px on home, 62px to 44px on /super, 80px to 48px on /business); the course strip and the language trigger disappear; the blue bar and /efficacy collapse their links into a menu button. Buttons grow to the column width (330px or 358px)."
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "anatomy": "Element with a transparent 4px bottom border; the visible face is a ::before layer (z-index -1) with the fill and a solid 4px box-shadow floor; uppercase label.",
+      "spec": { "height": "50px (48px on /math, 44px in bars)", "padding": "0 16px", "radius": "12px on home and course pages, 16px elsewhere", "face": "::before #58cc02, box-shadow rgb(88, 167, 0) 0px 4px 0px 0px", "border": "0 0 4px transparent", "font": "15px/normal 700, letter-spacing 0.8px, uppercase, #ffffff", "transition": "none (all 0s)" },
+      "states": [
+        { "name": "hover", "change": "filter: brightness(1.1)" },
+        { "name": "active", "change": "transform: translateY(4px) and the ::before box-shadow becomes none, so the face drops onto its floor; filter stays brightness(1.1)" },
+        { "name": "focus-visible", "change": "outline-offset: 1px (outline 3px in currentColor)" }
+      ],
+      "notes": "Blue variant on /math and the sign-in sheet: face #1cb0f6, floor #1899d6."
+    },
+    {
+      "name": "Outline button",
+      "anatomy": "Element with 2px 2px 4px transparent borders; ::before at inset -2px with a white fill, 2px #e5e5e5 border and a 2px #e5e5e5 floor.",
+      "spec": { "height": "50px", "padding": "0 16px", "radius": "12px or 16px", "face": "::before #ffffff, border 2px solid rgb(229, 229, 229), box-shadow rgb(229, 229, 229) 0px 2px 0px 0px", "font": "15px 700 uppercase, letter-spacing 0.8px, #1cb0f6" },
+      "states": [
+        { "name": "hover", "change": "filter: brightness(0.9)" },
+        { "name": "active", "change": "transform: translateY(2px) and the ::before box-shadow becomes none; filter stays brightness(0.9)" },
+        { "name": "focus-visible", "change": "outline-offset: 1px" }
+      ],
+      "notes": "Used for 'I already have an account', store badges (63px tall, 9.5px 14px padding) and sign-in providers."
+    },
+    {
+      "name": "Thin-rim outline button",
+      "anatomy": "1px 1px 5px transparent borders; ::before at inset -1px, white, 1px #e5e5e5 border, box-shadow 0 3px 0 1px #e5e5e5.",
+      "spec": { "height": "48px", "width": "300px", "padding": "0 11px", "radius": "16px", "font": "16px/42px 700 uppercase, letter-spacing 0.64px, #1cb0f6" },
+      "states": [
+        { "name": "hover", "change": "filter: brightness(0.9)" },
+        { "name": "active", "change": "transform: translateY(4px); colour rgb(24, 153, 214)" }
+      ]
+    },
+    {
+      "name": "White-faced button on navy",
+      "anatomy": "As the primary button with a white ::before and a 40% white floor; label is gradient text clipped over #042c60.",
+      "spec": { "height": "50px", "width": "310px (400px under the tiers)", "radius": "16px", "face": "::before #ffffff, box-shadow rgba(255, 255, 255, 0.4) 0px 4px 0px 0px" },
+      "states": [
+        { "name": "hover", "change": "filter: brightness(1.1)" },
+        { "name": "active", "change": "transform: translateY(4px)" }
+      ]
+    },
+    {
+      "name": "Ghost button on navy",
+      "anatomy": "Transparent face, ::before with a 2px rgba(255, 255, 255, 0.5) rim and 2px floor of the same colour.",
+      "spec": { "height": "44px", "width": "160px", "radius": "16px", "font": "15px/18px 700 uppercase, #ffffff" },
+      "states": [
+        { "name": "hover", "change": "filter: opacity(0.8)" },
+        { "name": "active", "change": "transform: translateY(2px)" }
+      ]
+    },
+    {
+      "name": "Site-language menu",
+      "anatomy": "Uppercase trigger with a chevron; on hover a popover hangs below it: 411px card, 2px #e5e5e5 border, 15px radius, 15px padding, notch on top, two 188.7px columns of 34 language links (flag + 15px #777777 label, 42px rows, 20px side padding).",
+      "spec": { "trigger": "15px/17.25px 700, letter-spacing 0.8px, #afafaf (#ffffff on the blue bar, #777777 on /math)", "popover": "background #ffffff, border 2px solid #e5e5e5, radius 15px, padding 15px" },
+      "states": [
+        { "name": "hover (trigger)", "change": "filter transition 0.2s ease (brightness(1) to brightness(1.1) on the blue bar)" },
+        { "name": "open", "change": "wrapper transition: border-color 0.3s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)" }
+      ]
+    },
+    {
+      "name": "Course tile",
+      "anatomy": "Link (catalogue) or button (sign-up) with a 26px top row, 88x68 image with a 4px rim and 16px radius, 17px/20.4px 700 name, 17px/20px #777777 learner count.",
+      "spec": { "size": "200x217", "padding": "12px 12px 24px", "border": "2px 2px 4px solid #e5e5e5", "radius": "16px", "background": "#ffffff" },
+      "states": [
+        { "name": "hover", "change": "filter: brightness(0.9)" },
+        { "name": "active", "change": "filter: brightness(0.9) (no press movement)" },
+        { "name": "focus-visible", "change": "outline-offset: 1px" }
+      ]
+    },
+    {
+      "name": "Accordion row",
+      "anatomy": "Clickable row (div role=button on the original) with the question and a chevron at the right; rows separated by 2px #e5e5e5 rules, grouped in a 2px-rimmed 16px-radius box on /help and /business.",
+      "spec": { "help row": "72px + 2px rule, padding 26px 32px, 19px/20px 400 #3c3c3c", "business row": "73px, padding 24px, 19px/25px 400 #3c3c3c", "math row": "24px question 20px/24px 700 #4b4b4b, 32px below, 2px rule, 32px gap" },
+      "states": [{ "name": "open", "change": "answer revealed below the question; chevron flips (timing not observed)" }]
+    },
+    {
+      "name": "Subscription tier card",
+      "anatomy": "3px frame drawn by padding over a translucent or gradient ground, 94px head (110px for the featured middle card) with a 19px name, body of six 36px rows with a check or cross.",
+      "spec": { "width": "306.66px", "radius": "16px outer, 13px inner", "free frame": "rgba(255, 255, 255, 0.2)", "body": "#000437 (white for the featured card)", "rows": "17px/20px, #ffffff on, #afafaf off" },
+      "states": []
+    },
+    {
+      "name": "Sign-in field",
+      "anatomy": "Well with a 2px #e5e5e5 border and #f7f7f7 fill, 12px radius, holding a borderless input; the password well also holds an uppercase FORGOT? link.",
+      "spec": { "height": "48px", "input padding": "8px 14px", "font": "17px", "gap": "8px between wells" },
+      "states": [
+        { "name": "FORGOT? hover", "change": "colour #afafaf to rgb(119, 119, 119)" },
+        { "name": "focus", "change": "not observed" }
+      ]
+    },
+    {
+      "name": "Feature tab",
+      "anatomy": "Uppercase 15px/20px 700 label with a 20px icon in a 66px row, 16px padding, 12px radius.",
+      "spec": { "width": "264px", "letter-spacing": "1px", "active background": "rgba(255, 255, 255, 0.1)" },
+      "states": [{ "name": "selected", "change": "background rgba(255, 255, 255, 0.1); transition all 0.3s ease (measured on /gift)" }]
+    }
+  ],
+  "motion": {
+    "durations": [
+      { "name": "instant", "value": "0s", "use": "All buttons: hover filter and the press are not transitioned" },
+      { "name": "trigger", "value": "0.2s", "use": "Site-language trigger and help breadcrumb filter" },
+      { "name": "rule", "value": "0.3s", "use": "Top bar rule colour, feature tabs, offer panel 'right' slide on /business" },
+      { "name": "menu", "value": "0.4s", "use": "Site-language popover transform" },
+      { "name": "strip", "value": "0.5s", "use": "Course strip paging" }
+    ],
+    "easings": [
+      { "name": "menu-out", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "use": "Site-language popover" },
+      { "name": "strip", "value": "ease-in-out", "use": "Course strip paging" },
+      { "name": "default", "value": "ease", "use": "Everything else" }
+    ],
+    "transitions": [
+      { "target": "Top bar wrapper", "properties": "border-color, transform", "duration": "0.3s, 0.4s", "easing": "ease, cubic-bezier(0.22, 1, 0.36, 1)" },
+      { "target": "Site-language trigger", "properties": "filter", "duration": "0.2s", "easing": "ease" },
+      { "target": "Course strip list", "properties": "transform", "duration": "0.5s", "easing": "ease-in-out" },
+      { "target": "Feature tabs on /gift", "properties": "all", "duration": "0.3s", "easing": "ease" },
+      { "target": "Offer panel on /business and home", "properties": "right", "duration": "0.3s", "easing": "ease" },
+      { "target": "Overlay scrim", "properties": "opacity 1 to 0 (Web Animation, fill forwards)", "duration": "300ms", "easing": "ease" }
+    ],
+    "keyframes": [
+      { "name": "dots-fade", "use": "Defined in the shared stylesheet; trigger not observed (three-step loading pulse)", "css": "@keyframes dots-fade{0%{opacity:1}33.3333333333%{opacity:.25}66.6666666667%{opacity:.5}to{opacity:1}}" },
+      { "name": "pop-in", "use": "Defined in the shared stylesheet; trigger not observed", "css": "@keyframes pop-in{0%{transform:scale(0)}to{transform:scale(1)}}" },
+      { "name": "heartbeat", "use": "Defined in the shared stylesheet; trigger not observed", "css": "@keyframes heartbeat{0%{transform:scale(1)}20%{transform:scale(1)}45%{transform:scale(1.2)}75%{transform:scale(1.2)}to{transform:scale(1)}}" },
+      { "name": "slide-in-overshoot", "use": "Defined in the shared stylesheet; one of a family of 30px to 150px horizontal slide-ins with a small overshoot at 80%; trigger not observed", "css": "@keyframes slide-in-overshoot{0%{opacity:0;transform:translate(120px)}80%{animation-timing-function:ease-out;opacity:1;transform:translate(-5px)}to{animation-timing-function:ease-in;opacity:1;transform:translate(0)}}" },
+      { "name": "rise-in", "use": "Defined in the shared stylesheet; trigger not observed", "css": "@keyframes rise-in{0%{transform:translateY(100%)}to{transform:translateY(0)}}" }
+    ],
+    "unmeasured": [
+      "Illustrations on the home page are Lottie or script-driven SVG (transform changes on <g> elements while scrolling); timing not measured.",
+      "Accordion open and close animation on /math, /help and /business was not measured.",
+      "The swap from the language trigger to the compact top-bar button while scrolling was seen in the survey screenshots; its timing was not measured."
+    ]
+  },
+  "flows": [
+    {
+      "name": "Sign up",
+      "entry": "/register",
+      "layout": "Fixed white top bar (logo, site-language trigger) over a 1012px panel with 40px padding; title 32px/40px centred, then the course tile grid (4 per row, 213px tracks).",
+      "steps": [
+        {
+          "name": "Choose a course",
+          "screen": ["Top bar with logo and site-language trigger", "Title 'I want to learn...'", "42 course tiles (flag, name, learner count)"],
+          "actions": ["Choosing a tile moves to the next sign-up step (not recorded)"]
+        }
+      ],
+      "notRecorded": "Every step after the course choice (goal, level, profile and account creation) needs input that starts an account; not recorded."
+    },
+    {
+      "name": "Log in",
+      "entry": "/log-in",
+      "layout": "Full-screen white sheet (30px padding) over the home page with a rgba(0, 0, 0, 0.3) scrim; close X top left (top right at 390), SIGN UP outline button top right; 375px form centred 128px from the top.",
+      "steps": [
+        {
+          "name": "Credentials",
+          "screen": ["Title 'Log in' 26px/40px", "Email or username field", "Password field with FORGOT? link", "Blue LOG IN button 375x50", "'or' divider", "Google, Facebook and Apple buttons, 50px, 15px apart", "Two 14px legal lines in #afafaf"],
+          "actions": ["LOG IN submits (blocked during the measurement)", "SIGN UP switches to the sign-up sheet", "FORGOT? opens password reset (not recorded)"],
+          "validation": "An empty submit stayed on the page and sent POST requests that the measurement blocked; no inline message was observed."
+        }
+      ],
+      "notRecorded": "Anything after a successful sign-in, password reset and the provider pop-ups."
+    }
+  ],
+  "templates": [
+    {
+      "id": "home",
+      "name": "Home",
+      "use": "Front page: one promise, two buttons, the course strip, then alternating illustrated feature rows and app, subscription and certificate bands.",
+      "structure": [
+        "Fixed white top bar 72px (70 + 2px rule that appears on scroll), logo left, site-language trigger right",
+        "Hero 750px: 424px illustration and a 480px column, 32px headline, two 330x50 buttons 12px apart, 40px above",
+        "Course strip 80px between 2px rules, 1002px window, 14px arrows (hidden at 390)",
+        "Four feature rows 530px tall, 473px copy beside a 530px illustration, 101px gap, 96px band padding",
+        "Apps band 1289px with a 64px navy headline and two store badges",
+        "Subscription band 900px on #100f3e with a white-faced button",
+        "Certificate row with an outline button, closing call to action 853px with a 64px/80px headline and a 230px green hill",
+        "Green footer: five 178px columns, 96px top padding, full-width rule, 37-entry site-language list"
+      ],
+      "pages": ["/"]
+    },
+    {
+      "id": "course",
+      "name": "Course Landing",
+      "use": "One landing page per course: same hero, strip, feature rows and closing band as home, with the course name in the copy.",
+      "structure": [
+        "Fixed white top bar 72px",
+        "Hero 750px with a 32px headline naming the course and two 330x50 buttons",
+        "Course bar: 64x48 flag and a 19px/24px heading between rules (hidden at 390)",
+        "Four feature rows 530px tall, 101px gap",
+        "Closing call to action 853px, green footer"
+      ],
+      "pages": ["/course/zu/en/Learn-Zulu", "/course/cs/en/Learn-Czech", "/course/cy/en/Learn-Welsh", "/course/el/en/Learn-Greek", "/course/ga/en/Learn-Irish", "/course/hi/en/Learn-Hindi", "/course/la/en/Learn-Latin", "/course/ar/en/Learn-Arabic", "/course/da/en/Learn-Danish", "/course/de/en/Learn-German", "/course/fr/en/Learn-French", "/course/he/en/Learn-Hebrew", "/course/ko/en/Learn-Korean", "/course/nv/en/Learn-Navajo", "/course/pl/en/Learn-Polish", "/course/en/en/Learn-English", "/course/es/en/Learn-Spanish", "/course/fi/en/Learn-Finnish", "/course/it/en/Learn-Italian", "/course/ru/en/Learn-Russian", "/course/sv/en/Learn-Swedish", "/course/sw/en/Learn-Swahili", "/course/tr/en/Learn-Turkish", "/course/yi/en/Learn-Yiddish", "/course/hw/en/Learn-Hawaiian", "/course/ja/en/Learn-Japanese", "/course/nl-NL/en/Learn-Dutch", "/course/ro/en/Learn-Romanian", "/course/tlh/en/Learn-Klingon", "/course/eo/en/Learn-Esperanto", "/course/hu/en/Learn-Hungarian", "/course/uk/en/Learn-Ukrainian", "/course/id/en/Learn-Indonesian", "/course/pt/en/Learn-Portuguese", "/course/vi/en/Learn-Vietnamese", "/course/hv/en/Learn-High%20Valyrian", "/course/ht/en/Learn-Haitian%20Creole", "/course/gd/en/Learn-Scottish%20Gaelic", "/course/zh/en/Learn-Chinese%20Simplified", "/course/no-BO/en/Learn-Norwegian%20Bokm%C3%A5l"]
+    },
+    {
+      "id": "subscription",
+      "name": "Subscription",
+      "use": "Paid-plan pitch on a navy ground: hero, plan comparison, stats, feature tabs, trial timeline.",
+      "structure": [
+        "Absolute 66px header: wordmark left, 160x44 ghost LOG IN button right",
+        "Hero 651px (padding 160 0 112): 62px/66.96px lowercase headline, 24px/31.92px lead, 310x50 white-faced button",
+        "Dark course strip 74px on #1a1e4c",
+        "Plans (padding 112 24): three 306.66px tier cards, featured middle card raised with a gradient frame, 400px button below",
+        "Stats band 238px on #1a1e4c, three 49.3px values with decorative bubbles",
+        "Feature tabs: 264px vertical tab list, device shot, caption panel; dots at 390",
+        "Give-back band 377px, trial timeline with three steps, footer 454px with store badges and a link row"
+      ],
+      "pages": ["/super", "/gift"]
+    },
+    {
+      "id": "subject",
+      "name": "Subject Landing",
+      "use": "Landing page for a non-language subject: compact hero, three phone-shot rows, grade cards and an FAQ.",
+      "structure": [
+        "Static 86px bar: logo left, muted site-language trigger right",
+        "Hero 501px: 40px/44px headline, blue 300x48 button over a thin-rim outline button, 16px radius",
+        "Three rows 910px wide, 583px tall: 442px copy (28px/32px heading, 20px/28px body) beside a 295x583 phone shot",
+        "Sections separated by 2px rules with a 100px gap",
+        "Grade grid: 3 columns of 339px, cards 342x110",
+        "FAQ 643px wide, ten rows of 20px/24px questions between 2px rules",
+        "Closing band and a light link-row footer"
+      ],
+      "pages": ["/math", "/chess"]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "use": "Team sales page: green hero, value cards, steps, a seat calculator and a boxed FAQ.",
+      "structure": [
+        "Green 80px bar with the team wordmark",
+        "Hero 876px on green: 80px/88px lowercase white headline, white-faced button with green label, text link, white wave",
+        "Value section 1052px: three 330x464 cards with a 170px badge circle",
+        "How it works 655px: four numbered steps",
+        "Seat calculator with a range input and live totals; split block for large teams",
+        "FAQ box 912px wide, 2px rim, 16px radius, 17 rows of 73px",
+        "Green footer 502px with a wave, wordmark, link row and store badges"
+      ],
+      "pages": ["/business"]
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "use": "Evidence page: tabbed sub-navigation, findings list, a chart and a row of video stories.",
+      "structure": [
+        "72px bar with five tabs, active tab in blue; menu button and drawer at 390",
+        "Intro grid 482/482: 64px headline, lead with inline links, key findings list",
+        "Chart section with a 533x389 figure",
+        "Stories: one 500x277 video and four 375x208 videos, 82px gap",
+        "Section gaps 182px (130 at 390), footer with a top rule and a light link row"
+      ],
+      "pages": ["/efficacy"]
+    },
+    {
+      "id": "help",
+      "name": "Help Center",
+      "use": "Question index grouped by topic in rimmed accordion boxes.",
+      "structure": [
+        "80px bar with a centred logo",
+        "Breadcrumb 19px uppercase blue",
+        "Title, then three groups: 19px blue heading over a 2px-rimmed 16px-radius box of 72px rows (padding 26px 32px)",
+        "'Still have a question' block with a 147px button"
+      ],
+      "pages": ["/help"]
+    },
+    {
+      "id": "legal",
+      "name": "Legal Document",
+      "use": "Long policy text in a white card under the blue bar.",
+      "structure": [
+        "Fixed 70px blue bar with logo, language trigger, LOGIN and GET STARTED buttons",
+        "880px card, padding 24px, radius 10px",
+        "32px/40px title and a bold intro paragraph",
+        "Numbered ordered list of 28 sections: 19px/20px headings, 17px/22.1px #999999 justified paragraphs, 15px/20px sub-headings and bullets"
+      ],
+      "pages": ["/terms", "/privacy", "/guidelines"]
+    },
+    {
+      "id": "catalog",
+      "name": "Course Catalog",
+      "use": "Every course as a tile grid, filtered by the learner's own language.",
+      "structure": [
+        "Fixed 70px blue bar",
+        "912px column with 94px top padding",
+        "Head row: 24px/40px title and an 'I speak' selector",
+        "Course tiles 200x217 on four 222px tracks with a 24px row gap (two per row at 390)"
+      ],
+      "pages": ["/courses"]
+    },
+    {
+      "id": "register",
+      "name": "Sign Up Start",
+      "use": "First public step of sign-up: pick a course from the tile grid.",
+      "structure": [
+        "Fixed white bar with logo and site-language trigger (trigger hidden at 390)",
+        "1012px panel, padding 90px 80px 40px",
+        "32px/40px centred title",
+        "Course tiles as buttons on four 213px tracks"
+      ],
+      "pages": ["/register"]
+    },
+    {
+      "id": "login",
+      "name": "Log In",
+      "use": "Full-screen sign-in sheet over the home page.",
+      "structure": [
+        "White sheet with 30px padding over a rgba(0, 0, 0, 0.3) scrim",
+        "Close X top left (top right at 390), SIGN UP outline button top right (hidden at 390)",
+        "375px form (330 at 390) 108px down: 26px/40px title, two 48px wells, blue 375x50 button",
+        "'or' divider, three 50px provider buttons 15px apart, two 14px/20px #afafaf legal lines"
+      ],
+      "pages": ["/log-in"]
+    }
+  ],
+  "principles": [
+    "Every button stands on a solid floor: the face is a ::before layer with a 4px (or 2px) box-shadow in a darker shade, and pressing moves the button down by exactly that floor and removes it.",
+    "No transitions on buttons: hover is a brightness filter and the press is instant.",
+    "Headlines in the display face are lowercase and green (navy on white bands, white on colour); everything else is the rounded sans.",
+    "All button labels are 15px bold uppercase with 0.8px tracking, centred in fixed-width buttons (330px on home, 300px on /math, 275px on /business, 310px on /super).",
+    "Generous white space: 96px to 112px band padding, 530px illustrations beside 473px text columns.",
+    "Illustration carries the personality; chrome stays flat with 2px #e5e5e5 rims and no soft shadows."
+  ],
+  "avoid": [
+    "Soft or blurred drop shadows; depth is only the solid bottom floor.",
+    "Thin hairline borders: rims are 2px (1px only on the /math thin-rim buttons).",
+    "Title-case or uppercase display headlines.",
+    "Animated button presses with easing; the original press has no transition."
+  ],
+  "libraries": {
+    "detected": [
+      { "name": "React", "npm": "react", "purpose": "UI runtime", "evidence": "\"react.element\" in a served chunk (weak: script fingerprint)" },
+      { "name": "Next.js", "npm": "next", "purpose": "Framework", "evidence": "__NEXT_DATA__ global on the page" },
+      { "name": "Lottie", "npm": "lottie-web", "purpose": "After Effects animation playback for illustrations", "evidence": "\"lottie\" string in a served chunk (weak: script fingerprint)" },
+      { "name": "OneTrust", "purpose": "Cookie consent banner", "evidence": "onetrust-fade-in keyframes in the page stylesheet" }
+    ],
+    "recommended": [
+      { "name": "Fontsource Nunito", "npm": "@fontsource-variable/nunito", "purpose": "Free rounded sans close to duolingo-sans" },
+      { "name": "Fontsource Fredoka", "npm": "@fontsource-variable/fredoka", "purpose": "Free heavy rounded display face close to feather" },
+      { "name": "lottie-react", "npm": "lottie-react", "purpose": "Playing illustration animations if they are rebuilt" }
+    ]
+  }
+}

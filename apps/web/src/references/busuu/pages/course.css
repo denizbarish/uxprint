@@ -1,0 +1,558 @@
+/* Course landing template (measured on /en/course/learn-spanish-online). */
+
+:where(.busuu-ref) .bu-hero--course .bu-hero__title {
+  padding-top: 0;
+  font-weight: 700;
+  line-height: 53.76px;
+}
+
+:where(.busuu-ref) .bu-course__cta {
+  width: 246px;
+}
+
+/* Language pills: rows of five centred, 24px gaps. */
+:where(.busuu-ref) .bu-pills {
+  padding: 0 62px;
+}
+
+:where(.busuu-ref) .bu-pills__title {
+  height: 60px;
+  color: var(--bu-ink);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 47.6px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-pills__wrap {
+  position: relative;
+  margin-top: 29px;
+  padding: 0 62px;
+}
+
+:where(.busuu-ref) .bu-pills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+:where(.busuu-ref) .bu-pill-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 76px;
+  padding: 24px 24px 24px 20px;
+  border: 1px solid var(--bu-surface);
+  border-radius: 60px;
+  background: var(--bu-surface);
+  color: var(--bu-navy);
+  transition: border-color 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-pill-lang:hover {
+  border-color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-pill-lang > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+:where(.busuu-ref) .bu-pill-lang__name {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 19px;
+}
+
+:where(.busuu-ref) .bu-pill-lang__count {
+  color: #a2a2a2;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+:where(.busuu-ref) .bu-pills__more {
+  display: none;
+}
+
+:where(.busuu-ref) .bu-course__all {
+  display: flex;
+  justify-content: center;
+}
+
+/* Blue feature band: full width, chips on the left, awards and phone on the right. */
+:where(.busuu-ref) .bu-band {
+  background: var(--bu-blue);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-band__inner {
+  display: flex;
+  align-items: center;
+  width: 1270px;
+  max-width: 100%;
+  height: 945px;
+  margin-left: 85px;
+}
+
+:where(.busuu-ref) .bu-band__left {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+  padding: 90px 0 64px;
+}
+
+:where(.busuu-ref) .bu-band__left h2 {
+  width: 560px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 65px;
+  letter-spacing: -0.96px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-band__chips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 56px;
+}
+
+:where(.busuu-ref) .bu-chip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 461px;
+  min-height: 93px;
+  padding: 18px 30px;
+  border-radius: 32px;
+  background: #287ef0;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+:where(.busuu-ref) .bu-chip:nth-child(1) { width: 470px; }
+:where(.busuu-ref) .bu-chip:nth-child(2) { width: 490px; }
+:where(.busuu-ref) .bu-chip:nth-child(3) { width: 451px; }
+
+:where(.busuu-ref) .bu-chip:hover,
+:where(.busuu-ref) .bu-chip.is-active {
+  background: #fff;
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-chip__title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 31px;
+}
+
+:where(.busuu-ref) .bu-chip__text {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+:where(.busuu-ref) .bu-band__cta {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+:where(.busuu-ref) .bu-band__laurel {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 32px;
+  border: 3px solid #ffffff66;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+:where(.busuu-ref) .bu-band__btn {
+  width: 242px;
+  background: #121b26;
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-band__btn:hover {
+  background: #262d37;
+}
+
+:where(.busuu-ref) .bu-band__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  margin-top: -6px;
+}
+
+:where(.busuu-ref) .bu-band__awards {
+  display: flex;
+  gap: 40px;
+  height: 64px;
+}
+
+:where(.busuu-ref) .bu-award {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-award > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 106px;
+}
+
+:where(.busuu-ref) .bu-award__leaf {
+  width: 30px;
+  height: 54px;
+  border: 3px solid #ffffff99;
+  border-right: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+:where(.busuu-ref) .bu-award__leaf--right {
+  transform: scaleX(-1);
+}
+
+:where(.busuu-ref) .bu-award__icon {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background: #ffffffcc;
+}
+
+:where(.busuu-ref) .bu-award__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+:where(.busuu-ref) .bu-award__sub {
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+:where(.busuu-ref) .bu-band__stage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  height: 680px;
+  margin-top: 64px;
+}
+
+:where(.busuu-ref) .bu-band__sun {
+  position: absolute;
+  inset: 40px 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd35a 0 38%, #ffd35a33 39% 60%, transparent 61%);
+}
+
+:where(.busuu-ref) .bu-band__phone {
+  position: relative;
+  width: 385px;
+  height: 680px;
+  border-radius: 30px;
+}
+
+/* Resource link lists. */
+:where(.busuu-ref) .bu-linklists {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 62px 20px;
+  color: var(--bu-ink);
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-linklist h3 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+:where(.busuu-ref) .bu-linklist ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+:where(.busuu-ref) .bu-linklist__head {
+  display: inline-flex;
+  align-items: center;
+  font: inherit;
+  pointer-events: none;
+}
+
+:where(.busuu-ref) .bu-linklist__head .bu-chev {
+  display: none;
+}
+
+:where(.busuu-ref) .bu-linklist a {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+:where(.busuu-ref) .bu-linklist a:hover {
+  text-decoration: underline;
+}
+
+:where(.busuu-ref) .bu-steps--strong .bu-step__text {
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref) .bu-pills {
+    padding: 0 16px;
+  }
+
+  :where(.busuu-ref) .bu-pills__title {
+    height: auto;
+    padding: 0 20px;
+    font-size: 26px;
+    line-height: 36.4px;
+  }
+
+  :where(.busuu-ref) .bu-pills__wrap {
+    max-height: 450px;
+    margin-top: 46px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  :where(.busuu-ref) .bu-pills__wrap.is-open {
+    max-height: none;
+    padding-bottom: 76px;
+  }
+
+  :where(.busuu-ref) .bu-pills__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  :where(.busuu-ref) .bu-pills__more {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 36px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 60px;
+    border-radius: 57px;
+    background: #fff;
+    box-shadow: rgba(99, 121, 154, 0.16) 0px 6px 20px 0px;
+    color: var(--bu-navy);
+  }
+
+  :where(.busuu-ref) .bu-pills__more svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  :where(.busuu-ref) .bu-pills__wrap.is-open .bu-pills__more svg {
+    transform: rotate(180deg);
+  }
+
+  :where(.busuu-ref) .bu-band__inner {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 30px 0 45px;
+  }
+
+  :where(.busuu-ref) .bu-band__left {
+    display: contents;
+  }
+
+  :where(.busuu-ref) .bu-band__left h2 {
+    order: 2;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 30px;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.32px;
+  }
+
+  :where(.busuu-ref) .bu-band__chips {
+    order: 3;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 53px;
+    padding: 0 32px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  :where(.busuu-ref) .bu-chip,
+  :where(.busuu-ref) .bu-chip:nth-child(n) {
+    flex: none;
+    width: 280px;
+    min-height: 130px;
+    padding: 16px;
+  }
+
+  :where(.busuu-ref) .bu-chip__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  :where(.busuu-ref) .bu-chip__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  :where(.busuu-ref) .bu-band__right {
+    display: contents;
+  }
+
+  :where(.busuu-ref) .bu-band__awards {
+    order: 1;
+    transform: scale(0.75);
+  }
+
+  :where(.busuu-ref) .bu-band__stage {
+    order: 4;
+    width: 100%;
+    height: 400px;
+    margin-top: 78px;
+  }
+
+  :where(.busuu-ref) .bu-band__phone {
+    width: 220px;
+    height: 400px;
+  }
+
+  :where(.busuu-ref) .bu-band__cta {
+    order: 5;
+    margin-top: -60px;
+  }
+
+  :where(.busuu-ref) .bu-band__btn {
+    width: 203px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  :where(.busuu-ref) .bu-band__laurel {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-linklists {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+}
+
+:where(.busuu-ref).bu-mk main > .bu-band {
+  margin-top: 120px;
+}
+
+@media (min-width: 768px) {
+  :where(.busuu-ref) .bu-band__awards {
+    margin-top: 170px;
+  }
+}
+
+:where(.busuu-ref).bu-mk main > .bu-course__all {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref).bu-mk main > .bu-band {
+    margin-top: 60px;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-steps + .bu-carousel {
+    margin-top: 0;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-pills + .bu-carousel {
+    margin-top: 60px;
+  }
+
+  :where(.busuu-ref) .bu-hero--course .bu-hero__title {
+    padding-top: 24px;
+    font-size: 32px;
+    line-height: 35.84px;
+  }
+
+  :where(.busuu-ref) .bu-hero--course .bu-hero__trust {
+    display: block;
+    width: 100%;
+  }
+
+  :where(.busuu-ref).bu-course .bu-card--resource {
+    height: 447px;
+  }
+
+  :where(.busuu-ref) .bu-linklists {
+    gap: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  :where(.busuu-ref) .bu-linklist {
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  :where(.busuu-ref) .bu-linklist h3 {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  :where(.busuu-ref) .bu-linklist__head {
+    justify-content: space-between;
+    width: 100%;
+    min-height: 39px;
+    border-radius: 4px;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  :where(.busuu-ref) .bu-linklist__head:focus-visible {
+    outline: 2px solid var(--bu-blue);
+    outline-offset: 2px;
+  }
+
+  :where(.busuu-ref) .bu-linklist__head .bu-chev {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  :where(.busuu-ref) .bu-linklist ul {
+    gap: 16px;
+    margin: 12px -12px 0;
+    padding: 24px 12px 12px;
+    border-top: 1px solid #dae1ea;
+  }
+
+  :where(.busuu-ref) .bu-linklist[data-open="false"] ul {
+    display: none;
+  }
+}

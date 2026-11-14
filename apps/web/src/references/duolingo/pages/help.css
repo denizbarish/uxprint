@@ -1,0 +1,135 @@
+/* Help centre index (measured on /help). */
+
+:where(.duolingo-ref) .dl-help__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  border-bottom: 2px solid var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-help__logo {
+  height: 42px;
+  font-size: 34px;
+}
+
+:where(.duolingo-ref) .dl-help__main {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 22px 16px 48px;
+}
+
+:where(.duolingo-ref) .dl-help__crumbs {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  color: var(--dl-blue);
+}
+
+:where(.duolingo-ref) .dl-help__crumbs a {
+  padding: 0 16px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 22.8px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: filter 0.2s ease;
+}
+
+:where(.duolingo-ref) .dl-help__crumbs a:hover {
+  filter: brightness(1.1);
+}
+
+:where(.duolingo-ref) .dl-help__crumbs svg {
+  width: 6px;
+  height: 10px;
+}
+
+:where(.duolingo-ref) .dl-help__title {
+  margin-top: 48px;
+  color: var(--dl-ink);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+:where(.duolingo-ref) .dl-help__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+:where(.duolingo-ref) .dl-help__group {
+  border: 2px solid var(--dl-line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+:where(.duolingo-ref) .dl-help__ghead {
+  padding: 26px 32px;
+  border-bottom: 2px solid var(--dl-line);
+  color: var(--dl-blue);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+:where(.duolingo-ref) .dl-faq--help .dl-faq__item {
+  border-bottom: 2px solid var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-faq--help .dl-faq__item:last-child {
+  border-bottom: 0;
+}
+
+:where(.duolingo-ref) .dl-faq--help .dl-faq__q button {
+  gap: 8px;
+  padding: 26px 32px;
+  color: var(--dl-ink);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+:where(.duolingo-ref) .dl-faq--help .dl-faq__q button:hover {
+  background: var(--dl-wash);
+}
+
+:where(.duolingo-ref) .dl-faq--help .dl-faq__chev {
+  width: 14px;
+  height: 20px;
+}
+
+:where(.duolingo-ref) .dl-faq--help .dl-faq__a {
+  padding: 0 32px 26px;
+}
+
+:where(.duolingo-ref) .dl-help__more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 48px;
+  color: var(--dl-ink);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+:where(.duolingo-ref) .dl-help__btn {
+  width: 147px;
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-help__bar {
+    height: 60px;
+  }
+
+  :where(.duolingo-ref) .dl-help__logo {
+    height: 34px;
+    font-size: 28px;
+  }
+}

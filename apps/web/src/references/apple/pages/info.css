@@ -1,0 +1,243 @@
+/* Contact directory (/contact) and notices hub (/legal): 980px column, 40px titles, 408px or 327px text columns. */
+
+:where(.apple-ref) .ap-info {
+  width: 980px;
+  max-width: calc(100% - 44px);
+  margin: 0 auto;
+  padding: 80px 0 60px;
+}
+
+:where(.apple-ref) .ap-info__title,
+:where(.apple-ref) .ap-info__sec h2 {
+  font-family: var(--ap-font-display);
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+:where(.apple-ref) .ap-info__sec {
+  padding: 80px 0 50px;
+}
+
+:where(.apple-ref) .ap-info__sec + .ap-info__sec {
+  padding-top: 50px;
+}
+
+:where(.apple-ref) .ap-info__sec--offices {
+  padding-bottom: 100px;
+}
+
+:where(.apple-ref) .ap-info__cols {
+  display: grid;
+  grid-template-columns: 408px 408px;
+  column-gap: 82px;
+  margin-top: 34px;
+}
+
+:where(.apple-ref) .ap-info__entry + .ap-info__entry {
+  margin-top: 33px;
+}
+
+:where(.apple-ref) .ap-info__entry h3,
+:where(.apple-ref) .ap-info__card h3 {
+  font-family: var(--ap-font-display);
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+
+:where(.apple-ref) .ap-info__entry p,
+:where(.apple-ref) .ap-info address,
+:where(.apple-ref) .ap-info__card p {
+  font-size: 17px;
+  line-height: 1.47059;
+  letter-spacing: -0.022em;
+  font-style: normal;
+}
+
+:where(.apple-ref) .ap-info__entry h3 + p {
+  margin-top: 11px;
+}
+
+:where(.apple-ref) .ap-info__entry p + p {
+  margin-top: 5px;
+}
+
+:where(.apple-ref) .ap-info__lead {
+  font-size: 19px;
+  line-height: 1.21053;
+  font-weight: 600;
+  letter-spacing: 0.012em;
+}
+
+:where(.apple-ref) .ap-info__lead--gap {
+  margin-top: 40px;
+}
+
+:where(.apple-ref) .ap-info address {
+  margin-top: 8px;
+}
+
+:where(.apple-ref) .ap-info__card {
+  margin-top: 0;
+  padding: 26px 36px 50px;
+  border-radius: 0;
+  background: #f5f5f7;
+}
+
+:where(.apple-ref) .ap-info__card-title {
+  margin: 35px 0 0;
+  font-family: var(--ap-font-display);
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+}
+
+:where(.apple-ref) .ap-info__card-intro {
+  margin-top: 16px;
+  max-width: 820px;
+}
+
+:where(.apple-ref) .ap-info__card-block {
+  margin-top: 150px;
+}
+
+:where(.apple-ref) .ap-info__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 245px);
+  gap: 50px 76px;
+  margin-top: 40px;
+}
+
+:where(.apple-ref) .ap-info__grid h4 {
+  font-size: 19px;
+  line-height: 1.21053;
+  font-weight: 600;
+}
+
+:where(.apple-ref) .ap-info__grid h4 + p {
+  margin-top: 13px;
+}
+
+:where(.apple-ref) .ap-info__grid p + p {
+  margin-top: 14px;
+}
+
+:where(.apple-ref) .ap-legal__hero {
+  position: relative;
+  height: 404px;
+  padding-top: 114px;
+  text-align: center;
+}
+
+:where(.apple-ref) .ap-legal__band {
+  position: absolute;
+  inset: -52px 0 0;
+}
+
+:where(.apple-ref) .ap-legal__hero > :not(.ap-legal__band) {
+  position: relative;
+}
+
+:where(.apple-ref) .ap-legal__hero h1 {
+  font-family: var(--ap-font-display);
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+:where(.apple-ref) .ap-legal__hero p {
+  max-width: 817px;
+  margin: 25px auto 0;
+  font-size: 19px;
+  line-height: 1.21053;
+  letter-spacing: 0.012em;
+}
+
+:where(.apple-ref) .ap-legal {
+  width: 817px;
+  max-width: calc(100% - 44px);
+  margin: 0 auto;
+  padding: 93px 0 120px;
+}
+
+:where(.apple-ref) .ap-legal__pair {
+  display: grid;
+  grid-template-columns: 327px 327px;
+  justify-content: space-between;
+}
+
+:where(.apple-ref) .ap-legal__icon {
+  height: 98px;
+  border-radius: 12px;
+}
+
+:where(.apple-ref) .ap-legal__wide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0 150px;
+  text-align: center;
+}
+
+:where(.apple-ref) .ap-legal__wide .ap-legal__icon {
+  height: 78px;
+}
+
+:where(.apple-ref) .ap-legal h2 {
+  margin-top: 28px;
+  font-family: var(--ap-font-display);
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+}
+
+:where(.apple-ref) .ap-legal p {
+  margin-top: 14px;
+  font-size: 17px;
+  line-height: 1.47059;
+  letter-spacing: -0.022em;
+}
+
+:where(.apple-ref) .ap-legal p + p {
+  margin-top: 17px;
+}
+
+:where(.apple-ref) .ap-legal__more::after {
+  content: " ›";
+}
+
+:where(.apple-ref) .ap-legal__more:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 734px) {
+  :where(.apple-ref) .ap-info__cols,
+  :where(.apple-ref) .ap-legal__pair {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  :where(.apple-ref) .ap-info__grid {
+    grid-template-columns: 1fr;
+  }
+
+  :where(.apple-ref) .ap-info__card {
+    padding: 26px 20px 50px;
+  }
+
+  :where(.apple-ref) .ap-info__col + .ap-info__col {
+    margin-top: 33px;
+  }
+
+  :where(.apple-ref) .ap-legal__hero {
+    height: 360px;
+    padding: 90px 24px 0;
+  }
+
+  :where(.apple-ref) .ap-legal__wide {
+    padding: 100px 0;
+  }
+}

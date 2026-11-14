@@ -1,0 +1,925 @@
+/*
+ * Building blocks shared by the marketing pages (course, app, careers, press, content, legal).
+ * Vertical rhythm: blocks sit 60px apart; carousels carry 60px of their own padding (120px between).
+ */
+
+:where(.busuu-ref).bu-mk main {
+  display: flex;
+  flex-direction: column;
+}
+
+:where(.busuu-ref).bu-mk main > * {
+  margin-top: 60px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-hero,
+:where(.busuu-ref).bu-mk main > .bu-hero + * {
+  margin-top: 0;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-hero + * {
+  margin-top: 30px;
+}
+
+:where(.busuu-ref).bu-mk main > :last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Hero ---------- */
+
+:where(.busuu-ref) .bu-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 29px 96px 0;
+  background: var(--bu-blue);
+  color: #fff;
+}
+
+/* A soft lighter wave in place of the original background artwork. */
+:where(.busuu-ref) .bu-hero::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -260px;
+  width: 980px;
+  height: 640px;
+  border-radius: 50%;
+  background: #ffffff14;
+}
+
+:where(.busuu-ref) .bu-hero__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding-bottom: 40px;
+}
+
+:where(.busuu-ref) .bu-hero__text {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  width: 624px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-hero__title {
+  padding-top: 24px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+:where(.busuu-ref) .bu-hero__sub {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+:where(.busuu-ref) .bu-hero__action {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+:where(.busuu-ref) .bu-hero__trust {
+  width: 624px;
+  height: 100px;
+  margin-top: 24px;
+}
+
+:where(.busuu-ref) .bu-hero__art {
+  flex: none;
+  width: 534px;
+  height: 394px;
+  border-radius: 24px;
+}
+
+/* ---------- Prose ---------- */
+
+:where(.busuu-ref) .bu-prose {
+  width: 994px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 62px;
+}
+
+:where(.busuu-ref) .bu-prose__col {
+  display: flex;
+  flex-direction: column;
+}
+
+:where(.busuu-ref) .bu-prose__col > * {
+  margin-bottom: 24px;
+}
+
+:where(.busuu-ref) .bu-prose__col > :last-child {
+  margin-bottom: 0;
+}
+
+:where(.busuu-ref) .bu-prose h2 {
+  margin-bottom: 16px;
+  color: var(--bu-ink);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 41.6px;
+}
+
+:where(.busuu-ref) .bu-prose h3 {
+  margin-bottom: 16px;
+  color: var(--bu-ink);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 31.2px;
+}
+
+:where(.busuu-ref) .bu-prose p,
+:where(.busuu-ref) .bu-prose li {
+  color: var(--bu-navy);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+:where(.busuu-ref) .bu-prose ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+  padding-left: 40px;
+  list-style: disc;
+}
+
+:where(.busuu-ref) .bu-prose a {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-prose a:hover {
+  text-decoration: underline;
+}
+
+:where(.busuu-ref) .bu-prose__img {
+  width: 100%;
+  height: 508px;
+  border-radius: 30px;
+}
+
+:where(.busuu-ref) .bu-prose__cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- Blue card ---------- */
+
+:where(.busuu-ref) .bu-bluecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 112px;
+  border-radius: 30px;
+  background: var(--bu-blue);
+  color: #fff;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-bluecard h2 {
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 41.6px;
+}
+
+:where(.busuu-ref) .bu-bluecard p {
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-bluecard p + p {
+  margin-top: 24px;
+}
+
+/* ---------- Card rows ---------- */
+
+:where(.busuu-ref) .bu-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 62px;
+}
+
+:where(.busuu-ref) .bu-stat {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 85px;
+  border-radius: 44px;
+  background: var(--bu-surface);
+  color: var(--bu-ink);
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-stat h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 62px;
+  letter-spacing: -1.6px;
+}
+
+:where(.busuu-ref) .bu-stat p {
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+:where(.busuu-ref) .bu-feature {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 44px 48px;
+  border-radius: 30px;
+  background: var(--bu-surface);
+}
+
+:where(.busuu-ref) .bu-features--white .bu-feature {
+  background: #fff;
+}
+
+:where(.busuu-ref) .bu-feature__art {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+:where(.busuu-ref) .bu-feature__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+:where(.busuu-ref) .bu-feature h3 {
+  color: var(--bu-ink);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 41.6px;
+}
+
+:where(.busuu-ref) .bu-feature p {
+  color: var(--bu-ink-deep);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* ---------- Steps ---------- */
+
+:where(.busuu-ref) .bu-steps {
+  position: relative;
+  padding: 44px 62px 0;
+}
+
+:where(.busuu-ref) .bu-steps__bolt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 420px;
+  height: 330px;
+  background: var(--bu-yellow);
+  clip-path: polygon(62% 0, 100% 0, 100% 18%, 58% 100%, 66% 46%, 30% 46%);
+}
+
+:where(.busuu-ref) .bu-steps__title {
+  position: relative;
+  color: var(--bu-ink);
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 62.4px;
+  letter-spacing: -0.52px;
+}
+
+:where(.busuu-ref) .bu-steps__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 85px 32px;
+  margin-top: 67px;
+}
+
+:where(.busuu-ref) .bu-step {
+  position: relative;
+  width: 413px;
+  padding: 45px 44px;
+  border-radius: 44px;
+  background: var(--bu-surface);
+  color: var(--bu-ink);
+}
+
+:where(.busuu-ref) .bu-step:nth-child(3n + 2) {
+  margin-top: 50px;
+}
+
+:where(.busuu-ref) .bu-step:nth-child(3n) {
+  margin-top: 100px;
+}
+
+:where(.busuu-ref) .bu-step__badge {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 44px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--bu-yellow);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-step__art {
+  width: 325px;
+  height: 195px;
+  border-radius: 20px;
+}
+
+:where(.busuu-ref) .bu-step__text {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 24.8px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-step__text h3 {
+  margin: 25px 0 8px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 42px;
+}
+
+/* ---------- Carousels ---------- */
+
+:where(.busuu-ref) .bu-carousel {
+  padding: 60px 0;
+}
+
+:where(.busuu-ref) .bu-carousel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 62px;
+}
+
+:where(.busuu-ref) .bu-carousel__head h2 {
+  color: var(--bu-ink);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 62px;
+  letter-spacing: -0.48px;
+}
+
+:where(.busuu-ref) .bu-carousel__arrows {
+  display: flex;
+  gap: 12px;
+}
+
+:where(.busuu-ref) .bu-carousel__arrows button {
+  width: 72px;
+  height: 56px;
+  padding: 1px 6px;
+  border-radius: 45%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
+  color: #000;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+:where(.busuu-ref) .bu-carousel__arrows button.is-first {
+  color: rgba(16, 16, 16, 0.3);
+}
+
+:where(.busuu-ref) .bu-carousel__track {
+  display: flex;
+  gap: 32px;
+  margin-top: 28px;
+  padding: 0 62px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 62px;
+  scrollbar-width: none;
+}
+
+:where(.busuu-ref) .bu-carousel__track > * {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+:where(.busuu-ref) .bu-card {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  padding: 50px 48px;
+  border-radius: 44px;
+  background: var(--bu-surface);
+}
+
+:where(.busuu-ref) .bu-card__art {
+  width: 338px;
+  height: 230px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+:where(.busuu-ref) .bu-card h3 {
+  margin-top: 40px;
+  color: var(--bu-ink-deep);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 44.2px;
+}
+
+:where(.busuu-ref) .bu-card p {
+  margin-top: 12px;
+  color: var(--bu-navy);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+:where(.busuu-ref) .bu-card--resource {
+  height: 613px;
+}
+
+:where(.busuu-ref) .bu-card--resource h3 {
+  margin: 0 0 12px;
+}
+
+:where(.busuu-ref) .bu-card__more {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 20px 32px;
+  border-radius: 100px;
+  background: var(--bu-navy);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-card__more:hover {
+  background: var(--bu-navy-hover);
+}
+
+/* ---------- Reviews ---------- */
+
+:where(.busuu-ref) .bu-review {
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+  height: 592px;
+  padding: 50px 48px;
+  border-radius: 44px;
+  color: var(--bu-ink);
+}
+
+:where(.busuu-ref) .bu-review__who {
+  display: flex;
+  gap: 20px;
+}
+
+:where(.busuu-ref) .bu-review__avatar {
+  width: 100px;
+  height: 104px;
+  border-radius: 50%;
+}
+
+:where(.busuu-ref) .bu-review h3 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 41.6px;
+}
+
+:where(.busuu-ref) .bu-review__line,
+:where(.busuu-ref) .bu-review__purpose {
+  color: var(--bu-navy);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+:where(.busuu-ref) .bu-review__line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+}
+
+:where(.busuu-ref) .bu-review__chip {
+  padding: 8px 12px;
+  border-radius: 100px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+:where(.busuu-ref) .bu-review__mark {
+  width: 60px;
+  height: 60px;
+  margin-top: 47px;
+  color: var(--bu-ink);
+}
+
+:where(.busuu-ref) .bu-review__quote {
+  margin-top: 16px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 39px;
+}
+
+/* ---------- Download banner ---------- */
+
+:where(.busuu-ref) .bu-download {
+  padding: 0 62px;
+}
+
+:where(.busuu-ref) .bu-download__card {
+  display: flex;
+  gap: 200px;
+  padding: 58px 91px;
+  border-radius: 30px;
+  background: #1079f1;
+}
+
+:where(.busuu-ref) .bu-download__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 567px;
+  color: #fff;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-download h2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 62px;
+}
+
+:where(.busuu-ref) .bu-download__box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 18px 18px 18px 0;
+  background: var(--bu-mint);
+}
+
+:where(.busuu-ref) .bu-download__word {
+  display: flex;
+  overflow: hidden;
+  color: var(--bu-navy);
+  font-size: 96px;
+  line-height: 124.8px;
+}
+
+:where(.busuu-ref) .bu-download__word span {
+  animation: bu-letter-in 0.5s ease-in both;
+}
+
+@keyframes bu-letter-in {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(-17px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-22px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+:where(.busuu-ref) .bu-download__spark {
+  position: absolute;
+  top: -54px;
+  right: -140px;
+  width: 102px;
+  height: 92px;
+  border-radius: 40% 60% 50% 50%;
+  background: #ffca3a;
+}
+
+:where(.busuu-ref) .bu-download__badges {
+  margin-top: 32px;
+}
+
+:where(.busuu-ref) .bu-download__badges .bu-badge {
+  width: 119px;
+  height: 40px;
+  margin: 0 17px 7px 0;
+  background: #000;
+}
+
+:where(.busuu-ref) .bu-download__note {
+  padding-top: 24px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+:where(.busuu-ref) .bu-download__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 367px;
+}
+
+:where(.busuu-ref) .bu-download__video {
+  width: 303px;
+  height: 663px;
+  margin: -14px 0;
+  border-radius: 18px;
+}
+
+:where(.busuu-ref) .bu-trustslot {
+  height: 240px;
+  margin-right: 62px;
+  margin-left: 62px;
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 767px) {
+  :where(.busuu-ref).bu-mk main > * {
+    margin-top: 30px;
+  }
+
+  :where(.busuu-ref) .bu-hero {
+    padding: 29px 16px 0;
+  }
+
+  :where(.busuu-ref) .bu-hero__art,
+  :where(.busuu-ref) .bu-hero__trust {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-hero__text {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  :where(.busuu-ref) .bu-hero__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  :where(.busuu-ref) .bu-hero__sub {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  :where(.busuu-ref) .bu-hero__action .bu-btn--lg {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  :where(.busuu-ref) .bu-prose {
+    padding: 0 16px;
+  }
+
+  :where(.busuu-ref) .bu-prose h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
+  :where(.busuu-ref) .bu-prose h3 {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  :where(.busuu-ref) .bu-prose__img {
+    height: 209px;
+  }
+
+  :where(.busuu-ref) .bu-bluecard {
+    padding: 32px 20px;
+  }
+
+  :where(.busuu-ref) .bu-bluecard h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
+  :where(.busuu-ref) .bu-row {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  :where(.busuu-ref) .bu-stat {
+    padding: 20px 85px;
+    border-radius: 22px;
+  }
+
+  :where(.busuu-ref) .bu-stat h2 {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  :where(.busuu-ref) .bu-stat p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  :where(.busuu-ref) .bu-feature {
+    padding: 32px 24px;
+  }
+
+  :where(.busuu-ref) .bu-feature h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  :where(.busuu-ref) .bu-steps {
+    padding: 43px 16px 0;
+  }
+
+  :where(.busuu-ref) .bu-steps__bolt {
+    width: 200px;
+    height: 160px;
+  }
+
+  :where(.busuu-ref) .bu-steps__title {
+    padding: 0 16px;
+    font-size: 32px;
+    line-height: 35.84px;
+    letter-spacing: -0.32px;
+  }
+
+  :where(.busuu-ref) .bu-steps__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+    margin-top: 38px;
+  }
+
+  :where(.busuu-ref) .bu-step,
+  :where(.busuu-ref) .bu-step:nth-child(n) {
+    width: 326px;
+    margin-top: 0;
+    padding: 34px 32px 26px;
+  }
+
+  :where(.busuu-ref) .bu-step__badge {
+    top: 20px;
+    left: 20px;
+    width: 36px;
+    height: 36px;
+    font-size: 21px;
+    line-height: 34px;
+  }
+
+  :where(.busuu-ref) .bu-step__art {
+    width: 262px;
+    height: 112px;
+  }
+
+  :where(.busuu-ref) .bu-step__text {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  :where(.busuu-ref) .bu-step__text h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  :where(.busuu-ref) .bu-carousel {
+    padding: 30px 0;
+  }
+
+  :where(.busuu-ref) .bu-carousel__head {
+    padding: 0 16px;
+  }
+
+  :where(.busuu-ref) .bu-carousel__head h2 {
+    width: 226px;
+    font-size: 26px;
+    line-height: 29px;
+    letter-spacing: -0.26px;
+  }
+
+  :where(.busuu-ref) .bu-carousel__arrows button {
+    width: 60px;
+    height: 48px;
+  }
+
+  :where(.busuu-ref) .bu-carousel__track {
+    gap: 12px;
+    padding: 0;
+    scroll-padding-left: 0;
+  }
+
+  :where(.busuu-ref) .bu-card {
+    width: 390px;
+    gap: 12px;
+    padding: 30px 20px;
+  }
+
+  :where(.busuu-ref) .bu-card__art {
+    width: 338px;
+    height: 230px;
+  }
+
+  :where(.busuu-ref) .bu-card h3 {
+    margin-top: 28px;
+    font-size: 21px;
+    line-height: 27.3px;
+  }
+
+  :where(.busuu-ref) .bu-card p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  :where(.busuu-ref) .bu-review {
+    width: 374px;
+    height: 512px;
+    padding: 30px 20px;
+    margin-left: 16px;
+  }
+
+  :where(.busuu-ref) .bu-review + .bu-review {
+    margin-left: 0;
+  }
+
+  :where(.busuu-ref) .bu-review h3 {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
+  :where(.busuu-ref) .bu-review__mark {
+    margin-top: 70px;
+  }
+
+  :where(.busuu-ref) .bu-review__quote {
+    font-size: 18px;
+  }
+
+  :where(.busuu-ref) .bu-download {
+    padding: 0 16px;
+  }
+
+  :where(.busuu-ref) .bu-download__card {
+    padding: 40px 16px;
+  }
+
+  :where(.busuu-ref) .bu-download__phone,
+  :where(.busuu-ref) .bu-download__spark {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-download__text {
+    width: 100%;
+  }
+
+  :where(.busuu-ref) .bu-download h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  :where(.busuu-ref) .bu-download__word {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  :where(.busuu-ref) .bu-trustslot {
+    margin: 0 16px;
+  }
+}

@@ -1,0 +1,302 @@
+/* Comparison table (/mac/compare): 980px, three 305px columns with 32px gutters, sections with a 63px header. */
+
+:where(.apple-ref) .ap-cmp-hero {
+  padding-top: 84px;
+  text-align: center;
+}
+
+:where(.apple-ref) .ap-cmp-hero h1 {
+  font-family: var(--ap-font-display);
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.009em;
+}
+
+:where(.apple-ref) .ap-cmp-hero p {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  margin-top: 17px;
+  font-size: 21px;
+  line-height: 1.381;
+  letter-spacing: 0.011em;
+}
+
+:where(.apple-ref) .ap-cmp-hero p a::after {
+  content: " ›";
+}
+
+:where(.apple-ref) .ap-cmp-hero__help {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 15px;
+  font-size: 21px;
+  line-height: 1.381;
+  color: #0066cc;
+}
+
+:where(.apple-ref) .ap-cmp-hero__help:hover {
+  text-decoration: underline;
+}
+
+:where(.apple-ref) .ap-cmp-hero__help .ap-chev {
+  width: 10px;
+  height: 10px;
+}
+
+:where(.apple-ref) .ap-cmp {
+  width: 980px;
+  max-width: calc(100% - 44px);
+  margin: 64px auto 0;
+}
+
+:where(.apple-ref) .ap-cmp__pickers {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 10px 0;
+  background: #ffffff;
+}
+
+:where(.apple-ref) .ap-cmp__picker {
+  position: relative;
+  display: block;
+}
+
+:where(.apple-ref) .ap-cmp__picker select {
+  width: 100%;
+  height: 57px;
+  padding: 0 40px 0 16px;
+  appearance: none;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: 19px;
+  line-height: 1.21053;
+  font-weight: 600;
+  letter-spacing: 0.012em;
+  color: #000000;
+  cursor: pointer;
+  transition: border-color 0.24s var(--ap-ease);
+}
+
+:where(.apple-ref) .ap-cmp__picker select:hover {
+  border-color: #86868b;
+}
+
+:where(.apple-ref) .ap-cmp__picker .ap-chev {
+  position: absolute;
+  right: 16px;
+  top: 23px;
+  color: #0071e3;
+  pointer-events: none;
+}
+
+:where(.apple-ref) .ap-cmp__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+:where(.apple-ref) .ap-cmp__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.47059;
+  color: #000000;
+}
+
+:where(.apple-ref) .ap-cmp__row--gallery {
+  height: 319px;
+  margin-top: 72px;
+}
+
+:where(.apple-ref) .ap-cmp__product {
+  width: 246px;
+  height: 158px;
+  border-radius: 8px;
+}
+
+:where(.apple-ref) .ap-cmp__swatches {
+  display: flex;
+  gap: 4px;
+  margin-top: 34px;
+}
+
+:where(.apple-ref) .ap-cmp__swatches button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.24s var(--ap-ease);
+}
+
+:where(.apple-ref) .ap-cmp__swatches button[aria-pressed="true"] {
+  box-shadow: 0 0 0 2px #0071e3;
+}
+
+:where(.apple-ref) .ap-cmp__finish {
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.47;
+}
+
+:where(.apple-ref) .ap-cmp__row--price {
+  height: 136px;
+  margin-top: 60px;
+  align-items: end;
+}
+
+:where(.apple-ref) .ap-cmp__new {
+  font-size: 12px;
+  line-height: 1.33337;
+  color: #bf4800;
+}
+
+:where(.apple-ref) .ap-cmp__row--buy {
+  height: 73px;
+  margin-top: 20px;
+}
+
+:where(.apple-ref) .ap-cmp__row--buy .ap-cmp__cell {
+  gap: 7px;
+}
+
+:where(.apple-ref) .ap-cmp__row--buy .ap-btn--sm {
+  padding: 4px 14px;
+  min-height: 28px;
+}
+
+:where(.apple-ref) .ap-cmp__section {
+  padding: 20px 0 40px;
+}
+
+:where(.apple-ref) .ap-cmp__section .ap-cmp__row + .ap-cmp__row {
+  margin-top: 20px;
+}
+
+:where(.apple-ref) .ap-cmp__head {
+  height: 63px;
+  margin-bottom: 37px;
+  padding-top: 8px;
+  border-bottom: 1px solid #d2d2d7;
+  font-family: var(--ap-font-display);
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  color: #1d1d1f;
+}
+
+:where(.apple-ref) .ap-cmp__icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  border: 2px solid #1d1d1f;
+  border-radius: 12px;
+}
+
+:where(.apple-ref) .ap-cmp__cell--quick {
+  justify-content: flex-end;
+  color: #1d1d1f;
+}
+
+:where(.apple-ref) .ap-cmp__from {
+  font-size: 14px;
+  line-height: 1.28577;
+  font-weight: 600;
+}
+
+:where(.apple-ref) .ap-cmp__big {
+  font-family: var(--ap-font-display);
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+:where(.apple-ref) .ap-cmp__glyph {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #1d1d1f;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+:where(.apple-ref) .ap-cmp__cap {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.28577;
+  font-weight: 600;
+  letter-spacing: -0.016em;
+}
+
+@media (max-width: 734px) {
+  :where(.apple-ref) .ap-cmp-hero {
+    padding-top: 60px;
+  }
+
+  :where(.apple-ref) .ap-cmp-hero h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    padding: 0 30px;
+  }
+
+  :where(.apple-ref) .ap-cmp-hero p,
+  :where(.apple-ref) .ap-cmp-hero__help {
+    font-size: 17px;
+  }
+
+  :where(.apple-ref) .ap-cmp {
+    max-width: calc(100% - 32px);
+  }
+
+  :where(.apple-ref) .ap-cmp__pickers,
+  :where(.apple-ref) .ap-cmp__row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  :where(.apple-ref) .ap-cmp__pickers > :nth-child(3),
+  :where(.apple-ref) .ap-cmp__row > :nth-child(3) {
+    display: none;
+  }
+
+  :where(.apple-ref) .ap-cmp__picker select {
+    height: 48px;
+    font-size: 14px;
+    padding-right: 28px;
+  }
+
+  :where(.apple-ref) .ap-cmp__product {
+    width: 150px;
+    height: 96px;
+  }
+
+  :where(.apple-ref) .ap-cmp__swatches button {
+    width: 30px;
+    height: 30px;
+  }
+
+  :where(.apple-ref) .ap-cmp__cell {
+    font-size: 14px;
+    line-height: 1.42859;
+  }
+
+  :where(.apple-ref) .ap-cmp__head {
+    font-size: 24px;
+  }
+
+  :where(.apple-ref) .ap-cmp__big {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,271 @@
+/*
+ * Reference screens for this print. Values come from prints/duolingo/print.json and the
+ * measurements under captures/duolingo*, captures/_survey/duolingo. Brand, copy and artwork are neutral.
+ * Every rule is scoped under :where(.duolingo-ref) so nothing leaks into the gallery.
+ */
+
+:where(.duolingo-ref),
+:where(.duolingo-ref) *,
+:where(.duolingo-ref) *::before,
+:where(.duolingo-ref) *::after {
+  box-sizing: border-box;
+}
+
+:where(.duolingo-ref) {
+  --dl-green: #58cc02;
+  --dl-green-shade: #58a700;
+  --dl-blue: #1cb0f6;
+  --dl-blue-shade: #1899d6;
+  --dl-navy: #042c60;
+  --dl-ink: #3c3c3c;
+  --dl-ink-2: #4b4b4b;
+  --dl-muted: #777777;
+  --dl-faint: #afafaf;
+  --dl-line: #e5e5e5;
+  --dl-wash: #f7f7f7;
+  --dl-footer-link: #a5ed6e;
+  --dl-footer-head: #d7ffb8;
+  --dl-super: #000437;
+  --dl-super-2: #1a1e4c;
+  --dl-super-3: #100f3e;
+  /* The original faces are proprietary and not hosted here; these system faces are the closest
+   * local match. Ideal substitutes are listed in print.json (Nunito, Fredoka). */
+  --dl-sans: ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --dl-display: "Arial Rounded MT Bold", ui-rounded, system-ui, sans-serif;
+  --dl-ease-menu: cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+  min-height: 100vh;
+  overflow-x: clip;
+  background: #fff;
+  color: var(--dl-ink);
+  font-family: var(--dl-sans);
+  font-size: 17px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.duolingo-ref) :where(h1, h2, h3, h4, p, ul, ol, li, figure, dl, dd) {
+  margin: 0;
+  padding: 0;
+}
+
+:where(.duolingo-ref) :where(ul, ol) {
+  list-style: none;
+}
+
+:where(.duolingo-ref) :where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(.duolingo-ref) :where(button, input, select) {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+:where(.duolingo-ref) :where(button) {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+:where(.duolingo-ref) :where(a, button, [tabindex]):focus-visible {
+  outline: 3px solid var(--dl-blue);
+  outline-offset: 1px;
+}
+
+:where(.duolingo-ref) .dl-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ buttons
+ * The signature: the face is a ::before layer with a solid 4px (or 2px) bottom edge drawn as a
+ * box-shadow. Pressing moves the button down by that edge and removes it, so the face lands on the
+ * floor. No transition (measured 0s): the press is instant. Hover brightens or dims via filter. */
+
+:where(.duolingo-ref) .dl-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 16px;
+  border: solid transparent;
+  border-width: 0 0 4px;
+  border-radius: 12px;
+  color: #fff;
+  font-family: var(--dl-sans);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+:where(.duolingo-ref) .dl-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--dl-green);
+  box-shadow: 0 4px 0 var(--dl-green-shade);
+}
+
+:where(.duolingo-ref) .dl-btn:hover {
+  filter: brightness(1.1);
+}
+
+:where(.duolingo-ref) .dl-btn:active {
+  transform: translateY(4px);
+}
+
+:where(.duolingo-ref) .dl-btn:active::before {
+  box-shadow: none;
+}
+
+:where(.duolingo-ref) .dl-btn--r16 {
+  border-radius: 16px;
+}
+
+:where(.duolingo-ref) .dl-btn--sm {
+  height: 44px;
+  padding: 0 20px;
+}
+
+:where(.duolingo-ref) .dl-btn--blue::before {
+  background: var(--dl-blue);
+  box-shadow: 0 4px 0 var(--dl-blue-shade);
+}
+
+/* White face with a grey 2px rim and 2px floor; dims on hover, presses by 2px. */
+:where(.duolingo-ref) .dl-btn--outline {
+  border-width: 2px 2px 4px;
+  color: var(--dl-blue);
+}
+
+:where(.duolingo-ref) .dl-btn--outline::before {
+  inset: -2px;
+  background: #fff;
+  border: 2px solid var(--dl-line);
+  box-shadow: 0 2px 0 var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-btn--outline:hover {
+  filter: brightness(0.9);
+}
+
+:where(.duolingo-ref) .dl-btn--outline:active {
+  transform: translateY(2px);
+}
+
+/* Solid white face on coloured grounds (navy, green, blue headers). */
+:where(.duolingo-ref) .dl-btn--white {
+  color: var(--dl-super);
+}
+
+:where(.duolingo-ref) .dl-btn--white::before {
+  background: #fff;
+  box-shadow: 0 4px 0 #d0d0d0;
+}
+
+/* --------------------------------------------------------------- placeholders */
+
+:where(.duolingo-ref) .dl-art {
+  position: relative;
+  display: block;
+  border-radius: 24px;
+  background: linear-gradient(150deg, #ddf4ff 0%, #d7ffb8 100%);
+  overflow: hidden;
+}
+
+:where(.duolingo-ref) .dl-art::after {
+  content: "";
+  position: absolute;
+  left: 28%;
+  top: 28%;
+  width: 44%;
+  height: 44%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+:where(.duolingo-ref) .dl-art--dark {
+  background: linear-gradient(150deg, #2b2f6b 0%, #4b2c80 100%);
+}
+
+:where(.duolingo-ref) .dl-art--dark::after {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+:where(.duolingo-ref) .dl-flag {
+  display: inline-block;
+  flex: none;
+  width: 36px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+/* ---------------------------------------------------------------- logo */
+
+:where(.duolingo-ref) .dl-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--dl-green);
+  font-family: var(--dl-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+:where(.duolingo-ref) .dl-logo svg {
+  width: 40px;
+  height: 40px;
+  flex: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.duolingo-ref) *,
+  :where(.duolingo-ref) *::before,
+  :where(.duolingo-ref) *::after {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Thin-rim outline used on the subject pages: 1px rim, 3px floor spread by 1px, presses 4px. */
+:where(.duolingo-ref) .dl-btn--thin {
+  border-width: 1px 1px 5px;
+  color: var(--dl-blue);
+}
+
+:where(.duolingo-ref) .dl-btn--thin::before {
+  inset: -1px;
+  background: #fff;
+  border: 1px solid var(--dl-line);
+  box-shadow: 0 3px 0 1px var(--dl-line);
+}
+
+:where(.duolingo-ref) .dl-btn--thin:hover {
+  filter: brightness(0.9);
+}
+
+:where(.duolingo-ref) .dl-btn--thin:active {
+  color: var(--dl-blue-shade);
+}

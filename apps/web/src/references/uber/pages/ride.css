@@ -1,0 +1,274 @@
+/* Booking landing (ride). Measured on /tr/en/ride at 1440 and 390. */
+
+:where(.uber-ref) .ub-bhero {
+  padding: 20px 0 48px;
+}
+
+:where(.uber-ref) .ub-bhero__title {
+  margin-top: 8px;
+}
+
+:where(.uber-ref) .ub-bhero__form .ub-when {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-bhero__form .ub-loc {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-bhero__go {
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-bhero__art {
+  display: none;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-bhero {
+    padding: 32px 0 64px;
+  }
+
+  :where(.uber-ref) .ub-bhero__grid {
+    display: grid;
+    grid-template-columns: 1fr 576px;
+    align-items: start;
+  }
+
+  :where(.uber-ref) .ub-bhero__form .ub-when {
+    margin-top: 16px;
+  }
+
+  :where(.uber-ref) .ub-bhero__art {
+    display: block;
+    width: 576px;
+    height: 384px;
+  }
+}
+
+/* Explore tiles show on tablet and desktop; phones get a single app card instead. */
+:where(.uber-ref) .ub-ride-explore {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-ride-explore {
+    display: block;
+  }
+
+  :where(.uber-ref) .ub-ride-appmobile {
+    display: none;
+  }
+
+  :where(.uber-ref) .ub-ride-explore .ub-tiles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+:where(.uber-ref) .ub-ride-appmobile .ub-h2,
+:where(.uber-ref) .ub-faqsec .ub-h2 {
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-ride-appmobile .ub-appcard,
+:where(.uber-ref) .ub-appband .ub-appcard {
+  border: 1px solid #e2e2e2;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-appband .ub-appcard {
+    border: 0;
+  }
+}
+
+/* Reserve panel and perks card */
+:where(.uber-ref) .ub-reserve {
+  display: grid;
+  gap: 24px;
+}
+
+:where(.uber-ref) .ub-reserve__panel {
+  position: relative;
+  display: flex;
+  border-radius: 8px;
+  background: #9dcdd6;
+  overflow: hidden;
+}
+
+:where(.uber-ref) .ub-reserve__form {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 32px 24px 24px;
+}
+
+:where(.uber-ref) .ub-reserve__title {
+  color: #000000;
+}
+
+:where(.uber-ref) .ub-reserve__step {
+  margin-top: 36px;
+  color: var(--ub-ink);
+}
+
+:where(.uber-ref) .ub-reserve__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+:where(.uber-ref) .ub-reserve__field > span:first-child {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--ub-subnav);
+}
+
+:where(.uber-ref) .ub-reserve__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  margin-top: 2px;
+  border-radius: 8px;
+  background: var(--ub-grey);
+}
+
+:where(.uber-ref) .ub-reserve__input svg {
+  position: absolute;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+:where(.uber-ref) .ub-reserve__input :is(input, select) {
+  width: 100%;
+  height: 44px;
+  padding: 10px 14px 10px 48px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  color: var(--ub-ink);
+  appearance: none;
+}
+
+:where(.uber-ref) .ub-reserve__input :is(input, select):focus-visible {
+  box-shadow: inset 0 0 0 2px #000000;
+}
+
+:where(.uber-ref) .ub-reserve__next {
+  width: 100%;
+  margin-top: 26px;
+}
+
+:where(.uber-ref) .ub-reserve__art {
+  display: none;
+}
+
+:where(.uber-ref) .ub-perks {
+  padding: 13px 13px 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+}
+
+:where(.uber-ref) .ub-perks__title {
+  font-family: var(--ub-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+:where(.uber-ref) .ub-perks ul {
+  margin-top: 20px;
+}
+
+:where(.uber-ref) .ub-perks li {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 12px 0 12px 22px;
+}
+
+:where(.uber-ref) .ub-perks li + li {
+  border-top: 1px solid #eeeeee;
+}
+
+:where(.uber-ref) .ub-perks__icon {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #111111;
+}
+
+:where(.uber-ref) .ub-perks p {
+  max-width: 254px;
+  color: var(--ub-ink);
+}
+
+:where(.uber-ref) .ub-perks__terms {
+  display: inline-block;
+  margin-top: 0;
+  border-bottom: 1px solid #525252;
+  color: #525252;
+  line-height: 24px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-reserve {
+    grid-template-columns: 768px 1fr;
+    gap: 26px;
+    align-items: start;
+  }
+
+  :where(.uber-ref) .ub-reserve__panel {
+    height: 404px;
+  }
+
+  :where(.uber-ref) .ub-reserve__form {
+    width: 396px;
+    padding: 72px 0 0 36px;
+  }
+
+  :where(.uber-ref) .ub-reserve__art {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 360px;
+  }
+
+  :where(.uber-ref) .ub-reserve__step {
+    margin-top: 36px;
+  }
+
+  :where(.uber-ref) .ub-reserve__next {
+    margin-top: 26px;
+  }
+
+  :where(.uber-ref) .ub-perks {
+    height: 404px;
+    padding: 13px 11px;
+  }
+}
+
+/* Business band list */
+:where(.uber-ref) .ub-ride-biz__list {
+  margin-top: 4px;
+  padding-left: 40px;
+  list-style: disc;
+}
+
+:where(.uber-ref) .ub-ride-biz__list li {
+  margin-top: 28px;
+  line-height: 20px;
+}
+
+:where(.uber-ref) .ub-reserve__field {
+  min-width: 0;
+}

@@ -1,0 +1,94 @@
+/* Story page (safety). Measured on /tr/en/safety at 1440 and 390. */
+
+:where(.uber-ref) .ub-ft-hero .ub-h1 {
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-ft-hero .ub-body,
+:where(.uber-ref) .ub-ft-grey,
+:where(.uber-ref) .ub-ft-cols,
+:where(.uber-ref) .ub-ft-note {
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-ft-hero .ub-feature__body {
+  margin-top: 20px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-ft-hero .ub-feature__body {
+    margin-top: 32px;
+  }
+}
+
+:where(.uber-ref) .ub-ft-quote {
+  padding: 76px 0;
+  background: #276ef1;
+  color: #ffffff;
+}
+
+:where(.uber-ref) .ub-ft-quote figure {
+  margin: 0;
+  padding: 0 12px;
+}
+
+:where(.uber-ref) .ub-ft-quote figcaption {
+  margin-top: 16px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-ft-quote {
+    padding: 100px 0;
+  }
+
+  :where(.uber-ref) .ub-ft-quote figure {
+    padding: 0 36px;
+  }
+
+  :where(.uber-ref) .ub-ft-quote figcaption {
+    margin-top: 24px;
+  }
+}
+
+:where(.uber-ref) .ub-ft-cols ul {
+  display: grid;
+  gap: 40px;
+}
+
+:where(.uber-ref) .ub-ft-cols__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #111111;
+}
+
+:where(.uber-ref) .ub-ft-cols h3 {
+  margin-top: 20px;
+}
+
+:where(.uber-ref) .ub-ft-cols h3 a:hover {
+  text-decoration: underline;
+}
+
+:where(.uber-ref) .ub-ft-cols p {
+  margin-top: 12px;
+  max-width: 357px;
+}
+
+:where(.uber-ref) .ub-ft-cols__link {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-ft-cols ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+:where(.uber-ref) .ub-ft-note p {
+  font-size: 14px;
+  line-height: 24px;
+}

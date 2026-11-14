@@ -1,0 +1,214 @@
+/* Careers template (measured on /en/careers). */
+
+:where(.busuu-ref) .bu-hero--careers {
+  height: 520px;
+  padding-top: 0;
+  background: transparent;
+  color: var(--bu-ink);
+}
+
+:where(.busuu-ref) .bu-hero--careers .bu-hero__art {
+  display: none;
+}
+
+:where(.busuu-ref) .bu-hero--careers .bu-hero__text {
+  width: 624px;
+}
+
+:where(.busuu-ref) .bu-hero--careers .bu-hero__title {
+  color: var(--bu-ink);
+  font-size: 72px;
+  line-height: 108px;
+}
+
+:where(.busuu-ref) .bu-hero--careers .bu-hero__sub {
+  margin-top: 20px;
+  color: var(--bu-ink);
+  line-height: 30.72px;
+}
+
+:where(.busuu-ref) .bu-hero--careers .bu-hero__action {
+  margin-top: 24px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-careers__beliefs {
+  margin-top: 54px;
+}
+
+:where(.busuu-ref) .bu-careers__beliefs .bu-feature {
+  min-height: 522px;
+}
+
+:where(.busuu-ref) .bu-perk {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 480px;
+  height: 507px;
+  padding: 50px 48px;
+  border-radius: 44px;
+  background: var(--bu-surface);
+  scroll-snap-align: start;
+}
+
+:where(.busuu-ref) .bu-perk__art {
+  width: 230px;
+  height: 230px;
+  margin: 0 auto 40px;
+  border-radius: 50%;
+}
+
+:where(.busuu-ref) .bu-perk h3 {
+  color: var(--bu-ink-deep);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 44.2px;
+}
+
+:where(.busuu-ref) .bu-perk p {
+  margin-top: 12px;
+  color: var(--bu-navy);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+:where(.busuu-ref) .bu-careers__story {
+  min-height: 380px;
+}
+
+:where(.busuu-ref) .bu-careers__story h2 {
+  color: #f4e9fe;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+}
+
+:where(.busuu-ref) .bu-careers__story p {
+  margin-top: 24px;
+}
+
+:where(.busuu-ref) .bu-careers__story h2 + p {
+  margin-top: 40px;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-careers__banner {
+  margin-top: 61px;
+}
+
+:where(.busuu-ref) .bu-careers__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 112px;
+  border-radius: 30px;
+  background: #ffca36;
+  color: var(--bu-ink);
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-careers__bannerart {
+  width: 300px;
+  height: 300px;
+  border-radius: 24px;
+}
+
+:where(.busuu-ref) .bu-careers__banner h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+}
+
+:where(.busuu-ref) .bu-careers__banner p {
+  margin-top: 16px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 41.6px;
+}
+
+:where(.busuu-ref) .bu-careers__banner .bu-btn {
+  margin-top: 39px;
+}
+
+:where(.busuu-ref) .bu-careers__banner .bu-careers__more {
+  margin-top: 0;
+}
+
+:where(.busuu-ref).bu-mk main > .bu-careers__data {
+  margin-top: 89px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+:where(.busuu-ref) .bu-careers__data a {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-careers__data a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  :where(.busuu-ref) .bu-hero--careers {
+    height: auto;
+    padding: 24px 16px 40px;
+  }
+
+  :where(.busuu-ref) .bu-hero--careers .bu-hero__title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  :where(.busuu-ref) .bu-hero--careers .bu-hero__sub {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  :where(.busuu-ref) .bu-perk {
+    width: 300px;
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  :where(.busuu-ref) .bu-perk__art {
+    width: 160px;
+    height: 160px;
+  }
+
+  :where(.busuu-ref) .bu-perk h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  :where(.busuu-ref) .bu-careers__story h2,
+  :where(.busuu-ref) .bu-careers__banner h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  :where(.busuu-ref) .bu-careers__banner {
+    padding: 32px 20px;
+  }
+
+  :where(.busuu-ref) .bu-careers__bannerart {
+    width: 200px;
+    height: 200px;
+  }
+
+  :where(.busuu-ref) .bu-careers__banner p {
+    font-size: 22px;
+    line-height: 28.6px;
+  }
+
+  :where(.busuu-ref).bu-mk main > .bu-careers__data {
+    margin-top: 60px;
+  }
+}
+
+:where(.busuu-ref).bu-careers .bu-steps {
+  padding-bottom: 60px;
+}
+
+:where(.busuu-ref).bu-careers .bu-steps__list {
+  align-items: flex-start;
+}

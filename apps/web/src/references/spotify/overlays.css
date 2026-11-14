@@ -1,0 +1,321 @@
+/* Login-gated prompts and dialogs (measured by clicking play, save and create while logged out). */
+
+@keyframes sp-overlay-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sp-dialog-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+:where(.spotify-ref).sp-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.9);
+  animation: sp-overlay-fade-in 0.2s both;
+}
+
+:where(.spotify-ref).sp-backdrop--soft {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* ---------- Login prompt (play while logged out) ---------- */
+
+:where(.spotify-ref).sp-prompt {
+  position: fixed;
+  inset: 0;
+  z-index: 51;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  color: var(--sp-subdued);
+  pointer-events: none;
+}
+
+:where(.spotify-ref) .sp-prompt__panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 810px;
+  max-width: calc(100vw - 32px);
+  height: 428px;
+  padding: 64px;
+  border-radius: 8px;
+  pointer-events: auto;
+  transition: background-color 0.5s;
+  animation: sp-dialog-rise 0.4s both;
+}
+
+:where(.spotify-ref) .sp-prompt__cover {
+  flex: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #ffffff26, #00000040);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 60px 0px;
+}
+
+:where(.spotify-ref) .sp-prompt__side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 304px;
+  text-align: center;
+}
+
+:where(.spotify-ref) .sp-prompt__title {
+  margin-bottom: 24px;
+  color: var(--sp-text);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+:where(.spotify-ref) .sp-pill--green {
+  background: var(--sp-green);
+}
+
+:where(.spotify-ref) .sp-pill--green:hover {
+  background: var(--sp-green-hover);
+}
+
+:where(.spotify-ref) .sp-prompt__outline {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  margin-top: 16px;
+  padding: 8px 32px;
+  border: 1px solid var(--sp-outline);
+  border-radius: 9999px;
+  color: var(--sp-text);
+  font-weight: 700;
+  transition:
+    border-color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-prompt__outline:hover {
+  border-color: var(--sp-text);
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-prompt__login {
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+:where(.spotify-ref) .sp-prompt__login a {
+  color: var(--sp-text);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+:where(.spotify-ref) .sp-prompt__close {
+  color: var(--sp-subdued);
+  font-size: 16px;
+  font-weight: 700;
+  pointer-events: auto;
+  transition:
+    color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-prompt__close:hover {
+  color: var(--sp-text);
+  transform: scale(1.04);
+}
+
+/* ---------- Blue callouts (create list, save) ---------- */
+
+:where(.spotify-ref).sp-callout-pos {
+  z-index: 40;
+}
+
+:where(.spotify-ref) .sp-callout {
+  position: relative;
+  width: 332px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--sp-callout);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 40px 0px;
+  color: var(--sp-text);
+  font-size: 14px;
+  line-height: 19.6px;
+  transition:
+    transform 0.3s,
+    visibility 0.3s,
+    opacity 0.3s;
+}
+
+:where(.spotify-ref) .sp-callout[data-starting-style],
+:where(.spotify-ref) .sp-callout[data-ending-style] {
+  opacity: 0;
+}
+
+:where(.spotify-ref) .sp-callout__arrow {
+  width: 16px;
+  height: 16px;
+}
+
+:where(.spotify-ref) .sp-callout__arrow::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: var(--sp-callout);
+  transform: rotate(45deg);
+}
+
+:where(.spotify-ref) .sp-callout__arrow[data-side="right"] {
+  left: -8px;
+}
+
+:where(.spotify-ref) .sp-callout__arrow[data-side="bottom"] {
+  top: -8px;
+}
+
+:where(.spotify-ref) .sp-callout__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+}
+
+:where(.spotify-ref) .sp-callout__text {
+  margin: 8px 0 0;
+}
+
+:where(.spotify-ref) .sp-callout--save .sp-callout__text {
+  margin-top: 8px;
+}
+
+:where(.spotify-ref) .sp-callout__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+:where(.spotify-ref) .sp-callout__later {
+  height: 32px;
+  padding: 4px 16px;
+  border-radius: 9999px;
+  color: var(--sp-text);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-callout__later:hover {
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-callout__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+:where(.spotify-ref) .sp-callout__x {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin: -2px -4px 0 0;
+  color: var(--sp-text);
+}
+
+/* ---------- Language dialog ---------- */
+
+:where(.spotify-ref).sp-langdlg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 51;
+  display: flex;
+  flex-direction: column;
+  width: 978px;
+  max-width: calc(100vw - 32px);
+  height: 588px;
+  max-height: calc(100vh - 32px);
+  border-radius: 8px;
+  background: var(--sp-dialog);
+  color: var(--sp-subdued);
+  transform: translate(-50%, -50%);
+  animation: sp-overlay-fade-in 0.2s both;
+}
+
+:where(.spotify-ref) .sp-langdlg__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 24px 0;
+}
+
+:where(.spotify-ref) .sp-langdlg__title {
+  margin: 0;
+  color: var(--sp-text);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+:where(.spotify-ref) .sp-langdlg__close {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--sp-meta);
+}
+
+:where(.spotify-ref) .sp-langdlg__close:hover {
+  color: var(--sp-text);
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-langdlg__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 44px;
+  padding: 0 24px 24px;
+  overflow-y: auto;
+}
+
+:where(.spotify-ref) .sp-langdlg__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  min-height: 81px;
+  padding: 16px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+:where(.spotify-ref) .sp-langdlg__item span:first-child {
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-langdlg__item span:last-child {
+  font-size: 14px;
+}
+
+:where(.spotify-ref) .sp-langdlg__item:hover {
+  background: #ffffff1a;
+}

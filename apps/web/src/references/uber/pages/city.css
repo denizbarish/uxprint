@@ -1,0 +1,359 @@
+/* City guide. Measured on the representative city page at 1440 and 390. */
+
+:where(.uber-ref) .ub-crumbs {
+  display: flex;
+  align-items: flex-end;
+  height: 68px;
+  padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+:where(.uber-ref) .ub-crumbs .ub-wrap {
+  display: flex;
+  gap: 8px;
+}
+
+:where(.uber-ref) .ub-city-hero {
+  padding: 20px 0 20px;
+}
+
+:where(.uber-ref) .ub-city-hero__lead {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-city-hero .ub-loc {
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-city-when {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  max-width: 396px;
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-city-when label {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--ub-subnav);
+}
+
+:where(.uber-ref) .ub-city-when__input {
+  display: block;
+  margin-top: 2px;
+}
+
+:where(.uber-ref) .ub-city-when__input :is(input, select) {
+  width: 100%;
+  height: 44px;
+  padding: 10px 14px 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--ub-grey);
+  font: inherit;
+  font-size: 16px;
+  color: var(--ub-ink);
+  appearance: none;
+}
+
+:where(.uber-ref) .ub-city-hero__go {
+  margin-top: 18px;
+}
+
+:where(.uber-ref) .ub-city-hero__art {
+  display: none;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-crumbs {
+    height: 80px;
+  }
+
+  :where(.uber-ref) .ub-city-hero {
+    padding: 32px 0;
+  }
+
+  :where(.uber-ref) .ub-city-hero__grid {
+    display: grid;
+    grid-template-columns: 444px 576px;
+    justify-content: space-between;
+  }
+
+  :where(.uber-ref) .ub-city-hero__lead,
+  :where(.uber-ref) .ub-city-hero .ub-loc {
+    margin-top: 32px;
+  }
+
+  :where(.uber-ref) .ub-city-hero .ub-loc {
+    margin-top: 34px;
+  }
+
+  :where(.uber-ref) .ub-city-hero__art {
+    display: block;
+    width: 576px;
+    height: 576px;
+  }
+}
+
+:where(.uber-ref) .ub-city-wide {
+  max-width: 756px;
+}
+
+:where(.uber-ref) .ub-city-lead {
+  max-width: 756px;
+  margin-top: 16px;
+  margin-bottom: 36px;
+}
+
+:where(.uber-ref) .ub-city-lead p + p {
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-city-fleet .ub-city-wide,
+:where(.uber-ref) .ub-city-fleet .ub-city-lead {
+  color: #333333;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-city-lead {
+    margin-top: 24px;
+  }
+
+  :where(.uber-ref) .ub-city-fleet .ub-city-lead {
+    margin-bottom: 35px;
+  }
+}
+
+/* Card tracks: carousel on phones, plain rows from 1136px. */
+:where(.uber-ref) .ub-city-groups,
+:where(.uber-ref) .ub-city-fleet {
+  overflow: hidden;
+}
+
+:where(.uber-ref) .ub-city-groups {
+  --city-pitch: 318px;
+}
+
+:where(.uber-ref) .ub-city-fleet {
+  --city-pitch: 315px;
+}
+
+:where(.uber-ref) .ub-city-track {
+  display: flex;
+  gap: 4px;
+  margin-top: 21px;
+  transition: transform 1s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-city-gcard,
+:where(.uber-ref) .ub-city-vcard {
+  flex: none;
+  width: 334px;
+  padding: 16px;
+}
+
+:where(.uber-ref) .ub-city-gcard__media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 24px;
+}
+
+:where(.uber-ref) .ub-city-gcard .ub-body {
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-city-gcard .ub-link {
+  display: inline-block;
+  margin-top: 24px;
+}
+
+:where(.uber-ref) .ub-city-vcard {
+  width: 331px;
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-city-vcard__media {
+  width: 100%;
+  aspect-ratio: 349 / 262;
+  margin-bottom: 20px;
+}
+
+:where(.uber-ref) .ub-city-vcard .ub-body {
+  margin-top: 12px;
+}
+
+:where(.uber-ref) .ub-city-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 15px;
+  border-radius: 30px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  vertical-align: 2px;
+}
+
+:where(.uber-ref) .ub-city-mobilenav {
+  margin-top: 24px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-city-track {
+    transform: none !important;
+  }
+
+  :where(.uber-ref) .ub-city-gcard {
+    width: 381px;
+  }
+
+  :where(.uber-ref) .ub-city-vcard {
+    width: 381px;
+  }
+
+  :where(.uber-ref) .ub-city-mobilenav {
+    display: none;
+  }
+}
+
+/* Explore */
+:where(.uber-ref) .ub-city-explore__grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 41px;
+}
+
+:where(.uber-ref) .ub-city-spots {
+  height: 480px;
+  overflow-y: auto;
+}
+
+:where(.uber-ref) .ub-city-spots li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 88px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+:where(.uber-ref) .ub-city-spots li > svg {
+  width: 24px;
+  height: 24px;
+}
+
+:where(.uber-ref) .ub-city-spots .ub-btn {
+  margin-left: auto;
+  width: 43px;
+}
+
+:where(.uber-ref) .ub-city-map {
+  height: 160px;
+}
+
+:where(.uber-ref) .ub-city-article {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+
+:where(.uber-ref) .ub-city-article__media {
+  grid-column: 1 / -1;
+  height: 160px;
+}
+
+:where(.uber-ref) .ub-city-article__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+:where(.uber-ref) .ub-city-article__more {
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+@media (max-width: 1135px) {
+  :where(.uber-ref) .ub-city-explore .ub-wrap {
+    padding: 0 16px;
+  }
+
+  :where(.uber-ref) .ub-city-spots {
+    height: 352px;
+  }
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-city-explore__grid {
+    grid-template-columns: 360px 360px 360px;
+    gap: 36px;
+  }
+
+  :where(.uber-ref) .ub-city-map {
+    height: 480px;
+  }
+}
+
+/* Cab links */
+:where(.uber-ref) .ub-city-links {
+  display: grid;
+  gap: 36px;
+}
+
+:where(.uber-ref) .ub-city-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 66px;
+  padding: 0 17px;
+  border: 1px solid #e2e2e2;
+  transition: background-color 0.2s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-city-links a:hover {
+  background: var(--ub-grey);
+}
+
+:where(.uber-ref) .ub-city-links svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-city-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-city-links {
+    margin-top: 51px;
+  }
+
+  :where(.uber-ref) .ub-city-links a {
+    height: 82px;
+    padding: 0 25px;
+  }
+}
+
+/* Footnotes */
+:where(.uber-ref) .ub-city-notes p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+:where(.uber-ref) .ub-city-notes p + p {
+  margin-top: 15px;
+}

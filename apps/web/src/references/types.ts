@@ -11,6 +11,8 @@ export type ReferenceScreenEntry = {
   url?: string;
   /** Original viewport screenshot under captures/<slug>/, used by tools/compare.mjs. */
   capture?: string;
+  /** Original viewport screenshot at 390x844 under captures/<slug>/; wins over the survey at phone width. */
+  capturePhone?: string;
   /** Page name under captures/_survey/<slug>/ whose full-page screenshots (1440 and 390) are the original. */
   survey?: string;
 };

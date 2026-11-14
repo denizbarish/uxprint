@@ -1,0 +1,365 @@
+/* Home (/): hero tiles 692px, promo grid 702x580 with 12px gutters, media carousel 957px. */
+
+:where(.apple-ref) .ap-home-hero {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+:where(.apple-ref) .ap-htile,
+:where(.apple-ref) .ap-ptile {
+  position: relative;
+  overflow: hidden;
+  height: 692px;
+  padding-top: 56px;
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+:where(.apple-ref) .ap-htile__link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+:where(.apple-ref) .ap-htile .ap-tile__copy,
+:where(.apple-ref) .ap-ptile .ap-tile__copy {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+:where(.apple-ref) .ap-tile__copy .ap-btn {
+  pointer-events: auto;
+}
+
+:where(.apple-ref) .ap-htile__media {
+  position: absolute;
+  left: 50%;
+  bottom: 52px;
+  width: 760px;
+  height: 330px;
+  transform: translateX(-50%);
+  border-radius: 28px;
+}
+
+:where(.apple-ref) .ap-htile__media--wide {
+  bottom: 0;
+  width: 520px;
+  height: 360px;
+  border-radius: 28px 28px 0 0;
+}
+
+:where(.apple-ref) .ap-htile--mosaic {
+  background: #1a4b45;
+  padding-top: 470px;
+}
+
+:where(.apple-ref) .ap-htile--mosaic .ap-media {
+  position: absolute;
+}
+
+:where(.apple-ref) .ap-htile__mosaic-top {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 380px;
+}
+
+:where(.apple-ref) .ap-htile__mosaic-left {
+  left: 0;
+  top: 380px;
+  bottom: 0;
+  width: 371px;
+}
+
+:where(.apple-ref) .ap-htile__mosaic-right {
+  right: 0;
+  top: 380px;
+  bottom: 0;
+  width: 371px;
+}
+
+:where(.apple-ref) .ap-home-promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 0 12px;
+}
+
+:where(.apple-ref) .ap-ptile {
+  height: 580px;
+  padding-top: 53px;
+}
+
+:where(.apple-ref) .ap-ptile--dark {
+  background: #000000;
+}
+
+:where(.apple-ref) .ap-ptile__media {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  width: 340px;
+  height: 330px;
+  transform: translateX(-50%);
+  border-radius: 24px;
+}
+
+/* Headline on top, tagline and buttons pinned to the bottom of the tile. */
+:where(.apple-ref) .ap-ptile--split .ap-tile__copy {
+  display: flex;
+  flex-direction: column;
+  height: 467px;
+}
+
+:where(.apple-ref) .ap-ptile--split .ap-tile__sub {
+  margin-top: auto;
+  width: 330px;
+  align-self: center;
+}
+
+:where(.apple-ref) .ap-ptile--split .ap-ptile__media {
+  bottom: auto;
+  top: 120px;
+  height: 300px;
+}
+
+:where(.apple-ref) .ap-home-media {
+  margin-top: 12px;
+  padding-top: 53px;
+  height: 957px;
+  background: #f5f5f7;
+  overflow: hidden;
+}
+
+:where(.apple-ref) .ap-home-media__title {
+  font-family: var(--ap-font-display);
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #000000;
+}
+
+:where(.apple-ref) .ap-home-media__track {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 26px;
+}
+
+:where(.apple-ref) .ap-home-media__card {
+  position: relative;
+  flex: none;
+  width: 930px;
+  height: 523px;
+  background: #000000;
+  color: #f5f5f7;
+}
+
+:where(.apple-ref) .ap-home-media__card:hover {
+  text-decoration: none;
+}
+
+:where(.apple-ref) .ap-home-media__card .ap-home-media__art,
+:where(.apple-ref) .ap-home-media__small .ap-home-media__art {
+  position: absolute;
+  inset: 0;
+}
+
+:where(.apple-ref) .ap-home-media__caption {
+  position: absolute;
+  left: 48px;
+  bottom: 40px;
+  right: 48px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 21px;
+  line-height: 1.19048;
+  letter-spacing: 0.011em;
+  z-index: 1;
+}
+
+:where(.apple-ref) .ap-home-media__pill {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  height: 44px;
+  padding: 0 21px;
+  border-radius: 980px;
+  background: #ffffff;
+  color: #1d1d1f;
+  font-size: 17px;
+  letter-spacing: -0.022em;
+}
+
+:where(.apple-ref) .ap-home-media__card:not(.is-current) .ap-home-media__caption {
+  opacity: 0.4;
+}
+
+:where(.apple-ref) .ap-home-media__row {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 13px;
+}
+
+:where(.apple-ref) .ap-home-media__small {
+  position: relative;
+  flex: none;
+  width: 416px;
+  height: 235px;
+  background: #1d1d1f;
+}
+
+:where(.apple-ref) .ap-home-media__small .ap-home-media__pill {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  height: 36px;
+  padding: 0 15px;
+  font-size: 14px;
+  letter-spacing: -0.016em;
+}
+
+:where(.apple-ref) .ap-home-media__nav {
+  position: relative;
+  margin-top: 0;
+}
+
+:where(.apple-ref) .ap-home-media__nav .ap-dots ul {
+  height: 56px;
+}
+
+:where(.apple-ref) .ap-home-media__play {
+  position: absolute;
+  right: 12px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(210, 210, 215, 0.64);
+  color: rgba(0, 0, 0, 0.48);
+}
+
+:where(.apple-ref) .ap-home-media__play svg {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 1068px) {
+  :where(.apple-ref) .ap-htile {
+    height: 580px;
+  }
+}
+
+@media (max-width: 734px) {
+  :where(.apple-ref) .ap-htile,
+  :where(.apple-ref) .ap-ptile {
+    height: 500px;
+    padding-top: 43px;
+  }
+
+  :where(.apple-ref) .ap-tile__copy .ap-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 1.28577;
+    letter-spacing: -0.016em;
+  }
+
+  :where(.apple-ref) .ap-htile__media,
+  :where(.apple-ref) .ap-ptile__media {
+    width: 300px;
+    height: 250px;
+    bottom: 30px;
+  }
+
+  :where(.apple-ref) .ap-htile--mosaic {
+    padding-top: 347px;
+  }
+
+  :where(.apple-ref) .ap-htile__mosaic-top {
+    height: 305px;
+  }
+
+  :where(.apple-ref) .ap-htile__mosaic-left,
+  :where(.apple-ref) .ap-htile__mosaic-right {
+    display: none;
+  }
+
+  :where(.apple-ref) .ap-home-promo {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  :where(.apple-ref) .ap-ptile--split .ap-tile__copy {
+    height: 406px;
+  }
+
+  :where(.apple-ref) .ap-ptile--split .ap-tile__sub {
+    width: 245px;
+  }
+
+  :where(.apple-ref) .ap-home-media {
+    height: 896px;
+    padding-top: 36px;
+  }
+
+  :where(.apple-ref) .ap-home-media__title {
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: 0.004em;
+  }
+
+  :where(.apple-ref) .ap-home-media__track {
+    justify-content: flex-start;
+    margin-left: -278px;
+    margin-top: 27px;
+  }
+
+  :where(.apple-ref) .ap-home-media__card {
+    width: 275px;
+    height: 489px;
+  }
+
+  :where(.apple-ref) .ap-home-media__caption {
+    left: 20px;
+    right: 20px;
+    bottom: 24px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 17px;
+    line-height: 1.23536;
+    letter-spacing: -0.022em;
+  }
+
+  :where(.apple-ref) .ap-home-media__pill {
+    height: 36px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  :where(.apple-ref) .ap-home-media__row {
+    justify-content: flex-start;
+    margin-left: -100px;
+  }
+
+  :where(.apple-ref) .ap-home-media__small {
+    width: 275px;
+    height: 155px;
+  }
+}
+
+:where(.apple-ref) .ap-htile.ap-on-dark,
+:where(.apple-ref) .ap-ptile.ap-on-dark {
+  color: #f5f5f7;
+}

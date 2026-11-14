@@ -1,0 +1,42 @@
+{
+  "home": {
+    "phone": 86.3,
+    "desktop": 94.28
+  },
+  "ride": {
+    "desktop": 93.9,
+    "phone": 89.31
+  },
+  "city": {
+    "desktop": 91.31,
+    "phone": 73.53
+  },
+  "earn": {
+    "desktop": 94.31,
+    "phone": 86.35
+  },
+  "story": {
+    "desktop": 91.77,
+    "phone": 78.73
+  },
+  "about": {
+    "desktop": 94.23,
+    "phone": 78.84
+  },
+  "teams": {
+    "desktop": 80.06,
+    "phone": 62.79
+  },
+  "posts": {
+    "desktop": 93.4,
+    "phone": 77.77
+  },
+  "documents": {
+    "desktop": 95.8,
+    "phone": 82.37
+  },
+  "places": {
+    "desktop": 94.28,
+    "phone": 88.99
+  }
+}

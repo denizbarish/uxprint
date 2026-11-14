@@ -1,0 +1,1121 @@
+{
+  "slug": "uber",
+  "name": "Uber",
+  "url": "https://www.uber.com",
+  "category": "marketing-site",
+  "tags": [
+    "black-and-white",
+    "pill-navigation",
+    "booking-form-hero",
+    "illustration-led",
+    "dense-footer",
+    "base-web",
+    "two-column-sections"
+  ],
+  "summary": "Pure black #000000 header and footer around white or black content, pill-shaped #111111 nav chips, bold UberMove headlines at 52/36px, and 1280px two-column sections that pair a short text block with a large image.",
+  "theme": "both",
+  "source": {
+    "tool": "craft-anything 0.4.0 + playwright 1.65.0",
+    "mode": "deep",
+    "capturedAt": "2026-11-14",
+    "widths": [
+      1440,
+      768,
+      390
+    ],
+    "pages": [
+      {
+        "name": "home",
+        "url": "https://www.uber.com/tr/en"
+      },
+      {
+        "name": "tr-en-ride",
+        "url": "https://www.uber.com/tr/en/ride"
+      },
+      {
+        "name": "tr-en-drive",
+        "url": "https://www.uber.com/tr/en/drive"
+      },
+      {
+        "name": "tr-en-uber-one",
+        "url": "https://www.uber.com/tr/en/uber-one"
+      },
+      {
+        "name": "tr-en-business",
+        "url": "https://www.uber.com/tr/en/business"
+      },
+      {
+        "name": "v2",
+        "url": "https://auth.uber.com/v2/"
+      }
+    ]
+  },
+  "color": {
+    "background": [
+      {
+        "name": "canvas-dark",
+        "value": "#000000",
+        "use": "Global header bar, footer, the home page canvas and dark promo bands on light pages (Uber One, business)"
+      },
+      {
+        "name": "canvas-light",
+        "value": "#ffffff",
+        "use": "Canvas of every page except home; product sub-navigation bar; app download cards on the dark home page"
+      },
+      {
+        "name": "chip",
+        "value": "#111111",
+        "use": "Resting fill of the header nav pills, the hamburger, footer social squares and the language/city buttons"
+      },
+      {
+        "name": "surface-grey",
+        "value": "#f6f6f6",
+        "use": "Location inputs, pill-shaped secondary buttons (Pickup now, Schedule ahead), carousel next button, the app download band on light pages"
+      },
+      {
+        "name": "card-dark",
+        "value": "#292929",
+        "use": "Service tiles on the dark home page (rgb(41, 41, 41))"
+      },
+      {
+        "name": "card-dark-2",
+        "value": "#282828",
+        "use": "Second dark tile shade seen on the home page"
+      },
+      {
+        "name": "card-light",
+        "value": "#f3f3f3",
+        "use": "Service tiles on light pages (Explore what you can do)"
+      },
+      {
+        "name": "button-soft",
+        "value": "#eeeeee",
+        "use": "Secondary rectangular button on the business page"
+      },
+      {
+        "name": "pressed-white",
+        "value": "#e2e2e2",
+        "use": "White pill button background on hover, focus and press (rgb(226, 226, 226))"
+      },
+      {
+        "name": "menu-panel",
+        "value": "#ececec",
+        "use": "Wrapper behind the white About dropdown list (rgb(236, 236, 236))"
+      },
+      {
+        "name": "carousel-disabled",
+        "value": "#e0e0e099",
+        "use": "Disabled previous button of the step carousel"
+      },
+      {
+        "name": "reserve-teal",
+        "value": "#9dcdd6",
+        "use": "Illustrated reserve card behind the date and time picker on the ride page"
+      }
+    ],
+    "text": [
+      {
+        "name": "on-dark",
+        "value": "#ffffff",
+        "use": "Headings and body on black"
+      },
+      {
+        "name": "on-chip",
+        "value": "#fcfcfc",
+        "use": "Labels inside #111111 nav pills and footer buttons"
+      },
+      {
+        "name": "on-light",
+        "value": "#000000",
+        "use": "Headings and body on white"
+      },
+      {
+        "name": "ink",
+        "value": "#111111",
+        "use": "Input values, pill button labels on #f6f6f6"
+      },
+      {
+        "name": "faq",
+        "value": "#333333",
+        "use": "FAQ heading and answer copy (rgb(51, 51, 51))"
+      },
+      {
+        "name": "placeholder",
+        "value": "#4a4a4a",
+        "use": "Pickup and dropoff placeholder text"
+      },
+      {
+        "name": "subnav",
+        "value": "#6b6b6b",
+        "use": "Product sub-navigation links and small field labels (rgb(107, 107, 107))"
+      },
+      {
+        "name": "menu-item",
+        "value": "#757575",
+        "use": "About dropdown items (rgb(117, 117, 117))"
+      },
+      {
+        "name": "muted-link",
+        "value": "#525252",
+        "use": "Underlined small link under the benefits list (See terms)"
+      },
+      {
+        "name": "footer-muted",
+        "value": "#afafaf",
+        "use": "Copyright line, legal links and the hover colour of footer links"
+      },
+      {
+        "name": "underline-track",
+        "value": "#cbcbcb",
+        "use": "Resting 1px underline track of animated text links"
+      }
+    ],
+    "border": [
+      {
+        "name": "faq-rule",
+        "value": "#c4c4c4",
+        "use": "FAQ row bottom border, drawn at 45% alpha: 1px solid rgba(196, 196, 196, 0.45)"
+      },
+      {
+        "name": "focus-ring",
+        "value": "#276ef1",
+        "use": "2px outer focus ring around controls, paired with a 2px inner #fcfcfc ring"
+      }
+    ],
+    "accent": [
+      {
+        "name": "focus-blue",
+        "value": "#276ef1",
+        "use": "Only colour outside greyscale in the chrome: the keyboard focus ring"
+      },
+      {
+        "name": "link-blue",
+        "value": "#068bee",
+        "use": "Inline highlighted words on the business page"
+      }
+    ],
+    "semantic": [],
+    "alternate": {
+      "name": "dark home",
+      "appliesTo": "The home page renders on #000000 with white text, #292929 tiles and white app cards; every other page is white with black text between the black header and footer",
+      "tokens": [
+        {
+          "name": "canvas",
+          "value": "#000000",
+          "use": "Home canvas"
+        },
+        {
+          "name": "tile",
+          "value": "#292929",
+          "use": "Home service tiles"
+        },
+        {
+          "name": "text",
+          "value": "#ffffff",
+          "use": "Home text"
+        }
+      ]
+    }
+  },
+  "typography": {
+    "families": [
+      {
+        "role": "display",
+        "stack": "UberMove, UberMoveText, system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "substitute": {
+          "name": "Inter",
+          "source": "fontsource",
+          "note": "UberMove is proprietary (faces 400 and 600 loaded; 700 requested by headings is synthesised from 600 by the browser). Inter at 700 is the closest hosted face; it runs slightly narrower."
+        }
+      },
+      {
+        "role": "sans",
+        "stack": "UberMoveText, system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "substitute": {
+          "name": "Inter",
+          "source": "fontsource",
+          "note": "UberMoveText is proprietary (400 and 500 loaded)."
+        }
+      },
+      {
+        "role": "mono",
+        "stack": "UberMoveMono, \"Lucida Console\", Monaco, monospace",
+        "substitute": {
+          "name": "JetBrains Mono",
+          "source": "fontsource",
+          "note": "Declared as --base-font-family-mono; not seen on the measured pages."
+        }
+      }
+    ],
+    "scale": [
+      {
+        "name": "display-1",
+        "size": "52px",
+        "weight": 700,
+        "lineHeight": "64px",
+        "family": "display",
+        "use": "Page h1 at 1136px and wider"
+      },
+      {
+        "name": "display-1-medium",
+        "size": "44px",
+        "weight": 700,
+        "lineHeight": "52px",
+        "family": "display",
+        "use": "Page h1 between 600 and 1135px"
+      },
+      {
+        "name": "display-1-small",
+        "size": "36px",
+        "weight": 700,
+        "lineHeight": "44px",
+        "family": "display",
+        "use": "Page h1 below 600px"
+      },
+      {
+        "name": "heading-1",
+        "size": "36px",
+        "weight": 700,
+        "lineHeight": "44px",
+        "family": "display",
+        "use": "Section h2 at 1136px and wider"
+      },
+      {
+        "name": "heading-1-medium",
+        "size": "32px",
+        "weight": 700,
+        "lineHeight": "40px",
+        "family": "display",
+        "use": "Section h2 between 600 and 1135px; mobile menu items"
+      },
+      {
+        "name": "heading-1-small",
+        "size": "28px",
+        "weight": 700,
+        "lineHeight": "36px",
+        "family": "display",
+        "use": "Section h2 below 600px"
+      },
+      {
+        "name": "heading-2",
+        "size": "24px",
+        "weight": 700,
+        "lineHeight": "32px",
+        "family": "display",
+        "use": "App download card titles, product sub-navigation title, legal list headings"
+      },
+      {
+        "name": "heading-3",
+        "size": "20px",
+        "weight": 700,
+        "lineHeight": "28px",
+        "family": "display",
+        "use": "Benefits card title"
+      },
+      {
+        "name": "label-large",
+        "size": "18px",
+        "weight": 500,
+        "lineHeight": "24px",
+        "family": "sans",
+        "use": "Card titles, footer column headings, form step titles"
+      },
+      {
+        "name": "body",
+        "size": "16px",
+        "weight": 400,
+        "lineHeight": "24px",
+        "family": "sans",
+        "use": "Paragraphs, FAQ answers, benefit lines"
+      },
+      {
+        "name": "button",
+        "size": "16px",
+        "weight": 500,
+        "lineHeight": "20px",
+        "family": "sans",
+        "use": "48px buttons and FAQ questions"
+      },
+      {
+        "name": "nav",
+        "size": "14px",
+        "weight": 500,
+        "lineHeight": "16px",
+        "family": "sans",
+        "use": "Header pills, footer buttons"
+      },
+      {
+        "name": "small",
+        "size": "14px",
+        "weight": 400,
+        "lineHeight": "20px",
+        "family": "sans",
+        "use": "Footer links, sub-navigation links, dropdown items"
+      },
+      {
+        "name": "caption",
+        "size": "12px",
+        "weight": 400,
+        "lineHeight": "20px",
+        "family": "sans",
+        "use": "Service tile descriptions, copyright and legal links"
+      }
+    ]
+  },
+  "spacing": {
+    "unit": "4px (Base Web scale; most gaps are 8, 16, 24, 36 and 64px)",
+    "scale": [
+      "4px",
+      "8px",
+      "12px",
+      "16px",
+      "20px",
+      "24px",
+      "32px",
+      "36px",
+      "48px",
+      "64px",
+      "96px"
+    ],
+    "containerMaxWidth": "1280px with 64px inner padding at 1136px and wider (content 1152px, starting at x 144 in a 1440 viewport); the header bar is 1408px with 64px padding",
+    "pageGutter": {
+      "desktop": "64px inside the 1280px container (header 80px from the viewport edge at 1440)",
+      "mobile": "24px below 600px, 32px from 600 to 1135px; header 24px"
+    },
+    "sectionGap": "Sections stack with no margin; each carries 64px of vertical padding (heading 64px below the previous block). Hero sections are fixed heights: 587px home, 480px ride."
+  },
+  "radius": [
+    {
+      "name": "pill",
+      "value": "999px",
+      "use": "Header nav pills, sign up button, Pickup now and Schedule ahead pills"
+    },
+    {
+      "name": "button",
+      "value": "8px",
+      "use": "48px rectangular buttons (See prices, Learn more), location inputs, service tiles at 1440, footer social squares and language buttons, dropdown panel"
+    },
+    {
+      "name": "tile",
+      "value": "12px",
+      "use": "Service tiles at 390px (106x96)"
+    },
+    {
+      "name": "dialog",
+      "value": "16px",
+      "use": "City picker dialog"
+    },
+    {
+      "name": "circle",
+      "value": "50%",
+      "use": "Hamburger, carousel previous and next"
+    },
+    {
+      "name": "image",
+      "value": "0px",
+      "use": "Photos, illustrations and app download cards are square-cornered"
+    }
+  ],
+  "shadow": [
+    {
+      "name": "menu",
+      "value": "rgba(0, 0, 0, 0.16) 0px 4px 16px 0px",
+      "use": "About dropdown panel"
+    },
+    {
+      "name": "hover-dark",
+      "value": "rgba(236, 236, 236, 0.15) 999px 999px 0px 0px inset",
+      "use": "Hover tint on controls sitting on black (inset fill trick); 0.2 alpha when pressed"
+    },
+    {
+      "name": "hover-light",
+      "value": "rgba(17, 17, 17, 0.06) 999px 999px 0px 0px inset",
+      "use": "Hover tint on light controls; 0.1 alpha when pressed"
+    },
+    {
+      "name": "focus",
+      "value": "rgb(252, 252, 252) 0px 0px 0px 2px inset, rgb(39, 110, 241) 0px 0px 0px 2px",
+      "use": "Keyboard focus on every button and pill"
+    }
+  ],
+  "layout": {
+    "breakpoints": [
+      "600px (min-width, 78 rules)",
+      "1120px (header switches from hamburger to pills)",
+      "1136px (min-width, 80 rules)",
+      "768px and 1024px (a few rules)"
+    ],
+    "patterns": [
+      {
+        "name": "Black header bar",
+        "description": "64px #000000 bar, full width. At 1136px and up: wordmark at x 80, six #111111 pills (14px/500, 36px tall, padding 10px 12px, 8px apart), the last one a menu button with a chevron; on the right a globe language pill, Help, Log in and a white Sign up pill. Below 1120px: wordmark, Log in, Sign up and a 36px round hamburger."
+      },
+      {
+        "name": "Product sub-navigation",
+        "description": "White 64px bar under the header on product pages: 24px/700 page title on the left, five or so 14px #6b6b6b links on the right. On phones the title becomes a button with a chevron that opens the link list."
+      },
+      {
+        "name": "Two-column feature section",
+        "description": "1152px content split into two 558px columns with 36px gap: text block (36px h2, 16px body, 48px button) vertically centred on one side, a 558px wide image on the other; sides alternate."
+      },
+      {
+        "name": "Card row",
+        "description": "Three 360px columns (36px gap) of image, 18px/500 title, 16px body and a black 48px button; on phones they stack."
+      },
+      {
+        "name": "Black footer",
+        "description": "#000000 footer: wordmark, Visit Help Center link, four link columns at 297px pitch (18px/500 heading, 14px links every 36px), 48px social squares and language plus city buttons, store badges, then 12px #afafaf copyright and legal links."
+      }
+    ],
+    "responsive": "Three tiers. 1136px and up: 1280px container with 64px padding, two-column sections, 52px h1. 600 to 1135px: 32px gutter, sections stack or keep two columns, 44px h1, hamburger header. Below 600px: 24px gutter, one column, 36px h1, card rows become stacks or 3-up icon tiles, footer columns stack."
+  },
+  "components": [
+    {
+      "name": "Header nav pill",
+      "anatomy": "Text label in a fully rounded chip; the About pill adds a 16px chevron and opens a dropdown.",
+      "spec": {
+        "height": "36px (38px for the menu button)",
+        "padding": "10px 12px",
+        "radius": "999px",
+        "background": "#111111",
+        "font": "14px/500, line-height 16px, #fcfcfc",
+        "gap": "4px between pills"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "box-shadow rgba(236, 236, 236, 0.15) 999px 999px 0px 0px inset (lighter fill)"
+        },
+        {
+          "name": "active",
+          "change": "inset tint at 0.2 alpha"
+        },
+        {
+          "name": "focus-visible",
+          "change": "2px inner #fcfcfc ring plus 2px outer #276ef1 ring"
+        },
+        {
+          "name": "open",
+          "change": "menu button keeps the tint and the chevron flips up"
+        }
+      ],
+      "notes": "Transition: background 0.2s cubic-bezier(0, 0, 1, 1)."
+    },
+    {
+      "name": "Sign up pill",
+      "anatomy": "White rounded chip at the right end of the header.",
+      "spec": {
+        "height": "36px",
+        "padding": "10px 12px",
+        "radius": "999px",
+        "background": "#ffffff",
+        "font": "14px/500, #000000"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "background #e2e2e2"
+        },
+        {
+          "name": "focus-visible",
+          "change": "background #e2e2e2 plus the focus double ring"
+        }
+      ]
+    },
+    {
+      "name": "About dropdown",
+      "anatomy": "White list panel hanging 4px under the pill: ten 14px links, one with a right chevron for a submenu.",
+      "spec": {
+        "width": "192px",
+        "height": "416px",
+        "radius": "8px",
+        "background": "#ffffff",
+        "shadow": "rgba(0, 0, 0, 0.16) 0px 4px 16px 0px",
+        "item": "36px tall rows every 40px, padding 0 16px, 14px/400 #757575",
+        "padding": "10px 0"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "opacity and transform over 0.1s cubic-bezier(0.2, 0.8, 0.4, 1)"
+        }
+      ]
+    },
+    {
+      "name": "Mobile menu",
+      "anatomy": "Full-width white panel under the 64px header; the hamburger turns into a close icon. Big 32px/700 links stacked every 72px, About with a chevron accordion, Help, then the language pill.",
+      "spec": {
+        "top": "64px",
+        "item": "32px/700, line-height 40px, #111111, 24px left inset",
+        "pitch": "72px"
+      },
+      "states": [
+        {
+          "name": "open",
+          "change": "panel replaces the page under the header; hamburger shows a cross"
+        }
+      ]
+    },
+    {
+      "name": "Button, primary rectangle",
+      "anatomy": "Label only, inverse of the surface: white on black sections, black on white ones.",
+      "spec": {
+        "height": "48px",
+        "padding": "14px 25px (14px 16px on some)",
+        "radius": "8px",
+        "font": "16px/500, line-height 20px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "inset tint rgba(236, 236, 236, 0.15) on black buttons, rgba(17, 17, 17, 0.06) on light ones"
+        },
+        {
+          "name": "active",
+          "change": "tint alpha 0.2 / 0.1"
+        },
+        {
+          "name": "focus-visible",
+          "change": "2px #fcfcfc inset ring plus 2px #276ef1 ring"
+        }
+      ]
+    },
+    {
+      "name": "Button, grey pill",
+      "anatomy": "Optional 16px leading icon, label, optional chevron, on #f6f6f6.",
+      "spec": {
+        "height": "48px",
+        "padding": "14px 16px",
+        "radius": "999px",
+        "background": "#f6f6f6",
+        "font": "16px/500, #111111"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "rgba(17, 17, 17, 0.06) inset tint"
+        }
+      ]
+    },
+    {
+      "name": "Location input",
+      "anatomy": "Two stacked 56px fields on #f6f6f6 joined by a 1px vertical connector, each with a 16px leading glyph; the first has a 24px locate arrow at the right.",
+      "spec": {
+        "width": "396px",
+        "height": "56px",
+        "gap": "16px",
+        "radius": "8px",
+        "background": "#f6f6f6",
+        "border": "0px solid #f6f6f6",
+        "text-inset": "48px",
+        "font": "16px/400, placeholder #4a4a4a"
+      },
+      "states": [
+        {
+          "name": "focus",
+          "change": "border, box-shadow and background over 0.2s cubic-bezier(0.2, 0.8, 0.4, 1)"
+        }
+      ]
+    },
+    {
+      "name": "Animated text link",
+      "anatomy": "Inline text with a 6px bottom padding and two stacked 1px gradient underlines: a #cbcbcb track and a current-colour bar that grows.",
+      "spec": {
+        "font": "16px/400, line-height 32px",
+        "padding-bottom": "6px",
+        "background-size": "0% 6px, 100% 6px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "first gradient grows to 100% over 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+        }
+      ]
+    },
+    {
+      "name": "Service tile",
+      "anatomy": "Card with a 16px/500 title, a 12px two-line description, a small white Details pill at the bottom left and a 128px illustration on the right.",
+      "spec": {
+        "size": "372x160 at 1440 (three per row, 18px gap)",
+        "radius": "8px (12px for the 106x96 phone tiles)",
+        "background": "#292929 on dark, #f3f3f3 on light",
+        "padding": "16px",
+        "title": "16px/500, line-height 20px",
+        "description": "12px/400, line-height 20px, 212px wide",
+        "illustration": "128x128 at x 228"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "not observed when forced; the phone tiles carry a background-color 0.5s transition"
+        }
+      ],
+      "notes": "At 390px they become 106x96 squares, three per row, with the illustration above a centred 12px/500 label."
+    },
+    {
+      "name": "FAQ accordion",
+      "anatomy": "Native details/summary rows with a 1px bottom rule and a 24px chevron at the right.",
+      "spec": {
+        "row": "56px",
+        "summary-padding": "16px 20px",
+        "font": "16px/500, #000000",
+        "border": "1px solid rgba(196, 196, 196, 0.45)",
+        "answer": "16px/400 #333333, padding 24px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "summary colour #111111"
+        },
+        {
+          "name": "open",
+          "change": "row expands to show the answer; no animation measured"
+        }
+      ]
+    },
+    {
+      "name": "App download card",
+      "anatomy": "White rectangle: 150px QR or app tile at left, 24px/700 title and 16px caption, a 24px arrow at the right.",
+      "spec": {
+        "size": "558x198",
+        "padding": "24px",
+        "radius": "0px",
+        "background": "#ffffff",
+        "title": "24px/700, line-height 32px"
+      },
+      "states": [
+        {
+          "name": "focus-visible",
+          "change": "1px auto outline"
+        }
+      ]
+    },
+    {
+      "name": "Carousel controls",
+      "anatomy": "Page counter (\"1/2\") followed by two 52px round buttons.",
+      "spec": {
+        "size": "52x52",
+        "radius": "50%",
+        "next": "#f6f6f6 with #111111 arrow",
+        "previous-disabled": "rgba(224, 224, 224, 0.6) with #c4c4c4 arrow",
+        "gap": "8px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "rgba(17, 17, 17, 0.06) inset tint"
+        }
+      ]
+    },
+    {
+      "name": "Footer link",
+      "anatomy": "14px/400 text link in a column.",
+      "spec": {
+        "font": "14px/400, line-height 20px, #ffffff",
+        "pitch": "36px"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "colour #afafaf"
+        }
+      ]
+    },
+    {
+      "name": "Footer square button",
+      "anatomy": "48px #111111 square with a 16px white social glyph; language and city buttons are 36px tall with a leading icon.",
+      "spec": {
+        "size": "48x48",
+        "radius": "8px",
+        "background": "#111111",
+        "language-button": "36px, padding 10px 12px, 14px/500"
+      },
+      "states": [
+        {
+          "name": "hover",
+          "change": "rgba(236, 236, 236, 0.15) inset tint"
+        }
+      ]
+    }
+  ],
+  "motion": {
+    "durations": [
+      {
+        "name": "control",
+        "value": "0.2s",
+        "use": "Button and pill background, input border and colour changes"
+      },
+      {
+        "name": "menu",
+        "value": "0.1s",
+        "use": "About dropdown opacity and transform"
+      },
+      {
+        "name": "panel",
+        "value": "0.4s",
+        "use": "Dialogs and sheets (top, bottom, opacity, transform)"
+      },
+      {
+        "name": "underline",
+        "value": "0.5s",
+        "use": "Animated link underline (background-size) and tile background"
+      },
+      {
+        "name": "carousel",
+        "value": "1s",
+        "use": "Carousel track transform"
+      }
+    ],
+    "easings": [
+      {
+        "name": "linear",
+        "value": "cubic-bezier(0, 0, 1, 1)",
+        "use": "Button background"
+      },
+      {
+        "name": "base-web",
+        "value": "cubic-bezier(0.2, 0.8, 0.4, 1)",
+        "use": "Inputs, menus, dialogs, carousel"
+      },
+      {
+        "name": "expo-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "use": "Link underline growth"
+      },
+      {
+        "name": "standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "use": "Headings and small blocks (all 0.2s)"
+      }
+    ],
+    "transitions": [
+      {
+        "target": "Underlined links and wordmark",
+        "properties": "background-size",
+        "duration": "0.5s",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+      },
+      {
+        "target": "Buttons and pills",
+        "properties": "background",
+        "duration": "0.2s",
+        "easing": "cubic-bezier(0, 0, 1, 1)"
+      },
+      {
+        "target": "Inputs",
+        "properties": "border, box-shadow, background-color",
+        "duration": "0.2s",
+        "easing": "cubic-bezier(0.2, 0.8, 0.4, 1)"
+      },
+      {
+        "target": "Service tiles",
+        "properties": "background-color",
+        "duration": "0.5s",
+        "easing": "ease"
+      },
+      {
+        "target": "Header nav",
+        "properties": "top",
+        "duration": "0.3s",
+        "easing": "ease"
+      },
+      {
+        "target": "About dropdown",
+        "properties": "opacity, transform",
+        "duration": "0.1s",
+        "easing": "cubic-bezier(0.2, 0.8, 0.4, 1)"
+      },
+      {
+        "target": "Dialogs",
+        "properties": "opacity, transform",
+        "duration": "0.4s",
+        "easing": "cubic-bezier(0.2, 0.8, 0.4, 1)"
+      },
+      {
+        "target": "Carousel track",
+        "properties": "transform",
+        "duration": "1s",
+        "easing": "cubic-bezier(0.2, 0.8, 0.4, 1)"
+      }
+    ],
+    "keyframes": [
+      {
+        "name": "gradient-pan",
+        "use": "Moving gradient on the Uber One page",
+        "css": "@keyframes gradient-pan { 0% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }"
+      },
+      {
+        "name": "action-button-spin",
+        "use": "Loading spinner inside action buttons",
+        "css": "@keyframes action-button-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }"
+      }
+    ],
+    "unmeasured": [
+      "Lottie animations (lottie-web is bundled) on illustration slots were not inspected frame by frame.",
+      "The home hero image grid and the vertical green line between sections are static in the capture; any scroll-linked behaviour was not observed."
+    ]
+  },
+  "flows": [
+    {
+      "name": "Log in and sign up",
+      "entry": "/ (the header's Log in and Sign up pills lead to auth.uber.com)",
+      "layout": "not recorded: auth.uber.com answered with a bot-protection interstitial (\"Just a moment...\") to the automated browser, so its first screen could not be measured.",
+      "steps": [
+        {
+          "name": "Entry",
+          "screen": [
+            "Header Log in (#111111 pill) and Sign up (white pill) are the only entry points observed on the marketing site"
+          ],
+          "actions": [
+            "Log in and Sign up both leave the marketing site for auth.uber.com"
+          ]
+        }
+      ],
+      "notRecorded": "Every auth screen: the first public screen was behind a bot check, and later steps need an account."
+    }
+  ],
+  "principles": [
+    "Frame every page with the same black 64px header and black footer; switch only the middle between white and black.",
+    "Keep the palette greyscale: #000000, #111111, #f6f6f6, #ffffff. Colour comes from photos and illustrations, never from UI chrome.",
+    "Write headings in UberMove bold (52px h1, 36px h2) and keep body copy at 16px/24px; nothing in between except 18px/500 card titles.",
+    "Build sections as a 1152px content box: either a two-column text plus image pair or a heading over a three-column row.",
+    "Use pills (999px) for navigation and quick choices, 8px rectangles for the main call to action.",
+    "Indicate hover with an inset tint (rgba(17, 17, 17, 0.06) on light, rgba(236, 236, 236, 0.15) on dark), not a colour change.",
+    "End product pages with an FAQ accordion and an app download band before the footer."
+  ],
+  "avoid": [
+    "Coloured buttons or brand-colour fills in the chrome",
+    "Rounded image corners or card shadows on content blocks",
+    "Centred marketing heroes; heroes are left-aligned with the image on the right",
+    "Thin or light headings; headings are always bold"
+  ],
+  "libraries": {
+    "detected": [
+      {
+        "name": "Next.js",
+        "npm": "next",
+        "purpose": "Framework",
+        "evidence": "\"__NEXT_DATA__\" in a page script"
+      },
+      {
+        "name": "React",
+        "npm": "react",
+        "purpose": "UI runtime",
+        "evidence": "\"react.element\" in client-vendor bundle"
+      },
+      {
+        "name": "styled-components",
+        "npm": "styled-components",
+        "purpose": "CSS-in-JS (class names like css-jVXhVQ)",
+        "evidence": "\"styled-components\" in client-vendor bundle"
+      },
+      {
+        "name": "TanStack Query",
+        "npm": "@tanstack/react-query",
+        "purpose": "Server state",
+        "evidence": "\"No QueryClient set\" in client-vendor bundle"
+      },
+      {
+        "name": "Lottie",
+        "npm": "lottie-web",
+        "purpose": "After Effects animation playback",
+        "evidence": "\"lottie-web\" in client-runtime bundle"
+      },
+      {
+        "name": "Base Web",
+        "npm": "baseui",
+        "purpose": "Uber's component library",
+        "evidence": "data-baseweb attributes on buttons and icons (data-baseweb=\"button\", \"icon\")"
+      }
+    ],
+    "recommended": [
+      {
+        "name": "Inter",
+        "npm": "@fontsource-variable/inter",
+        "purpose": "Substitute for UberMove and UberMoveText"
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "home",
+      "name": "Home",
+      "use": "Dark brand front page that sells booking first, then every service.",
+      "structure": [
+        "Black 64px header: wordmark, #111111 pill chips 14px/500 36px tall with 4px gaps, globe+locale, Help, Log in, white Sign up pill; hamburger below 1120px",
+        "Dark hero (#000): 459px form column (city line, 52px/64px h1, Leave now pill, pickup/dropoff fields on #f6f6f6 with 8px radius, white See prices button plus underline link) beside a 558px illustration with a pill band",
+        "Suggestions: 36px/44px h2, service tiles 372x160 (106x96 on phones) on #f6f6f6 radius 8px",
+        "1px divider, How-it-works carousel with counter and 48px round arrows",
+        "Two 2-column features (459px text, 558px media, 36px gap, 64px vertical padding)",
+        "Earn card, business feature (square media first), app download cards (150px QR, 24px/700 title, arrow)",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/tr/en",
+        "/tr/tr"
+      ]
+    },
+    {
+      "id": "booking-landing",
+      "name": "Booking Landing",
+      "use": "Product page for one ride service with a booking form at the top.",
+      "structure": [
+        "Black 64px header: wordmark, #111111 pill chips 14px/500 36px tall with 4px gaps, globe+locale, Help, Log in, white Sign up pill; hamburger below 1120px",
+        "White 64px subnav: product title left, 14px #6b6b6b links with 24px gaps; on phones a title button opens a dropdown",
+        "Light booking hero: city line, 52px h1, Leave now pill, location fields, black See prices button; 576x384 illustration right",
+        "Suggestion tiles, Reserve panel (teal #9dcdd6 panel with date and hour fields, Next button) beside a perks card",
+        "Dark membership feature, three-up square cards with buttons, dark business feature with underlined list",
+        "FAQ: details rows, 16px 20px summary padding, 1px rgba(196,196,196,.45) rule",
+        "Grey #f6f6f6 app band with two download cards",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/tr/en/ride",
+        "/tr/en/airports",
+        "/tr/en/city-hub"
+      ]
+    },
+    {
+      "id": "city-guide",
+      "name": "City Guide",
+      "use": "One page per city: booking form, local services, places, FAQ.",
+      "structure": [
+        "Black 64px header: wordmark, #111111 pill chips 14px/500 36px tall with 4px gaps, globe+locale, Help, Log in, white Sign up pill; hamburger below 1120px",
+        "Breadcrumb row (underlined region link > city)",
+        "Hero: 52px h1, 205-char lead, location fields, day and hour inputs, See prices; 576px art right",
+        "Reserve feature (square media first), group tabs with two-card carousel, fleet tabs with three vehicle cards",
+        "Grey explore band: tabs over a 10-row places list with Go pills, a map slot and an article card",
+        "Trip-type link list with 24px/700 rows and arrows, FAQ, notes, grey app band with two QR cards",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/global/en/r/cities/adana-adana-tr",
+        "/global/en/r/cities/izmir-izmir-tr",
+        "/global/en/r/cities/konya-konya-tr",
+        "/global/en/r/cities/ankara-ankara-tr",
+        "/global/en/r/cities/mersin-mersin-tr",
+        "/global/en/r/cities/kocaeli-kocaeli-tr",
+        "/global/en/r/cities/sakarya-sakarya-tr",
+        "/global/en/r/cities/istanbul-istanbul-tr",
+        "/global/en/r/cities/eskisehir-eskisehir-tr"
+      ]
+    },
+    {
+      "id": "earn-landing",
+      "name": "Earn Landing",
+      "use": "Recruiting page for drivers and couriers.",
+      "structure": [
+        "Black 64px header: wordmark, #111111 pill chips 14px/500 36px tall with 4px gaps, globe+locale, Help, Log in, white Sign up pill; hamburger below 1120px",
+        "Subnav with nine links",
+        "Dark hero: 52px h1, intro, white Apply button and underline link; media right",
+        "Earn section: wide media then three icon columns (icon, 18px/500 title, body)",
+        "First-steps tabs with a three-step carousel, perks with big icons and links, FAQ",
+        "Partner app band with media, grey band with one app card, 36px Apply row with arrow, legal notes",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/tr/en/drive",
+        "/tr/en/deliver"
+      ]
+    },
+    {
+      "id": "story",
+      "name": "Story Page",
+      "use": "Explainer page for a program or topic built from alternating features.",
+      "structure": [
+        "Black 64px header: wordmark, #111111 pill chips 14px/500 36px tall with 4px gaps, globe+locale, Help, Log in, white Sign up pill; hamburger below 1120px",
+        "Hero as a 2-column feature with h1 (128px bottom padding), then alternating 459px text / 558px media features at 64px padding",
+        "Optional blue #276ef1 quote band",
+        "Two icon columns, closing note; dark variant (hotels) flips the page to black",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/tr/en/safety",
+        "/tr/en/uber-one",
+        "/tr/en/gift-cards",
+        "/tr/en/about/accessibility",
+        "/tr/en/about/sustainability",
+        "/tr/en/about/uber-offerings",
+        "/tr/en/about/how-does-uber-work",
+        "/tr/en/hotels"
+      ]
+    },
+    {
+      "id": "about-hub",
+      "name": "About Hub",
+      "use": "Company overview linking out to every corporate section.",
+      "structure": [
+        "Black 64px header: wordmark, #111111 pill chips 14px/500 36px tall with 4px gaps, globe+locale, Help, Log in, white Sign up pill; hamburger below 1120px",
+        "Full-width hero image (700px, 480px on phones) with the h1 over it",
+        "Intro text, dark letter band with a 52px heading, three features",
+        "Company cards, three icon columns, join feature with h1-sized heading, closing note with underline link",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/tr/en/about"
+      ]
+    },
+    {
+      "id": "sub-brand-landing",
+      "name": "Sub-brand Landing",
+      "use": "Landing page for a sub-brand with its own header nav and footer.",
+      "structure": [
+        "Sub-brand header: lockup instead of the wordmark, five dropdown chips, Contact and Get started pills",
+        "Dark hero with a blue #068bee highlighted phrase, four dark boxes, masked logo strip",
+        "Four solution blocks (diagram, columns, link) alternating white and grey",
+        "Industry carousel, band media, dashboard carousel, split features, light boxes, quote, signup row, long legal notes",
+        "Sub-brand footer with three link columns"
+      ],
+      "pages": [
+        "/tr/en/business",
+        "/tr/en/autonomous"
+      ]
+    },
+    {
+      "id": "article-index",
+      "name": "Article Index",
+      "use": "Blog and newsroom list pages.",
+      "structure": [
+        "Blog header: wordmark plus a section name, one Explore dropdown chip, then locale, Help, Log in, Sign up",
+        "Grey #f6f6f6 hero 368px: 28px/36px #6b6b6b label, centered 36px/44px h1",
+        "List head: 32px/700 h2 left, Filter select (32px, #f6f6f6, radius 8px) right",
+        "Three-column card grid, 26px gap: 366x206 image, blue tag chips (#025bb6 on #eff4fe, 14px/500), 28px/700/36px title clamped to two lines, 14px date; two columns from 600px, one below",
+        "Pagination: Prev, page select, of N, Next",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/tr/en/blog",
+        "/tr/en/newsroom"
+      ]
+    },
+    {
+      "id": "legal-index",
+      "name": "Legal Index",
+      "use": "Document library filtered by region, product line and topic.",
+      "structure": [
+        "Header with the shorter five-chip nav",
+        "Hero: 52px/64px h1 at 64px top padding, 756px wide 16px/24px lead with an underlined link, 32px gaps",
+        "Three 350x70 filter fields (16px label, 48px #f6f6f6 select) with 32px gaps; stacked on phones",
+        "Groups: 24px/700/32px heading in a 396px track, underlined 16px/500 links at 36px pitch; groups 34px apart",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/legal/document"
+      ]
+    },
+    {
+      "id": "directory",
+      "name": "Directory",
+      "use": "Country or city list linking to each local page.",
+      "structure": [
+        "Header with the shorter five-chip nav",
+        "Hero: 52px h1 over two lines, 756px lead with underlined inline link, a 32px tall underline link",
+        "One group: 24px/700 heading in a 396px track, 72 underlined links in two 360px columns (36px gap) at 36px pitch; one column on phones",
+        "Black footer about 969px at 1440: 112px wordmark block, 67px help link, four columns (18px/500 headings, 14px/20px links at 36px pitch, 36px column gap), 48px social squares, language and city chips, store badges, 12px #afafaf legal row"
+      ],
+      "pages": [
+        "/tr/en/r/cities"
+      ]
+    }
+  ]
+}

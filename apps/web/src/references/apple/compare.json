@@ -1,0 +1,54 @@
+{
+  "home": {
+    "desktop": 94.07,
+    "phone": 85.52
+  },
+  "product-family": {
+    "desktop": 91.73,
+    "phone": 73.73
+  },
+  "product-detail": {
+    "desktop": 87.1,
+    "phone": 82.66
+  },
+  "compare": {
+    "desktop": 93.26,
+    "phone": 88.2
+  },
+  "store": {
+    "desktop": 81.69,
+    "phone": 71.13
+  },
+  "service": {
+    "desktop": 85.66,
+    "phone": 79.03
+  },
+  "feature-story": {
+    "desktop": 87.78,
+    "phone": 82.19
+  },
+  "sitemap": {
+    "desktop": 92.63,
+    "phone": 91.42
+  },
+  "contact": {
+    "desktop": 89.87,
+    "phone": 83.64
+  },
+  "legal": {
+    "desktop": 91.26,
+    "phone": 77.4
+  },
+  "values": {
+    "desktop": 92.62,
+    "phone": 84.9
+  },
+  "audience-hub": {
+    "desktop": 92.93,
+    "phone": 85.48
+  },
+  "newsroom": {
+    "desktop": 95.6,
+    "phone": 91.34
+  }
+}

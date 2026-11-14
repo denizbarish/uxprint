@@ -1,0 +1,276 @@
+/* Home (dark). Measured on /tr/en at 1440 and 390. */
+
+:where(.uber-ref) .ub-home-hero {
+  padding: 40px 0 48px;
+}
+
+:where(.uber-ref) .ub-home-hero__title {
+  margin-top: 8px;
+}
+
+:where(.uber-ref) .ub-home-hero__form .ub-when {
+  display: none;
+}
+
+:where(.uber-ref) .ub-home-hero__form .ub-loc {
+  margin-top: 32px;
+}
+
+:where(.uber-ref) .ub-home-hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-home-hero__art {
+  display: none;
+  position: relative;
+  width: 459px;
+  height: 459px;
+}
+
+:where(.uber-ref) .ub-home-hero__grid-art {
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+}
+
+:where(.uber-ref) .ub-home-hero__band {
+  position: absolute;
+  left: 18px;
+  right: 30px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 12px 0 12px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(40, 40, 40, 0.7), rgba(120, 110, 100, 0.55));
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+:where(.uber-ref) .ub-home-hero__band .ub-btn {
+  height: 48px;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-home-hero__form .ub-when {
+    display: inline-flex;
+    margin-top: 16px;
+  }
+
+  :where(.uber-ref) .ub-home-hero__form .ub-loc {
+    margin-top: 24px;
+  }
+
+  :where(.uber-ref) .ub-home-hero__actions {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-home-hero {
+    padding: 64px 0;
+  }
+
+  :where(.uber-ref) .ub-home-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    align-items: start;
+  }
+
+  :where(.uber-ref) .ub-home-hero__art {
+    display: block;
+  }
+}
+
+/* Tiles on black */
+:where(.uber-ref) .ub-home-explore {
+  --tile: #292929;
+  --tile-hover: #333333;
+}
+
+/* Divider illustration: a single vertical line in the middle of the band. */
+:where(.uber-ref) .ub-home-divider {
+  position: relative;
+  height: 80px;
+}
+
+:where(.uber-ref) .ub-home-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #0e8345;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-home-divider {
+    height: 270px;
+  }
+
+  :where(.uber-ref) .ub-home-divider::after {
+    top: 0;
+    bottom: 0;
+    height: 270px;
+  }
+}
+
+/* Steps carousel */
+:where(.uber-ref) .ub-home-steps {
+  --step-w: 329px;
+  --step-pitch: 345px;
+}
+
+:where(.uber-ref) .ub-home-steps__viewport {
+  overflow: hidden;
+  margin-right: -24px;
+}
+
+:where(.uber-ref) .ub-home-steps__track {
+  display: flex;
+  gap: 16px;
+  transition: transform 1s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-home-step {
+  flex: none;
+  width: var(--step-w);
+}
+
+:where(.uber-ref) .ub-home-step__art {
+  position: relative;
+  height: 185px;
+  margin-bottom: 21px;
+}
+
+:where(.uber-ref) .ub-home-step__photo {
+  position: absolute;
+  left: 59px;
+  top: 0;
+  width: 252px;
+  height: 155px;
+  border-radius: 6px;
+}
+
+:where(.uber-ref) .ub-home-step__icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #000000;
+}
+
+:where(.uber-ref) .ub-home-step__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+:where(.uber-ref) .ub-home-step__text {
+  margin-top: 12px;
+}
+
+:where(.uber-ref) .ub-home-steps__nav {
+  margin-top: 48px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-home-steps {
+    --step-w: 354px;
+    --step-pitch: 390px;
+  }
+
+  :where(.uber-ref) .ub-home-steps__viewport {
+    margin-right: 0;
+  }
+
+  :where(.uber-ref) .ub-home-steps__track {
+    gap: 36px;
+  }
+
+  :where(.uber-ref) .ub-home-step__art {
+    height: 199px;
+    margin-bottom: 20px;
+  }
+
+  :where(.uber-ref) .ub-home-step__photo {
+    left: 64px;
+    width: 272px;
+    height: 166px;
+  }
+
+  :where(.uber-ref) .ub-home-step__icon {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+/* Feature text tweaks */
+:where(.uber-ref) .ub-home-feature .ub-feature__body {
+  margin-top: 16px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-home-feature .ub-feature__body {
+    margin-top: 24px;
+  }
+}
+
+:where(.uber-ref) .ub-home-citypill {
+  height: 48px;
+  padding: 8px 20px;
+  gap: 8px;
+  background: var(--ub-grey);
+  font-size: 14px;
+  line-height: 16px;
+}
+
+:where(.uber-ref) .ub-home-citypill svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Earn card */
+:where(.uber-ref) .ub-home-earn__card {
+  max-width: 360px;
+}
+
+:where(.uber-ref) .ub-home-earn__media {
+  width: 100%;
+  aspect-ratio: 360 / 203;
+  margin-bottom: 20px;
+}
+
+:where(.uber-ref) .ub-home-earn__card p {
+  margin-top: 12px;
+}
+
+:where(.uber-ref) .ub-home-earn__link {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+@media (max-width: 599px) {
+  :where(.uber-ref) .ub-home-earn__card {
+    max-width: none;
+  }
+
+  :where(.uber-ref) .ub-home-earn__media {
+    aspect-ratio: 342 / 192;
+  }
+}

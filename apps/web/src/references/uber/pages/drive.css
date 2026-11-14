@@ -1,0 +1,212 @@
+/* Earn landing (drive). Measured on /tr/en/drive at 1440 and 390. */
+
+:where(.uber-ref) .ub-earn-hero {
+  padding: 40px 0;
+}
+
+:where(.uber-ref) .ub-earn-hero__text p {
+  margin-top: 16px;
+}
+
+:where(.uber-ref) .ub-earn-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+:where(.uber-ref) .ub-earn-hero__art {
+  display: none;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-earn-hero {
+    padding: 64px 0;
+  }
+
+  :where(.uber-ref) .ub-earn-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    align-items: center;
+  }
+
+  :where(.uber-ref) .ub-earn-hero__text {
+    width: 459px;
+  }
+
+  :where(.uber-ref) .ub-earn-hero__text p,
+  :where(.uber-ref) .ub-earn-hero__actions {
+    margin-top: 32px;
+  }
+
+  :where(.uber-ref) .ub-earn-hero__art {
+    display: block;
+    width: 558px;
+    height: 558px;
+  }
+}
+
+:where(.uber-ref) .ub-earn-sec .ub-h2,
+:where(.uber-ref) .ub-earn-sec .ub-body,
+:where(.uber-ref) .ub-earn-start .ub-h2,
+:where(.uber-ref) .ub-earn-start .ub-body,
+:where(.uber-ref) .ub-icols {
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-earn-wide {
+  width: 100%;
+  aspect-ratio: 342 / 192;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-earn-wide {
+    aspect-ratio: auto;
+    height: 270px;
+  }
+}
+
+:where(.uber-ref) .ub-earn-lead {
+  margin-top: 24px;
+}
+
+/* Perks lead pulls the icon row closer. */
+:where(.uber-ref) .ub-earn-lead + .ub-icols {
+  margin-top: 36px;
+}
+
+/* Get started: tabbed carousel of icon cards */
+:where(.uber-ref) .ub-earn-start {
+  --earn-pitch: 316px;
+  overflow: hidden;
+}
+
+:where(.uber-ref) .ub-earn-start__track {
+  transition: transform 1s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-earn-start .ub-icols {
+  display: flex;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+:where(.uber-ref) .ub-earn-start .ub-icols li {
+  flex: none;
+  width: 312px;
+  padding: 16px;
+}
+
+:where(.uber-ref) .ub-earn-start__nav {
+  margin-top: 24px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-earn-start__track {
+    transform: none !important;
+  }
+
+  :where(.uber-ref) .ub-earn-start .ub-icols li {
+    width: 381px;
+  }
+
+  :where(.uber-ref) .ub-earn-start__nav {
+    display: none;
+  }
+}
+
+/* Partner app band */
+:where(.uber-ref) .ub-earn-app {
+  position: relative;
+  overflow: hidden;
+  padding: 84px 0;
+  background: #7d7d7d;
+  color: #ffffff;
+}
+
+:where(.uber-ref) .ub-earn-app__art {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 220px;
+  height: 100%;
+}
+
+:where(.uber-ref) .ub-earn-app__text {
+  position: relative;
+}
+
+:where(.uber-ref) .ub-earn-app__text .ub-h2 {
+  max-width: 308px;
+}
+
+:where(.uber-ref) .ub-earn-app__text p {
+  max-width: 756px;
+  margin: 16px 0 24px;
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-earn-app {
+    padding: 128px 0;
+  }
+
+  :where(.uber-ref) .ub-earn-app__art {
+    right: calc(50% - 400px);
+    width: 380px;
+  }
+
+  :where(.uber-ref) .ub-earn-app__text .ub-h2 {
+    max-width: none;
+  }
+
+  :where(.uber-ref) .ub-earn-app__text p {
+    margin: 24px 0 32px;
+  }
+}
+
+/* Single app card, half width from 600px */
+:where(.uber-ref) .ub-earn-onecard .ub-apps {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  :where(.uber-ref) .ub-earn-onecard .ub-apps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+:where(.uber-ref) .ub-earn-signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 558px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #000000;
+}
+
+:where(.uber-ref) .ub-earn-signup svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s var(--ub-ease-base);
+}
+
+:where(.uber-ref) .ub-earn-signup:hover svg {
+  transform: translateX(4px);
+}
+
+@media (min-width: 1136px) {
+  :where(.uber-ref) .ub-earn-signup {
+    padding-bottom: 46px;
+  }
+}
+
+:where(.uber-ref) .ub-earn-notes p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+:where(.uber-ref) .ub-earn-notes p + p {
+  margin-top: 15px;
+}

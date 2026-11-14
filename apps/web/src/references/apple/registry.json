@@ -1,0 +1,18 @@
+{
+  "screens": [
+    { "id": "home", "title": "Home", "theme": "light", "template": "home", "url": "https://www.apple.com", "survey": "home" },
+    { "id": "product-family", "title": "Product Family", "theme": "light", "template": "product-family", "url": "https://www.apple.com/mac", "survey": "mac" },
+    { "id": "product-detail", "title": "Product Detail", "theme": "light", "template": "product-detail", "url": "https://www.apple.com/apple-pencil", "survey": "apple-pencil" },
+    { "id": "compare", "title": "Model Comparison", "theme": "light", "template": "compare", "url": "https://www.apple.com/mac/compare", "survey": "mac-compare" },
+    { "id": "store", "title": "Store", "theme": "light", "template": "store", "url": "https://www.apple.com/store", "survey": "us-shop-goto-store" },
+    { "id": "service", "title": "Service", "theme": "dark", "template": "service", "url": "https://www.apple.com/apple-arcade", "survey": "apple-arcade" },
+    { "id": "feature-story", "title": "Feature Story", "theme": "dark", "template": "feature-story", "url": "https://www.apple.com/os/ios", "survey": "os-ios" },
+    { "id": "sitemap", "title": "Site Index", "theme": "light", "template": "sitemap", "url": "https://www.apple.com/sitemap", "survey": "sitemap" },
+    { "id": "contact", "title": "Contact Directory", "theme": "light", "template": "contact", "url": "https://www.apple.com/contact", "survey": "contact" },
+    { "id": "legal", "title": "Notices Hub", "theme": "light", "template": "legal", "url": "https://www.apple.com/legal", "survey": "legal" },
+    { "id": "values", "title": "Values Editorial", "theme": "light", "template": "values", "url": "https://www.apple.com/accessibility", "survey": "accessibility" },
+    { "id": "audience-hub", "title": "Audience Hub", "theme": "dark", "template": "audience-hub", "url": "https://www.apple.com/business", "survey": "business" },
+    { "id": "newsroom", "title": "Newsroom Index", "theme": "light", "template": "newsroom", "url": "https://www.apple.com/newsroom", "survey": "newsroom" }
+  ],
+  "components": {}
+}

@@ -7,6 +7,16 @@ import stripe from "./stripe/registry.json";
 import stripeScores from "./stripe/compare.json";
 import raycast from "./raycast/registry.json";
 import raycastScores from "./raycast/compare.json";
+import apple from "./apple/registry.json";
+import appleScores from "./apple/compare.json";
+import spotify from "./spotify/registry.json";
+import spotifyScores from "./spotify/compare.json";
+import uber from "./uber/registry.json";
+import uberScores from "./uber/compare.json";
+import duolingo from "./duolingo/registry.json";
+import duolingoScores from "./duolingo/compare.json";
+import busuu from "./busuu/registry.json";
+import busuuScores from "./busuu/compare.json";
 
 /** Prints without screens here simply have no live reference. */
 const registries: Record<string, ReferenceRegistry> = {
@@ -14,6 +24,11 @@ const registries: Record<string, ReferenceRegistry> = {
   vercel: vercel as ReferenceRegistry,
   stripe: stripe as ReferenceRegistry,
   raycast: raycast as ReferenceRegistry,
+  apple: apple as ReferenceRegistry,
+  spotify: spotify as ReferenceRegistry,
+  uber: uber as ReferenceRegistry,
+  duolingo: duolingo as ReferenceRegistry,
+  busuu: busuu as ReferenceRegistry,
 };
 
 const scores: Record<string, CompareScores> = {
@@ -21,6 +36,11 @@ const scores: Record<string, CompareScores> = {
   vercel: vercelScores,
   stripe: stripeScores,
   raycast: raycastScores,
+  apple: appleScores,
+  spotify: spotifyScores,
+  uber: uberScores,
+  duolingo: duolingoScores,
+  busuu: busuuScores,
 };
 
 export function getReferences(slug: string): ReferenceRegistry | undefined {

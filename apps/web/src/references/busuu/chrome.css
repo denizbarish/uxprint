@@ -1,0 +1,1006 @@
+/* Shared frames: marketing header and footer, scrolling band, legacy frame, app bar. */
+
+:where(.busuu-ref) .bu-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.6px;
+}
+
+:where(.busuu-ref) .bu-logo svg {
+  width: 38px;
+  height: 38px;
+}
+
+/* ---------- Marketing frame ---------- */
+
+:where(.busuu-ref).bu-mk {
+  position: relative;
+  color: var(--bu-navy);
+}
+
+:where(.busuu-ref).bu-mk > :not(.bu-mk__wash) {
+  position: relative;
+}
+
+:where(.busuu-ref) .bu-mk__wash {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 570px;
+  background: linear-gradient(#e7f0fd 0%, #ffffff 100%);
+}
+
+:where(.busuu-ref) .bu-mh {
+  position: relative;
+  z-index: 20;
+  height: 90px;
+  padding: 0 62px;
+}
+
+:where(.busuu-ref) .bu-mh--blue {
+  background: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-mh__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 21px 0;
+}
+
+:where(.busuu-ref) .bu-logo--mh {
+  width: 132px;
+  height: 48px;
+  --bu-logo-cut: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-mh--clear .bu-logo--mh {
+  color: var(--bu-blue);
+  --bu-logo-cut: #eaf2fd;
+}
+
+:where(.busuu-ref) .bu-mh__actions {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+:where(.busuu-ref) .bu-mh__round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border-radius: 26px;
+  background: var(--bu-navy);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-mh__round:hover {
+  background: var(--bu-navy-hover);
+}
+
+:where(.busuu-ref) .bu-mh__round:active {
+  background: #000;
+}
+
+:where(.busuu-ref) .bu-mh__langbtn {
+  gap: 8px;
+  width: 131px;
+  padding: 12px 24px;
+}
+
+:where(.busuu-ref) .bu-mh__langbtn .bu-chev {
+  margin-left: 8px;
+}
+
+:where(.busuu-ref) .bu-chev {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-chev--up {
+  transform: rotate(180deg);
+}
+
+:where(.busuu-ref) .bu-mh__burger {
+  position: relative;
+  width: 60px;
+}
+
+:where(.busuu-ref) .bu-mh__burger span {
+  position: absolute;
+  left: 20px;
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-mh__burger span:first-child {
+  top: 20px;
+}
+
+:where(.busuu-ref) .bu-mh__burger span:last-child {
+  top: 26px;
+}
+
+:where(.busuu-ref) .bu-mh__burger.is-open span:first-child {
+  top: 23px;
+  transform: rotate(45deg);
+}
+
+:where(.busuu-ref) .bu-mh__burger.is-open span:last-child {
+  top: 23px;
+  transform: rotate(-45deg);
+}
+
+:where(.busuu-ref) .bu-mh__lang,
+:where(.busuu-ref) .bu-mh__menu {
+  position: relative;
+}
+
+/* Desktop dropdowns (opened screenshots of /en/about at 1440). */
+:where(.busuu-ref) .bu-menu,
+:where(.busuu-ref) .bu-langmenu {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: rgba(99, 121, 154, 0.16) 0px 6px 23px 2px;
+  color: var(--bu-ink-deep);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  animation: bu-pop 0.2s ease-out;
+}
+
+@keyframes bu-pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+:where(.busuu-ref) .bu-menu {
+  top: 85px;
+  right: 2px;
+  width: 336px;
+  padding: 20px 32px 24px;
+}
+
+:where(.busuu-ref) .bu-menu__phone {
+  display: none;
+}
+
+:where(.busuu-ref) .bu-menu__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+}
+
+:where(.busuu-ref) .bu-menu__row:hover,
+:where(.busuu-ref) .bu-menu__courses a:hover,
+:where(.busuu-ref) .bu-langmenu a:hover {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-menu__toggle .bu-chev {
+  width: 14px;
+  height: 14px;
+}
+
+:where(.busuu-ref) .bu-menu__courses {
+  display: grid;
+  grid-template-columns: 152px 1fr;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 40px);
+  margin-bottom: 6px;
+}
+
+:where(.busuu-ref) .bu-menu__courses a,
+:where(.busuu-ref) .bu-langmenu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+}
+
+:where(.busuu-ref) .bu-langmenu {
+  top: 77px;
+  width: 230px;
+  padding: 16px 20px 20px;
+}
+
+:where(.busuu-ref) .bu-langmenu__caption,
+:where(.busuu-ref) .bu-menu__caption {
+  color: var(--bu-muted-2);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+:where(.busuu-ref) .bu-langmenu__check {
+  width: 14px;
+  height: 14px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: #d6dee6;
+}
+
+/* ---------- Scrolling band ---------- */
+
+:where(.busuu-ref) .bu-marquee {
+  display: flex;
+  align-items: center;
+  height: 318px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+:where(.busuu-ref) .bu-marquee__track {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+  animation: bu-marquee 30s linear infinite;
+}
+
+@keyframes bu-marquee {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+:where(.busuu-ref) .bu-marquee__item {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  color: var(--bu-ink);
+  font-size: 104px;
+  font-weight: 800;
+  line-height: 145px;
+  letter-spacing: -5.2px;
+  white-space: nowrap;
+}
+
+:where(.busuu-ref) .bu-marquee__first {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-marquee__art {
+  width: 200px;
+  height: 120px;
+  margin-left: -4px;
+  border-radius: 60px 60px 60px 8px;
+}
+
+/* ---------- Marketing footer ---------- */
+
+:where(.busuu-ref) .bu-mf {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 62px 72px;
+  color: var(--bu-ink-deep);
+}
+
+:where(.busuu-ref) .bu-mf__main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1190px;
+  min-height: 691px;
+}
+
+:where(.busuu-ref) .bu-mf__cols {
+  display: flex;
+  gap: 96px;
+}
+
+:where(.busuu-ref) .bu-mf__col {
+  width: var(--col, auto);
+}
+
+:where(.busuu-ref) .bu-mf__col:nth-child(1) { --col: 308px; }
+:where(.busuu-ref) .bu-mf__col:nth-child(2) { --col: 135px; }
+:where(.busuu-ref) .bu-mf__col:nth-child(3) { --col: 118px; }
+:where(.busuu-ref) .bu-mf__col:nth-child(4) { --col: 111px; }
+:where(.busuu-ref) .bu-mf__col:nth-child(5) { --col: 134px; }
+
+:where(.busuu-ref) .bu-mf__col h2 {
+  margin-bottom: 28px;
+  padding-top: 15px;
+  color: var(--bu-ink);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 23px;
+}
+
+:where(.busuu-ref) .bu-mf__col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+:where(.busuu-ref) .bu-mf__col--grid ul {
+  display: grid;
+  grid-template-columns: 148.938px 148.938px;
+  grid-auto-rows: 46px;
+  gap: 10px;
+}
+
+:where(.busuu-ref) .bu-mf a {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+:where(.busuu-ref) .bu-mf__col a:hover,
+:where(.busuu-ref) .bu-mf__acc-list a:hover {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-mf__col a:focus-visible,
+:where(.busuu-ref) .bu-mf__acc-list a:focus-visible {
+  background: #c3dbfb;
+  color: var(--bu-navy);
+  outline-color: var(--bu-navy);
+}
+
+:where(.busuu-ref) .bu-mf__accs {
+  display: none;
+}
+
+:where(.busuu-ref) .bu-mf__bottom {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+  height: 95px;
+}
+
+:where(.busuu-ref) .bu-mf__site {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 216px;
+}
+
+:where(.busuu-ref) .bu-mf__site p {
+  color: var(--bu-muted-2);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+:where(.busuu-ref) .bu-mf__site button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 53px;
+  padding: 13px 16px 16px;
+  border-radius: 20px;
+  background: var(--bu-surface);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+:where(.busuu-ref) .bu-mf__site button span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+:where(.busuu-ref) .bu-mf__credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+:where(.busuu-ref) .bu-mf__credits a {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:where(.busuu-ref) .bu-mf__legal {
+  display: flex;
+  gap: 24px;
+}
+
+:where(.busuu-ref) .bu-badges {
+  display: flex;
+  gap: 20px;
+}
+
+:where(.busuu-ref) .bu-badge {
+  display: block;
+  width: 119px;
+  height: 40px;
+  margin-right: 17px;
+  border-radius: 8px;
+  background: #121b26;
+}
+
+:where(.busuu-ref) .bu-mf__art {
+  position: absolute;
+  top: 423px;
+  left: 922px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle at 60% 70%, #dbe8fc 0 30%, transparent 31%);
+}
+
+:where(.busuu-ref) .bu-mf__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 28px;
+  width: 126px;
+}
+
+:where(.busuu-ref) .bu-mf__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: rgba(99, 121, 154, 0.16) 0px 6px 23px 2px;
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-mf__social svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Legacy frame (home footer, statements) ---------- */
+
+:where(.busuu-ref) .bu-lh {
+  height: 50px;
+}
+
+:where(.busuu-ref) .bu-lh__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+  max-width: 100%;
+  height: 40px;
+  margin: 5px auto 0;
+  padding: 0 10px;
+}
+
+:where(.busuu-ref) .bu-logo--legacy {
+  width: 127px;
+  height: 40px;
+  margin-left: 10px;
+  color: var(--bu-blue);
+  font-size: 24px;
+  --bu-logo-cut: #fff;
+}
+
+:where(.busuu-ref) .bu-logo--legacy svg {
+  width: 34px;
+  height: 34px;
+}
+
+:where(.busuu-ref) .bu-lh__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+:where(.busuu-ref) .bu-lh__text {
+  padding: 5px 0;
+  color: var(--bu-ink);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23.8px;
+}
+
+:where(.busuu-ref) .bu-lh__text:hover {
+  text-decoration: underline;
+}
+
+:where(.busuu-ref) .bu-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  padding: 6px 28px;
+  border: 2px solid var(--bu-blue);
+  border-radius: 45.04px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+:where(.busuu-ref) .bu-pill--blue {
+  background: var(--bu-blue);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-pill--blue:hover {
+  background: #5398f8;
+  border-color: #5398f8;
+}
+
+:where(.busuu-ref) .bu-pill--outline {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-pill--outline:hover {
+  background: var(--bu-blue);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-lf {
+  background: var(--bu-legacy);
+  color: var(--bu-ink);
+}
+
+:where(.busuu-ref) .bu-lf__wrap {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+:where(.busuu-ref) .bu-lf__section {
+  padding: 0 20px;
+}
+
+:where(.busuu-ref) .bu-lf h2 {
+  margin-bottom: 12px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 27.2px;
+}
+
+:where(.busuu-ref) .bu-lf__display {
+  width: 300px;
+  height: 100px;
+}
+
+:where(.busuu-ref) .bu-lf__select {
+  width: 220px;
+  height: 41px;
+  margin-left: 20px;
+  padding: 10px 25px 10px 10px;
+  border: 1px solid var(--bu-field);
+  border-radius: 5px;
+  background: #fff;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+:where(.busuu-ref) .bu-lf__select:focus-visible {
+  border-color: var(--bu-blue);
+  outline: none;
+}
+
+:where(.busuu-ref) .bu-lf__cols {
+  display: flex;
+}
+
+:where(.busuu-ref) .bu-lf__col {
+  width: 33.333%;
+}
+
+:where(.busuu-ref) .bu-lf ul {
+  margin-bottom: 17px;
+  padding: 0 20px;
+}
+
+:where(.busuu-ref) .bu-lf li {
+  height: 23.8px;
+  margin-bottom: 3px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23.8px;
+}
+
+:where(.busuu-ref) .bu-lf li a:hover {
+  text-decoration: underline;
+}
+
+:where(.busuu-ref) .bu-lf__credits {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 20px 0 15px;
+  border-top: 1px solid var(--bu-field);
+}
+
+:where(.busuu-ref) .bu-lf__credits p {
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23.8px;
+}
+
+:where(.busuu-ref) .bu-lf__credits span {
+  padding: 0 30px;
+}
+
+:where(.busuu-ref) .bu-lf__socials {
+  display: flex;
+  gap: 14px;
+}
+
+:where(.busuu-ref) .bu-lf__socials a {
+  display: block;
+  width: 40px;
+  height: 48px;
+}
+
+:where(.busuu-ref) .bu-lf__socials span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #a7b0b7;
+}
+
+:where(.busuu-ref) .bu-lf__socials a:hover span {
+  background: var(--bu-blue);
+}
+
+/* ---------- App frame ---------- */
+
+:where(.busuu-ref) .bu-app__bar {
+  position: relative;
+  z-index: 2;
+  height: 59px;
+  padding: 8px 16px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
+}
+
+:where(.busuu-ref) .bu-app__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+  max-width: 100%;
+  height: 42px;
+  margin: 0 auto;
+}
+
+:where(.busuu-ref) .bu-logo--app {
+  width: 128px;
+  height: 42px;
+  color: var(--bu-blue);
+  font-size: 25px;
+  --bu-logo-cut: #fff;
+}
+
+:where(.busuu-ref) .bu-logo--app svg {
+  width: 34px;
+  height: 34px;
+}
+
+:where(.busuu-ref) .bu-app__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+:where(.busuu-ref) .bu-app__text {
+  padding: 0 10px;
+  color: var(--bu-navy);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+:where(.busuu-ref) .bu-app__text:hover {
+  color: var(--bu-blue);
+}
+
+:where(.busuu-ref) .bu-app__btn {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 6px 16px;
+  border: 2px solid var(--bu-blue);
+  border-radius: 26px;
+  color: var(--bu-blue);
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.busuu-ref) .bu-app__btn--solid {
+  background: var(--bu-blue);
+  color: #fff;
+}
+
+:where(.busuu-ref) .bu-app__btn:hover {
+  border-color: var(--bu-blue-hover);
+}
+
+:where(.busuu-ref) .bu-app__btn--solid:hover {
+  background: var(--bu-blue-hover);
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 767px) {
+  :where(.busuu-ref) .bu-mh {
+    height: 78px;
+    padding: 0 16px;
+  }
+
+  :where(.busuu-ref) .bu-mh__nav {
+    height: 78px;
+  }
+
+  :where(.busuu-ref) .bu-logo--mh {
+    width: 94px;
+    height: 36px;
+    font-size: 19px;
+  }
+
+  :where(.busuu-ref) .bu-logo--mh svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  :where(.busuu-ref) .bu-mh__desk {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-mh__menu {
+    position: static;
+  }
+
+  :where(.busuu-ref) .bu-mh__burger {
+    width: 42px;
+    height: 35px;
+  }
+
+  :where(.busuu-ref) .bu-mh__burger span {
+    left: 11px;
+  }
+
+  :where(.busuu-ref) .bu-mh__burger span:first-child {
+    top: 13px;
+  }
+
+  :where(.busuu-ref) .bu-mh__burger span:last-child {
+    top: 19px;
+  }
+
+  :where(.busuu-ref) .bu-mh__burger.is-open span {
+    top: 16px !important;
+  }
+
+  :where(.busuu-ref) .bu-menu {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: calc(100vh - 78px);
+    overflow-y: auto;
+    padding: 16px 16px 32px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  :where(.busuu-ref) .bu-menu__phone {
+    display: block;
+  }
+
+  :where(.busuu-ref) .bu-menu__site {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 52px;
+    margin: 4px 0 52px;
+    padding: 0 16px;
+    border-radius: 20px;
+    background: var(--bu-surface);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  :where(.busuu-ref) .bu-menu__row {
+    height: 46px;
+  }
+
+  :where(.busuu-ref) .bu-menu__courses {
+    grid-template-columns: 152px 1fr;
+  }
+
+  :where(.busuu-ref) .bu-menu__courses a {
+    gap: 12px;
+  }
+
+  :where(.busuu-ref) .bu-menu__courses .bu-flag {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  :where(.busuu-ref) .bu-menu__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 12px;
+  }
+
+  :where(.busuu-ref) .bu-menu__signin {
+    border-color: var(--bu-field);
+    color: var(--bu-navy);
+  }
+
+  :where(.busuu-ref) .bu-marquee {
+    height: 125px;
+    margin-bottom: 30px;
+  }
+
+  :where(.busuu-ref) .bu-marquee__item {
+    gap: 12px;
+    font-size: 36px;
+    line-height: 65px;
+    letter-spacing: -1.08px;
+  }
+
+  :where(.busuu-ref) .bu-marquee__art {
+    width: 40px;
+    height: 40px;
+    margin-left: 4px;
+    border-radius: 20px 20px 20px 4px;
+  }
+
+  :where(.busuu-ref) .bu-mf {
+    flex-direction: column;
+    padding: 0 16px 18px;
+  }
+
+  :where(.busuu-ref) .bu-mf__cols,
+  :where(.busuu-ref) .bu-mf__art {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-mf__accs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  :where(.busuu-ref) .bu-mf__acc {
+    padding: 12px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  :where(.busuu-ref) .bu-mf__acc-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 48px;
+    color: var(--bu-ink);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21px;
+  }
+
+  :where(.busuu-ref) .bu-mf__acc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 0 4px;
+  }
+
+  /* Phone order: sections, site language, store badges, socials, credits. */
+  :where(.busuu-ref) .bu-mf__main,
+  :where(.busuu-ref) .bu-mf__bottom {
+    display: contents;
+  }
+
+  :where(.busuu-ref) .bu-mf__accs { order: 1; }
+
+  :where(.busuu-ref) .bu-mf__site {
+    order: 2;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  :where(.busuu-ref) .bu-mf .bu-badges {
+    order: 3;
+    justify-content: center;
+    margin-top: 38px;
+  }
+
+  :where(.busuu-ref) .bu-mf__socials {
+    order: 4;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    margin-top: 40px;
+  }
+
+  :where(.busuu-ref) .bu-mf__credits {
+    order: 5;
+    flex-direction: row;
+    justify-content: center;
+    gap: 21px;
+    margin-top: 40px;
+  }
+
+  :where(.busuu-ref) .bu-badge {
+    margin-right: 0;
+  }
+
+  :where(.busuu-ref) .bu-mf__social {
+    width: 40px;
+    height: 40px;
+  }
+
+  :where(.busuu-ref) .bu-lh__text {
+    display: none;
+  }
+
+  :where(.busuu-ref) .bu-lf__cols {
+    flex-direction: column;
+  }
+
+  :where(.busuu-ref) .bu-lf__col {
+    width: 100%;
+  }
+
+  :where(.busuu-ref) .bu-lf__credits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  :where(.busuu-ref) .bu-app__links .bu-app__text {
+    display: none;
+  }
+}
+
+/* Course pages: no site-language block in the footer, so the bottom row is 45px. */
+:where(.busuu-ref) .bu-mf--simple .bu-mf__site {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  :where(.busuu-ref) .bu-mf--simple .bu-mf__main {
+    min-height: 641px;
+  }
+
+  :where(.busuu-ref) .bu-mf--simple .bu-mf__bottom {
+    height: 45px;
+  }
+}

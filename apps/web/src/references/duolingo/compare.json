@@ -1,0 +1,45 @@
+{
+  "home": {
+    "desktop": 94.68,
+    "phone": 83.09
+  },
+  "course": {
+    "desktop": 93.58,
+    "phone": 86.21
+  },
+  "subscription": {
+    "desktop": 91.43,
+    "phone": 73.3
+  },
+  "subject": {
+    "desktop": 96.47,
+    "phone": 87.18
+  },
+  "business": {
+    "desktop": 89,
+    "phone": 83.19
+  },
+  "efficacy": {
+    "desktop": 95.01,
+    "phone": 86.2
+  },
+  "help": {
+    "desktop": 94.22,
+    "phone": 88.53
+  },
+  "legal": {
+    "desktop": 84.48,
+    "phone": 74.04
+  },
+  "courses": {
+    "desktop": 93.31,
+    "phone": 87.23
+  },
+  "register": {
+    "desktop": 92,
+    "phone": 85.07
+  },
+  "login": {
+    "desktop": 97.07
+  }
+}

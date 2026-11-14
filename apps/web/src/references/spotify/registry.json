@@ -1,0 +1,94 @@
+{
+  "screens": [
+    {
+      "id": "home",
+      "title": "Home",
+      "theme": "dark",
+      "template": "home",
+      "url": "https://open.spotify.com",
+      "survey": "home",
+      "capture": "home/screen-clean.png",
+      "capturePhone": "home/screen-clean-390.png"
+    },
+    {
+      "id": "album",
+      "title": "Album",
+      "theme": "dark",
+      "template": "album",
+      "url": "https://open.spotify.com/album/07yiI9ScrZV7DXiObRz6Sp",
+      "survey": "album-07yiI9ScrZV7DXiObRz6Sp",
+      "capture": "album-07yiI9ScrZV7DXiObRz6Sp/screen-clean.png",
+      "capturePhone": "album-07yiI9ScrZV7DXiObRz6Sp/screen-clean-390.png"
+    },
+    {
+      "id": "playlist",
+      "title": "Playlist",
+      "theme": "dark",
+      "template": "playlist",
+      "url": "https://open.spotify.com/playlist/37i9dQZEVXbIVYVBNw9D5K",
+      "survey": "playlist-37i9dQZEVXbIVYVBNw9D5K",
+      "capture": "playlist-37i9dQZEVXbIVYVBNw9D5K/screen-clean.png",
+      "capturePhone": "playlist-37i9dQZEVXbIVYVBNw9D5K/screen-clean-390.png"
+    },
+    {
+      "id": "artist",
+      "title": "Artist",
+      "theme": "dark",
+      "template": "artist",
+      "url": "https://open.spotify.com/artist/08mjMUUjyTchMHCW7evc3R",
+      "survey": "artist-08mjMUUjyTchMHCW7evc3R",
+      "capture": "artist-08mjMUUjyTchMHCW7evc3R/screen-clean.png",
+      "capturePhone": "artist-08mjMUUjyTchMHCW7evc3R/screen-clean-390.png"
+    },
+    {
+      "id": "section",
+      "title": "Show All Grid",
+      "theme": "dark",
+      "template": "section-grid",
+      "url": "https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B",
+      "survey": "section-0JQ5DAnM3wGh0gz1MXnu3B",
+      "capture": "section-0JQ5DAnM3wGh0gz1MXnu3B/screen-clean.png",
+      "capturePhone": "section-0JQ5DAnM3wGh0gz1MXnu3B/screen-clean-390.png"
+    },
+    {
+      "id": "genre",
+      "title": "Genre",
+      "theme": "dark",
+      "template": "genre",
+      "url": "https://open.spotify.com/genre/podcasts-web",
+      "survey": "genre-podcasts-web",
+      "capture": "genre-podcasts-web/screen-clean.png",
+      "capturePhone": "genre-podcasts-web/screen-clean-390.png"
+    },
+    {
+      "id": "region",
+      "title": "Region Hub",
+      "theme": "dark",
+      "template": "region",
+      "url": "https://open.spotify.com/popular-in/tr",
+      "survey": "popular-in-tr",
+      "capture": "popular-in-tr/screen-clean.png",
+      "capturePhone": "popular-in-tr/screen-clean-390.png"
+    },
+    {
+      "id": "search",
+      "title": "Search Browse",
+      "theme": "dark",
+      "template": "search",
+      "url": "https://open.spotify.com/search",
+      "capture": "search/screen-clean.png",
+      "capturePhone": "search/screen-clean-390.png"
+    },
+    {
+      "id": "download",
+      "title": "Download",
+      "theme": "dark",
+      "template": "download",
+      "url": "https://open.spotify.com/download",
+      "survey": "download",
+      "capture": "download/screen-clean.png",
+      "capturePhone": "download/screen-clean-390.png"
+    }
+  ],
+  "components": {}
+}

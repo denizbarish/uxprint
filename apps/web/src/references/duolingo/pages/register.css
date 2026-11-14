@@ -1,0 +1,88 @@
+/* Sign-up course picker (measured on /register). */
+
+:where(.duolingo-ref) .dl-reg__bar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  height: 72px;
+  border-bottom: 2px solid transparent;
+  background: #fff;
+}
+
+:where(.duolingo-ref) .dl-reg__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 988px;
+  max-width: 100%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+:where(.duolingo-ref) .dl-reg__logo {
+  height: 46px;
+  font-size: 38px;
+}
+
+:where(.duolingo-ref) .dl-reg {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+:where(.duolingo-ref) .dl-reg__panel {
+  width: 1012px;
+  max-width: 100%;
+  padding: 90px 80px 40px;
+}
+
+:where(.duolingo-ref) .dl-reg__title {
+  color: var(--dl-ink-2);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+:where(.duolingo-ref) .dl-reg__grid {
+  grid-template-columns: repeat(4, 213px);
+  row-gap: 24px;
+  margin-top: 50px;
+}
+
+:where(.duolingo-ref) .dl-reg__grid li {
+  padding: 0 6.5px;
+}
+
+@media (max-width: 699px) {
+  :where(.duolingo-ref) .dl-reg__nav {
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  :where(.duolingo-ref) .dl-reg__lang {
+    display: none;
+  }
+
+  :where(.duolingo-ref) .dl-reg__logo {
+    height: 42px;
+    font-size: 34px;
+  }
+
+  :where(.duolingo-ref) .dl-reg {
+    padding: 40px 10px;
+  }
+
+  :where(.duolingo-ref) .dl-reg__panel {
+    padding: 74px 12px 0;
+  }
+
+  :where(.duolingo-ref) .dl-reg__grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12px;
+  }
+
+  :where(.duolingo-ref) .dl-reg__grid li {
+    padding: 0 6px;
+  }
+}

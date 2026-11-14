@@ -1,0 +1,772 @@
+/*
+ * Reference screens for this print: the logged-out web player frame. Values come from
+ * the print.json record and getComputedStyle/getBoundingClientRect reads of the live pages at
+ * 1440x900 and 390x844 (the frame keeps 800px below that width and the viewport crops it).
+ * Brand, copy and artwork are neutral. Everything is scoped under .spotify-ref.
+ */
+
+:where(.spotify-ref),
+:where(.spotify-ref) *,
+:where(.spotify-ref) *::before,
+:where(.spotify-ref) *::after {
+  box-sizing: border-box;
+}
+
+:where(.spotify-ref) {
+  --sp-frame: #000000;
+  --sp-panel: #121212;
+  --sp-control: #1f1f1f;
+  --sp-control-hover: #2a2a2a;
+  --sp-dialog: #282828;
+  --sp-text: #ffffff;
+  --sp-subdued: #b3b3b3;
+  --sp-meta: #ffffffb3;
+  --sp-rule: #292929;
+  --sp-outline: #7c7c7c;
+  --sp-green: #1ed760;
+  --sp-green-hover: #3be477;
+  --sp-callout: #0c69d8;
+  --sp-ease: cubic-bezier(0.3, 0, 0, 1);
+  --sp-lib-w: 331px;
+  --sp-rail-w: 40px;
+  font-family: "Inter Variable", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--sp-subdued);
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.spotify-ref) :where(h1, h2, h3, h4, p, ul, ol, figure) {
+  margin: 0;
+  padding: 0;
+}
+
+:where(.spotify-ref) :where(ul, ol) {
+  list-style: none;
+}
+
+:where(.spotify-ref) :where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(.spotify-ref) :where(button) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+:where(.spotify-ref) :where(a, button, input, [tabindex]):focus-visible {
+  outline: 3px solid var(--sp-text);
+  outline-offset: 1px;
+}
+
+:where(.spotify-ref) .sp-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- Frame: the document never scrolls ---------- */
+
+:where(.spotify-ref).sp-frame {
+  display: grid;
+  grid-template-rows: 64px minmax(0, 1fr) auto;
+  width: 100%;
+  min-width: 800px;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--sp-frame);
+}
+
+:where(.spotify-ref) .sp-body {
+  display: grid;
+  grid-template-columns: var(--sp-lib-w) minmax(0, 1fr) var(--sp-rail-w);
+  column-gap: 8px;
+  min-height: 0;
+  padding-left: 8px;
+}
+
+@media (max-width: 1023px) {
+  :where(.spotify-ref) {
+    --sp-lib-w: 280px;
+    --sp-rail-w: 32px;
+  }
+
+  :where(.spotify-ref) .sp-body {
+    padding-right: 8px;
+  }
+}
+
+/* ---------- Top bar ---------- */
+
+:where(.spotify-ref) .sp-top {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 8px;
+  background: var(--sp-frame);
+}
+
+:where(.spotify-ref) .sp-top__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 48px;
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-top__mark svg {
+  width: 32px;
+  height: 32px;
+}
+
+:where(.spotify-ref) .sp-home {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-left: 8px;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--sp-control);
+  color: var(--sp-subdued);
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+:where(.spotify-ref) .sp-home[aria-current="page"] {
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-home:hover {
+  background: var(--sp-control-hover);
+  color: var(--sp-text);
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-home:active {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+:where(.spotify-ref) .sp-search {
+  position: relative;
+  width: 490px;
+  padding: 0 8px;
+}
+
+:where(.spotify-ref) .sp-search__input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 96px 12px 48px;
+  border: 0;
+  border-radius: 500px;
+  background: var(--sp-control);
+  color: var(--sp-text);
+  font: inherit;
+  font-size: 16px;
+  transition:
+    box-shadow 0.22s ease-in,
+    background 0.22s ease-in,
+    color 0.22s ease-in;
+}
+
+:where(.spotify-ref) .sp-search__input::placeholder {
+  color: var(--sp-subdued);
+  opacity: 1;
+}
+
+:where(.spotify-ref) .sp-search__input:hover {
+  background: var(--sp-control-hover);
+}
+
+:where(.spotify-ref) .sp-search__input:focus-visible {
+  outline: none;
+  background: var(--sp-control-hover);
+  box-shadow: #ffffff 0 0 0 2px inset;
+}
+
+:where(.spotify-ref) .sp-search__icon {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  color: var(--sp-subdued);
+  transition: color 0.22s ease-in;
+}
+
+:where(.spotify-ref) .sp-search__icon:hover {
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-search__browse {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 4px 0 12px;
+  border-left: 1px solid var(--sp-outline);
+}
+
+:where(.spotify-ref) .sp-search__browse button {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  color: var(--sp-subdued);
+  transition:
+    color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-search__browse button:hover,
+:where(.spotify-ref) .sp-search__browse button[aria-current="page"] {
+  color: var(--sp-text);
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-top__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+:where(.spotify-ref) .sp-top__nav {
+  display: flex;
+  gap: 8px;
+}
+
+:where(.spotify-ref) .sp-textbtn {
+  height: 48px;
+  padding: 8px 0;
+  border-radius: 9999px;
+  color: var(--sp-subdued);
+  font-size: 16px;
+  font-weight: 700;
+  transition:
+    color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-textbtn:hover,
+:where(.spotify-ref) .sp-install:hover,
+:where(.spotify-ref) .sp-signup:hover {
+  color: var(--sp-text);
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-textbtn:active,
+:where(.spotify-ref) .sp-install:active,
+:where(.spotify-ref) .sp-signup:active {
+  color: var(--sp-text);
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+:where(.spotify-ref) .sp-top__divider {
+  width: 1px;
+  height: 25px;
+  margin: 0 24px;
+  background: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-install {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 4px 16px 4px 36px;
+  border-radius: 9999px;
+  color: var(--sp-subdued);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-install svg {
+  position: absolute;
+  left: 12px;
+}
+
+:where(.spotify-ref) .sp-signup {
+  height: 32px;
+  margin-left: 8px;
+  padding: 4px 16px 4px 8px;
+  border-radius: 9999px;
+  color: var(--sp-subdued);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+/* White pill (log in, join for free, create, browse). */
+:where(.spotify-ref) .sp-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: var(--sp-text);
+  color: #000000;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    background-color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-pill:hover {
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-pill:active {
+  transform: scale(1);
+}
+
+:where(.spotify-ref) .sp-pill--lg {
+  height: 48px;
+  padding: 8px 32px;
+  font-size: 16px;
+}
+
+:where(.spotify-ref) .sp-pill--sm {
+  height: 32px;
+  padding: 4px 16px;
+  font-size: 14px;
+}
+
+:where(.spotify-ref) .sp-login {
+  width: 108px;
+  margin-left: 1px;
+}
+
+@media (max-width: 1279px) {
+  :where(.spotify-ref) .sp-search {
+    width: auto;
+  }
+
+  :where(.spotify-ref) .sp-search__input {
+    width: 48px;
+    padding: 12px 0 12px 48px;
+  }
+
+  :where(.spotify-ref) .sp-search__input::placeholder {
+    color: transparent;
+  }
+
+  :where(.spotify-ref) .sp-search__browse {
+    display: none;
+  }
+}
+
+/* ---------- Library rail ---------- */
+
+:where(.spotify-ref) .sp-lib {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--sp-panel);
+}
+
+:where(.spotify-ref) .sp-lib__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px 8px;
+}
+
+:where(.spotify-ref) .sp-lib__title {
+  padding-left: 4px;
+  color: var(--sp-text);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+:where(.spotify-ref) .sp-lib__create {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 9999px;
+  background: var(--sp-control);
+  color: var(--sp-subdued);
+  transition: background-color 0.2s ease-out;
+}
+
+:where(.spotify-ref) .sp-lib__create:hover {
+  background: var(--sp-control-hover);
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-lib__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 8px 8px;
+}
+
+:where(.spotify-ref) .sp-lib__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: var(--sp-control);
+}
+
+:where(.spotify-ref) .sp-lib__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-lib__card-text strong {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+:where(.spotify-ref) .sp-lib__card-text span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:where(.spotify-ref) .sp-lib__foot {
+  margin-top: auto;
+  padding: 32px 0;
+}
+
+:where(.spotify-ref) .sp-legal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 24px;
+}
+
+:where(.spotify-ref) .sp-legal li {
+  height: 25px;
+  margin-right: 16px;
+}
+
+:where(.spotify-ref) .sp-legal a,
+:where(.spotify-ref) .sp-legal button {
+  display: inline-block;
+  color: var(--sp-subdued);
+  font-size: 12px;
+  line-height: 17px;
+  transition: color 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-legal a:hover,
+:where(.spotify-ref) .sp-legal button:hover {
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-legal__cookies {
+  display: block;
+  padding: 4px 0 1px 24px;
+  color: var(--sp-text);
+  font-size: 12px;
+  line-height: 17px;
+}
+
+:where(.spotify-ref) .sp-legal__cookies:hover {
+  text-decoration: underline;
+}
+
+:where(.spotify-ref) .sp-lang {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  margin: 32px 0 0 24px;
+  padding: 4px 16px 4px 36px;
+  border: 1px solid var(--sp-outline);
+  border-radius: 9999px;
+  color: var(--sp-text);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    border-color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-lang svg {
+  position: absolute;
+  left: 12px;
+}
+
+:where(.spotify-ref) .sp-lang:hover {
+  border-color: var(--sp-text);
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-lang:active {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+/* ---------- Main view (inner scroller) ---------- */
+
+:where(.spotify-ref) .sp-main {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--sp-panel);
+  container: sp-main / inline-size;
+}
+
+:where(.spotify-ref) .sp-scroll {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff4d transparent;
+}
+
+:where(.spotify-ref) .sp-scroll:focus-visible {
+  outline-offset: -3px;
+}
+
+/* ---------- Collapsed right rail ---------- */
+
+:where(.spotify-ref) .sp-rail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--sp-panel);
+}
+
+:where(.spotify-ref) .sp-rail button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--sp-subdued);
+  transition: color 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-rail button:hover {
+  color: var(--sp-text);
+}
+
+/* Below 1024px the small text steps down one pixel (measured at 390: 14px to 13px, 12px to 11px). */
+@media (max-width: 1023px) {
+  :where(.spotify-ref) .sp-lib__card-text span {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  :where(.spotify-ref) .sp-lib .sp-pill--sm,
+  :where(.spotify-ref) .sp-lang,
+  :where(.spotify-ref) .sp-strip__text strong {
+    font-size: 13px;
+  }
+
+  :where(.spotify-ref) .sp-strip__text strong {
+    line-height: 18px;
+  }
+
+  :where(.spotify-ref) .sp-legal li {
+    height: 23px;
+  }
+
+  :where(.spotify-ref) .sp-legal a,
+  :where(.spotify-ref) .sp-legal button,
+  :where(.spotify-ref) .sp-legal__cookies {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  :where(.spotify-ref) .sp-legal__cookies {
+    padding-top: 6px;
+  }
+
+  /* Not observed: the text nav sits past the visible 390px of the 800px frame. */
+  :where(.spotify-ref) .sp-top__nav,
+  :where(.spotify-ref) .sp-top__divider {
+    display: none;
+  }
+}
+
+/* ---------- Bottom sign-up strip ---------- */
+
+:where(.spotify-ref) .sp-strip-row {
+  padding: 8px;
+}
+
+:where(.spotify-ref) .sp-strip {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 66px;
+  padding: 11px 24px 7px 15px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgb(175, 40, 150), rgb(80, 155, 245));
+  color: var(--sp-text);
+}
+
+:where(.spotify-ref) .sp-strip__text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+:where(.spotify-ref) .sp-strip__text strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+:where(.spotify-ref) .sp-strip__text p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+:where(.spotify-ref) .sp-strip .sp-pill {
+  flex: none;
+  width: 153px;
+  margin: -4px 0 0;
+}
+
+/* ---------- Footer inside the main view ---------- */
+
+:where(.spotify-ref) .sp-footer {
+  padding: 64px 24px 40px;
+}
+
+:where(.spotify-ref) .sp-footer hr {
+  height: 0;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--sp-rule);
+}
+
+:where(.spotify-ref) .sp-footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 64px 0 40px;
+}
+
+:where(.spotify-ref) .sp-footer__cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+:where(.spotify-ref) .sp-footer__col {
+  width: 169px;
+}
+
+:where(.spotify-ref) .sp-footer__col h4 {
+  padding-bottom: 8px;
+  color: var(--sp-text);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+:where(.spotify-ref) .sp-footer__col li + li {
+  margin-top: 8px;
+}
+
+:where(.spotify-ref) .sp-footer__col a {
+  color: var(--sp-subdued);
+  font-size: 16px;
+  line-height: 22px;
+  transition: color 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-footer__col a:hover {
+  color: var(--sp-text);
+  text-decoration: underline;
+}
+
+:where(.spotify-ref) .sp-footer__social {
+  display: flex;
+  gap: 16px;
+}
+
+:where(.spotify-ref) .sp-footer__social a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--sp-rule);
+  color: var(--sp-text);
+  transition:
+    background-color 0.15s var(--sp-ease),
+    transform 0.15s var(--sp-ease);
+}
+
+:where(.spotify-ref) .sp-footer__social a:hover {
+  background: #727272;
+  transform: scale(1.04);
+}
+
+:where(.spotify-ref) .sp-footer__bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  padding: 16px 0 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@container sp-main (max-width: 700px) {
+  :where(.spotify-ref) .sp-footer {
+    padding: 48px 16px 40px;
+  }
+
+  :where(.spotify-ref) .sp-footer__top {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  :where(.spotify-ref) .sp-footer__cols {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.spotify-ref) *,
+  :where(.spotify-ref) *::before,
+  :where(.spotify-ref) *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

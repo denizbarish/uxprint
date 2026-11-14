@@ -1,0 +1,85 @@
+{
+  "screens": [
+    {
+      "id": "home",
+      "title": "Home",
+      "theme": "dark",
+      "template": "home",
+      "url": "https://www.uber.com/tr/en",
+      "survey": "home"
+    },
+    {
+      "id": "ride",
+      "title": "Booking Landing",
+      "theme": "light",
+      "template": "booking-landing",
+      "url": "https://www.uber.com/tr/en/ride",
+      "survey": "tr-en-ride"
+    },
+    {
+      "id": "city",
+      "title": "City Guide",
+      "theme": "light",
+      "template": "city-guide",
+      "url": "https://www.uber.com/global/en/r/cities/istanbul-istanbul-tr",
+      "survey": "global-en-r-cities-istanbul-istanbul-tr"
+    },
+    {
+      "id": "earn",
+      "title": "Earn Landing",
+      "theme": "light",
+      "template": "earn-landing",
+      "url": "https://www.uber.com/tr/en/drive",
+      "survey": "tr-en-drive"
+    },
+    {
+      "id": "story",
+      "title": "Story Page",
+      "theme": "light",
+      "template": "story",
+      "url": "https://www.uber.com/tr/en/safety",
+      "survey": "tr-en-safety"
+    },
+    {
+      "id": "about",
+      "title": "About Hub",
+      "theme": "light",
+      "template": "about-hub",
+      "url": "https://www.uber.com/tr/en/about",
+      "survey": "tr-en-about"
+    },
+    {
+      "id": "teams",
+      "title": "Sub-brand Landing",
+      "theme": "dark",
+      "template": "sub-brand-landing",
+      "url": "https://www.uber.com/tr/en/business",
+      "survey": "tr-en-business"
+    },
+    {
+      "id": "posts",
+      "title": "Post Index",
+      "theme": "light",
+      "template": "article-index",
+      "url": "https://www.uber.com/tr/en/blog",
+      "survey": "tr-en-blog"
+    },
+    {
+      "id": "documents",
+      "title": "Document Index",
+      "theme": "light",
+      "template": "legal-index",
+      "url": "https://www.uber.com/legal/document",
+      "survey": "legal-document"
+    },
+    {
+      "id": "places",
+      "title": "Place Directory",
+      "theme": "light",
+      "template": "directory",
+      "url": "https://www.uber.com/tr/en/r/cities",
+      "survey": "tr-en-r-cities"
+    }
+  ],
+  "components": {}
+}

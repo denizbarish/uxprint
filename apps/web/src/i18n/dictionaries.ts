@@ -118,6 +118,14 @@ const en = {
   },
   pages: { one: "page", many: "pages", openLive: "Open Live Screen" },
   sponsors: { title: "Sponsors", become: "Become A Sponsor", sponsor: "Sponsor" },
+  howTo: {
+    title: "How To Use",
+    steps: [
+      { title: "Find A Print", value: "npx @denizbarish/uxprint list" },
+      { title: "Add It To Your Project", value: "npx @denizbarish/uxprint add linear" },
+      { title: "Tell Your Agent", value: "Read DESIGN.md before writing UI. Use its tokens, type scale, component specs and motion values exactly as written." },
+    ],
+  },
 };
 
 export type Dictionary = typeof en;
@@ -234,6 +242,14 @@ const tr: Dictionary = {
   },
   pages: { one: "sayfa", many: "sayfa", openLive: "Canlı Ekranı Aç" },
   sponsors: { title: "Sponsorlar", become: "Sponsor Ol", sponsor: "Sponsor Ol" },
+  howTo: {
+    title: "Nasıl Kullanılır",
+    steps: [
+      { title: "Kayıt Bul", value: "npx @denizbarish/uxprint list" },
+      { title: "Projene Ekle", value: "npx @denizbarish/uxprint add linear" },
+      { title: "Ajanına Söyle", value: "Arayüz yazmadan önce DESIGN.md dosyasını oku. Token, yazı ölçeği, bileşen ve hareket değerlerini yazıldığı gibi kullan." },
+    ],
+  },
 };
 
 const dictionaries: Record<Locale, Dictionary> = { en, tr };

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Gallery } from "@/components/gallery";
+import { HowTo } from "@/components/how-to";
 import { getDictionary, isLocale, type Locale } from "@/i18n/dictionaries";
 import { getAllPrints } from "@/lib/prints";
 import { toCardData } from "@/lib/preview";
@@ -17,6 +18,7 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
   return (
     <main id="main" className="mx-auto max-w-[1400px] px-4 pt-8 pb-16 sm:px-6">
       <h1 className="mt-0 mb-6 text-[28px] font-semibold tracking-[-0.02em]">{dict.gallery}</h1>
+      <HowTo dict={{ ...dict.howTo, copy: dict.agent.copy, copied: dict.agent.copied }} />
       <Gallery
         cards={cards}
         locale={locale}

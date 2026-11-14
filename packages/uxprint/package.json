@@ -27,8 +27,8 @@
   "scripts": {
     "build": "tsup && tsc",
     "test": "vitest run --reporter=dot",
-    "prepack": "rm -rf prints && cp -R ../../prints prints",
-    "postpack": "rm -rf prints"
+    "prepack": "rm -rf prints && cp -R ../../prints prints && cp ../../README.md ../../LICENSE .",
+    "postpack": "rm -rf prints README.md LICENSE"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",

@@ -62,6 +62,8 @@ export function ReferenceViewer({ slug, locale, screens, labels }: { slug: strin
 
   // Syncs with an external resource: whether the original image is served.
   useEffect(() => {
+    // Only a local build can have them; elsewhere the request would just log a 404.
+    if (!["localhost", "127.0.0.1"].includes(window.location.hostname)) return;
     let cancelled = false;
     const probe = new Image();
     probe.onload = () => !cancelled && setLoaded((state) => ({ ...state, [originalSrc]: true }));

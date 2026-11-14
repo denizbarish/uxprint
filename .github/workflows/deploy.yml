@@ -1,0 +1,55 @@
+# .github/workflows/deploy.yml: uxprint gallery from main to Coolify on cxdem (uxprint.denizbarish.com).
+# The job runs on the uxprint-deploy runner on ci01: the runner accepts only main jobs and builds the image
+# with the project's own buildkitd. The deploy key is not a repo secret; it is mounted read-only into the
+# runner (~/.deploy) and locked on cxdem to a single command and this application. No Coolify token in GitHub.
+# Actions are pinned to commit SHAs; on upgrade, change the SHA together with the tag in the comment.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: deploy-uxprint
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # The real rule lives in the runner's job-started hook (non-main jobs are dropped); this line is a second layer.
+    if: github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, uxprint-deploy]
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069 # v4.4.1
+        with:
+          driver: remote
+          endpoint: unix:///run/buildkit/buildkitd.sock
+      - uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - id: build
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/denizbarish/uxprint:sha-${{ github.sha }}
+          provenance: false
+      - name: Deploy to Coolify (cxdem)
+        env:
+          ETIKET: sha-${{ github.sha }}
+          DIGEST: ${{ steps.build.outputs.digest }}
+        run: |
+          [[ $DIGEST =~ ^sha256:[0-9a-f]{64}$ ]] || { echo "::error::invalid digest: $DIGEST"; exit 1; }
+          ssh -i ~/.deploy/id_ed25519 -o UserKnownHostsFile=~/.deploy/known_hosts -o StrictHostKeyChecking=yes \
+            -o BatchMode=yes -o IdentitiesOnly=yes coolify-ci@45.94.169.141 "deploy $ETIKET $DIGEST"

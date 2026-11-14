@@ -80,7 +80,7 @@ let base = option("url", "");
 if (!base) {
   const dir = join(root, "apps/web/out");
   if (!existsSync(dir)) {
-    console.error("apps/web/out is missing. Run: pnpm --filter uxprint build && pnpm --filter web build");
+    console.error("apps/web/out is missing. Run: pnpm --filter @denizbarish/uxprint build && pnpm --filter web build");
     process.exit(1);
   }
   const port = Number(option("port", "4311"));

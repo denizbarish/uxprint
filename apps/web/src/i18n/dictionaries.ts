@@ -96,7 +96,7 @@ const en = {
     copyDesignMd: "Copy DESIGN.md",
     files: "Static Files",
     promptText: (name: string, slug: string) =>
-      `Read DESIGN.md (the uxprint for ${name}, added with \`npx uxprint add ${slug}\`) before writing UI. Use its tokens, type scale, component specs and motion values exactly as written, follow its principles, and avoid everything in its Avoid list.`,
+      `Read DESIGN.md (the uxprint for ${name}, added with \`npx @denizbarish/uxprint add ${slug}\`) before writing UI. Use its tokens, type scale, component specs and motion values exactly as written, follow its principles, and avoid everything in its Avoid list.`,
   },
   preview: {
     title: "Live Reference",

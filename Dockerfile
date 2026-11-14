@@ -9,7 +9,7 @@ RUN pnpm install --frozen-lockfile
 COPY packages packages
 COPY apps apps
 COPY prints prints
-RUN pnpm --filter uxprint build && pnpm --filter web build
+RUN pnpm --filter @denizbarish/uxprint build && pnpm --filter web build
 
 FROM nginxinc/nginx-unprivileged:1.27-alpine AS runner
 COPY nginx.conf /etc/nginx/conf.d/default.conf

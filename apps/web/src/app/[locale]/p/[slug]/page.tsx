@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import type { Print } from "uxprint";
+import type { Print } from "@denizbarish/uxprint";
 import { CopyButton } from "@/components/copy-button";
 import { LibraryPicker } from "@/components/library-picker";
 import { EasingDemo, KeyframeDemo } from "@/components/motion-demos";
@@ -777,8 +777,8 @@ function CopyBlock({ title, value, dict, children }: { title: string; value: str
 }
 
 function SendToAgent({ print, dict, designMd }: { print: Print; dict: Dictionary; designMd: string }) {
-  const cli = `npx uxprint add ${print.slug}`;
-  const mcp = JSON.stringify({ mcpServers: { uxprint: { command: "npx", args: ["-y", "uxprint", "mcp"] } } }, null, 2);
+  const cli = `npx @denizbarish/uxprint add ${print.slug}`;
+  const mcp = JSON.stringify({ mcpServers: { uxprint: { command: "npx", args: ["-y", "@denizbarish/uxprint", "mcp"] } } }, null, 2);
   const prompt = dict.agent.promptText(print.name, print.slug);
   return (
     <div className="flex flex-col gap-4">

@@ -1,4 +1,4 @@
-import type { Print } from "uxprint";
+import type { Print } from "@denizbarish/uxprint";
 import { renderStack } from "./fonts";
 
 export type CardPreview = {

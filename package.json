@@ -8,7 +8,7 @@
     "draft": "node tools/draft.mjs",
     "build": "pnpm -r build",
     "test": "pnpm -r test",
-    "validate": "pnpm --filter uxprint build && node packages/uxprint/dist/cli.js validate"
+    "validate": "pnpm --filter @denizbarish/uxprint build && node packages/uxprint/dist/cli.js validate"
   },
   "devDependencies": {
     "playwright": "1.65.0",

@@ -1,4 +1,4 @@
-import type { Print } from "uxprint";
+import type { Print } from "@denizbarish/uxprint";
 
 type Family = Print["typography"]["families"][number];
 

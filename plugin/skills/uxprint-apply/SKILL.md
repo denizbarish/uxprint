@@ -9,8 +9,8 @@ A print is the measured record of one platform's interface: colour, type, spacin
 
 ## Steps
 
-1. Find the print. Call the `list_prints` tool (pass a query such as "dark dashboard"), or run `npx uxprint list`. If nothing matches, say so and stop; do not imitate the platform from memory and call it a print.
-2. Put it in the project: `npx uxprint add <slug>` writes `DESIGN.md` and links it from `AGENTS.md` and `CLAUDE.md` when they exist. It refuses to replace an existing `DESIGN.md`; ask before passing `--force`.
+1. Find the print. Call the `list_prints` tool (pass a query such as "dark dashboard"), or run `npx @denizbarish/uxprint list`. If nothing matches, say so and stop; do not imitate the platform from memory and call it a print.
+2. Put it in the project: `npx @denizbarish/uxprint add <slug>` writes `DESIGN.md` and links it from `AGENTS.md` and `CLAUDE.md` when they exist. It refuses to replace an existing `DESIGN.md`; ask before passing `--force`.
 3. Read all of `DESIGN.md` before writing UI code. For exact tokens in code, `get_print` with `format: "json"` returns the structured record.
 4. Map the tokens once (CSS variables or the Tailwind theme), then build components from the Components section, states included.
 

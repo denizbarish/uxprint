@@ -1,5 +1,5 @@
 import { join } from "node:path";
-import { loadAllPrints, loadPrint, renderDesignMd, type Print } from "uxprint";
+import { loadAllPrints, loadPrint, renderDesignMd, type Print } from "@denizbarish/uxprint";
 
 /** Prints live at the repository root; `next build` runs with apps/web as the working directory. */
 const PRINTS_DIR = join(process.cwd(), "..", "..", "prints");

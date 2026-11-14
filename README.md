@@ -7,9 +7,9 @@ A print is the measured record of one platform's interface: colour, type, spacin
 ## Use a print
 
 ```
-npx uxprint list                 # what is available (--json for machines)
-npx uxprint add linear           # writes DESIGN.md into the current project
-npx uxprint show linear --json   # the structured record
+npx @denizbarish/uxprint list                 # what is available (--json for machines)
+npx @denizbarish/uxprint add linear           # writes DESIGN.md into the current project
+npx @denizbarish/uxprint show linear --json   # the structured record
 ```
 
 `add` links `DESIGN.md` from `AGENTS.md` and `CLAUDE.md` when the project has them, so Claude Code, Codex, Cursor and other agents pick it up.
@@ -17,7 +17,7 @@ npx uxprint show linear --json   # the structured record
 ### MCP
 
 ```json
-{ "mcpServers": { "uxprint": { "command": "npx", "args": ["-y", "uxprint", "mcp"] } } }
+{ "mcpServers": { "uxprint": { "command": "npx", "args": ["-y", "@denizbarish/uxprint", "mcp"] } } }
 ```
 
 Tools: `list_prints` (optional `query`) and `get_print` (`slug`, `format`: `design-md` or `json`).

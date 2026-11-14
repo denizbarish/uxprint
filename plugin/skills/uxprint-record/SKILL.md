@@ -19,7 +19,7 @@ Needs the uxprint repository, Node 20 or newer, `pnpm install`, and Craft Anythi
    `captures/<slug>/` now holds, per page, screenshots at 1440, 768 and 390, opened menus (`states/`), readable tiles (`tiles/`), `capture.json` and `measure.json`; plus `draft.json` across pages.
 3. Read `draft.json` and each `measure.json`, and look at the tiles and `screen-*.png` files. Screenshots show layout and intent; numbers come from the JSON.
 4. Write `prints/<slug>/print.json` to the schema in `packages/uxprint/src/schema.ts`. `prints/linear/print.json` is the worked example.
-5. Check it: `pnpm --filter uxprint build && node packages/uxprint/dist/cli.js validate`, then read `node packages/uxprint/dist/cli.js show <slug>` as an agent would.
+5. Check it: `pnpm --filter @denizbarish/uxprint build && node packages/uxprint/dist/cli.js validate`, then read `node packages/uxprint/dist/cli.js show <slug>` as an agent would.
 
 ## Where each section comes from
 
